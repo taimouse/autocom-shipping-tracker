@@ -22,23 +22,227 @@
         display: none;
       }
       .fc-tooltip {
-        padding: 8px 16px;
-        line-height: 1.5;
+        padding: 8px 12px;
+        line-height: 1.75;
         font-size: 14px;
+        border-radius: 4px;
+      }
+
+      /* 모달 스타일 */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+      .modal-header {
+        padding: 12px 20px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .modal-body {
+        padding: 20px;
+      }
+      .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+      .close:hover,
+      .close:focus {
+        color: #000;
+      }
+
+      /* 필터 아이콘 스타일 */
+      .filter-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e5e7eb;
+        border: none;
+        border-radius: 50%;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        z-index: 100;
+        svg {
+          width: 24px;
+          height: 24px;
+          color: #2c3e50;
+        }
+      }
+      .filter-icon:hover {
+        border: 2px solid #2c3e50;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      #calendar {
+        /* font-size: 15px; */
       }
     </style>
-    `
   </head>
   <body class="m-0 p-5 bg-gray-100">
-    <h1 class="text-center text-gray-800 text-2xl font-bold mb-4">
-      선박 운송 일정 달력
-    </h1>
-    <div class="max-w-7xl mx-auto">
-      <div id="calendar" class="bg-white rounded-lg shadow-lg p-2.5"></div>
+    <div class="flex justify-between items-center gap-4 p-3 mb-4">
+      <h1 class="text-gray-800 text-2xl font-bold">Shipping Schedule</h1>
+
+      <!-- 필터 아이콘 -->
+      <button class="filter-icon" onclick="openModal()" title="필터 설정">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- 필터 모달 -->
+    <div id="filterModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="text-lg font-semibold text-gray-800">필터 설정</h2>
+          <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 회사 필터 -->
+            <div>
+              <h3 class="text-gray-700 font-semibold mb-3">회사 선택:</h3>
+              <div class="flex items-center mb-3">
+                <input type="checkbox" id="selectAll" class="mr-2" checked />
+                <label
+                  for="selectAll"
+                  class="cursor-pointer font-semibold text-sm"
+                  >전체 선택/해제</label
+                >
+              </div>
+              <div id="companyCheckboxes" class="grid grid-cols-2 gap-2"></div>
+            </div>
+
+            <!-- 포트 필터 -->
+            <div>
+              <h3 class="text-gray-700 font-semibold mb-3">포트 선택:</h3>
+
+              <!-- 출발 포트 -->
+              <div class="mb-4">
+                <h4 class="text-gray-600 font-semibold mb-2 text-sm">
+                  출발 포트
+                </h4>
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="selectAllDeparturePorts"
+                    class="mr-2"
+                    checked
+                  />
+                  <label
+                    for="selectAllDeparturePorts"
+                    class="cursor-pointer text-sm"
+                    >전체 선택/해제</label
+                  >
+                </div>
+                <div
+                  id="departurePortCheckboxes"
+                  class="grid grid-cols-2 gap-2"
+                ></div>
+              </div>
+
+              <!-- 도착 포트 -->
+              <div>
+                <h4 class="text-gray-600 font-semibold mb-2 text-sm">
+                  도착 포트
+                </h4>
+                <div class="flex items-center mb-2">
+                  <input
+                    type="checkbox"
+                    id="selectAllArrivalPorts"
+                    class="mr-2"
+                    checked
+                  />
+                  <label
+                    for="selectAllArrivalPorts"
+                    class="cursor-pointer text-sm"
+                    >전체 선택/해제</label
+                  >
+                </div>
+                <div
+                  id="arrivalPortCheckboxes"
+                  class="grid grid-cols-2 gap-2"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto">
+      <div
+        id="calendar"
+        class="bg-white rounded-lg shadow-lg py-3 px-4 max-h-[840px] overflow-auto"
+      ></div>
     </div>
 
     <script>
+      // 모달 열기/닫기 함수
+      function openModal() {
+        document.getElementById("filterModal").style.display = "block";
+        document.body.style.overflow = "hidden"; // 배경 스크롤 방지
+      }
+
+      function closeModal() {
+        document.getElementById("filterModal").style.display = "none";
+        document.body.style.overflow = "auto"; // 배경 스크롤 복원
+      }
+
+      // 모달 외부 클릭 시 닫기
+      window.onclick = function (event) {
+        const modal = document.getElementById("filterModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+
+      // ESC 키로 모달 닫기
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeModal();
+        }
+      });
+
       let shippingData = [];
+      let calendar = null;
+      let selectedCompanies = [];
+      let selectedDeparturePorts = [];
+      let selectedArrivalPorts = [];
 
       // JSON 데이터 로드
       fetch(
@@ -47,9 +251,202 @@
         .then((response) => response.json())
         .then((data) => {
           shippingData = data;
+          populateCompanySelect();
+          populatePortSelect();
           initCalendars();
         })
         .catch((error) => console.error("Error loading JSON:", error));
+
+      // 회사 목록을 checkbox로 추가
+      function populateCompanySelect() {
+        const companies = [
+          ...new Set(shippingData.map((ship) => ship.Company)),
+        ].sort();
+        const container = document.getElementById("companyCheckboxes");
+        const selectAllCheckbox = document.getElementById("selectAll");
+
+        // 초기화: 모든 회사 선택
+        selectedCompanies = [...companies];
+
+        companies.forEach((company) => {
+          const div = document.createElement("div");
+          div.className = "flex items-center";
+
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.id = `company_${company.replace(/\s+/g, "_")}`;
+          checkbox.value = company;
+          checkbox.checked = true;
+          checkbox.className = "mr-2 company-checkbox";
+
+          const label = document.createElement("label");
+          label.htmlFor = checkbox.id;
+          label.textContent = company;
+          label.className = "cursor-pointer text-sm";
+
+          div.appendChild(checkbox);
+          div.appendChild(label);
+          container.appendChild(div);
+
+          // checkbox 변경 이벤트
+          checkbox.addEventListener("change", (e) => {
+            if (e.target.checked) {
+              selectedCompanies.push(company);
+            } else {
+              selectedCompanies = selectedCompanies.filter(
+                (c) => c !== company,
+              );
+            }
+            updateSelectAllCheckbox();
+            updateCalendar();
+          });
+        });
+
+        // 전체 선택/해제 이벤트
+        selectAllCheckbox.addEventListener("change", (e) => {
+          const checkboxes = document.querySelectorAll(".company-checkbox");
+          checkboxes.forEach((cb) => {
+            cb.checked = e.target.checked;
+          });
+          selectedCompanies = e.target.checked ? [...companies] : [];
+          updateCalendar();
+        });
+      }
+
+      // 전체 선택 체크박스 상태 업데이트
+      function updateSelectAllCheckbox() {
+        const checkboxes = document.querySelectorAll(".company-checkbox");
+        const selectAllCheckbox = document.getElementById("selectAll");
+        const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
+        selectAllCheckbox.checked = allChecked;
+      }
+
+      // 포트 목록을 checkbox로 추가
+      function populatePortSelect() {
+        const departurePorts = new Set();
+        const arrivalPorts = new Set();
+
+        shippingData.forEach((ship) => {
+          Object.keys(ship["Departure Ports"]).forEach((port) =>
+            departurePorts.add(port),
+          );
+          Object.keys(ship["Arrival Ports"]).forEach((port) =>
+            arrivalPorts.add(port),
+          );
+        });
+
+        const departurePortsList = [...departurePorts].sort();
+        const arrivalPortsList = [...arrivalPorts].sort();
+
+        // 출발 포트 체크박스 생성
+        createPortCheckboxes(
+          departurePortsList,
+          "departurePortCheckboxes",
+          "selectAllDeparturePorts",
+          "departure-port-checkbox",
+          selectedDeparturePorts,
+          (ports) => {
+            selectedDeparturePorts = ports;
+          },
+        );
+
+        // 도착 포트 체크박스 생성
+        createPortCheckboxes(
+          arrivalPortsList,
+          "arrivalPortCheckboxes",
+          "selectAllArrivalPorts",
+          "arrival-port-checkbox",
+          selectedArrivalPorts,
+          (ports) => {
+            selectedArrivalPorts = ports;
+          },
+        );
+      }
+
+      // 포트 체크박스 생성 헬퍼 함수
+      function createPortCheckboxes(
+        ports,
+        containerId,
+        selectAllId,
+        checkboxClass,
+        selectedArray,
+        setSelected,
+      ) {
+        const container = document.getElementById(containerId);
+        const selectAllCheckbox = document.getElementById(selectAllId);
+
+        // 초기화: 모든 포트 선택
+        setSelected([...ports]);
+
+        ports.forEach((port) => {
+          const div = document.createElement("div");
+          div.className = "flex items-center";
+
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.id = `${checkboxClass}_${port.replace(/\s+/g, "_")}`;
+          checkbox.value = port;
+          checkbox.checked = true;
+          checkbox.className = `mr-2 ${checkboxClass}`;
+
+          const label = document.createElement("label");
+          label.htmlFor = checkbox.id;
+          label.textContent = port;
+          label.className = "cursor-pointer text-sm";
+
+          div.appendChild(checkbox);
+          div.appendChild(label);
+          container.appendChild(div);
+
+          // checkbox 변경 이벤트
+          checkbox.addEventListener("change", (e) => {
+            let currentSelected =
+              checkboxClass === "departure-port-checkbox"
+                ? selectedDeparturePorts
+                : selectedArrivalPorts;
+
+            if (e.target.checked) {
+              currentSelected.push(port);
+            } else {
+              currentSelected = currentSelected.filter((p) => p !== port);
+            }
+
+            if (checkboxClass === "departure-port-checkbox") {
+              selectedDeparturePorts = currentSelected;
+            } else {
+              selectedArrivalPorts = currentSelected;
+            }
+
+            updateSelectAllPortsCheckbox(selectAllId, checkboxClass);
+            updateCalendar();
+          });
+        });
+
+        // 전체 선택/해제 이벤트
+        selectAllCheckbox.addEventListener("change", (e) => {
+          const checkboxes = document.querySelectorAll(`.${checkboxClass}`);
+          checkboxes.forEach((cb) => {
+            cb.checked = e.target.checked;
+          });
+          setSelected(e.target.checked ? [...ports] : []);
+          updateCalendar();
+        });
+      }
+
+      // 전체 포트 선택 체크박스 상태 업데이트
+      function updateSelectAllPortsCheckbox(selectAllId, checkboxClass) {
+        const checkboxes = document.querySelectorAll(`.${checkboxClass}`);
+        const selectAllCheckbox = document.getElementById(selectAllId);
+        const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
+        selectAllCheckbox.checked = allChecked;
+      }
+
+      // 달력 업데이트
+      function updateCalendar() {
+        const events = buildEvents();
+        calendar.removeAllEvents();
+        calendar.addEventSource(events);
+      }
 
       function parseDateStr(dateStr) {
         if (dateStr === "-") return null;
@@ -73,41 +470,59 @@
         const currentYear = now.getFullYear();
         const currentMonth = now.getMonth(); // 0-based
         let year = currentYear;
-        if (monIdx > currentMonth) {
+
+        // JSON 데이터는 0-4개월 범위의 스케줄을 제공
+        // 현재 월 기준 ±4개월 범위를 벗어나면 연도 조정
+        const monthDiff = monIdx - currentMonth;
+        if (monthDiff > 4) {
+          // 월 차이가 4보다 크면 작년 (예: 2월에 12월 데이터 → 2025년 12월)
           year = currentYear - 1;
+        } else if (monthDiff < -4) {
+          // 월 차이가 -4보다 작으면 내년 (예: 10월에 2월 데이터 → 2027년 2월)
+          year = currentYear + 1;
         }
+
         return new Date(year, monIdx, day);
       }
 
       function buildEvents() {
         const events = [];
-        shippingData.forEach((ship) => {
+        const filteredData =
+          selectedCompanies.length === 0
+            ? []
+            : shippingData.filter((ship) =>
+                selectedCompanies.includes(ship.Company),
+              );
+
+        filteredData.forEach((ship) => {
           // Departure events
           Object.entries(ship["Departure Ports"]).forEach(([port, dateStr]) => {
-            if (dateStr !== "-") {
+            if (dateStr !== "-" && selectedDeparturePorts.includes(port)) {
               const date = parseDateStr(dateStr);
               if (date) {
+                const dateFormatted = `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일`;
                 events.push({
                   title: ship.Company,
                   start: date,
                   backgroundColor: "#4CAF50",
                   borderColor: "#4CAF50",
-                  description: `출발 : ${port}<br>[${ship.Company}]<br>${ship["Ship Name"]}<br>${ship.Voyage}`,
+                  description: `<span style="background-color: #4CAF50; color: white; padding: 0px 6px; border-radius: 4px; display: inline-block; line-height: 1.5;">출발</span> ${dateFormatted}<br><span style="font-weight: bold">${port}</span><br>[${ship.Company}]<br>${ship["Ship Name"]}<br>Voyage: ${ship.Voyage}`,
                 });
               }
             }
           });
           // Arrival events
           Object.entries(ship["Arrival Ports"]).forEach(([port, dateStr]) => {
-            if (dateStr !== "-") {
+            if (dateStr !== "-" && selectedArrivalPorts.includes(port)) {
               const date = parseDateStr(dateStr);
               if (date) {
+                const dateFormatted = `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일`;
                 events.push({
                   title: ship.Company,
                   start: date,
                   backgroundColor: "#2196F3",
                   borderColor: "#2196F3",
-                  description: `도착 : ${port}<br>[${ship.Company}]<br>${ship["Ship Name"]}<br>${ship.Voyage}`,
+                  description: `<span style="background-color: #2196F3; color: white; padding: 0px 6px; border-radius: 4px; display: inline-block;">도착</span> ${dateFormatted}<br><span style="font-weight: bold">${port}</span><br>[${ship.Company}]<br>${ship["Ship Name"]}<br>Voyage: ${ship.Voyage}`,
                 });
               }
             }
@@ -123,17 +538,18 @@
         const currentMonth = now.getMonth();
 
         // Calendar 1: Current month
-        const calendar = new FullCalendar.Calendar(
+        calendar = new FullCalendar.Calendar(
           document.getElementById("calendar"),
           {
-            initialView: "dayGridMonth",
+            initialView: "multiMonthYear",
+            multiMonthMaxColumns: 2,
             initialDate: new Date(currentYear, currentMonth, 1),
             events: events,
             height: "auto",
             headerToolbar: {
-              left: "prev,next",
+              left: "multiMonthYear,listWeek",
               center: "title",
-              right: "dayGridMonth,listWeek",
+              right: "today,prev,next",
             },
             eventMouseEnter: function (info) {
               // 툴팁 표시
@@ -143,7 +559,7 @@
               tooltip.style.position = "absolute";
               tooltip.style.background = "white";
               tooltip.style.border = "1px solid #ccc";
-              tooltip.style.zIndex = "1000";
+              tooltip.style.zIndex = "10000";
               tooltip.style.pointerEvents = "none";
               document.body.appendChild(tooltip);
               const rect = info.el.getBoundingClientRect();
