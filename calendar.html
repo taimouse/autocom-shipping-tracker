@@ -41,7 +41,9 @@
       let shippingData = [];
 
       // JSON 데이터 로드
-      fetch("shipping_history.json")
+      fetch(
+        "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_history.json",
+      )
         .then((response) => response.json())
         .then((data) => {
           shippingData = data;

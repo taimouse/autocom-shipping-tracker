@@ -1,10 +1,9 @@
-name: Daily Shipping Data Scrape
+name: Daily Ship Scrape
 
 on:
   schedule:
-    # 매일 한국 시간 오전 9시 (UTC 00:00)에 실행
     - cron: "0 0 * * *"
-  workflow_dispatch: # 수동으로도 실행 가능하게 설정
+  workflow_dispatch: # 이 줄이 있어야 Actions 탭에 수동 실행 버튼이 생깁니다.
 
 jobs:
   build:
@@ -22,13 +21,12 @@ jobs:
         run: |
           pip install requests pandas lxml html5lib
 
-      - name: Run scraper
+      - name: Run Scraper
         run: python scraper.py
 
-      - name: Commit and Push changes
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add shipping_schedule.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update shipping data: $(date +'%Y-%m-%d')"
-          git push
+          git add shipping_history.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update shipping data" && git push)
