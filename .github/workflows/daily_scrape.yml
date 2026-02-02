@@ -1,0 +1,34 @@
+name: Daily Shipping Data Scrape
+
+on:
+  schedule:
+    # 매일 한국 시간 오전 9시 (UTC 00:00)에 실행
+    - cron: "0 0 * * *"
+  workflow_dispatch: # 수동으로도 실행 가능하게 설정
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas lxml html5lib
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add shipping_schedule.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update shipping data: $(date +'%Y-%m-%d')"
+          git push

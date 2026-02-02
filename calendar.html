@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping Tracker Calendar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      .fc-event-time {
+        display: none;
+      }
+      .fc-tooltip {
+        padding: 8px 16px;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+    </style>
+    `
+  </head>
+  <body class="m-0 p-5 bg-gray-100">
+    <h1 class="text-center text-gray-800 text-2xl font-bold mb-4">
+      선박 운송 일정 달력
+    </h1>
+    <div class="max-w-7xl mx-auto">
+      <div id="calendar" class="bg-white rounded-lg shadow-lg p-2.5"></div>
+    </div>
+
+    <script>
+      let shippingData = [];
+
+      // JSON 데이터 로드
+      fetch("shipping_history.json")
+        .then((response) => response.json())
+        .then((data) => {
+          shippingData = data;
+          initCalendars();
+        })
+        .catch((error) => console.error("Error loading JSON:", error));
+
+      function parseDateStr(dateStr) {
+        if (dateStr === "-") return null;
+        const months = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const monIdx = months.indexOf(dateStr.slice(0, 3));
+        const day = parseInt(dateStr.slice(3));
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth(); // 0-based
+        let year = currentYear;
+        if (monIdx > currentMonth) {
+          year = currentYear - 1;
+        }
+        return new Date(year, monIdx, day);
+      }
+
+      function buildEvents() {
+        const events = [];
+        shippingData.forEach((ship) => {
+          // Departure events
+          Object.entries(ship["Departure Ports"]).forEach(([port, dateStr]) => {
+            if (dateStr !== "-") {
+              const date = parseDateStr(dateStr);
+              if (date) {
+                events.push({
+                  title: ship.Company,
+                  start: date,
+                  backgroundColor: "#4CAF50",
+                  borderColor: "#4CAF50",
+                  description: `출발 : ${port}<br>[${ship.Company}]<br>${ship["Ship Name"]}<br>${ship.Voyage}`,
+                });
+              }
+            }
+          });
+          // Arrival events
+          Object.entries(ship["Arrival Ports"]).forEach(([port, dateStr]) => {
+            if (dateStr !== "-") {
+              const date = parseDateStr(dateStr);
+              if (date) {
+                events.push({
+                  title: ship.Company,
+                  start: date,
+                  backgroundColor: "#2196F3",
+                  borderColor: "#2196F3",
+                  description: `도착 : ${port}<br>[${ship.Company}]<br>${ship["Ship Name"]}<br>${ship.Voyage}`,
+                });
+              }
+            }
+          });
+        });
+        return events;
+      }
+
+      function initCalendars() {
+        const events = buildEvents();
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth();
+
+        // Calendar 1: Current month
+        const calendar = new FullCalendar.Calendar(
+          document.getElementById("calendar"),
+          {
+            initialView: "dayGridMonth",
+            initialDate: new Date(currentYear, currentMonth, 1),
+            events: events,
+            height: "auto",
+            headerToolbar: {
+              left: "prev,next",
+              center: "title",
+              right: "dayGridMonth,listWeek",
+            },
+            eventMouseEnter: function (info) {
+              // 툴팁 표시
+              const tooltip = document.createElement("div");
+              tooltip.className = "fc-tooltip";
+              tooltip.innerHTML = info.event.extendedProps.description;
+              tooltip.style.position = "absolute";
+              tooltip.style.background = "white";
+              tooltip.style.border = "1px solid #ccc";
+              tooltip.style.zIndex = "1000";
+              tooltip.style.pointerEvents = "none";
+              document.body.appendChild(tooltip);
+              const rect = info.el.getBoundingClientRect();
+              tooltip.style.left = rect.left + "px";
+              tooltip.style.top = rect.top - -24 + "px";
+              info.el.tooltip = tooltip;
+            },
+            eventMouseLeave: function (info) {
+              // 툴팁 제거
+              if (info.el.tooltip) {
+                document.body.removeChild(info.el.tooltip);
+                info.el.tooltip = null;
+              }
+            },
+          },
+        );
+        calendar.render();
+      }
+    </script>
+  </body>
+</html>
