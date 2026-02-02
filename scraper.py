@@ -3,6 +3,109 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import sys
+
+# 사용법:
+# python scraper.py          # 일반 크롤링 실행
+# python scraper.py --test   # 이메일 설정 테스트
+
+def send_notification_email():
+    """변경 사항 알림 이메일 전송"""
+    try:
+        # 이메일 설정 (아래 값들을 실제 값으로 변경하세요)
+        sender_email = "jiworld.kim@gmail.com"  # 발신자 Gmail 주소
+        receiver_emails = ["jiworld.kim@gmail.com", "ateam.marko@gmail.com"]  # 여러 수신자 이메일
+        password = "lcia yurn ifks eqdi"  # Gmail 앱 비밀번호 (일반 비밀번호 아님!)
+
+        # Gmail 앱 비밀번호 설정 방법:
+        # 1. Google 계정 설정 → 보안 → 2단계 인증 켜기
+        # 2. 보안 → 앱 비밀번호 생성 (선택: 메일, 기기: Windows 컴퓨터)
+        # 3. 생성된 16자리 비밀번호를 password에 입력
+
+        # 이메일 내용 구성
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = ", ".join(receiver_emails)  # 여러 수신자 표시
+        msg['Subject'] = f"선박 운송 일정 변경 알림 - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+
+        body = f"""
+안녕하세요,
+
+선박 운송 일정에 변경 사항이 감지되었습니다.
+
+변경 시간: {datetime.now().strftime('%Y년 %m월 %d일 %H시 %M분')}
+
+새로운 데이터를 확인하려면 shipping_history.json 파일을 확인해주세요.
+
+자동화 시스템
+        """.strip()
+
+        msg.attach(MIMEText(body, 'plain'))
+
+        # SMTP 서버 연결 및 이메일 전송 (여러 수신자)
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(sender_email, password)
+        text = msg.as_string()
+        server.sendmail(sender_email, receiver_emails, text)  # receiver_emails 리스트 전달
+        server.quit()
+
+        print("이메일 알림이 성공적으로 전송되었습니다.")
+
+    except Exception as e:
+        print(f"이메일 전송 실패: {e}")
+def send_test_email():
+    """테스트 이메일 전송"""
+    try:
+        # 이메일 설정 (아래 값들을 실제 값으로 변경하세요)
+        sender_email = "jiworld.kim@gmail.com"  # 발신자 Gmail 주소
+        receiver_emails = ["jiworld.kim@gmail.com", "rokgy85@gmail.com"]  # 여러 수신자 이메일
+        password = "lcia yurn ifks eqdi"  # Gmail 앱 비밀번호 (일반 비밀번호 아님!)
+
+        # 이메일 내용 구성
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = ", ".join(receiver_emails)  # 여러 수신자 표시
+        msg['Subject'] = f"선박 운송 일정 알림 시스템 테스트 - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+
+        body = f"""
+테스트 이메일입니다.
+
+선박 운송 일정 알림 시스템이 정상적으로 작동하고 있습니다.
+
+테스트 시간: {datetime.now().strftime('%Y년 %m월 %d일 %H시 %M분')}
+
+이 메일이 정상적으로 수신되었다면 시스템 설정이 완료된 것입니다.
+
+자동화 시스템
+        """.strip()
+
+        msg.attach(MIMEText(body, 'plain'))
+
+        # SMTP 서버 연결 및 이메일 전송 (여러 수신자)
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(sender_email, password)
+        text = msg.as_string()
+        server.sendmail(sender_email, receiver_emails, text)  # receiver_emails 리스트 전달
+        server.quit()
+
+        print("테스트 이메일이 성공적으로 전송되었습니다!")
+
+    except Exception as e:
+        print(f"테스트 이메일 전송 실패: {e}")
+        print("\n※ Gmail 설정을 확인해주세요:")
+        print("  1. sender_email과 password를 실제 Gmail 계정 정보로 변경")
+        print("  2. Gmail 앱 비밀번호 생성 방법:")
+        print("    - Google 계정 → 보안 → 2단계 인증 켜기")
+        print("    - 보안 → 앱 비밀번호 생성 (메일/Windows 컴퓨터)")
+        print("    - 생성된 16자리 비밀번호를 password에 입력")
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 def scrape_and_update():
     url = "https://autocj.co.jp/japan_shipping?dest=8"
@@ -104,8 +207,13 @@ def scrape_and_update():
         with open(history_file, "w", encoding="utf-8") as f:
             json.dump(current_data, f, ensure_ascii=False, indent=2)
 
+        # 8. 변경 알림 이메일 전송
+        print("7. 변경 알림 이메일을 전송합니다...")
+        send_notification_email()
+
         full_path = os.path.abspath(history_file)
         print(f"최종 결과: 파일 저장 완료! 위치: {full_path}")
+        print("변경 알림 이메일이 전송되었습니다.")
 
     except Exception as e:
         print(f"실행 중 에러 발생: {e}")
@@ -113,4 +221,8 @@ def scrape_and_update():
         traceback.print_exc()
 
 if __name__ == "__main__":
-    scrape_and_update()
+    if len(sys.argv) > 1 and sys.argv[1] == "--test":
+        print("테스트 모드로 실행합니다...")
+        send_test_email()
+    else:
+        scrape_and_update()
