@@ -23,7 +23,7 @@
       }
       .fc-tooltip {
         padding: 8px 12px;
-        line-height: 1.75;
+        line-height: 1.5;
         font-size: 14px;
         border-radius: 4px;
       }
@@ -243,6 +243,21 @@
       let selectedCompanies = [];
       let selectedDeparturePorts = [];
       let selectedArrivalPorts = [];
+      let companyColors = {}; // 회사별 색상 맵
+
+      // 색상 팔레트 (회사 수만큼 반복 사용)
+      const colorPalette = [
+        "#3788d8", // 파란색
+        "#e74c3c", // 빨간색
+        "#2ecc71", // 초록색
+        "#f39c12", // 주황색
+        "#9b59b6", // 보라색
+        "#1abc9c", // 청록색
+        "#34495e", // 어두운 회색
+        "#e67e22", // 주황색 변형
+        "#95a5a6", // 밝은 회색
+        "#f1c40f", // 노란색
+      ];
 
       // JSON 데이터 로드
       fetch(
@@ -267,6 +282,11 @@
 
         // 초기화: 모든 회사 선택
         selectedCompanies = [...companies];
+
+        // 회사별 색상 할당
+        companies.forEach((company, index) => {
+          companyColors[company] = colorPalette[index % colorPalette.length];
+        });
 
         companies.forEach((company) => {
           const div = document.createElement("div");
@@ -527,38 +547,57 @@
         filteredData.forEach((ship) => {
           const fullSchedule = buildShipSchedule(ship);
 
-          // Departure events
+          // 모든 날짜 수집
+          const allDates = [];
+          let hasDeparture = false;
+          let hasArrival = false;
+
+          // 출발 항구의 날짜 수집
           Object.entries(ship["Departure Ports"]).forEach(([port, dateStr]) => {
             if (dateStr !== "-" && selectedDeparturePorts.includes(port)) {
               const date = parseDateStr(dateStr);
               if (date) {
-                const dateFormatted = `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일`;
-                events.push({
-                  title: ship.Company,
-                  start: date,
-                  backgroundColor: "#4CAF50",
-                  borderColor: "#4CAF50",
-                  description: `<span style="background-color: #4CAF50; color: white; padding: 0px 6px; border-radius: 4px; display: inline-block; line-height: 1.5;">출발</span> ${dateFormatted}<br><span style="font-weight: bold">${port}</span><br>[${ship.Company}]<br>${ship["Ship Name"]}<br>Voyage: ${ship.Voyage}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
-                });
+                allDates.push(date);
+                hasDeparture = true;
               }
             }
           });
-          // Arrival events
+
+          // 도착 항구의 날짜 수집
           Object.entries(ship["Arrival Ports"]).forEach(([port, dateStr]) => {
             if (dateStr !== "-" && selectedArrivalPorts.includes(port)) {
               const date = parseDateStr(dateStr);
               if (date) {
-                const dateFormatted = `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일`;
-                events.push({
-                  title: ship.Company,
-                  start: date,
-                  backgroundColor: "#2196F3",
-                  borderColor: "#2196F3",
-                  description: `<span style="background-color: #2196F3; color: white; padding: 0px 6px; border-radius: 4px; display: inline-block;">도착</span> ${dateFormatted}<br><span style="font-weight: bold">${port}</span><br>[${ship.Company}]<br>${ship["Ship Name"]}<br>Voyage: ${ship.Voyage}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
-                });
+                allDates.push(date);
+                hasArrival = true;
               }
             }
           });
+
+          // 필터링된 날짜가 있을 경우에만 이벤트 생성
+          if (allDates.length > 0) {
+            // 날짜 정렬
+            allDates.sort((a, b) => a - b);
+
+            const startDate = allDates[0];
+            const endDate = allDates[allDates.length - 1];
+
+            // 종료일에 1일 추가 (FullCalendar의 end는 exclusive)
+            const endDatePlusOne = new Date(endDate);
+            endDatePlusOne.setDate(endDatePlusOne.getDate() + 1);
+
+            const startFormatted = `${startDate.getFullYear()}년 ${startDate.getMonth() + 1}월 ${startDate.getDate()}일`;
+            const endFormatted = `${endDate.getFullYear()}년 ${endDate.getMonth() + 1}월 ${endDate.getDate()}일`;
+
+            events.push({
+              title: `${ship.Company} - ${ship["Ship Name"]}`,
+              start: startDate,
+              end: endDatePlusOne,
+              backgroundColor: companyColors[ship.Company], // 회사별 색상 적용
+              borderColor: companyColors[ship.Company], // 회사별 색상 적용
+              description: `<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>기간:</strong><br> ${startFormatted} ~ ${endFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
+            });
+          }
         });
         return events;
       }
