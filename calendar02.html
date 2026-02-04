@@ -106,23 +106,35 @@
     <div class="flex justify-between items-center gap-4 p-3 mb-4">
       <h1 class="text-gray-800 text-2xl font-bold">Shipping Schedule</h1>
 
-      <!-- 필터 아이콘 -->
-      <button class="filter-icon" onclick="openModal()" title="필터 설정">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6"
+      <div class="flex items-center gap-3">
+        <!-- 라우트 선택 드롭다운 -->
+        <select
+          id="routeSelector"
+          class="px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 font-medium hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onchange="changeRoute()"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
-          />
-        </svg>
-      </button>
+          <option value="east_asia">EAST ASIA</option>
+          <option value="asia_africa">ASIA, AFRICA</option>
+        </select>
+
+        <!-- 필터 아이콘 -->
+        <button class="filter-icon" onclick="openModal()" title="필터 설정">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- 필터 모달 -->
@@ -244,6 +256,15 @@
       let selectedDeparturePorts = [];
       let selectedArrivalPorts = [];
       let companyColors = {}; // 회사별 색상 맵
+      let currentRoute = "east_asia"; // 현재 선택된 라우트
+
+      // 라우트별 JSON URL 설정
+      const routeUrls = {
+        east_asia:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_history_east_asia.json",
+        asia_africa:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_history_asia_africa.json",
+      };
 
       // 색상 팔레트 (회사 수만큼 반복 사용)
       const colorPalette = [
@@ -259,18 +280,32 @@
         "#f1c40f", // 노란색
       ];
 
-      // JSON 데이터 로드
-      fetch(
-        "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_history.json",
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          shippingData = data;
-          populateCompanySelect();
-          populatePortSelect();
-          initCalendars();
-        })
-        .catch((error) => console.error("Error loading JSON:", error));
+      // 라우트 변경 함수
+      function changeRoute() {
+        const selector = document.getElementById("routeSelector");
+        currentRoute = selector.value;
+        loadShippingData(routeUrls[currentRoute]);
+      }
+
+      // JSON 데이터 로드 함수
+      function loadShippingData(url) {
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            shippingData = data;
+            companyColors = {}; // 색상 맵 초기화
+            populateCompanySelect();
+            populatePortSelect();
+            if (calendar) {
+              calendar.destroy();
+            }
+            initCalendars();
+          })
+          .catch((error) => console.error("Error loading JSON:", error));
+      }
+
+      // 초기 로드
+      loadShippingData(routeUrls[currentRoute]);
 
       // 회사 목록을 checkbox로 추가
       function populateCompanySelect() {
