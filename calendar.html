@@ -27,6 +27,10 @@
         font-size: 14px;
         border-radius: 4px;
       }
+      .fc-multimonth-title {
+        background-color: #2c3e50;
+        color: #ffffff;
+      }
 
       /* 모달 스타일 */
       .modal {
@@ -670,16 +674,17 @@
       }
 
       function buildShipSchedule(ship) {
-        const scheduleLines = [];
+        const scheduleItems = [];
 
         // 출발 항구 스케줄
         Object.entries(ship["Departure Ports"]).forEach(([port, dateStr]) => {
           if (dateStr !== "-") {
             const date = parseDateStr(dateStr);
             if (date) {
-              scheduleLines.push(
-                `${port} ${date.getMonth() + 1}월 ${date.getDate()}일`,
-              );
+              scheduleItems.push({
+                date: date,
+                text: `${port} 출발 ${date.getMonth() + 1}월 ${date.getDate()}일`,
+              });
             }
           }
         });
@@ -689,14 +694,19 @@
           if (dateStr !== "-") {
             const date = parseDateStr(dateStr);
             if (date) {
-              scheduleLines.push(
-                `${port} ${date.getMonth() + 1}월 ${date.getDate()}일`,
-              );
+              scheduleItems.push({
+                date: date,
+                text: `${port} 도착 ${date.getMonth() + 1}월 ${date.getDate()}일`,
+              });
             }
           }
         });
 
-        return scheduleLines.join("<br>");
+        // 날짜순으로 정렬
+        scheduleItems.sort((a, b) => a.date - b.date);
+
+        // 텍스트만 추출하여 join
+        return scheduleItems.map((item) => item.text).join("<br>");
       }
 
       function buildEvents() {
@@ -711,17 +721,19 @@
         filteredData.forEach((ship) => {
           const fullSchedule = buildShipSchedule(ship);
 
-          // 해당 스케줄의 모든 날짜 수집 (가장 빠른 출발일 ~ 가장 늦은 도착일)
-          const allDates = [];
+          // 해당 스케줄의 출발 날짜만 수집 (가장 빠른 출발일 ~ 가장 늦은 출발일)
+          const departureDates = [];
+          const departurePorts = [];
           let hasMatchingDeparturePort = false;
           let hasMatchingArrivalPort = false;
 
-          // 출발 항구: 모든 날짜 수집 + 선택된 출발 포트 매칭 체크
+          // 출발 항구: 출발 날짜 수집 + 선택된 출발 포트 매칭 체크
           Object.entries(ship["Departure Ports"]).forEach(([port, dateStr]) => {
             if (dateStr !== "-") {
               const date = parseDateStr(dateStr);
               if (date) {
-                allDates.push(date);
+                departureDates.push(date);
+                departurePorts.push(port);
               }
               // 선택된 출발 포트에 포함되어 있고 실제 값이 있으면 매칭
               if (selectedDeparturePorts.includes(port)) {
@@ -730,13 +742,9 @@
             }
           });
 
-          // 도착 항구: 모든 날짜 수집 + 선택된 도착 포트 매칭 체크
+          // 도착 항구: 선택된 도착 포트 매칭 체크 (날짜 수집은 하지 않음)
           Object.entries(ship["Arrival Ports"]).forEach(([port, dateStr]) => {
             if (dateStr !== "-") {
-              const date = parseDateStr(dateStr);
-              if (date) {
-                allDates.push(date);
-              }
               // 선택된 도착 포트에 포함되어 있고 실제 값이 있으면 매칭
               if (selectedArrivalPorts.includes(port)) {
                 hasMatchingArrivalPort = true;
@@ -767,12 +775,12 @@
             shouldShow = hasMatchingDeparturePort && hasMatchingArrivalPort;
           }
 
-          if (shouldShow && allDates.length > 0) {
-            // 날짜 정렬: 가장 빠른 날짜 ~ 가장 늦은 날짜
-            allDates.sort((a, b) => a - b);
+          if (shouldShow && departureDates.length > 0) {
+            // 출발 날짜 정렬: 가장 빠른 출발일 ~ 가장 늦은 출발일
+            departureDates.sort((a, b) => a - b);
 
-            const startDate = allDates[0];
-            const endDate = allDates[allDates.length - 1];
+            const startDate = departureDates[0];
+            const endDate = departureDates[departureDates.length - 1];
 
             // 종료일에 1일 추가 (FullCalendar의 end는 exclusive)
             const endDatePlusOne = new Date(endDate);
@@ -781,13 +789,19 @@
             const startFormatted = `${startDate.getFullYear()}년 ${startDate.getMonth() + 1}월 ${startDate.getDate()}일`;
             const endFormatted = `${endDate.getFullYear()}년 ${endDate.getMonth() + 1}월 ${endDate.getDate()}일`;
 
+            // 출발 포트들을 title에 추가
+            const portsText =
+              departurePorts.length > 0
+                ? ` (${departurePorts.join(", ")})`
+                : "";
+
             events.push({
-              title: `${ship.Company} - ${ship["Ship Name"]}`,
+              title: `${ship.Company} - ${ship["Ship Name"]} [${ship.Voyage}]${portsText}`,
               start: startDate,
               end: endDatePlusOne,
               backgroundColor: companyColors[ship.Company], // 회사별 색상 적용
               borderColor: companyColors[ship.Company], // 회사별 색상 적용
-              description: `<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>기간:</strong><br> ${startFormatted} ~ ${endFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
+              description: `<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>출발 기간:</strong><br> ${startFormatted} ~ ${endFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
             });
           }
         });
@@ -810,7 +824,7 @@
         calendar = new FullCalendar.Calendar(
           document.getElementById("calendar"),
           {
-            // initialView: "multiMonthYear",
+            initialView: "multiMonthYear",
             multiMonthMaxColumns: 1,
             initialDate: new Date(currentYear, currentMonth, 1),
             events: events,
@@ -825,7 +839,7 @@
               const tooltip = document.createElement("div");
               tooltip.className = "fc-tooltip";
               tooltip.innerHTML = info.event.extendedProps.description;
-              tooltip.style.position = "absolute";
+              tooltip.style.position = "fixed";
               tooltip.style.background = "white";
               tooltip.style.border = "1px solid #ccc";
               tooltip.style.zIndex = "10000";
@@ -833,7 +847,7 @@
               document.body.appendChild(tooltip);
               const rect = info.el.getBoundingClientRect();
               tooltip.style.left = rect.left + "px";
-              tooltip.style.top = rect.top - -24 + "px";
+              tooltip.style.top = rect.top - 24 + "px";
               info.el.tooltip = tooltip;
             },
             eventMouseLeave: function (info) {
