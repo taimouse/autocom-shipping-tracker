@@ -1,32 +1,5 @@
 [
   {
-    "Company": "NYK",
-    "Ship Name": "CENTAURUS LEADER",
-    "Voyage": "061",
-    "Departure Ports": {
-      "Yokohama": "Dec22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Dec24",
-      "Kobe": "Dec25",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "Jan14",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "GRAVITY HIGHWAY",
     "Voyage": "81",
@@ -598,12 +571,12 @@
     "Ship Name": "GOLIATH LEADER",
     "Voyage": "126",
     "Departure Ports": {
-      "Yokohama": "Feb13",
+      "Yokohama": "Feb12",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Feb14",
-      "Kobe": "Feb19",
-      "Osaka": "Feb18",
+      "Kobe": "Feb18",
+      "Osaka": "Feb19",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -614,7 +587,7 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "Mar20",
+      "Durban": "Mar21",
       "Dar": "Mar15",
       "Mombasa": "Mar13",
       "Maput": "-"
@@ -625,12 +598,12 @@
     "Ship Name": "APOLLON LEADER",
     "Voyage": "118",
     "Departure Ports": {
-      "Yokohama": "Feb19",
+      "Yokohama": "Feb18",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Feb21",
-      "Kobe": "Feb24",
-      "Osaka": "Feb23",
+      "Nagoya": "Feb20",
+      "Kobe": "Feb21",
+      "Osaka": "Feb22",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",

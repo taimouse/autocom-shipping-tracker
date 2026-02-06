@@ -379,12 +379,12 @@
     "Ship Name": "GOLIATH LEADER",
     "Voyage": "126",
     "Departure Ports": {
-      "Yokohama": "Feb13",
+      "Yokohama": "Feb12",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Feb14",
-      "Kobe": "Feb19",
-      "Osaka": "Feb18",
+      "Kobe": "Feb18",
+      "Osaka": "Feb19",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -393,7 +393,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Mar4",
+      "Hambantota": "Mar3",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -404,12 +404,12 @@
     "Ship Name": "APOLLON LEADER",
     "Voyage": "118",
     "Departure Ports": {
-      "Yokohama": "Feb19",
+      "Yokohama": "Feb18",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Feb21",
-      "Kobe": "Feb24",
-      "Osaka": "Feb23",
+      "Nagoya": "Feb20",
+      "Kobe": "Feb21",
+      "Osaka": "Feb22",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -418,7 +418,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "O",
+      "Hambantota": "Mar9",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
