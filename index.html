@@ -117,143 +117,278 @@
         border-bottom: 1px solid #eee;
         margin-bottom: -1px;
       }
+
+      /* 사이드바 스타일 */
+      #sidebar {
+        width: 260px;
+        min-width: 260px;
+        height: 100vh;
+        background-color: #f8f9fa;
+        border-right: 1px solid #e9ecef;
+        overflow-y: auto;
+        padding: 20px;
+      }
+      #sidebar h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #2c3e50;
+      }
+      #sidebar h4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #495057;
+      }
+      .sidebar-section {
+        margin-bottom: 24px;
+      }
+      #main-container {
+        display: flex;
+        min-height: 100vh;
+      }
+      #main-content {
+        flex: 1;
+        overflow-x: hidden;
+        height: 100vh;
+      }
     </style>
   </head>
-  <body class="m-0 p-5 bg-gray-100">
-    <div
-      class="flex justify-between items-center gap-4 p-3 mb-4 mx-auto max-w-[1440px]"
-    >
-      <h1 class="text-gray-800 text-2xl font-bold">Shipping Schedule</h1>
+  <body class="m-0 bg-gray-100">
+    <div id="main-container">
+      <!-- PC 사이드바 -->
+      <div id="sidebar" class="hidden md:block">
+        <h1 class="text-xl font-bold text-gray-800 mb-6">Shipping Schedule</h1>
 
-      <div class="flex items-center gap-3">
-        <!-- 라우트 선택 드롭다운 -->
-        <select
-          id="routeSelector"
-          class="px-2.5 py-1.5 border border-gray-300 rounded-lg bg-white text-gray-700 font-medium hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          onchange="changeRoute()"
-        >
-          <option value="east_asia">EAST ASIA</option>
-          <option value="asia_africa">ASIA, AFRICA</option>
-        </select>
-
-        <!-- 필터 아이콘 -->
-        <button class="filter-icon" onclick="openModal()" title="필터 설정">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
+        <!-- 루트 선택 -->
+        <div class="sidebar-section">
+          <h3>루트 선택</h3>
+          <select
+            id="routeSelectorSidebar"
+            class="w-full px-2 py-1.5 border border-gray-300 rounded-lg bg-white text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            onchange="changeRoute()"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
+            <option value="east_asia">EAST ASIA</option>
+            <option value="asia_africa">ASIA, AFRICA</option>
+          </select>
+        </div>
 
-    <!-- 필터 모달 -->
-    <div id="filterModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
+        <!-- 필터 설정 -->
+        <div class="sidebar-section">
+          <p class="text-sm text-gray-600 mb-3">
+            필터링된 스케줄:
+            <span id="filteredCountSidebar" class="font-semibold text-blue-600"
+              >0</span
+            >건
+          </p>
+        </div>
+
+        <!-- 회사 필터 -->
+        <div class="sidebar-section">
+          <h3>회사 선택</h3>
+          <div class="flex items-center mb-2">
+            <input type="checkbox" id="selectAllSidebar" class="mr-2" checked />
+            <label
+              for="selectAllSidebar"
+              class="cursor-pointer text-sm font-semibold"
+              >전체 선택/해제</label
+            >
+          </div>
+          <div
+            id="companyCheckboxesSidebar"
+            class="grid grid-cols-2 gap-1"
+          ></div>
+        </div>
+
+        <!-- 포트 필터 -->
+        <div class="sidebar-section">
+          <!-- 출발 포트 -->
+          <div class="mb-4">
+            <h3 class="text-sm font-semibold text-gray-600 mb-2">출발 포트</h3>
+            <div class="flex items-center mb-2">
+              <input
+                type="checkbox"
+                id="selectAllDeparturePortsSidebar"
+                class="mr-2"
+              />
+              <label
+                for="selectAllDeparturePortsSidebar"
+                class="cursor-pointer text-xs"
+                >전체 선택/해제</label
+              >
+            </div>
+            <div
+              id="departurePortCheckboxesSidebar"
+              class="grid grid-cols-2 gap-1"
+            ></div>
+          </div>
+
+          <!-- 도착 포트 -->
           <div>
-            <h2 class="text-lg font-semibold text-gray-800">필터 설정</h2>
-            <p class="text-sm text-gray-600 mt-1">
-              필터링된 스케줄:
-              <span id="filteredCount" class="font-semibold text-blue-600"
-                >0</span
-              >건
-            </p>
-          </div>
-          <span class="close" onclick="closeModal()">&times;</span>
-        </div>
-        <div class="modal-body">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- 회사 필터 -->
-            <div>
-              <h3 class="text-gray-700 font-semibold mb-3">회사 선택:</h3>
-              <div class="flex items-center mb-3">
-                <input type="checkbox" id="selectAll" class="mr-2" checked />
-                <label
-                  for="selectAll"
-                  class="cursor-pointer font-semibold text-sm"
-                  >전체 선택/해제</label
-                >
-              </div>
-              <div id="companyCheckboxes" class="grid grid-cols-2 gap-2"></div>
+            <h3 class="text-sm font-semibold text-gray-600 mb-2">도착 포트</h3>
+            <div class="flex items-center mb-2">
+              <input
+                type="checkbox"
+                id="selectAllArrivalPortsSidebar"
+                class="mr-2"
+              />
+              <label
+                for="selectAllArrivalPortsSidebar"
+                class="cursor-pointer text-xs"
+                >전체 선택/해제</label
+              >
             </div>
-
-            <!-- 포트 필터 -->
-            <div>
-              <h3 class="text-gray-700 font-semibold mb-3">포트 선택:</h3>
-              <div class="flex items-center mb-3">
-                <input type="checkbox" id="selectAllPorts" class="mr-2" />
-                <label
-                  for="selectAllPorts"
-                  class="cursor-pointer font-semibold text-sm"
-                  >전체 선택/해제</label
-                >
-              </div>
-
-              <!-- 출발 포트 -->
-              <div class="mb-4">
-                <h4 class="text-gray-600 font-semibold mb-2 text-sm">
-                  출발 포트
-                </h4>
-                <div class="flex items-center mb-2">
-                  <input
-                    type="checkbox"
-                    id="selectAllDeparturePorts"
-                    class="mr-2"
-                  />
-                  <label
-                    for="selectAllDeparturePorts"
-                    class="cursor-pointer text-sm"
-                    >전체 선택/해제</label
-                  >
-                </div>
-                <div
-                  id="departurePortCheckboxes"
-                  class="grid grid-cols-2 gap-2"
-                ></div>
-              </div>
-
-              <!-- 도착 포트 -->
-              <div>
-                <h4 class="text-gray-600 font-semibold mb-2 text-sm">
-                  도착 포트
-                </h4>
-                <div class="flex items-center mb-2">
-                  <input
-                    type="checkbox"
-                    id="selectAllArrivalPorts"
-                    class="mr-2"
-                  />
-                  <label
-                    for="selectAllArrivalPorts"
-                    class="cursor-pointer text-sm"
-                    >전체 선택/해제</label
-                  >
-                </div>
-                <div
-                  id="arrivalPortCheckboxes"
-                  class="grid grid-cols-2 gap-2"
-                ></div>
-              </div>
-            </div>
+            <div
+              id="arrivalPortCheckboxesSidebar"
+              class="grid grid-cols-2 gap-1"
+            ></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="mx-auto max-w-[1440px]">
-      <div
-        id="calendar"
-        class="bg-white rounded-lg shadow-lg py-3 px-4 overflow-auto"
-      ></div>
+
+      <!-- 메인 컨텐츠 -->
+      <div id="main-content" class="flex-1">
+        <!-- SP 헤더 -->
+        <div
+          class="flex justify-between items-center gap-4 p-3 mb-4 mx-auto max-w-[1440px]"
+        >
+          <h1 class="text-gray-800 text-2xl font-bold md:hidden">
+            Shipping Schedule
+          </h1>
+
+          <div class="flex items-center gap-3">
+            <!-- 루트 선택 드롭다운 (SP만) -->
+            <select
+              id="routeSelector"
+              class="md:hidden px-2.5 py-1.5 border border-gray-300 rounded-lg bg-white text-gray-700 font-medium hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onchange="changeRoute()"
+            >
+              <option value="east_asia">EAST ASIA</option>
+              <option value="asia_africa">ASIA, AFRICA</option>
+            </select>
+
+            <!-- 필터 아이콘 (SP만) -->
+            <button
+              class="filter-icon md:hidden"
+              onclick="openModal()"
+              title="필터 설정"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 필터 모달 (SP 전용) -->
+        <div id="filterModal" class="modal md:hidden">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-800">필터 설정</h2>
+                <p class="text-sm text-gray-600 mt-1">
+                  필터링된 스케줄:
+                  <span id="filteredCount" class="font-semibold text-blue-600"
+                    >0</span
+                  >건
+                </p>
+              </div>
+              <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 회사 필터 -->
+                <div>
+                  <h3 class="text-gray-700 font-semibold mb-3">회사 선택:</h3>
+                  <div class="flex items-center mb-3">
+                    <input
+                      type="checkbox"
+                      id="selectAll"
+                      class="mr-2"
+                      checked
+                    />
+                    <label
+                      for="selectAll"
+                      class="cursor-pointer font-semibold text-sm"
+                      >전체 선택/해제</label
+                    >
+                  </div>
+                  <div
+                    id="companyCheckboxes"
+                    class="grid grid-cols-2 gap-2"
+                  ></div>
+                </div>
+
+                <!-- 포트 필터 -->
+                <div>
+                  <!-- 출발 포트 -->
+                  <div class="mb-4">
+                    <h3 class="text-gray-600 font-semibold mb-2 text-sm">
+                      출발 포트
+                    </h3>
+                    <div class="flex items-center mb-2">
+                      <input
+                        type="checkbox"
+                        id="selectAllDeparturePorts"
+                        class="mr-2"
+                      />
+                      <label
+                        for="selectAllDeparturePorts"
+                        class="cursor-pointer text-sm"
+                        >전체 선택/해제</label
+                      >
+                    </div>
+                    <div
+                      id="departurePortCheckboxes"
+                      class="grid grid-cols-2 gap-2"
+                    ></div>
+                  </div>
+
+                  <!-- 도착 포트 -->
+                  <div>
+                    <h3 class="text-gray-600 font-semibold mb-2 text-sm">
+                      도착 포트
+                    </h3>
+                    <div class="flex items-center mb-2">
+                      <input
+                        type="checkbox"
+                        id="selectAllArrivalPorts"
+                        class="mr-2"
+                      />
+                      <label
+                        for="selectAllArrivalPorts"
+                        class="cursor-pointer text-sm"
+                        >전체 선택/해제</label
+                      >
+                    </div>
+                    <div
+                      id="arrivalPortCheckboxes"
+                      class="grid grid-cols-2 gap-2"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 md:p-5 mx-auto w-full">
+          <div
+            id="calendar"
+            class="bg-white rounded-lg shadow-lg py-3 px-4 overflow-auto"
+          ></div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -289,9 +424,9 @@
       let selectedDeparturePorts = []; // 출발 포트 선택
       let selectedArrivalPorts = []; // 도착 포트 선택
       let companyColors = {}; // 회사별 색상 맵
-      let currentRoute = "east_asia"; // 현재 선택된 라우트
+      let currentRoute = "east_asia"; // 현재 선택된 루트
 
-      // 라우트별 JSON URL 설정
+      // 루트별 JSON URL 설정
       const routeUrls = {
         east_asia:
           "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_history_east_asia.json",
@@ -313,10 +448,27 @@
         "#00BCD4", // 청록색 500
       ];
 
-      // 라우트 변경 함수
+      // 루트 변경 함수
       function changeRoute() {
-        const selector = document.getElementById("routeSelector");
-        currentRoute = selector.value;
+        const selectorMobile = document.getElementById("routeSelector");
+        const selectorSidebar = document.getElementById("routeSelectorSidebar");
+
+        // 어느 쪽에서 변경되었는지 확인하고 다른 쪽 동기화
+        if (event && event.target.id === "routeSelector") {
+          currentRoute = selectorMobile.value;
+          if (selectorSidebar) selectorSidebar.value = currentRoute;
+        } else if (event && event.target.id === "routeSelectorSidebar") {
+          currentRoute = selectorSidebar.value;
+          if (selectorMobile) selectorMobile.value = currentRoute;
+        } else {
+          // 초기 로드 시
+          currentRoute = selectorMobile
+            ? selectorMobile.value
+            : selectorSidebar
+              ? selectorSidebar.value
+              : "east_asia";
+        }
+
         loadShippingData(routeUrls[currentRoute]);
       }
 
@@ -348,16 +500,11 @@
       // 초기 로드
       loadShippingData(routeUrls[currentRoute]);
 
-      // 회사 목록을 checkbox로 추가
+      // 회사 목록을 checkbox로 추가 (PC/SP 양쪽)
       function populateCompanySelect() {
         const companies = [
           ...new Set(shippingData.map((ship) => ship.Company)),
         ].sort();
-        const container = document.getElementById("companyCheckboxes");
-        const selectAllCheckbox = document.getElementById("selectAll");
-
-        // 기존 체크박스 제거
-        container.innerHTML = "";
 
         // 초기화: 모든 회사 선택
         selectedCompanies = [...companies];
@@ -367,60 +514,152 @@
           companyColors[company] = colorPalette[index % colorPalette.length];
         });
 
+        // SP 모달 생성
+        createCompanyCheckboxes(
+          companies,
+          "companyCheckboxes",
+          "selectAll",
+          false,
+        );
+
+        // PC 사이드바 생성
+        createCompanyCheckboxes(
+          companies,
+          "companyCheckboxesSidebar",
+          "selectAllSidebar",
+          true,
+        );
+      }
+
+      // 회사 체크박스 생성 헬퍼 함수
+      function createCompanyCheckboxes(
+        companies,
+        containerId,
+        selectAllId,
+        isSidebar,
+      ) {
+        const container = document.getElementById(containerId);
+        const selectAllCheckbox = document.getElementById(selectAllId);
+
+        if (!container || !selectAllCheckbox) return;
+
+        // 기존 체크박스 제거
+        container.innerHTML = "";
+
         companies.forEach((company) => {
           const div = document.createElement("div");
           div.className = "flex items-center";
 
           const checkbox = document.createElement("input");
           checkbox.type = "checkbox";
-          checkbox.id = `company_${company.replace(/\s+/g, "_")}`;
+          checkbox.id = `company_${company.replace(/\s+/g, "_")}_${isSidebar ? "sidebar" : "modal"}`;
           checkbox.value = company;
           checkbox.checked = true;
-          checkbox.className = "mr-2 company-checkbox";
+          checkbox.className = `mr-2 company-checkbox-${isSidebar ? "sidebar" : "modal"}`;
+          checkbox.dataset.company = company;
 
           const label = document.createElement("label");
           label.htmlFor = checkbox.id;
           label.textContent = company;
-          label.className = "cursor-pointer text-sm";
+          label.className = "cursor-pointer text-xs";
 
           div.appendChild(checkbox);
           div.appendChild(label);
           container.appendChild(div);
 
-          // checkbox 변경 이벤트
+          // checkbox 변경 이벤트 - 양쪽 동기화
           checkbox.addEventListener("change", (e) => {
-            if (e.target.checked) {
-              selectedCompanies.push(company);
+            const company = e.target.dataset.company;
+            const isChecked = e.target.checked;
+
+            // 전역 상태 업데이트
+            if (isChecked) {
+              if (!selectedCompanies.includes(company)) {
+                selectedCompanies.push(company);
+              }
             } else {
               selectedCompanies = selectedCompanies.filter(
                 (c) => c !== company,
               );
             }
+
+            // 반대편 체크박스 동기화
+            const otherCheckboxes = document.querySelectorAll(
+              `input[data-company="${company}"]`,
+            );
+            otherCheckboxes.forEach((cb) => {
+              if (cb !== e.target) cb.checked = isChecked;
+            });
+
             updateSelectAllCheckbox();
             updateCalendar();
           });
         });
 
         // 전체 선택/해제 이벤트
-        selectAllCheckbox.addEventListener("change", (e) => {
-          const checkboxes = document.querySelectorAll(".company-checkbox");
+        const newSelectAll = selectAllCheckbox.cloneNode(true);
+        selectAllCheckbox.replaceWith(newSelectAll);
+
+        document.getElementById(selectAllId).addEventListener("change", (e) => {
+          const isChecked = e.target.checked;
+          const checkboxes = document.querySelectorAll(
+            `.company-checkbox-${isSidebar ? "sidebar" : "modal"}`,
+          );
+
           checkboxes.forEach((cb) => {
-            cb.checked = e.target.checked;
+            cb.checked = isChecked;
           });
-          selectedCompanies = e.target.checked ? [...companies] : [];
+
+          // 전역 상태 업데이트
+          selectedCompanies.splice(0, selectedCompanies.length);
+          if (isChecked) {
+            selectedCompanies.push(...companies);
+          }
+
+          // 반대편 전체 선택 동기화
+          const otherSelectAll = document.getElementById(
+            isSidebar ? "selectAll" : "selectAllSidebar",
+          );
+          if (otherSelectAll) otherSelectAll.checked = isChecked;
+
+          // 반대편 개별 체크박스 동기화
+          const otherCheckboxes = document.querySelectorAll(
+            `.company-checkbox-${isSidebar ? "modal" : "sidebar"}`,
+          );
+          otherCheckboxes.forEach((cb) => (cb.checked = isChecked));
+
           updateCalendar();
         });
       }
 
-      // 전체 선택 체크박스 상태 업데이트
+      // 전체 선택 체크박스 상태 업데이트 (PC/SP 양쪽)
       function updateSelectAllCheckbox() {
-        const checkboxes = document.querySelectorAll(".company-checkbox");
-        const selectAllCheckbox = document.getElementById("selectAll");
-        const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
-        selectAllCheckbox.checked = allChecked;
+        // SP 모달
+        const checkboxesModal = document.querySelectorAll(
+          ".company-checkbox-modal",
+        );
+        const selectAllModal = document.getElementById("selectAll");
+        if (checkboxesModal.length > 0 && selectAllModal) {
+          const allCheckedModal = Array.from(checkboxesModal).every(
+            (cb) => cb.checked,
+          );
+          selectAllModal.checked = allCheckedModal;
+        }
+
+        // PC 사이드바
+        const checkboxesSidebar = document.querySelectorAll(
+          ".company-checkbox-sidebar",
+        );
+        const selectAllSidebar = document.getElementById("selectAllSidebar");
+        if (checkboxesSidebar.length > 0 && selectAllSidebar) {
+          const allCheckedSidebar = Array.from(checkboxesSidebar).every(
+            (cb) => cb.checked,
+          );
+          selectAllSidebar.checked = allCheckedSidebar;
+        }
       }
 
-      // 포트 목록을 checkbox로 추가 (출발/도착 포트 별도 필터링)
+      // 포트 목록을 checkbox로 추가 (출발/도착 포트 별도 필터링, PC/SP 양쪽)
       function populatePortSelect() {
         const departurePorts = new Set();
         const arrivalPorts = new Set();
@@ -438,123 +677,167 @@
         const departurePortsList = [...departurePorts].sort();
         const arrivalPortsList = [...arrivalPorts].sort();
 
-        // 라우트별 초기 포트 선택
-        selectedDeparturePorts = [];
+        // 루트별 초기 포트 선택
+        selectedDeparturePorts.splice(0, selectedDeparturePorts.length);
+        selectedArrivalPorts.splice(0, selectedArrivalPorts.length);
+
         if (currentRoute === "east_asia") {
-          // EAST ASIA: Hambantota만 선택
-          selectedArrivalPorts = arrivalPortsList.includes("Hambantota")
-            ? ["Hambantota"]
-            : [];
+          if (arrivalPortsList.includes("Hambantota")) {
+            selectedArrivalPorts.push("Hambantota");
+          }
         } else if (currentRoute === "asia_africa") {
-          // ASIA, AFRICA: Mombasa만 선택
-          selectedArrivalPorts = arrivalPortsList.includes("Mombasa")
-            ? ["Mombasa"]
-            : [];
-        } else {
-          // 기타 라우트: 선택 해제
-          selectedArrivalPorts = [];
+          if (arrivalPortsList.includes("Mombasa")) {
+            selectedArrivalPorts.push("Mombasa");
+          }
         }
 
-        // 출발 포트 체크박스 생성
+        // SP 모달 생성
         createPortCheckboxes(
           departurePortsList,
           "departurePortCheckboxes",
-          "departure-port-checkbox",
+          "departure-port-checkbox-modal",
           selectedDeparturePorts,
-          (ports) => {
-            selectedDeparturePorts = ports;
-          },
+          false,
         );
-
-        // 도착 포트 체크박스 생성
         createPortCheckboxes(
           arrivalPortsList,
           "arrivalPortCheckboxes",
-          "arrival-port-checkbox",
+          "arrival-port-checkbox-modal",
           selectedArrivalPorts,
-          (ports) => {
-            selectedArrivalPorts = ports;
-          },
+          false,
         );
 
-        // 전체 선택/해제 이벤트 설정 (모든 포트)
-        const selectAllCheckbox = document.getElementById("selectAllPorts");
-        selectAllCheckbox.replaceWith(selectAllCheckbox.cloneNode(true)); // 기존 이벤트 제거
-        document
-          .getElementById("selectAllPorts")
-          .addEventListener("change", (e) => {
-            const checkboxes = document.querySelectorAll(
-              ".departure-port-checkbox, .arrival-port-checkbox",
-            );
-            checkboxes.forEach((cb) => {
-              cb.checked = e.target.checked;
-            });
-            selectedDeparturePorts = e.target.checked
-              ? [...departurePortsList]
-              : [];
-            selectedArrivalPorts = e.target.checked
-              ? [...arrivalPortsList]
-              : [];
-            updateSelectAllPortsCheckbox();
-            updateCalendar();
-          });
+        // PC 사이드바 생성
+        createPortCheckboxes(
+          departurePortsList,
+          "departurePortCheckboxesSidebar",
+          "departure-port-checkbox-sidebar",
+          selectedDeparturePorts,
+          true,
+        );
+        createPortCheckboxes(
+          arrivalPortsList,
+          "arrivalPortCheckboxesSidebar",
+          "arrival-port-checkbox-sidebar",
+          selectedArrivalPorts,
+          true,
+        );
 
-        // 출발 포트 전체 선택/해제 이벤트
-        const selectAllDepartureCheckbox = document.getElementById(
-          "selectAllDeparturePorts",
-        );
-        selectAllDepartureCheckbox.replaceWith(
-          selectAllDepartureCheckbox.cloneNode(true),
-        );
-        document
-          .getElementById("selectAllDeparturePorts")
-          .addEventListener("change", (e) => {
-            const checkboxes = document.querySelectorAll(
-              ".departure-port-checkbox",
-            );
-            checkboxes.forEach((cb) => {
-              cb.checked = e.target.checked;
-            });
-            selectedDeparturePorts = e.target.checked
-              ? [...departurePortsList]
-              : [];
-            updateSelectAllPortsCheckbox();
-            updateCalendar();
-          });
-
-        // 도착 포트 전체 선택/해제 이벤트
-        const selectAllArrivalCheckbox = document.getElementById(
-          "selectAllArrivalPorts",
-        );
-        selectAllArrivalCheckbox.replaceWith(
-          selectAllArrivalCheckbox.cloneNode(true),
-        );
-        document
-          .getElementById("selectAllArrivalPorts")
-          .addEventListener("change", (e) => {
-            const checkboxes = document.querySelectorAll(
-              ".arrival-port-checkbox",
-            );
-            checkboxes.forEach((cb) => {
-              cb.checked = e.target.checked;
-            });
-            selectedArrivalPorts = e.target.checked
-              ? [...arrivalPortsList]
-              : [];
-            updateSelectAllPortsCheckbox();
-            updateCalendar();
-          });
+        // 전체 선택 이벤트 설정
+        setupPortSelectAllEvents(departurePortsList, arrivalPortsList);
       }
 
-      // 포트 체크박스 생성 헬퍼 함수
+      // 포트 전체 선택 이벤트 설정
+      function setupPortSelectAllEvents(departurePortsList, arrivalPortsList) {
+        // 출발 포트 전체 선택 - SP
+        const selectAllDepartureModal = document.getElementById(
+          "selectAllDeparturePorts",
+        );
+        if (selectAllDepartureModal) {
+          const newEl = selectAllDepartureModal.cloneNode(true);
+          selectAllDepartureModal.replaceWith(newEl);
+          newEl.addEventListener("change", (e) => {
+            handlePortSelectAll(
+              e.target.checked,
+              departurePortsList,
+              selectedDeparturePorts,
+              "departure-port-checkbox-modal",
+              "departure-port-checkbox-sidebar",
+            );
+          });
+        }
+
+        // 출발 포트 전체 선택 - PC
+        const selectAllDepartureSidebar = document.getElementById(
+          "selectAllDeparturePortsSidebar",
+        );
+        if (selectAllDepartureSidebar) {
+          const newEl = selectAllDepartureSidebar.cloneNode(true);
+          selectAllDepartureSidebar.replaceWith(newEl);
+          newEl.addEventListener("change", (e) => {
+            handlePortSelectAll(
+              e.target.checked,
+              departurePortsList,
+              selectedDeparturePorts,
+              "departure-port-checkbox-sidebar",
+              "departure-port-checkbox-modal",
+            );
+          });
+        }
+
+        // 도착 포트 전체 선택 - SP
+        const selectAllArrivalModal = document.getElementById(
+          "selectAllArrivalPorts",
+        );
+        if (selectAllArrivalModal) {
+          const newEl = selectAllArrivalModal.cloneNode(true);
+          selectAllArrivalModal.replaceWith(newEl);
+          newEl.addEventListener("change", (e) => {
+            handlePortSelectAll(
+              e.target.checked,
+              arrivalPortsList,
+              selectedArrivalPorts,
+              "arrival-port-checkbox-modal",
+              "arrival-port-checkbox-sidebar",
+            );
+          });
+        }
+
+        // 도착 포트 전체 선택 - PC
+        const selectAllArrivalSidebar = document.getElementById(
+          "selectAllArrivalPortsSidebar",
+        );
+        if (selectAllArrivalSidebar) {
+          const newEl = selectAllArrivalSidebar.cloneNode(true);
+          selectAllArrivalSidebar.replaceWith(newEl);
+          newEl.addEventListener("change", (e) => {
+            handlePortSelectAll(
+              e.target.checked,
+              arrivalPortsList,
+              selectedArrivalPorts,
+              "arrival-port-checkbox-sidebar",
+              "arrival-port-checkbox-modal",
+            );
+          });
+        }
+      }
+
+      // 포트 전체 선택 핸들러
+      function handlePortSelectAll(
+        isChecked,
+        portsList,
+        selectedArray,
+        thisClass,
+        otherClass,
+      ) {
+        // 현재 쪽 체크박스 업데이트
+        const thisCheckboxes = document.querySelectorAll(`.${thisClass}`);
+        thisCheckboxes.forEach((cb) => (cb.checked = isChecked));
+
+        // 반대쪽 체크박스 업데이트
+        const otherCheckboxes = document.querySelectorAll(`.${otherClass}`);
+        otherCheckboxes.forEach((cb) => (cb.checked = isChecked));
+
+        // 전역 상태 업데이트
+        selectedArray.splice(0, selectedArray.length);
+        if (isChecked) {
+          selectedArray.push(...portsList);
+        }
+
+        updateSelectAllPortsCheckbox();
+        updateCalendar();
+      }
+
+      // 포트 체크박스 생성 헬퍼 함수 (PC/SP 동기화)
       function createPortCheckboxes(
         ports,
         containerId,
         checkboxClass,
         selectedArray,
-        setSelected,
+        isSidebar,
       ) {
         const container = document.getElementById(containerId);
+        if (!container) return;
 
         // 기존 체크박스 제거
         container.innerHTML = "";
@@ -569,19 +852,28 @@
           checkbox.value = port;
           checkbox.checked = selectedArray.includes(port);
           checkbox.className = `mr-2 ${checkboxClass}`;
+          checkbox.dataset.port = port;
+          checkbox.dataset.type = checkboxClass.includes("departure")
+            ? "departure"
+            : "arrival";
 
           const label = document.createElement("label");
           label.htmlFor = checkbox.id;
           label.textContent = port;
-          label.className = "cursor-pointer text-sm";
+          label.className = "cursor-pointer text-xs";
 
           div.appendChild(checkbox);
           div.appendChild(label);
           container.appendChild(div);
 
-          // checkbox 변경 이벤트
+          // checkbox 변경 이벤트 - 양쪽 동기화
           checkbox.addEventListener("change", (e) => {
-            if (e.target.checked) {
+            const port = e.target.dataset.port;
+            const type = e.target.dataset.type;
+            const isChecked = e.target.checked;
+
+            // 전역 상태 업데이트
+            if (isChecked) {
               if (!selectedArray.includes(port)) {
                 selectedArray.push(port);
               }
@@ -591,47 +883,84 @@
                 selectedArray.splice(index, 1);
               }
             }
+
+            // 반대편 체크박스 동기화
+            const otherClass = isSidebar
+              ? `${type}-port-checkbox-modal`
+              : `${type}-port-checkbox-sidebar`;
+            const otherCheckboxes = document.querySelectorAll(
+              `.${otherClass}[data-port="${port}"]`,
+            );
+            otherCheckboxes.forEach((cb) => {
+              if (cb !== e.target) cb.checked = isChecked;
+            });
+
             updateSelectAllPortsCheckbox();
             updateCalendar();
           });
         });
       }
 
-      // 전체 포트 선택 체크박스 상태 업데이트
+      // 전체 포트 선택 체크박스 상태 업데이트 (PC/SP 양쪽)
       function updateSelectAllPortsCheckbox() {
-        const departureCheckboxes = document.querySelectorAll(
-          ".departure-port-checkbox",
+        // SP 모달 - 출발 포트
+        const departureCheckboxesModal = document.querySelectorAll(
+          ".departure-port-checkbox-modal",
         );
-        const arrivalCheckboxes = document.querySelectorAll(
-          ".arrival-port-checkbox",
-        );
-        const allCheckboxes = document.querySelectorAll(
-          ".departure-port-checkbox, .arrival-port-checkbox",
-        );
-
-        const selectAllCheckbox = document.getElementById("selectAllPorts");
-        const selectAllDepartureCheckbox = document.getElementById(
+        const selectAllDepartureModal = document.getElementById(
           "selectAllDeparturePorts",
         );
-        const selectAllArrivalCheckbox = document.getElementById(
+        if (departureCheckboxesModal.length > 0 && selectAllDepartureModal) {
+          const allChecked = Array.from(departureCheckboxesModal).every(
+            (cb) => cb.checked,
+          );
+          selectAllDepartureModal.checked = allChecked;
+        }
+
+        // SP 모달 - 도착 포트
+        const arrivalCheckboxesModal = document.querySelectorAll(
+          ".arrival-port-checkbox-modal",
+        );
+        const selectAllArrivalModal = document.getElementById(
           "selectAllArrivalPorts",
         );
+        if (arrivalCheckboxesModal.length > 0 && selectAllArrivalModal) {
+          const allChecked = Array.from(arrivalCheckboxesModal).every(
+            (cb) => cb.checked,
+          );
+          selectAllArrivalModal.checked = allChecked;
+        }
 
-        // 전체 포트 선택 상태
-        const allChecked = Array.from(allCheckboxes).every((cb) => cb.checked);
-        selectAllCheckbox.checked = allChecked;
-
-        // 출발 포트 선택 상태
-        const allDepartureChecked = Array.from(departureCheckboxes).every(
-          (cb) => cb.checked,
+        // PC 사이드바 - 출발 포트
+        const departureCheckboxesSidebar = document.querySelectorAll(
+          ".departure-port-checkbox-sidebar",
         );
-        selectAllDepartureCheckbox.checked = allDepartureChecked;
-
-        // 도착 포트 선택 상태
-        const allArrivalChecked = Array.from(arrivalCheckboxes).every(
-          (cb) => cb.checked,
+        const selectAllDepartureSidebar = document.getElementById(
+          "selectAllDeparturePortsSidebar",
         );
-        selectAllArrivalCheckbox.checked = allArrivalChecked;
+        if (
+          departureCheckboxesSidebar.length > 0 &&
+          selectAllDepartureSidebar
+        ) {
+          const allChecked = Array.from(departureCheckboxesSidebar).every(
+            (cb) => cb.checked,
+          );
+          selectAllDepartureSidebar.checked = allChecked;
+        }
+
+        // PC 사이드바 - 도착 포트
+        const arrivalCheckboxesSidebar = document.querySelectorAll(
+          ".arrival-port-checkbox-sidebar",
+        );
+        const selectAllArrivalSidebar = document.getElementById(
+          "selectAllArrivalPortsSidebar",
+        );
+        if (arrivalCheckboxesSidebar.length > 0 && selectAllArrivalSidebar) {
+          const allChecked = Array.from(arrivalCheckboxesSidebar).every(
+            (cb) => cb.checked,
+          );
+          selectAllArrivalSidebar.checked = allChecked;
+        }
       }
 
       // 달력 업데이트
@@ -640,10 +969,16 @@
         calendar.removeAllEvents();
         calendar.addEventSource(events);
 
-        // 필터링된 건수 업데이트
-        const countElement = document.getElementById("filteredCount");
-        if (countElement) {
-          countElement.textContent = events.length;
+        // 필터링된 건수 업데이트 (SP/PC 양쪽)
+        const countElementModal = document.getElementById("filteredCount");
+        if (countElementModal) {
+          countElementModal.textContent = events.length;
+        }
+        const countElementSidebar = document.getElementById(
+          "filteredCountSidebar",
+        );
+        if (countElementSidebar) {
+          countElementSidebar.textContent = events.length;
         }
       }
 
@@ -863,23 +1198,29 @@
         const currentYear = now.getFullYear();
         const currentMonth = now.getMonth();
 
-        // 초기 필터링 건수 표시
-        const countElement = document.getElementById("filteredCount");
-        if (countElement) {
-          countElement.textContent = events.length;
+        // 초기 필터링 건수 표시 (SP/PC 양쪽)
+        const countElementModal = document.getElementById("filteredCount");
+        if (countElementModal) {
+          countElementModal.textContent = events.length;
+        }
+        const countElementSidebar = document.getElementById(
+          "filteredCountSidebar",
+        );
+        if (countElementSidebar) {
+          countElementSidebar.textContent = events.length;
         }
 
         // Calendar 1: Current month
         calendar = new FullCalendar.Calendar(
           document.getElementById("calendar"),
           {
-            initialView: "multiMonthYear",
+            initialView: "dayGridMonth",
             multiMonthMaxColumns: 1,
             initialDate: new Date(currentYear, currentMonth, 1),
             events: events,
-            height: "auto",
+            height: "90vh",
             headerToolbar: {
-              left: "multiMonthYear,listWeek",
+              left: "dayGridMonth,dayGridWeek",
               center: "title",
               right: "today,prev,next",
             },
@@ -944,6 +1285,23 @@
           },
         );
         calendar.render();
+
+        // 전역 키보드 조작 추가
+        document.addEventListener("keydown", function (event) {
+          // 캘린더가 초기화된 경우에만 실행
+          if (calendar) {
+            if (event.key === "ArrowLeft") {
+              calendar.prev(); // 이전 달로 이동
+              event.preventDefault(); // 기본 동작 방지
+            } else if (event.key === "ArrowRight") {
+              calendar.next(); // 다음 달로 이동
+              event.preventDefault(); // 기본 동작 방지
+            } else if (event.key === "ArrowUp") {
+              calendar.today(); // 오늘로 이동
+              event.preventDefault();
+            }
+          }
+        });
       }
     </script>
   </body>
