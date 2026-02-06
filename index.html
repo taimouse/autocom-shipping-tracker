@@ -965,20 +965,20 @@
 
       // 달력 업데이트
       function updateCalendar() {
-        const events = buildEvents();
+        const { events, lineCount } = buildEvents();
         calendar.removeAllEvents();
         calendar.addEventSource(events);
 
         // 필터링된 건수 업데이트 (SP/PC 양쪽)
         const countElementModal = document.getElementById("filteredCount");
         if (countElementModal) {
-          countElementModal.textContent = events.length;
+          countElementModal.textContent = lineCount;
         }
         const countElementSidebar = document.getElementById(
           "filteredCountSidebar",
         );
         if (countElementSidebar) {
-          countElementSidebar.textContent = events.length;
+          countElementSidebar.textContent = lineCount;
         }
       }
 
@@ -1057,6 +1057,7 @@
 
       function buildEvents() {
         const events = [];
+        let lineCount = 0;
         const filteredData =
           selectedCompanies.length === 0
             ? []
@@ -1148,8 +1149,10 @@
               end: endDatePlusOne,
               backgroundColor: companyColors[ship.Company], // 회사별 색상 적용
               borderColor: companyColors[ship.Company], // 회사별 색상 적용
+              eventType: "line",
               description: `<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>출발 기간:</strong><br> ${startFormatted} ~ ${endFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
             });
+            lineCount += 1;
 
             // 추가: 각 출발 포트별 이벤트 (포트명 표시용)
             if (departureDates.length > 1) {
@@ -1179,6 +1182,7 @@
                           start: departureDate,
                           backgroundColor: companyColors[ship.Company], // 회사 컬러 적용
                           borderColor: companyColors[ship.Company],
+                          eventType: "port",
                           description: `<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>출발:<br></strong> ${port} - ${dateFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
                         });
                       }
@@ -1189,11 +1193,11 @@
             }
           }
         });
-        return events;
+        return { events, lineCount };
       }
 
       function initCalendars() {
-        const events = buildEvents();
+        const { events, lineCount } = buildEvents();
         const now = new Date();
         const currentYear = now.getFullYear();
         const currentMonth = now.getMonth();
@@ -1201,13 +1205,13 @@
         // 초기 필터링 건수 표시 (SP/PC 양쪽)
         const countElementModal = document.getElementById("filteredCount");
         if (countElementModal) {
-          countElementModal.textContent = events.length;
+          countElementModal.textContent = lineCount;
         }
         const countElementSidebar = document.getElementById(
           "filteredCountSidebar",
         );
         if (countElementSidebar) {
-          countElementSidebar.textContent = events.length;
+          countElementSidebar.textContent = lineCount;
         }
 
         // Calendar 1: Current month
