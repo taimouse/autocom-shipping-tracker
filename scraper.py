@@ -57,9 +57,9 @@ def send_notification_email(change_summary=None, route_name=None):
             body_lines.append("변경 요약:")
             body_lines.append(summary)
             body_lines.append("")
-            body_lines.append("전체 데이터는 shipping_history.json을 확인하세요.")
+            body_lines.append("전체 데이터는 shipping_update.json을 확인하세요.")
         else:
-            body_lines.append("새로운 데이터를 확인하려면 shipping_history.json 파일을 확인해주세요.")
+            body_lines.append("새로운 데이터를 확인하려면 shipping_update.json 파일을 확인해주세요.")
 
         body_lines.append("")
         body_lines.append("자동화 시스템")
@@ -192,14 +192,14 @@ SCRAPE_CONFIGS = [
     {
         "name": "EAST ASIA",
         "url": "https://autocj.co.jp/japan_shipping?dest=8",
-        "history_file": "shipping_history_east_asia.json",
+        "history_file": "shipping_update_east_asia.json",
         "departure_ports": ["Yokohama", "Kawasaki", "Kisarazu", "Nagoya", "Kobe", "Osaka", "Hakata", "Hibikinada", "Kanda", "Hitachinaka"],
         "arrival_ports": ["Hong Kong", "Laem Chabang", "Hambantota", "Chittagong", "Mongla", "Subic"]
     },
     {
         "name": "ASIA,AFRICA",
         "url": "https://autocj.co.jp/japan_shipping?dest=2",
-        "history_file": "shipping_history_asia_africa.json",
+        "history_file": "shipping_update_asia_africa.json",
         "departure_ports": ["Yokohama", "Kawasaki", "Kisarazu", "Nagoya", "Kobe", "Osaka", "Hakata", "Hibikinada", "Kanda", "Nakanoseki", "Hitachinaka"],
         "arrival_ports": ["Jebel Ali", "Karachi", "Port Louis", "Durban", "Dar", "Mombasa", "Maput"]
     }
