@@ -1,55 +1,5 @@
 [
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "66",
-    "Departure Ports": {
-      "Yokohama": "Dec25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Dec26",
-      "Kobe": "-",
-      "Osaka": "Dec27",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "Jan10",
-      "Mongla": "Jan12",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "K-LINE",
-    "Ship Name": "GRAVITY HIGHWAY",
-    "Voyage": "81",
-    "Departure Ports": {
-      "Yokohama": "Dec25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Dec30",
-      "Kobe": "Dec28",
-      "Osaka": "Dec28",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jan14",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "SUNSHINE ACE",
     "Voyage": "0121A",
