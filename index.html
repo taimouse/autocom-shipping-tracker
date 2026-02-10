@@ -434,6 +434,14 @@
           "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_update_asia_africa.json",
       };
 
+      // 루트별 아카이브 JSON URL 설정
+      const archiveUrls = {
+        east_asia:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_archive_east_asia.json",
+        asia_africa:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_archive_asia_africa.json",
+      };
+
       // 색상 팔레트 (회사 수만큼 반복 사용) - 500톤 색상
       const colorPalette = [
         "#2196F3", // 파란색 500
@@ -469,15 +477,44 @@
               : "east_asia";
         }
 
-        loadShippingData(routeUrls[currentRoute]);
+        loadShippingData(routeUrls[currentRoute], archiveUrls[currentRoute]);
       }
 
-      // JSON 데이터 로드 함수
-      function loadShippingData(url) {
-        fetch(url)
-          .then((response) => response.json())
-          .then((data) => {
-            shippingData = data;
+      // JSON 데이터 로드 함수 (최신 + 아카이브 병합)
+      function loadShippingData(url, archiveUrl) {
+        // 최신 데이터와 아카이브 데이터를 동시 로드
+        const fetchCurrent = fetch(url).then((r) => r.json());
+        const fetchArchive = archiveUrl
+          ? fetch(archiveUrl)
+              .then((r) => r.json())
+              .catch(() => []) // 아카이브 파일이 없으면 빈 배열
+          : Promise.resolve([]);
+
+        Promise.all([fetchCurrent, fetchArchive])
+          .then(([currentData, archiveData]) => {
+            // 중복 제거 병합 (Company + Ship Name + Voyage 키 기준)
+            const seen = new Set();
+            const merged = [];
+
+            // 최신 데이터 우선
+            currentData.forEach((ship) => {
+              const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+              if (!seen.has(key)) {
+                seen.add(key);
+                merged.push(ship);
+              }
+            });
+
+            // 아카이브 데이터 추가 (중복 제외)
+            archiveData.forEach((ship) => {
+              const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+              if (!seen.has(key)) {
+                seen.add(key);
+                merged.push(ship);
+              }
+            });
+
+            shippingData = merged;
             // 회사명 변환 (긴 이름은 짧게)
             const companyNameMap = {
               "SEVEN SEALS CO.,LTD": "SEALS",
@@ -498,7 +535,7 @@
       }
 
       // 초기 로드
-      loadShippingData(routeUrls[currentRoute]);
+      loadShippingData(routeUrls[currentRoute], archiveUrls[currentRoute]);
 
       // 회사 목록을 checkbox로 추가 (PC/SP 양쪽)
       function populateCompanySelect() {

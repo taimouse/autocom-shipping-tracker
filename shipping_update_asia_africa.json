@@ -567,60 +567,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "DON JUAN",
-    "Voyage": "704",
-    "Departure Ports": {
-      "Yokohama": "Feb23",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb21",
-      "Kobe": "Feb19",
-      "Osaka": "Feb19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb20"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "Mar3",
-      "Karachi": "Mar5",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Mar20",
-      "Mombasa": "Mar18",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-DON JUAN",
-    "Voyage": "704",
-    "Departure Ports": {
-      "Yokohama": "Feb23",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb21",
-      "Kobe": "Feb19",
-      "Osaka": "Feb19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "HOEGH",
     "Ship Name": "HOEGH SUNGLIGHT",
     "Voyage": "7",
@@ -698,6 +644,60 @@
       "Durban": "Mar31",
       "Dar": "Mar22",
       "Mombasa": "Mar25",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "Feb25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb21",
+      "Osaka": "Feb22",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb20"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "Mar3",
+      "Karachi": "Mar5",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar20",
+      "Mombasa": "Mar18",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "IN-DON JUAN",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "Feb25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb21",
+      "Osaka": "Feb22",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "O",
+      "Mombasa": "O",
       "Maput": "-"
     }
   },
