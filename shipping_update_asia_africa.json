@@ -1,32 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "GLORIOUS ACE",
-    "Voyage": "0106A",
-    "Departure Ports": {
-      "Yokohama": "Dec26",
-      "Kawasaki": "-",
-      "Kisarazu": "Dec25",
-      "Nagoya": "Dec27",
-      "Kobe": "Dec29",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Jan15",
-      "Dar": "Jan22",
-      "Mombasa": "Jan26",
-      "Maput": "Jan18"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "LAKE QARAOUN",
     "Voyage": "IF502",
@@ -399,8 +372,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Mar4",
-      "Mombasa": "Mar7",
+      "Dar": "Mar2",
+      "Mombasa": "Mar5",
       "Maput": "-"
     }
   },
@@ -486,6 +459,33 @@
     }
   },
   {
+    "Company": "NYK",
+    "Ship Name": "GOLIATH LEADER",
+    "Voyage": "126",
+    "Departure Ports": {
+      "Yokohama": "Feb12",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb14",
+      "Kobe": "Feb18",
+      "Osaka": "Feb19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar21",
+      "Dar": "Mar15",
+      "Mombasa": "Mar13",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "0040A",
@@ -514,42 +514,15 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "GOLIATH LEADER",
-    "Voyage": "126",
-    "Departure Ports": {
-      "Yokohama": "Feb12",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb14",
-      "Kobe": "Feb18",
-      "Osaka": "Feb19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar21",
-      "Dar": "Mar15",
-      "Mombasa": "Mar13",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "NYK",
     "Ship Name": "APOLLON LEADER",
     "Voyage": "118",
     "Departure Ports": {
-      "Yokohama": "Feb18",
+      "Yokohama": "Feb20",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Feb20",
-      "Kobe": "Feb21",
-      "Osaka": "Feb22",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb25",
+      "Osaka": "Feb26",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -560,36 +533,9 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "Mar19",
-      "Dar": "Mar25",
-      "Mombasa": "Mar28",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "BRANDS HATCH",
-    "Voyage": "",
-    "Departure Ports": {
-      "Yokohama": "Feb21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb22",
-      "Kobe": "Feb23",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Feb25",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb20"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar26",
-      "Dar": "Mar18",
-      "Mombasa": "Mar20",
+      "Durban": "Mar23",
+      "Dar": "Mar29",
+      "Mombasa": "Apr1",
       "Maput": "-"
     }
   },
@@ -671,6 +617,87 @@
       "Durban": "-",
       "Dar": "O",
       "Mombasa": "O",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH SUNGLIGHT",
+    "Voyage": "7",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "Feb23",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb20"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar24",
+      "Dar": "Mar30",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH TRADER",
+    "Voyage": "186",
+    "Departure Ports": {
+      "Yokohama": "Feb24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb25",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar24",
+      "Dar": "Mar30",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "BRANDS HATCH",
+    "Voyage": "IF602",
+    "Departure Ports": {
+      "Yokohama": "Feb24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb25",
+      "Kobe": "Feb26",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Feb28",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar31",
+      "Dar": "Mar22",
+      "Mombasa": "Mar25",
       "Maput": "-"
     }
   },

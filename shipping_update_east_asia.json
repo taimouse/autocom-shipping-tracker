@@ -1,30 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "SUNSHINE ACE",
-    "Voyage": "0121A",
-    "Departure Ports": {
-      "Yokohama": "Dec26",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jan8",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "36",
@@ -293,7 +268,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Feb24",
+      "Hambantota": "Feb23",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -354,12 +329,12 @@
     "Ship Name": "APOLLON LEADER",
     "Voyage": "118",
     "Departure Ports": {
-      "Yokohama": "Feb18",
+      "Yokohama": "Feb20",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Feb20",
-      "Kobe": "Feb21",
-      "Osaka": "Feb22",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb25",
+      "Osaka": "Feb26",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -368,7 +343,32 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Mar9",
+      "Hambantota": "Mar13",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "LAKE ANNECY",
+    "Voyage": "0017A",
+    "Departure Ports": {
+      "Yokohama": "Feb24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar18",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
