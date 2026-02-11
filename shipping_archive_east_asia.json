@@ -248,5 +248,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA GRACE",
+    "Voyage": "48",
+    "Departure Ports": {
+      "Yokohama": "Feb6",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb10",
+      "Kobe": "-",
+      "Osaka": "Feb11",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Mar14",
+      "Mongla": "Mar16",
+      "Subic": "-"
+    }
   }
 ]
