@@ -281,7 +281,7 @@
       "Kobe": "Feb6",
       "Osaka": "-",
       "Hakata": "-",
-      "Hibikinada": "Feb8",
+      "Hibikinada": "Feb11",
       "Kanda": "-",
       "Nakanoseki": "-",
       "Hitachinaka": "Feb3"
@@ -290,9 +290,9 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "Mar10",
-      "Dar": "Feb22",
-      "Mombasa": "Mar4",
+      "Durban": "Mar14",
+      "Dar": "Mar5",
+      "Mombasa": "Mar8",
       "Maput": "-"
     }
   },
@@ -324,33 +324,6 @@
     }
   },
   {
-    "Company": "GRIMALDI",
-    "Ship Name": "GRANDE HOUSTON",
-    "Voyage": "GHO0126",
-    "Departure Ports": {
-      "Yokohama": "Feb7",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb9",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Mar3",
-      "Mombasa": "Mar4",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "MORNING MENAD",
     "Voyage": "IE601",
@@ -374,6 +347,33 @@
       "Durban": "-",
       "Dar": "Mar2",
       "Mombasa": "Mar5",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE HOUSTON",
+    "Voyage": "GHO0126",
+    "Departure Ports": {
+      "Yokohama": "Feb7",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb9",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar3",
+      "Mombasa": "Mar4",
       "Maput": "-"
     }
   },
@@ -540,33 +540,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "VICTOIROUS ACE",
-    "Voyage": "0086A",
-    "Departure Ports": {
-      "Yokohama": "Feb21",
-      "Kawasaki": "-",
-      "Kisarazu": "Feb22",
-      "Nagoya": "Feb23",
-      "Kobe": "Feb25",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "Feb26",
-      "Hitachinaka": "Feb20"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar17",
-      "Dar": "-",
-      "Mombasa": "Mar28",
-      "Maput": "Mar20"
-    }
-  },
-  {
     "Company": "HOEGH",
     "Ship Name": "HOEGH SUNLIGHT",
     "Voyage": "7",
@@ -617,33 +590,6 @@
       "Durban": "Mar24",
       "Dar": "Mar30",
       "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "BRANDS HATCH",
-    "Voyage": "IF602",
-    "Departure Ports": {
-      "Yokohama": "Feb24",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb25",
-      "Kobe": "Feb26",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Feb28",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb23"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar31",
-      "Dar": "Mar22",
-      "Mombasa": "Mar25",
       "Maput": "-"
     }
   },
@@ -702,6 +648,60 @@
     }
   },
   {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "BRANDS HATCH",
+    "Voyage": "IF602",
+    "Departure Ports": {
+      "Yokohama": "Feb25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb24",
+      "Kobe": "Feb28",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar2",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb26"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr2",
+      "Dar": "Mar24",
+      "Mombasa": "Mar27",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "LEO SPIRIT",
+    "Voyage": "0081A",
+    "Departure Ports": {
+      "Yokohama": "Feb25",
+      "Kawasaki": "-",
+      "Kisarazu": "Feb26",
+      "Nagoya": "Feb20",
+      "Kobe": "Feb21",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Feb23",
+      "Hitachinaka": "Feb20"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar17",
+      "Dar": "-",
+      "Mombasa": "Mar28",
+      "Maput": "Mar20"
+    }
+  },
+  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "IN-SEALS-FEB",
     "Voyage": "",
@@ -752,6 +752,33 @@
       "Durban": "-",
       "Dar": "Apr2",
       "Mombasa": "Mar31",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "ARABIAN SEA",
+    "Voyage": "",
+    "Departure Ports": {
+      "Yokohama": "Mar10",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar11",
+      "Kobe": "Mar12",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar14",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr5",
+      "Mombasa": "Apr7",
       "Maput": "-"
     }
   },
@@ -807,6 +834,33 @@
       "Dar": "Apr11",
       "Mombasa": "Apr12",
       "Maput": "Apr15"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "MORNING CAPO",
+    "Voyage": "",
+    "Departure Ports": {
+      "Yokohama": "Mar24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar25",
+      "Kobe": "Mar26",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar28",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr28",
+      "Dar": "Apr20",
+      "Mombasa": "Apr22",
+      "Maput": "-"
     }
   }
 ]
