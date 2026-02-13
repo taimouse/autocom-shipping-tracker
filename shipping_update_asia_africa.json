@@ -418,7 +418,7 @@
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Nakanoseki": "Feb13",
+      "Nakanoseki": "Feb15",
       "Hitachinaka": "-"
     },
     "Arrival Ports": {
@@ -621,33 +621,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-DON JUAN",
-    "Voyage": "704",
-    "Departure Ports": {
-      "Yokohama": "Feb25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb23",
-      "Kobe": "Feb21",
-      "Osaka": "Feb22",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "BRANDS HATCH",
     "Voyage": "IF602",
@@ -676,20 +649,20 @@
   },
   {
     "Company": "MOL",
-    "Ship Name": "LEO SPIRIT",
-    "Voyage": "0081A",
+    "Ship Name": "ETERNAL ACE",
+    "Voyage": "0127A",
     "Departure Ports": {
-      "Yokohama": "Feb25",
+      "Yokohama": "Feb27",
       "Kawasaki": "-",
-      "Kisarazu": "Feb26",
-      "Nagoya": "Feb20",
-      "Kobe": "Feb21",
+      "Kisarazu": "Feb28",
+      "Nagoya": "Feb26",
+      "Kobe": "Feb24",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "Feb23",
-      "Hitachinaka": "Feb20"
+      "Hitachinaka": "Feb21"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -757,17 +730,17 @@
   },
   {
     "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "ARABIAN SEA",
-    "Voyage": "",
+    "Ship Name": "VIKING PASSAMA",
+    "Voyage": "IE602",
     "Departure Ports": {
-      "Yokohama": "Mar10",
+      "Yokohama": "Mar8",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar11",
-      "Kobe": "Mar12",
+      "Nagoya": "Mar9",
+      "Kobe": "Mar10",
       "Osaka": "-",
       "Hakata": "-",
-      "Hibikinada": "Mar14",
+      "Hibikinada": "Mar12",
       "Kanda": "-",
       "Nakanoseki": "-",
       "Hitachinaka": "-"
@@ -777,8 +750,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Apr5",
-      "Mombasa": "Apr7",
+      "Dar": "Mar31",
+      "Mombasa": "Apr3",
       "Maput": "-"
     }
   },

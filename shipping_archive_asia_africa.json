@@ -376,5 +376,59 @@
       "Mombasa": "Feb13",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "MORNING MENAD",
+    "Voyage": "IE601",
+    "Departure Ports": {
+      "Yokohama": "Feb7",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb8",
+      "Kobe": "Feb9",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Feb13",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar2",
+      "Mombasa": "Mar5",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS CORONA",
+    "Voyage": "094",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Feb9",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Feb11",
+      "Hakata": "Feb13",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar8",
+      "Mombasa": "Mar4",
+      "Maput": "-"
+    }
   }
 ]

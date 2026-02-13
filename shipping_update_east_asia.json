@@ -423,5 +423,30 @@
       "Mongla": "Mar25",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "VIKING PASSAMA",
+    "Voyage": "IE602",
+    "Departure Ports": {
+      "Yokohama": "Mar8",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar9",
+      "Kobe": "Mar10",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar12",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar25",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]

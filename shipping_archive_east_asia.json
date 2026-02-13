@@ -273,5 +273,30 @@
       "Mongla": "Mar16",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "MORNING MENAD",
+    "Voyage": "IE601",
+    "Departure Ports": {
+      "Yokohama": "Feb7",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb8",
+      "Kobe": "Feb9",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Feb13",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Feb23",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
