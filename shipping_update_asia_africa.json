@@ -324,33 +324,6 @@
     }
   },
   {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "MORNING MENAD",
-    "Voyage": "IE601",
-    "Departure Ports": {
-      "Yokohama": "Feb7",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb8",
-      "Kobe": "Feb9",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Feb13",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Mar2",
-      "Mombasa": "Mar5",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "GRIMALDI",
     "Ship Name": "GRANDE HOUSTON",
     "Voyage": "GHO0126",
@@ -374,6 +347,33 @@
       "Durban": "-",
       "Dar": "Mar3",
       "Mombasa": "Mar4",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "MORNING MENAD",
+    "Voyage": "IE601",
+    "Departure Ports": {
+      "Yokohama": "Feb7",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb8",
+      "Kobe": "Feb9",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Feb13",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar2",
+      "Mombasa": "Mar5",
       "Maput": "-"
     }
   },
@@ -459,33 +459,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "GOLIATH LEADER",
-    "Voyage": "126",
-    "Departure Ports": {
-      "Yokohama": "Feb12",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb14",
-      "Kobe": "Feb18",
-      "Osaka": "Feb19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar21",
-      "Dar": "Mar15",
-      "Mombasa": "Mar13",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "0040A",
@@ -509,6 +482,33 @@
       "Durban": "-",
       "Dar": "Mar18",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GOLIATH LEADER",
+    "Voyage": "126",
+    "Departure Ports": {
+      "Yokohama": "Feb12",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb14",
+      "Kobe": "Feb18",
+      "Osaka": "Feb19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar21",
+      "Dar": "Mar15",
+      "Mombasa": "Mar13",
       "Maput": "-"
     }
   },
@@ -729,6 +729,33 @@
     }
   },
   {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS SPLENDOR",
+    "Voyage": "075",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar10",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar8",
+      "Hakata": "Mar6",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "VIKING PASSAMA",
     "Voyage": "IE602",
@@ -752,33 +779,6 @@
       "Durban": "-",
       "Dar": "Mar31",
       "Mombasa": "Apr3",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS SIRIUS",
-    "Voyage": "sub",
-    "Departure Ports": {
-      "Yokohama": "-",
-      "Kawasaki": "-",
-      "Kisarazu": "Mar12",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "Mar10",
-      "Hakata": "Mar8",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
       "Maput": "-"
     }
   },
@@ -833,6 +833,33 @@
       "Durban": "Apr28",
       "Dar": "Apr20",
       "Mombasa": "Apr22",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS CLIPPER",
+    "Voyage": "119",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar27",
+      "Nagoya": "O",
+      "Kobe": "-",
+      "Osaka": "Mar29",
+      "Hakata": "O",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "O",
+      "Mombasa": "O",
       "Maput": "-"
     }
   }
