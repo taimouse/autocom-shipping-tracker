@@ -430,5 +430,32 @@
       "Mombasa": "Mar4",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "PROGRESS ACE",
+    "Voyage": "0175A",
+    "Departure Ports": {
+      "Yokohama": "Feb10",
+      "Kawasaki": "-",
+      "Kisarazu": "Feb11",
+      "Nagoya": "Feb8",
+      "Kobe": "Feb14",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Feb15",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "Mar1",
+      "Durban": "Mar8",
+      "Dar": "Mar16",
+      "Mombasa": "Mar17",
+      "Maput": "Mar8"
+    }
   }
 ]
