@@ -676,8 +676,8 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-SEALS-FEB",
-    "Voyage": "",
+    "Ship Name": "IN-LYDDEN",
+    "Voyage": "41",
     "Departure Ports": {
       "Yokohama": "Feb28",
       "Kawasaki": "-",
@@ -703,8 +703,8 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-SEALS-FEB",
-    "Voyage": "",
+    "Ship Name": "SL-LYDDEN",
+    "Voyage": "41",
     "Departure Ports": {
       "Yokohama": "Feb28",
       "Kawasaki": "-",
@@ -860,6 +860,33 @@
       "Durban": "-",
       "Dar": "O",
       "Mombasa": "O",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "TURANDOT",
+    "Voyage": "38",
+    "Departure Ports": {
+      "Yokohama": "Mar30",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "Mar27",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar29"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May3",
+      "Mombasa": "May1",
       "Maput": "-"
     }
   }

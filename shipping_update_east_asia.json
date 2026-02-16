@@ -379,12 +379,12 @@
     "Ship Name": "VIKING DRIVE",
     "Voyage": "37",
     "Departure Ports": {
-      "Yokohama": "Feb28",
+      "Yokohama": "Mar3",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Feb27",
+      "Nagoya": "Mar2",
       "Kobe": "-",
-      "Osaka": "Feb26",
+      "Osaka": "Mar1",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -444,6 +444,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Mar25",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "38",
+    "Departure Ports": {
+      "Yokohama": "Mar29",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "-",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Apr16",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
