@@ -457,5 +457,32 @@
       "Mombasa": "Mar17",
       "Maput": "Mar8"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "AZUL ACE",
+    "Voyage": "0040A",
+    "Departure Ports": {
+      "Yokohama": "Feb12",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb16",
+      "Kobe": "-",
+      "Osaka": "Feb17",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar18",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
