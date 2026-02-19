@@ -326,10 +326,10 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "APOLLON LEADER",
-    "Voyage": "118",
+    "Ship Name": "GLOBAL FUJI",
+    "Voyage": "001",
     "Departure Ports": {
-      "Yokohama": "Feb20",
+      "Yokohama": "Feb21",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Feb23",
@@ -354,7 +354,7 @@
     "Ship Name": "LAKE ANNECY",
     "Voyage": "0017A",
     "Departure Ports": {
-      "Yokohama": "Feb24",
+      "Yokohama": "Feb26",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "-",
@@ -369,6 +369,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Mar12",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "K-LINE",
+    "Ship Name": "LYDDEN",
+    "Voyage": "41",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar2",
+      "Kobe": "-",
+      "Osaka": "Mar4",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar18",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"

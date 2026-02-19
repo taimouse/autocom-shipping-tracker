@@ -460,10 +460,10 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "APOLLON LEADER",
-    "Voyage": "118",
+    "Ship Name": "GLOBAL FUJI",
+    "Voyage": "001",
     "Departure Ports": {
-      "Yokohama": "Feb20",
+      "Yokohama": "Feb21",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Feb23",
@@ -540,33 +540,6 @@
     }
   },
   {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "BRANDS HATCH",
-    "Voyage": "IF602",
-    "Departure Ports": {
-      "Yokohama": "Feb25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb24",
-      "Kobe": "Feb28",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Mar2",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb26"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Apr2",
-      "Dar": "Mar24",
-      "Mombasa": "Mar27",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "DON JUAN",
     "Voyage": "704",
@@ -590,6 +563,33 @@
       "Durban": "-",
       "Dar": "Mar20",
       "Mombasa": "Mar18",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "BRANDS HATCH",
+    "Voyage": "IF602",
+    "Departure Ports": {
+      "Yokohama": "Feb26",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb25",
+      "Kobe": "Mar1",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar4",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb27"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr2",
+      "Dar": "Mar26",
+      "Mombasa": "Mar29",
       "Maput": "-"
     }
   },
@@ -622,34 +622,7 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-LYDDEN",
-    "Voyage": "41",
-    "Departure Ports": {
-      "Yokohama": "Feb28",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar2",
-      "Kobe": "Mar3",
-      "Osaka": "Mar4",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb26"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Apr2",
-      "Mombasa": "Mar31",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-LYDDEN",
+    "Ship Name": "LYDDEN",
     "Voyage": "41",
     "Departure Ports": {
       "Yokohama": "Feb28",
@@ -683,7 +656,7 @@
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "-",
-      "Kobe": "Mar3",
+      "Kobe": "-",
       "Osaka": "Mar3",
       "Hakata": "-",
       "Hibikinada": "-",

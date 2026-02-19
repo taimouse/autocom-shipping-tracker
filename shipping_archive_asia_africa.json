@@ -484,5 +484,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GOLIATH LEADER",
+    "Voyage": "126",
+    "Departure Ports": {
+      "Yokohama": "Feb12",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb14",
+      "Kobe": "Feb18",
+      "Osaka": "Feb19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar21",
+      "Dar": "Mar15",
+      "Mombasa": "Mar13",
+      "Maput": "-"
+    }
   }
 ]

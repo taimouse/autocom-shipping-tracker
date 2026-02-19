@@ -298,5 +298,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GOLIATH LEADER",
+    "Voyage": "126",
+    "Departure Ports": {
+      "Yokohama": "Feb12",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb14",
+      "Kobe": "Feb18",
+      "Osaka": "Feb19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar3",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
