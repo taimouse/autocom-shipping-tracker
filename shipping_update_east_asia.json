@@ -1,30 +1,5 @@
 [
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "VIKING DRIVE",
-    "Voyage": "36",
-    "Departure Ports": {
-      "Yokohama": "Jan5",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Jan7",
-      "Kobe": "-",
-      "Osaka": "Jan8",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jan19",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "47",
@@ -404,10 +379,10 @@
     "Ship Name": "VIKING DRIVE",
     "Voyage": "37",
     "Departure Ports": {
-      "Yokohama": "Mar3",
+      "Yokohama": "Mar4",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar2",
+      "Nagoya": "Mar3",
       "Kobe": "-",
       "Osaka": "Mar1",
       "Hakata": "-",
