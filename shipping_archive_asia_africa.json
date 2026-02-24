@@ -511,5 +511,32 @@
       "Mombasa": "Mar13",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH SUNLIGHT",
+    "Voyage": "7",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "Feb24",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb20"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar24",
+      "Dar": "Mar30",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]

@@ -1,32 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "FREEDOM ACE",
-    "Voyage": "0182A",
-    "Departure Ports": {
-      "Yokohama": "Jan9",
-      "Kawasaki": "-",
-      "Kisarazu": "Jan14",
-      "Nagoya": "Jan8",
-      "Kobe": "Jan16",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "Jan17",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "Jan29",
-      "Durban": "Feb3",
-      "Dar": "Feb10",
-      "Mombasa": "-",
-      "Maput": "Feb6"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "GLORIOUS LEADER",
     "Voyage": "050",
