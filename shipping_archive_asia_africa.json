@@ -538,5 +538,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH TRADER",
+    "Voyage": "186",
+    "Departure Ports": {
+      "Yokohama": "Feb24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb25",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar24",
+      "Dar": "Mar30",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
