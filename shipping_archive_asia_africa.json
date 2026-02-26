@@ -565,5 +565,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GLOBAL FUJI",
+    "Voyage": "001",
+    "Departure Ports": {
+      "Yokohama": "Feb21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb25",
+      "Osaka": "Feb26",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar23",
+      "Dar": "Mar29",
+      "Mombasa": "Apr1",
+      "Maput": "-"
+    }
   }
 ]

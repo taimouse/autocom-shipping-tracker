@@ -323,5 +323,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GLOBAL FUJI",
+    "Voyage": "001",
+    "Departure Ports": {
+      "Yokohama": "Feb21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb25",
+      "Osaka": "Feb26",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar13",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
