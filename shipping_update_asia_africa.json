@@ -517,9 +517,9 @@
     "Ship Name": "ETERNAL ACE",
     "Voyage": "0127A",
     "Departure Ports": {
-      "Yokohama": "Feb27",
+      "Yokohama": "Feb28",
       "Kawasaki": "-",
-      "Kisarazu": "Feb28",
+      "Kisarazu": "Mar1",
       "Nagoya": "Feb26",
       "Kobe": "Feb24",
       "Osaka": "-",
@@ -537,60 +537,6 @@
       "Dar": "-",
       "Mombasa": "Mar28",
       "Maput": "Mar20"
-    }
-  },
-  {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "BRANDS HATCH",
-    "Voyage": "IF602",
-    "Departure Ports": {
-      "Yokohama": "Feb28",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb27",
-      "Kobe": "Mar3",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Mar6",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb27"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Apr2",
-      "Dar": "Mar26",
-      "Mombasa": "Mar29",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "LYDDEN",
-    "Voyage": "41",
-    "Departure Ports": {
-      "Yokohama": "Feb28",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar4",
-      "Kobe": "Mar5",
-      "Osaka": "Mar6",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Apr2",
-      "Mombasa": "Mar31",
-      "Maput": "-"
     }
   },
   {
@@ -621,6 +567,33 @@
     }
   },
   {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "BRANDS HATCH",
+    "Voyage": "IF602",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb27",
+      "Kobe": "Mar3",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar6",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb27"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr2",
+      "Dar": "Mar26",
+      "Mombasa": "Mar29",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "HOEGH",
     "Ship Name": "HOEGH OSAKA",
     "Voyage": "127",
@@ -644,6 +617,33 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "LYDDEN",
+    "Voyage": "41",
+    "Departure Ports": {
+      "Yokohama": "Mar3",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar4",
+      "Kobe": "Mar5",
+      "Osaka": "Mar6",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr2",
+      "Mombasa": "Mar31",
       "Maput": "-"
     }
   },
@@ -783,6 +783,60 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "SL A VESSEL",
+    "Voyage": "",
+    "Departure Ports": {
+      "Yokohama": "Mar25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar26",
+      "Kobe": "Mar27",
+      "Osaka": "Mar28",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar24"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May13",
+      "Mombasa": "May15",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "IN A VESSEL",
+    "Voyage": "",
+    "Departure Ports": {
+      "Yokohama": "Mar25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar26",
+      "Kobe": "Mar27",
+      "Osaka": "Mar28",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar24"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May13",
+      "Mombasa": "May15",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS CLIPPER",
     "Voyage": "119",
@@ -811,33 +865,6 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-TURANDOT",
-    "Voyage": "38",
-    "Departure Ports": {
-      "Yokohama": "Mar30",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar28",
-      "Kobe": "Mar27",
-      "Osaka": "Mar27",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Mar29"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "May3",
-      "Mombasa": "May1",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "IN-TURANDOT",
     "Voyage": "38",
     "Departure Ports": {
@@ -860,6 +887,33 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "SL-TURANDOT",
+    "Voyage": "38",
+    "Departure Ports": {
+      "Yokohama": "Mar30",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "Mar27",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar29"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May3",
+      "Mombasa": "May1",
       "Maput": "-"
     }
   },
