@@ -619,5 +619,32 @@
       "Mombasa": "Mar26",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "ETERNAL ACE",
+    "Voyage": "0127A",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar1",
+      "Nagoya": "Feb26",
+      "Kobe": "Feb24",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Feb23",
+      "Hitachinaka": "Feb21"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar17",
+      "Dar": "-",
+      "Mombasa": "Mar28",
+      "Maput": "Mar20"
+    }
   }
 ]

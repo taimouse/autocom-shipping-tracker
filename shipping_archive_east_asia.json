@@ -348,5 +348,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "LAKE ANNECY",
+    "Voyage": "0017A",
+    "Departure Ports": {
+      "Yokohama": "Mar1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar20",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
