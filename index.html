@@ -34,6 +34,9 @@
       .fc-daygrid-event {
         overflow: hidden;
       }
+      .fc .fc-daygrid-day-frame {
+        min-height: 160px;
+      }
 
       /* 모달 스타일 */
       .modal {
@@ -196,7 +199,7 @@
           </div>
           <div
             id="companyCheckboxesSidebar"
-            class="grid grid-cols-2 gap-1"
+            class="grid gap-1"
           ></div>
         </div>
 
@@ -502,6 +505,19 @@
         "#00BCD4", // 청록색 500
       ];
 
+      // 지정된 회사 고정 색상
+      const fixedCompanyColors = {
+        "NYK": "#00a334",
+        "MOL": "#0095b9",
+        "KEIHIN": "#b30232",
+        "SEALS": "#5f2c1b",
+        "ECL": "#2196f3",
+        "K-LINE": "#9c27b0",
+        "GRIMALDI": "#eb7f0c",
+        "HOEGH": "#607d8b",
+        "G ALLIANCE SHIPPING": "#00467d"
+      };
+
       // 루트 변경 함수
       function changeRoute() {
         const selectorMobile = document.getElementById("routeSelector");
@@ -636,9 +652,11 @@
 
         // 회사별 색상 할당
         companies.forEach((company, index) => {
-           // 색상을 rgba로 변환하기 쉽도록 헥사 코드를 저장하지만
-           // 캘린더 라이브러리에서 opacity나 rgba를 지원하므로 기본 색상은 그대로 둠
-          companyColors[company] = colorPalette[index % colorPalette.length];
+          if (fixedCompanyColors[company]) {
+            companyColors[company] = fixedCompanyColors[company];
+          } else {
+            companyColors[company] = colorPalette[index % colorPalette.length];
+          }
         });
 
         // SP 모달 생성
@@ -687,8 +705,18 @@
 
           const label = document.createElement("label");
           label.htmlFor = checkbox.id;
-          label.textContent = company;
-          label.className = "cursor-pointer text-xs";
+          label.className = "cursor-pointer text-xs flex items-center";
+
+          const colorDot = document.createElement("span");
+          colorDot.style.display = "inline-block";
+          colorDot.style.width = "10px";
+          colorDot.style.height = "10px";
+          colorDot.style.borderRadius = "50%";
+          colorDot.style.backgroundColor = companyColors[company] || "#ccc";
+          colorDot.style.marginRight = "6px";
+
+          label.appendChild(colorDot);
+          label.appendChild(document.createTextNode(company));
 
           div.appendChild(checkbox);
           div.appendChild(label);
