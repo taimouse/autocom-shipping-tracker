@@ -1,30 +1,5 @@
 [
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA GRACE",
-    "Voyage": "47",
-    "Departure Ports": {
-      "Yokohama": "Jan15",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Jan14",
-      "Kobe": "-",
-      "Osaka": "Jan17",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "Feb10",
-      "Mongla": "Feb12",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "GLORIOUS LEADER",
     "Voyage": "050",
@@ -150,31 +125,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "PRIME ACE",
-    "Voyage": "0096A",
-    "Departure Ports": {
-      "Yokohama": "Feb2",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Feb18",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "K-LINE",
     "Ship Name": "GENIUS HIGHWAY",
     "Voyage": "85",
@@ -194,6 +144,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Feb22",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "PRIME ACE",
+    "Voyage": "0096A",
+    "Departure Ports": {
+      "Yokohama": "Feb2",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Feb18",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
