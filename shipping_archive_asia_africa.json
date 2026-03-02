@@ -538,5 +538,113 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH TRADER",
+    "Voyage": "186",
+    "Departure Ports": {
+      "Yokohama": "Feb24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb25",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar24",
+      "Dar": "Mar30",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GLOBAL FUJI",
+    "Voyage": "001",
+    "Departure Ports": {
+      "Yokohama": "Feb21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb23",
+      "Kobe": "Feb25",
+      "Osaka": "Feb26",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar23",
+      "Dar": "Mar29",
+      "Mombasa": "Apr1",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb26",
+      "Kobe": "Feb23",
+      "Osaka": "Feb25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb20"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "Mar18",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar28",
+      "Mombasa": "Mar26",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "ETERNAL ACE",
+    "Voyage": "0127A",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar1",
+      "Nagoya": "Feb26",
+      "Kobe": "Feb24",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Feb23",
+      "Hitachinaka": "Feb21"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Mar17",
+      "Dar": "-",
+      "Mombasa": "Mar28",
+      "Maput": "Mar20"
+    }
   }
 ]
