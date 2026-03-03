@@ -646,5 +646,32 @@
       "Mombasa": "Mar28",
       "Maput": "Mar20"
     }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH OSAKA",
+    "Voyage": "127",
+    "Departure Ports": {
+      "Yokohama": "Mar1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar3",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb28"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
