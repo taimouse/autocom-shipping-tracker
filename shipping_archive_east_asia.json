@@ -373,5 +373,55 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "K-LINE",
+    "Ship Name": "LYDDEN",
+    "Voyage": "41",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar4",
+      "Kobe": "-",
+      "Osaka": "Mar4",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar20",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "37",
+    "Departure Ports": {
+      "Yokohama": "Mar4",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar3",
+      "Kobe": "-",
+      "Osaka": "Mar1",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Mar15",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]

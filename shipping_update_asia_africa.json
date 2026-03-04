@@ -621,33 +621,6 @@
     }
   },
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS SPLENDOR",
-    "Voyage": "075",
-    "Departure Ports": {
-      "Yokohama": "-",
-      "Kawasaki": "-",
-      "Kisarazu": "Mar10",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "Mar8",
-      "Hakata": "Mar6",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "MORNING NINNI",
     "Voyage": "IE602",
@@ -695,6 +668,33 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "Mar30",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS SPLENDOR",
+    "Voyage": "075",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar14",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar13",
+      "Hakata": "Mar11",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
