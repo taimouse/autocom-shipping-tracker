@@ -810,6 +810,33 @@
     }
   },
   {
+    "Company": "MOL",
+    "Ship Name": "MARTORELL",
+    "Voyage": "sub",
+    "Departure Ports": {
+      "Yokohama": "Mar26",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar25",
+      "Nagoya": "Mar27",
+      "Kobe": "Mar30",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Mar29",
+      "Hitachinaka": "Mar24"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr17",
+      "Dar": "Apr24",
+      "Mombasa": "Mar28",
+      "Maput": "Apr20"
+    }
+  },
+  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS CLIPPER",
     "Voyage": "119",
