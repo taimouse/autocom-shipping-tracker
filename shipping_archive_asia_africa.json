@@ -673,5 +673,59 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "BRANDS HATCH",
+    "Voyage": "IF602",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb27",
+      "Kobe": "Mar3",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar6",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb27"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr2",
+      "Dar": "Mar26",
+      "Mombasa": "Mar29",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "LYDDEN",
+    "Voyage": "41",
+    "Departure Ports": {
+      "Yokohama": "Mar1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar4",
+      "Kobe": "Mar5",
+      "Osaka": "Mar6",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr2",
+      "Mombasa": "Mar31",
+      "Maput": "-"
+    }
   }
 ]

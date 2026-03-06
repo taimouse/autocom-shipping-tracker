@@ -702,6 +702,33 @@
     }
   },
   {
+    "Company": "NYK",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "mid",
+    "Departure Ports": {
+      "Yokohama": "Mar17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar14",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May2",
+      "Mombasa": "O",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "GRIMALDI",
     "Ship Name": "GRANDE TORINO",
     "Voyage": "GRR0226",
@@ -914,33 +941,6 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "NYK MAR mid",
-    "Voyage": "mid",
-    "Departure Ports": {
-      "Yokohama": "O",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "O",
-      "Kobe": "O",
-      "Osaka": "O",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
       "Maput": "-"
     }
   },
