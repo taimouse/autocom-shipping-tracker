@@ -1,32 +1,5 @@
 [
   {
-    "Company": "GRIMALDI",
-    "Ship Name": "GRANDE MIRAFIORI",
-    "Voyage": "0126",
-    "Departure Ports": {
-      "Yokohama": "Jan21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Feb9",
-      "Mombasa": "Feb12",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "DELPHINUS LEADER",
     "Voyage": "063",
