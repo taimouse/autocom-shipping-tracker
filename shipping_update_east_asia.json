@@ -1,55 +1,5 @@
 [
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "67",
-    "Departure Ports": {
-      "Yokohama": "Jan22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Jan23",
-      "Kobe": "-",
-      "Osaka": "Jan24",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "-",
-      "Mongla": "Feb12",
-      "Subic": "Feb10"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "DELPHINUS LEADER",
-    "Voyage": "063",
-    "Departure Ports": {
-      "Yokohama": "Jan22",
-      "Kawasaki": "Jan23",
-      "Kisarazu": "-",
-      "Nagoya": "Jan24",
-      "Kobe": "Jan26",
-      "Osaka": "Jan27",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Feb9",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "FIRMAMENT ACE",
     "Voyage": "0150A",
@@ -318,7 +268,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Mar15",
+      "Hambantota": "Mar16",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -426,15 +376,40 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "VIKING DRIVE",
-    "Voyage": "38",
+    "Ship Name": "TURANDOT",
+    "Voyage": "703",
     "Departure Ports": {
       "Yokohama": "Mar29",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar28",
+      "Nagoya": "Mar30",
       "Kobe": "-",
-      "Osaka": "Mar27",
+      "Osaka": "Mar31",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Mar28"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Apr12",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "38",
+    "Departure Ports": {
+      "Yokohama": "Mar31",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar30",
+      "Kobe": "-",
+      "Osaka": "Mar29",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -443,7 +418,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr16",
+      "Hambantota": "Apr13",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -451,24 +426,49 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
+    "Ship Name": "MODERN LINK",
     "Voyage": "703",
     "Departure Ports": {
-      "Yokohama": "Mar30",
+      "Yokohama": "Apr8",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar28",
+      "Nagoya": "Apr7",
       "Kobe": "-",
-      "Osaka": "Mar27",
+      "Osaka": "Apr6",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Hitachinaka": "Mar29"
+      "Hitachinaka": "-"
     },
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr14",
+      "Hambantota": "Apr23",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "Apr15",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr14",
+      "Kobe": "-",
+      "Osaka": "Apr13",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Apr17"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May1",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
