@@ -727,5 +727,32 @@
       "Mombasa": "Mar31",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "MORNING NINNI",
+    "Voyage": "IE602",
+    "Departure Ports": {
+      "Yokohama": "Mar8",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar9",
+      "Kobe": "Mar10",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar12",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Mar31",
+      "Mombasa": "Apr3",
+      "Maput": "-"
+    }
   }
 ]

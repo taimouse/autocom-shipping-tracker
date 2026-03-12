@@ -243,7 +243,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Mar20",
+      "Hambantota": "Apr10",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -376,14 +376,14 @@
   },
   {
     "Company": "MOL",
-    "Ship Name": "LAKE VILLARICA",
-    "Voyage": "0003A",
+    "Ship Name": "PROMINENT ACE",
+    "Voyage": "0184A",
     "Departure Ports": {
-      "Yokohama": "Mar28",
+      "Yokohama": "Mar27",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "Mar30",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
@@ -393,7 +393,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr11",
+      "Hambantota": "Apr9",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
