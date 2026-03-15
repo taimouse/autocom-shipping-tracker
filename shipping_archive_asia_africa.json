@@ -754,5 +754,59 @@
       "Mombasa": "Apr3",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "LIBERTY ACE",
+    "Voyage": "0163A",
+    "Departure Ports": {
+      "Yokohama": "Mar11",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar12",
+      "Nagoya": "Mar10",
+      "Kobe": "Mar15",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Mar14",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "Mar30",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS SPLENDOR",
+    "Voyage": "075",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar15",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar13",
+      "Hakata": "Mar11",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
