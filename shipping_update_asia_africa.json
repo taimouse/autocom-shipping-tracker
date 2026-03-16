@@ -459,33 +459,6 @@
     }
   },
   {
-    "Company": "HOEGH",
-    "Ship Name": "HOEGH OSAKA",
-    "Voyage": "127",
-    "Departure Ports": {
-      "Yokohama": "Mar1",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "Mar3",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb28"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "LYDDEN",
     "Voyage": "41",
@@ -509,6 +482,33 @@
       "Durban": "-",
       "Dar": "Apr2",
       "Mombasa": "Mar31",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH OSAKA",
+    "Voyage": "127",
+    "Departure Ports": {
+      "Yokohama": "Mar1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar3",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb28"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
       "Maput": "-"
     }
   },
@@ -702,6 +702,33 @@
     }
   },
   {
+    "Company": "NYK",
+    "Ship Name": "GLOBAL LEADER",
+    "Voyage": "081",
+    "Departure Ports": {
+      "Yokohama": "Mar24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar23",
+      "Kobe": "-",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr21",
+      "Dar": "Apr27",
+      "Mombasa": "Apr30",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "MOL",
     "Ship Name": "FIRMAMENT ACE",
     "Voyage": "0151A",
@@ -784,55 +811,28 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-TURANDOT",
-    "Voyage": "38",
+    "Ship Name": "SL-HORIZON HIGHWAY",
+    "Voyage": "93",
     "Departure Ports": {
-      "Yokohama": "Mar29",
+      "Yokohama": "Mar30",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar30",
-      "Kobe": "-",
-      "Osaka": "Mar31",
+      "Nagoya": "Mar29",
+      "Kobe": "Mar26",
+      "Osaka": "Mar27",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "Mar28"
+      "Hitachinaka": "Mar23"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Apr21",
-      "Mombasa": "Apr19",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-TURANDOT",
-    "Voyage": "38",
-    "Departure Ports": {
-      "Yokohama": "Mar29",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar30",
-      "Kobe": "-",
-      "Osaka": "Mar31",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Mar28"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Apr21",
-      "Mombasa": "Apr19",
+      "Dar": "May12",
+      "Mombasa": "May15",
       "Maput": "-"
     }
   },
@@ -865,28 +865,55 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-HORIZON HIGHWAY",
-    "Voyage": "93",
+    "Ship Name": "IN-TURANDOT",
+    "Voyage": "703",
     "Departure Ports": {
-      "Yokohama": "Mar30",
+      "Yokohama": "Mar31",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar29",
-      "Kobe": "Mar26",
-      "Osaka": "Mar27",
+      "Nagoya": "Apr1",
+      "Kobe": "-",
+      "Osaka": "Apr2",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "Mar23"
+      "Hitachinaka": "Mar28"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "May12",
-      "Mombasa": "May15",
+      "Dar": "Apr22",
+      "Mombasa": "Apr20",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "SL-TURANDOT",
+    "Voyage": "703",
+    "Departure Ports": {
+      "Yokohama": "Mar31",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr1",
+      "Kobe": "-",
+      "Osaka": "Apr2",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar28"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr21",
+      "Mombasa": "Apr19",
       "Maput": "-"
     }
   },
@@ -999,33 +1026,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "NYK MAR end",
-    "Voyage": "end",
-    "Departure Ports": {
-      "Yokohama": "O",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "O",
-      "Kobe": "O",
-      "Osaka": "O",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "KEIHIN 1ST APR",
     "Voyage": "",
@@ -1046,6 +1046,33 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "TBN PL Apr",
+    "Voyage": "beg",
+    "Departure Ports": {
+      "Yokohama": "O",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "O",
+      "Kobe": "O",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "O",
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",

@@ -375,31 +375,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
-    "Voyage": "703",
-    "Departure Ports": {
-      "Yokohama": "Mar29",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar30",
-      "Kobe": "-",
-      "Osaka": "Mar31",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "Mar28"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Apr12",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "K-LINE",
     "Ship Name": "HORIZON HIGHWAY",
     "Voyage": "180",
@@ -426,15 +401,40 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "VIKING DRIVE",
-    "Voyage": "38",
+    "Ship Name": "TURANDOT",
+    "Voyage": "703",
     "Departure Ports": {
       "Yokohama": "Mar31",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Mar30",
+      "Nagoya": "Apr1",
       "Kobe": "-",
-      "Osaka": "Mar29",
+      "Osaka": "Apr2",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Mar28"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Apr12",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "38",
+    "Departure Ports": {
+      "Yokohama": "Apr4",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr2",
+      "Kobe": "-",
+      "Osaka": "Apr1",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -443,7 +443,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr13",
+      "Hambantota": "Apr16",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
