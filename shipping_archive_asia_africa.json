@@ -808,5 +808,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "059",
+    "Departure Ports": {
+      "Yokohama": "Mar17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar14",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr27",
+      "Mombasa": "Apr30",
+      "Maput": "-"
+    }
   }
 ]

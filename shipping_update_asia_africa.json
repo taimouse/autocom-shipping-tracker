@@ -405,33 +405,6 @@
     }
   },
   {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "BRANDS HATCH",
-    "Voyage": "IF602",
-    "Departure Ports": {
-      "Yokohama": "Feb28",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb27",
-      "Kobe": "Mar3",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Mar6",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Feb27"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Apr2",
-      "Dar": "Mar26",
-      "Mombasa": "Mar29",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "DON JUAN",
     "Voyage": "704",
@@ -455,6 +428,33 @@
       "Durban": "-",
       "Dar": "Mar28",
       "Mombasa": "Mar26",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "BRANDS HATCH",
+    "Voyage": "IF602",
+    "Departure Ports": {
+      "Yokohama": "Feb28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Feb27",
+      "Kobe": "Mar3",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar6",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Feb27"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr2",
+      "Dar": "Mar26",
+      "Mombasa": "Mar29",
       "Maput": "-"
     }
   },
@@ -735,9 +735,9 @@
     "Departure Ports": {
       "Yokohama": "Mar24",
       "Kawasaki": "-",
-      "Kisarazu": "Mar25",
-      "Nagoya": "Mar26",
-      "Kobe": "Mar28",
+      "Kisarazu": "Mar27",
+      "Nagoya": "Mar25",
+      "Kobe": "Mar30",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
@@ -811,7 +811,7 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-HORIZON HIGHWAY",
+    "Ship Name": "IN-HORIZON HIGHWAY",
     "Voyage": "93",
     "Departure Ports": {
       "Yokohama": "Mar30",
@@ -838,7 +838,7 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-HORIZON HIGHWAY",
+    "Ship Name": "SL-HORIZON HIGHWAY",
     "Voyage": "93",
     "Departure Ports": {
       "Yokohama": "Mar30",
@@ -914,6 +914,33 @@
       "Durban": "-",
       "Dar": "Apr21",
       "Mombasa": "Apr19",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "HERMES LEADER",
+    "Voyage": "081",
+    "Departure Ports": {
+      "Yokohama": "Apr3",
+      "Kawasaki": "Apr4",
+      "Kisarazu": "-",
+      "Nagoya": "Apr5",
+      "Kobe": "Apr6",
+      "Osaka": "Apr7",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr29",
+      "Mombasa": "May2",
       "Maput": "-"
     }
   },
