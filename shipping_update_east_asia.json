@@ -1,55 +1,5 @@
 [
   {
-    "Company": "K-LINE",
-    "Ship Name": "GENIUS HIGHWAY",
-    "Voyage": "85",
-    "Departure Ports": {
-      "Yokohama": "Feb2",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb4",
-      "Kobe": "-",
-      "Osaka": "Feb6",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Feb22",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "MOL",
-    "Ship Name": "PRIME ACE",
-    "Voyage": "0096A",
-    "Departure Ports": {
-      "Yokohama": "Feb2",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Feb18",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "48",
