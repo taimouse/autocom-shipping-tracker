@@ -183,9 +183,102 @@ def summarize_changes(old_data, new_data):
         return "변경 사항이 감지되었으나 요약할 차이점이 없습니다. 전체 파일을 확인하세요."
 
     return "\n".join(lines)
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+
+def parse_date_from_str(date_str):
+    """'Jan5', 'Feb10' 같은 날짜 문자열을 datetime 객체로 변환.
+    연도는 현재 날짜 기준으로 추정한다."""
+    if not date_str or date_str == '-':
+        return None
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+    try:
+        mon_str = date_str[:3]
+        day = int(date_str[3:])
+        mon_idx = months.index(mon_str)  # 0-based
+        now = datetime.now()
+        current_year = now.year
+        current_month = now.month - 1  # 0-based
+        year = current_year
+        month_diff = mon_idx - current_month
+        if month_diff > 4:
+            year = current_year - 1
+        elif month_diff < -4:
+            year = current_year + 1
+        return datetime(year, mon_idx + 1, day)
+    except (ValueError, IndexError):
+        return None
+
+def get_latest_departure_date(ship):
+    """선박 데이터에서 가장 늦은 출발일을 반환."""
+    latest = None
+    for port, date_str in ship.get('Departure Ports', {}).items():
+        d = parse_date_from_str(date_str)
+        if d and (latest is None or d > latest):
+            latest = d
+    return latest
+
+def ship_key(item):
+    """선박 고유 키 생성 (중복 판별용)."""
+    return f"{item.get('Company','')}¦{item.get('Ship Name','')}¦{item.get('Voyage','')}"
+
+def update_archive(existing_data, current_data, archive_file):
+    """기존 데이터 중 출발일이 모두 지난 스케줄을 아카이브에 추가.
+
+    Args:
+        existing_data: 갱신 전 현재 JSON 데이터 (list or None)
+        current_data: 새로 크롤링한 데이터 (list)
+        archive_file: 아카이브 JSON 파일 경로
+    """
+    now = datetime.now()
+
+    # 아카이브 파일 로드
+    archive_data = []
+    if os.path.exists(archive_file):
+        with open(archive_file, 'r', encoding='utf-8') as f:
+            archive_data = json.load(f)
+
+    # 기존 아카이브 키 셋
+    archive_keys = {ship_key(item) for item in archive_data}
+
+    # 새 데이터의 키 셋 (현재 크롤링에 포함된 것들)
+    new_keys = {ship_key(item) for item in current_data}
+
+    added_count = 0
+
+    # 아카이브 대상: 기존 데이터에는 있었지만 새 데이터에는 없는 스케줄 중
+    # 가장 늦은 출발일이 현재 날짜를 지난 것
+    if existing_data:
+        for ship in existing_data:
+            key = ship_key(ship)
+            # 이미 아카이브에 있으면 스킵
+            if key in archive_keys:
+                continue
+            # 새 데이터에 여전히 있으면 아직 활성 상태이므로 스킵
+            if key in new_keys:
+                continue
+            # 가장 늦은 출발일 확인
+            latest_dep = get_latest_departure_date(ship)
+            if latest_dep and now > latest_dep:
+                archive_data.append(ship)
+                archive_keys.add(key)
+                added_count += 1
+
+    # 추가로: 새 데이터에서도 출발일이 모두 지난 것은 아카이브에 추가
+    # (갱신 후에도 사라지지 않도록)
+    for ship in current_data:
+        key = ship_key(ship)
+        if key in archive_keys:
+            continue
+        latest_dep = get_latest_departure_date(ship)
+        if latest_dep and now > latest_dep:
+            archive_data.append(ship)
+            archive_keys.add(key)
+            added_count += 1
+
+    # 아카이브 저장
+    with open(archive_file, 'w', encoding='utf-8') as f:
+        json.dump(archive_data, f, ensure_ascii=False, indent=2)
+
+    print(f"아카이브 업데이트: {added_count}개 스케줄 추가 (총 {len(archive_data)}개 보존)")
 
 # 크롤링 설정 정의
 SCRAPE_CONFIGS = [
@@ -193,6 +286,7 @@ SCRAPE_CONFIGS = [
         "name": "EAST ASIA",
         "url": "https://autocj.co.jp/japan_shipping?dest=8",
         "history_file": "shipping_update_east_asia.json",
+        "archive_file": "shipping_archive_east_asia.json",
         "departure_ports": ["Yokohama", "Kawasaki", "Kisarazu", "Nagoya", "Kobe", "Osaka", "Hakata", "Hibikinada", "Kanda", "Hitachinaka"],
         "arrival_ports": ["Hong Kong", "Laem Chabang", "Hambantota", "Chittagong", "Mongla", "Subic"]
     },
@@ -200,6 +294,7 @@ SCRAPE_CONFIGS = [
         "name": "ASIA,AFRICA",
         "url": "https://autocj.co.jp/japan_shipping?dest=2",
         "history_file": "shipping_update_asia_africa.json",
+        "archive_file": "shipping_archive_asia_africa.json",
         "departure_ports": ["Yokohama", "Kawasaki", "Kisarazu", "Nagoya", "Kobe", "Osaka", "Hakata", "Hibikinada", "Kanda", "Nakanoseki", "Hitachinaka"],
         "arrival_ports": ["Jebel Ali", "Karachi", "Port Louis", "Durban", "Dar", "Mombasa", "Maput"]
     }
@@ -216,6 +311,7 @@ def scrape_page(config):
     """
     url = config["url"]
     history_file = config["history_file"]
+    archive_file = config["archive_file"]
     departure_ports = config["departure_ports"]
     arrival_ports = config["arrival_ports"]
     route_name = config["name"]
@@ -308,7 +404,10 @@ def scrape_page(config):
         # 6. 변경 사항 비교
         if existing_data is not None and existing_data == current_data:
             print("결과: 기존 데이터와 동일합니다. 변경 사항이 없어 저장하지 않습니다.")
-            return
+            # 변경이 없더라도 아카이브는 업데이트 (출발일이 지난 스케줄 보존)
+            print("아카이브를 확인합니다...")
+            update_archive(existing_data, current_data, archive_file)
+            return False
 
         # 변경 요약 생성
         if existing_data is not None:
@@ -316,13 +415,17 @@ def scrape_page(config):
         else:
             change_summary = summarize_changes(None, current_data)
 
-        # 7. 데이터 저장 (덮어쓰기)
-        print("6. 변경 사항 확인! 새 데이터를 저장합니다.")
+        # 7. 아카이브 업데이트 (출발일이 지난 스케줄 보존)
+        print("6. 아카이브를 업데이트합니다...")
+        update_archive(existing_data, current_data, archive_file)
+
+        # 8. 데이터 저장 (덮어쓰기)
+        print("7. 변경 사항 확인! 새 데이터를 저장합니다.")
         with open(history_file, "w", encoding="utf-8") as f:
             json.dump(current_data, f, ensure_ascii=False, indent=2)
 
-        # 8. 변경 알림 이메일 전송 (요약 포함)
-        print("7. 변경 알림 이메일을 전송합니다...")
+        # 9. 변경 알림 이메일 전송 (요약 포함)
+        print("8. 변경 알림 이메일을 전송합니다...")
         send_notification_email(f"[{route_name}] 변경 알림\n\n" + change_summary)
 
         full_path = os.path.abspath(history_file)
