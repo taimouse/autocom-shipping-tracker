@@ -1,30 +1,5 @@
 [
   {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "MORNING MENAD",
-    "Voyage": "IE601",
-    "Departure Ports": {
-      "Yokohama": "Feb7",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb8",
-      "Kobe": "Feb9",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "Feb13",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Feb23",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "VENUS LEADER",
     "Voyage": "078",
@@ -275,31 +250,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "PROMINENT ACE",
-    "Voyage": "0184A",
-    "Departure Ports": {
-      "Yokohama": "Mar27",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar30",
-      "Kobe": "Mar29",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Apr15",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "69",
@@ -350,6 +300,31 @@
     }
   },
   {
+    "Company": "MOL",
+    "Ship Name": "PROMINENT ACE",
+    "Voyage": "0184A",
+    "Departure Ports": {
+      "Yokohama": "Apr1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar30",
+      "Kobe": "Mar29",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Apr15",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "NYK",
     "Ship Name": "HERMES LEADER",
     "Voyage": "081",
@@ -379,12 +354,12 @@
     "Ship Name": "VIKING DRIVE",
     "Voyage": "38",
     "Departure Ports": {
-      "Yokohama": "Apr4",
+      "Yokohama": "Apr7",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr3",
+      "Nagoya": "Apr6",
       "Kobe": "-",
-      "Osaka": "Apr2",
+      "Osaka": "Apr5",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -393,32 +368,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr16",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "PLUTO LEADER",
-    "Voyage": "069",
-    "Departure Ports": {
-      "Yokohama": "Apr6",
-      "Kawasaki": "Apr7",
-      "Kisarazu": "-",
-      "Nagoya": "Apr8",
-      "Kobe": "Apr9",
-      "Osaka": "Apr10",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Apr23",
+      "Hambantota": "Apr20",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
