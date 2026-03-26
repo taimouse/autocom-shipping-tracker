@@ -330,11 +330,11 @@
     "Voyage": "081",
     "Departure Ports": {
       "Yokohama": "Apr3",
-      "Kawasaki": "Apr4",
+      "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr5",
-      "Kobe": "Apr6",
-      "Osaka": "Apr7",
+      "Nagoya": "Apr6",
+      "Kobe": "Apr7",
+      "Osaka": "Apr8",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -343,7 +343,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr20",
+      "Hambantota": "Apr21",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"

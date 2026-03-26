@@ -862,5 +862,32 @@
       "Mombasa": "Apr26",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GARNET LEADER",
+    "Voyage": "134",
+    "Departure Ports": {
+      "Yokohama": "Mar20",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar23",
+      "Kobe": "Mar25",
+      "Osaka": "Mar26",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr24",
+      "Dar": "Apr19",
+      "Mombasa": "Apr17",
+      "Maput": "-"
+    }
   }
 ]
