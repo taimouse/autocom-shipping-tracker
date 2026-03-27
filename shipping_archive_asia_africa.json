@@ -889,5 +889,32 @@
       "Mombasa": "Apr17",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GLOBAL LEADER",
+    "Voyage": "081",
+    "Departure Ports": {
+      "Yokohama": "Mar24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar23",
+      "Kobe": "-",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr21",
+      "Dar": "Apr27",
+      "Mombasa": "Apr30",
+      "Maput": "-"
+    }
   }
 ]
