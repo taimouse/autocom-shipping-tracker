@@ -1,59 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "AZUL ACE",
-    "Voyage": "0040A",
-    "Departure Ports": {
-      "Yokohama": "Feb12",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb16",
-      "Kobe": "-",
-      "Osaka": "Feb17",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Mar18",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "GOLIATH LEADER",
-    "Voyage": "126",
-    "Departure Ports": {
-      "Yokohama": "Feb12",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb14",
-      "Kobe": "Feb18",
-      "Osaka": "Feb19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar21",
-      "Dar": "Mar15",
-      "Mombasa": "Mar13",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "GLOBAL FUJI",
     "Voyage": "001",
@@ -567,33 +513,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "PROMINENT ACE",
-    "Voyage": "0184A",
-    "Departure Ports": {
-      "Yokohama": "Apr1",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar28",
-      "Kobe": "Mar30",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Apr21",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "TURANDOT",
     "Voyage": "703",
@@ -617,6 +536,33 @@
       "Durban": "-",
       "Dar": "Apr22",
       "Mombasa": "Apr20",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "PROMINENT ACE",
+    "Voyage": "0184A",
+    "Departure Ports": {
+      "Yokohama": "Apr1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "Mar30",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr21",
+      "Mombasa": "-",
       "Maput": "-"
     }
   },
@@ -837,33 +783,6 @@
     }
   },
   {
-    "Company": "GRIMALDI",
-    "Ship Name": "GRANDE SHANGHAI",
-    "Voyage": "GSG0226",
-    "Departure Ports": {
-      "Yokohama": "Apr26",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "May24",
-      "Mombasa": "May27",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "CRYSTAL ACE",
     "Voyage": "sub",
@@ -887,6 +806,33 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE SHANGHAI",
+    "Voyage": "GSG0226",
+    "Departure Ports": {
+      "Yokohama": "Apr26",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May24",
+      "Mombasa": "May27",
       "Maput": "-"
     }
   },

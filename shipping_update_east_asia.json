@@ -1,31 +1,6 @@
 [
   {
     "Company": "NYK",
-    "Ship Name": "GOLIATH LEADER",
-    "Voyage": "126",
-    "Departure Ports": {
-      "Yokohama": "Feb12",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb14",
-      "Kobe": "Feb18",
-      "Osaka": "Feb19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Mar3",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
     "Ship Name": "GLOBAL FUJI",
     "Voyage": "001",
     "Departure Ports": {
@@ -200,31 +175,6 @@
     }
   },
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "69",
-    "Departure Ports": {
-      "Yokohama": "Mar27",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar28",
-      "Kobe": "-",
-      "Osaka": "Mar30",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "Apr14",
-      "Mongla": "Apr16",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "SPICA LEADER",
     "Voyage": "080",
@@ -246,6 +196,31 @@
       "Hambantota": "Apr13",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "69",
+    "Departure Ports": {
+      "Yokohama": "Mar27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "-",
+      "Osaka": "Mar30",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Apr14",
+      "Mongla": "Apr16",
       "Subic": "-"
     }
   },

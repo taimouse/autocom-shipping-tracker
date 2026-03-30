@@ -916,5 +916,32 @@
       "Mombasa": "Apr30",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "LAKE SHIRASAGI",
+    "Voyage": "IF603",
+    "Departure Ports": {
+      "Yokohama": "Mar22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar26",
+      "Kobe": "Mar27",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Mar30",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar24"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May1",
+      "Dar": "Apr22",
+      "Mombasa": "Apr25",
+      "Maput": "-"
+    }
   }
 ]
