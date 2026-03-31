@@ -17,7 +17,7 @@ def send_notification_email(change_summary=None, route_name=None):
 
     Args:
         change_summary (str|None): 변경 사항 요약 문자열. None이면 간단한 알림만 전송.
-        route_name (str|None): 라우트 이름 (예: "EAST ASIA"). Subject에 포함.
+        route_name (str|None): 라우트 이름 (예: "ASIA"). Subject에 포함.
     """
     try:
         # 이메일 설정 (아래 값들을 실제 값으로 변경하세요)
@@ -283,7 +283,7 @@ def update_archive(existing_data, current_data, archive_file):
 # 크롤링 설정 정의
 SCRAPE_CONFIGS = [
     {
-        "name": "EAST ASIA",
+        "name": "ASIA",
         "url": "https://autocj.co.jp/japan_shipping?dest=8",
         "history_file": "shipping_update_east_asia.json",
         "archive_file": "shipping_archive_east_asia.json",
@@ -291,7 +291,7 @@ SCRAPE_CONFIGS = [
         "arrival_ports": ["Hong Kong", "Laem Chabang", "Hambantota", "Chittagong", "Mongla", "Subic"]
     },
     {
-        "name": "ASIA,AFRICA",
+        "name": "AFRICA",
         "url": "https://autocj.co.jp/japan_shipping?dest=2",
         "history_file": "shipping_update_asia_africa.json",
         "archive_file": "shipping_archive_asia_africa.json",

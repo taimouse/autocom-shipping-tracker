@@ -156,6 +156,20 @@
         height: 100vh;
       }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MSJP29YKZB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MSJP29YKZB");
+    </script>
   </head>
   <body class="m-0 bg-gray-100">
     <div id="main-container">
@@ -197,10 +211,7 @@
               >전체 선택/해제</label
             >
           </div>
-          <div
-            id="companyCheckboxesSidebar"
-            class="grid gap-1"
-          ></div>
+          <div id="companyCheckboxesSidebar" class="grid gap-1"></div>
         </div>
 
         <!-- 포트 필터 -->
@@ -249,7 +260,9 @@
 
           <!-- 아프리카 도착 포트 (EAST ASIA 전용) -->
           <div id="crossArrivalFilterSectionSidebar" class="mt-4 hidden">
-            <h3 class="text-sm font-semibold mb-2 text-gray-600">아프리카 도착 포트</h3>
+            <h3 class="text-sm font-semibold mb-2 text-gray-600">
+              아프리카 도착 포트
+            </h3>
             <div class="flex items-center mb-2">
               <input
                 type="checkbox"
@@ -429,7 +442,7 @@
             </div>
           </div>
         </div>
-        <div class="p-3 md:p-5 mx-auto w-full">
+        <div class="p-3 md:p-5 mx-auto max-w-[1440px]">
           <div
             id="calendar"
             class="bg-white rounded-lg shadow-lg py-3 px-4 overflow-auto"
@@ -507,15 +520,15 @@
 
       // 지정된 회사 고정 색상
       const fixedCompanyColors = {
-        "NYK": "#00a334",
-        "MOL": "#0095b9",
-        "KEIHIN": "#b30232",
-        "SEALS": "#5f2c1b",
-        "ECL": "#2196f3",
+        NYK: "#00a334",
+        MOL: "#0095b9",
+        KEIHIN: "#b30232",
+        SEALS: "#5f2c1b",
+        ECL: "#2196f3",
         "K-LINE": "#9c27b0",
-        "GRIMALDI": "#eb7f0c",
-        "HOEGH": "#607d8b",
-        "G ALLIANCE SHIPPING": "#00467d"
+        GRIMALDI: "#eb7f0c",
+        HOEGH: "#607d8b",
+        "G ALLIANCE SHIPPING": "#00467d",
       };
 
       // 루트 변경 함수
@@ -557,84 +570,97 @@
         if (currentRoute === "east_asia") {
           const crossUrl = routeUrls["asia_africa"];
           const crossArchiveUrl = archiveUrls["asia_africa"];
-          const fetchCrossCurrent = fetch(crossUrl).then((r) => r.json()).catch(() => []);
-          const fetchCrossArchive = crossArchiveUrl ? fetch(crossArchiveUrl).then((r) => r.json()).catch(() => []) : Promise.resolve([]);
+          const fetchCrossCurrent = fetch(crossUrl)
+            .then((r) => r.json())
+            .catch(() => []);
+          const fetchCrossArchive = crossArchiveUrl
+            ? fetch(crossArchiveUrl)
+                .then((r) => r.json())
+                .catch(() => [])
+            : Promise.resolve([]);
           fetches.push(fetchCrossCurrent, fetchCrossArchive);
         } else {
           fetches.push(Promise.resolve([]), Promise.resolve([]));
         }
 
         Promise.all(fetches)
-          .then(([currentData, archiveData, crossCurrentData, crossArchiveData]) => {
-            // 중복 제거 병합 (Company + Ship Name + Voyage 키 기준)
-            const seen = new Set();
-            const merged = [];
+          .then(
+            ([
+              currentData,
+              archiveData,
+              crossCurrentData,
+              crossArchiveData,
+            ]) => {
+              // 중복 제거 병합 (Company + Ship Name + Voyage 키 기준)
+              const seen = new Set();
+              const merged = [];
 
-            // 최신 데이터 우선 (isArchive = false)
-            currentData.forEach((ship) => {
-              const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
-              if (!seen.has(key)) {
-                seen.add(key);
-                ship.isArchive = false;
-                merged.push(ship);
-              }
-            });
-
-            // 아카이브 데이터 추가 (중복 제외, isArchive = true)
-            archiveData.forEach((ship) => {
-              const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
-              if (!seen.has(key)) {
-                seen.add(key);
-                ship.isArchive = true;
-                merged.push(ship);
-              }
-            });
-
-            shippingData = merged;
-
-            // 교차 루트 데이터(asia_africa) 병합
-            if (currentRoute === "east_asia") {
-              const crossSeen = new Set();
-              const crossMerged = [];
-              crossCurrentData.forEach((ship) => {
+              // 최신 데이터 우선 (isArchive = false)
+              currentData.forEach((ship) => {
                 const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
-                if (!crossSeen.has(key)) {
-                  crossSeen.add(key);
-                  crossMerged.push(ship);
+                if (!seen.has(key)) {
+                  seen.add(key);
+                  ship.isArchive = false;
+                  merged.push(ship);
                 }
               });
-              crossArchiveData.forEach((ship) => {
+
+              // 아카이브 데이터 추가 (중복 제외, isArchive = true)
+              archiveData.forEach((ship) => {
                 const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
-                if (!crossSeen.has(key)) {
-                  crossSeen.add(key);
-                  crossMerged.push(ship);
+                if (!seen.has(key)) {
+                  seen.add(key);
+                  ship.isArchive = true;
+                  merged.push(ship);
                 }
               });
-              crossRouteShippingData = crossMerged;
-            } else {
-              crossRouteShippingData = [];
-            }
 
-            // 회사명 변환 (긴 이름은 짧게)
-            const companyNameMap = {
-              "SEVEN SEALS CO.,LTD": "SEALS",
-              "THE KEIHIN CO., LTD.": "KEIHIN",
-            };
-            shippingData.forEach((ship) => {
-              ship.Company = companyNameMap[ship.Company] || ship.Company;
-            });
-            crossRouteShippingData.forEach((ship) => {
-              ship.Company = companyNameMap[ship.Company] || ship.Company;
-            });
+              shippingData = merged;
 
-            companyColors = {}; // 색상 맵 초기화
-            populateCompanySelect();
-            populatePortSelect();
-            if (calendar) {
-              calendar.destroy();
-            }
-            initCalendars();
-          })
+              // 교차 루트 데이터(asia_africa) 병합
+              if (currentRoute === "east_asia") {
+                const crossSeen = new Set();
+                const crossMerged = [];
+                crossCurrentData.forEach((ship) => {
+                  const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                  if (!crossSeen.has(key)) {
+                    crossSeen.add(key);
+                    crossMerged.push(ship);
+                  }
+                });
+                crossArchiveData.forEach((ship) => {
+                  const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                  if (!crossSeen.has(key)) {
+                    crossSeen.add(key);
+                    crossMerged.push(ship);
+                  }
+                });
+                crossRouteShippingData = crossMerged;
+              } else {
+                crossRouteShippingData = [];
+              }
+
+              // 회사명 변환 (긴 이름은 짧게)
+              const companyNameMap = {
+                "SEVEN SEALS CO.,LTD": "SEALS",
+                "THE KEIHIN CO., LTD.": "KEIHIN",
+              };
+              shippingData.forEach((ship) => {
+                ship.Company = companyNameMap[ship.Company] || ship.Company;
+              });
+              crossRouteShippingData.forEach((ship) => {
+                ship.Company = companyNameMap[ship.Company] || ship.Company;
+              });
+
+              companyColors = {}; // 색상 맵 초기화
+              populateCompanySelect();
+              populatePortSelect();
+              if (calendar) {
+                calendar.destroy();
+              }
+              initCalendars();
+            },
+          )
           .catch((error) => console.error("Error loading JSON:", error));
       }
 
@@ -830,19 +856,30 @@
           });
 
           // 교차 루트 데이터 매칭 확인 및 crossArrivalPorts 추가
-          if (currentRoute === "east_asia" && crossRouteShippingData.length > 0) {
-            const crossShipMatch = crossRouteShippingData.find(cs =>
-              cs.Company === ship.Company &&
-              cs["Ship Name"] === ship["Ship Name"] &&
-              cs.Voyage === ship.Voyage
+          if (
+            currentRoute === "east_asia" &&
+            crossRouteShippingData.length > 0
+          ) {
+            const crossShipMatch = crossRouteShippingData.find(
+              (cs) =>
+                cs.Company === ship.Company &&
+                cs["Ship Name"] === ship["Ship Name"] &&
+                cs.Voyage === ship.Voyage,
             );
             if (crossShipMatch) {
-              const sourceDepPorts = Object.keys(ship["Departure Ports"]).filter(p => ship["Departure Ports"][p] !== "-");
-              const crossDepPorts = Object.keys(crossShipMatch["Departure Ports"]).filter(p => crossShipMatch["Departure Ports"][p] !== "-");
-              let hasMatchingDeparture = sourceDepPorts.some(p => crossDepPorts.includes(p));
+              const sourceDepPorts = Object.keys(
+                ship["Departure Ports"],
+              ).filter((p) => ship["Departure Ports"][p] !== "-");
+              const crossDepPorts = Object.keys(
+                crossShipMatch["Departure Ports"],
+              ).filter((p) => crossShipMatch["Departure Ports"][p] !== "-");
+              let hasMatchingDeparture = sourceDepPorts.some((p) =>
+                crossDepPorts.includes(p),
+              );
               if (hasMatchingDeparture) {
                 Object.keys(crossShipMatch["Arrival Ports"]).forEach((port) => {
-                  if (crossShipMatch["Arrival Ports"][port] !== "-") crossArrivalPorts.add(port);
+                  if (crossShipMatch["Arrival Ports"][port] !== "-")
+                    crossArrivalPorts.add(port);
                 });
               }
             }
@@ -897,11 +934,16 @@
         );
 
         // 아프리카 도착 포트 섹션 표시/숨김 및 생성
-        const crossSectionModal = document.getElementById("crossArrivalFilterSectionModal");
-        const crossSectionSidebar = document.getElementById("crossArrivalFilterSectionSidebar");
+        const crossSectionModal = document.getElementById(
+          "crossArrivalFilterSectionModal",
+        );
+        const crossSectionSidebar = document.getElementById(
+          "crossArrivalFilterSectionSidebar",
+        );
         if (currentRoute === "east_asia" && crossArrivalPortsList.length > 0) {
           if (crossSectionModal) crossSectionModal.classList.remove("hidden");
-          if (crossSectionSidebar) crossSectionSidebar.classList.remove("hidden");
+          if (crossSectionSidebar)
+            crossSectionSidebar.classList.remove("hidden");
 
           createPortCheckboxes(
             crossArrivalPortsList,
@@ -921,11 +963,19 @@
         }
 
         // 전체 선택 이벤트 설정
-        setupPortSelectAllEvents(departurePortsList, arrivalPortsList, crossArrivalPortsList);
+        setupPortSelectAllEvents(
+          departurePortsList,
+          arrivalPortsList,
+          crossArrivalPortsList,
+        );
       }
 
       // 포트 전체 선택 이벤트 설정
-      function setupPortSelectAllEvents(departurePortsList, arrivalPortsList, crossArrivalPortsList) {
+      function setupPortSelectAllEvents(
+        departurePortsList,
+        arrivalPortsList,
+        crossArrivalPortsList,
+      ) {
         // 출발 포트 전체 선택 - SP
         const selectAllDepartureModal = document.getElementById(
           "selectAllDeparturePorts",
@@ -1191,7 +1241,9 @@
         const crossArrChecksModal = document.querySelectorAll(
           ".cross-arrival-port-checkbox-modal",
         );
-        const crossArrAllModal = document.getElementById("selectAllCrossArrivalPorts");
+        const crossArrAllModal = document.getElementById(
+          "selectAllCrossArrivalPorts",
+        );
         if (crossArrChecksModal.length > 0 && crossArrAllModal) {
           crossArrAllModal.checked = Array.from(crossArrChecksModal).every(
             (cb) => cb.checked,
@@ -1202,7 +1254,9 @@
         const crossArrChecksSidebar = document.querySelectorAll(
           ".cross-arrival-port-checkbox-sidebar",
         );
-        const crossArrAllSidebar = document.getElementById("selectAllCrossArrivalPortsSidebar");
+        const crossArrAllSidebar = document.getElementById(
+          "selectAllCrossArrivalPortsSidebar",
+        );
         if (crossArrChecksSidebar.length > 0 && crossArrAllSidebar) {
           crossArrAllSidebar.checked = Array.from(crossArrChecksSidebar).every(
             (cb) => cb.checked,
@@ -1320,19 +1374,27 @@
           let hasMatchingCrossArrivalPort = false; // 추가: 아프리카 도착 포트 매칭 여부
 
           // EAST ASIA 루트인 경우, ASIA AFRICA 연장 스케줄 매칭 및 도착 포트 표시
-          if (currentRoute === "east_asia" && crossRouteShippingData.length > 0) {
+          if (
+            currentRoute === "east_asia" &&
+            crossRouteShippingData.length > 0
+          ) {
             // 1. Company, Ship Name, Voyage 일치 확인
-            const crossShipMatch = crossRouteShippingData.find(cs =>
-              cs.Company === ship.Company &&
-              cs["Ship Name"] === ship["Ship Name"] &&
-              cs.Voyage === ship.Voyage
+            const crossShipMatch = crossRouteShippingData.find(
+              (cs) =>
+                cs.Company === ship.Company &&
+                cs["Ship Name"] === ship["Ship Name"] &&
+                cs.Voyage === ship.Voyage,
             );
 
             if (crossShipMatch) {
               // 2. 출발 포트 중 하나라도 동일한 것이 있는지 체크 (일본 포트 등)
               let hasMatchingDeparture = false;
-              const sourceDepPorts = Object.keys(ship["Departure Ports"]).filter(p => ship["Departure Ports"][p] !== "-");
-              const crossDepPorts = Object.keys(crossShipMatch["Departure Ports"]).filter(p => crossShipMatch["Departure Ports"][p] !== "-");
+              const sourceDepPorts = Object.keys(
+                ship["Departure Ports"],
+              ).filter((p) => ship["Departure Ports"][p] !== "-");
+              const crossDepPorts = Object.keys(
+                crossShipMatch["Departure Ports"],
+              ).filter((p) => crossShipMatch["Departure Ports"][p] !== "-");
 
               for (const p of sourceDepPorts) {
                 if (crossDepPorts.includes(p)) {
@@ -1343,26 +1405,30 @@
 
               if (hasMatchingDeparture) {
                 const arrivalItems = [];
-                Object.entries(crossShipMatch["Arrival Ports"]).forEach(([port, dateStr]) => {
-                  if (dateStr !== "-") {
-                     // 선택된 아프리카 도착 포트가 있는지 확인
-                    if (selectedCrossArrivalPorts.includes(port)) {
-                      hasMatchingCrossArrivalPort = true;
-                    }
+                Object.entries(crossShipMatch["Arrival Ports"]).forEach(
+                  ([port, dateStr]) => {
+                    if (dateStr !== "-") {
+                      // 선택된 아프리카 도착 포트가 있는지 확인
+                      if (selectedCrossArrivalPorts.includes(port)) {
+                        hasMatchingCrossArrivalPort = true;
+                      }
 
-                    const date = parseDateStr(dateStr);
-                    if (date) {
-                      arrivalItems.push({
-                        date: date,
-                        text: `${port} 도착 ${date.getMonth() + 1}월 ${date.getDate()}일`,
-                      });
+                      const date = parseDateStr(dateStr);
+                      if (date) {
+                        arrivalItems.push({
+                          date: date,
+                          text: `${port} 도착 ${date.getMonth() + 1}월 ${date.getDate()}일`,
+                        });
+                      }
                     }
-                  }
-                });
+                  },
+                );
 
                 if (arrivalItems.length > 0) {
                   arrivalItems.sort((a, b) => a.date - b.date);
-                  const crossScheduleText = arrivalItems.map(item => item.text).join("<br>");
+                  const crossScheduleText = arrivalItems
+                    .map((item) => item.text)
+                    .join("<br>");
                   fullSchedule += `<br><br><span style="color: #009688; font-weight: bold;">[AFRICA 도착 스케줄]</span><br>${crossScheduleText}`;
                 }
               }
@@ -1424,7 +1490,11 @@
           }
 
           // EAST ASIA 전용 아프리카 도착 포트 필터 적용
-          if (shouldShow && currentRoute === "east_asia" && selectedCrossArrivalPorts.length > 0) {
+          if (
+            shouldShow &&
+            currentRoute === "east_asia" &&
+            selectedCrossArrivalPorts.length > 0
+          ) {
             shouldShow = hasMatchingCrossArrivalPort;
           }
 
@@ -1450,7 +1520,9 @@
 
             // 아카이브 여부에 따라 UI 스타일 변경
             const opacityStyle = ship.isArchive ? "opacity: 0.5;" : "";
-            const archiveHtmlTag = ship.isArchive ? `<div style="color: #e74c3c; font-weight: bold; margin-bottom: 5px;">[기간 지난 스케줄]</div>` : "";
+            const archiveHtmlTag = ship.isArchive
+              ? `<div style="color: #e74c3c; font-weight: bold; margin-bottom: 5px;">[기간 지난 스케줄]</div>`
+              : "";
 
             // 기간 이벤트 (라인 스케줄)
             events.push({
@@ -1579,7 +1651,7 @@
                 };
               }
             },
-            eventDidMount: function(info) {
+            eventDidMount: function (info) {
               // 아카이브된 기간이 지난 스케줄은 투명도 0.5 적용
               if (info.event.extendedProps.isArchive) {
                 info.el.style.opacity = "0.5";
@@ -1618,8 +1690,10 @@
               const tooltipRect = tooltip.getBoundingClientRect();
 
               // 스크롤바를 제외한 실제 보이는 화면 크기 사용
-              const viewportHeight = document.documentElement.clientHeight || window.innerHeight;
-              const viewportWidth = document.documentElement.clientWidth || window.innerWidth;
+              const viewportHeight =
+                document.documentElement.clientHeight || window.innerHeight;
+              const viewportWidth =
+                document.documentElement.clientWidth || window.innerWidth;
 
               // 화면 중심을 기준으로 4등분 판별용
               const centerX = viewportWidth / 2;
@@ -1667,7 +1741,7 @@
               info.el.tooltip = tooltip;
 
               // 툴팁에서 마우스가 벗어날 때 처리
-              tooltip.addEventListener('mouseleave', () => {
+              tooltip.addEventListener("mouseleave", () => {
                 info.el.tooltipTimeout = setTimeout(() => {
                   if (info.el.tooltip) {
                     document.body.removeChild(info.el.tooltip);
@@ -1677,7 +1751,7 @@
               });
 
               // 툴팁에 마우스가 들어올 때 (이벤트에서 툴팁으로 이동 시 제거 취소)
-              tooltip.addEventListener('mouseenter', () => {
+              tooltip.addEventListener("mouseenter", () => {
                 if (info.el.tooltipTimeout) {
                   clearTimeout(info.el.tooltipTimeout);
                   info.el.tooltipTimeout = null;
