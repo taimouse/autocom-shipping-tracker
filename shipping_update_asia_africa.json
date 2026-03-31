@@ -513,33 +513,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
-    "Voyage": "703",
-    "Departure Ports": {
-      "Yokohama": "Apr1",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr2",
-      "Kobe": "-",
-      "Osaka": "Apr3",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Mar31"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Apr22",
-      "Mombasa": "Apr20",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "PROMINENT ACE",
     "Voyage": "0184A",
@@ -563,6 +536,33 @@
       "Durban": "-",
       "Dar": "Apr21",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "TURANDOT",
+    "Voyage": "703",
+    "Departure Ports": {
+      "Yokohama": "Apr2",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr3",
+      "Kobe": "-",
+      "Osaka": "Apr4",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar31"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Apr22",
+      "Mombasa": "Apr20",
       "Maput": "-"
     }
   },
@@ -601,7 +601,7 @@
       "Yokohama": "Apr10",
       "Kawasaki": "-",
       "Kisarazu": "Apr11",
-      "Nagoya": "Apr9",
+      "Nagoya": "Apr16",
       "Kobe": "Apr14",
       "Osaka": "-",
       "Hakata": "-",
@@ -642,7 +642,7 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "May9",
+      "Dar": "-",
       "Mombasa": "-",
       "Maput": "-"
     }
@@ -752,6 +752,33 @@
       "Durban": "May21",
       "Dar": "May27",
       "Mombasa": "May30",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "ASIAN EMPIRE",
+    "Voyage": "IF604",
+    "Departure Ports": {
+      "Yokohama": "Apr23",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr24",
+      "Kobe": "Apr25",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Apr28",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Apr22"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Jun4",
+      "Dar": "May25",
+      "Mombasa": "May28",
       "Maput": "-"
     }
   },
@@ -887,33 +914,6 @@
       "Durban": "-",
       "Dar": "Jun11",
       "Mombasa": "Jun9",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "KEIHIN 1ST APR",
-    "Voyage": "",
-    "Departure Ports": {
-      "Yokohama": "O",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "O",
-      "Kobe": "O",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "O",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
       "Maput": "-"
     }
   }

@@ -943,5 +943,32 @@
       "Mombasa": "Apr25",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "ORION HIGHWAY",
+    "Voyage": "98",
+    "Departure Ports": {
+      "Yokohama": "Mar31",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar29",
+      "Kobe": "Mar26",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May12",
+      "Mombasa": "May15",
+      "Maput": "-"
+    }
   }
 ]
