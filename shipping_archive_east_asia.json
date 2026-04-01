@@ -573,5 +573,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "PROMINENT ACE",
+    "Voyage": "0184A",
+    "Departure Ports": {
+      "Yokohama": "Apr1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar30",
+      "Kobe": "Mar29",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Apr15",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]

@@ -229,7 +229,7 @@
     "Ship Name": "ORION HIGHWAY",
     "Voyage": "98",
     "Departure Ports": {
-      "Yokohama": "Mar30",
+      "Yokohama": "Mar31",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Mar29",
@@ -326,8 +326,8 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "AQUARIUS LEADER",
-    "Voyage": "071",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "060",
     "Departure Ports": {
       "Yokohama": "Apr17",
       "Kawasaki": "-",
@@ -401,8 +401,8 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "APOLLON LEADER",
-    "Voyage": "119",
+    "Ship Name": "METIS LEADER",
+    "Voyage": "131",
     "Departure Ports": {
       "Yokohama": "Apr22",
       "Kawasaki": "-",
