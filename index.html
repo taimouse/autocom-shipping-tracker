@@ -18,11 +18,14 @@
       body {
         font-family: "Noto Sans KR", sans-serif;
       }
+      .hr {
+        margin: 8px 0;
+      }
       .fc-event-time {
         display: none;
       }
       .fc-tooltip {
-        padding: 8px 12px;
+        padding: 8px 12px 12px;
         line-height: 1.34;
         font-size: 14px;
         border-radius: 4px;
@@ -338,12 +341,12 @@
           <div class="modal-content">
             <div class="modal-header">
               <div>
-                <h2 class="text-lg font-semibold text-gray-800">필터 설정</h2>
+                <h2 class="text-lg font-semibold text-gray-800">Fillter</h2>
                 <p class="text-sm text-gray-600 mt-1">
-                  필터링된 스케줄:
+                  Filtered Schedule:
                   <span id="filteredCount" class="font-semibold text-blue-600"
                     >0</span
-                  >건
+                  >
                 </p>
               </div>
               <span class="close" onclick="closeModal()">&times;</span>
@@ -377,7 +380,7 @@
                   <!-- 출발 포트 -->
                   <div class="mb-4">
                     <h3 class="text-gray-600 font-semibold mb-2 text-sm">
-                      출발 포트
+                      Departure Port
                     </h3>
                     <div class="flex items-center mb-2">
                       <input
@@ -387,7 +390,7 @@
                       />
                       <label
                         for="selectAllDeparturePorts"
-                        class="cursor-pointer text-sm"
+                        class="cursor-pointer text-xs font-semibold"
                         >Select All</label
                       >
                     </div>
@@ -400,7 +403,7 @@
                   <!-- 도착 포트 -->
                   <div>
                     <h3 class="text-gray-600 font-semibold mb-2 text-sm">
-                      도착 포트
+                      Arrival Port
                     </h3>
                     <div class="flex items-center mb-2">
                       <input
@@ -410,7 +413,7 @@
                       />
                       <label
                         for="selectAllArrivalPorts"
-                        class="cursor-pointer text-sm"
+                        class="cursor-pointer text-xs font-semibold"
                         >Select All</label
                       >
                     </div>
@@ -423,7 +426,7 @@
                   <!-- 아프리카 도착 포트 (EAST ASIA 전용) -->
                   <div id="crossArrivalFilterSectionModal" class="mt-4 hidden">
                     <h3 class="text-teal-700 font-semibold mb-2 text-sm">
-                      아프리카 도착 포트
+                      Africa Arrival Port
                     </h3>
                     <div class="flex items-center mb-2">
                       <input
@@ -433,7 +436,7 @@
                       />
                       <label
                         for="selectAllCrossArrivalPorts"
-                        class="cursor-pointer text-sm font-semibold text-teal-700"
+                        class="cursor-pointer text-xs font-semibold"
                         >Select All</label
                       >
                     </div>
@@ -1328,16 +1331,17 @@
       }
 
       function buildShipSchedule(ship) {
-        const scheduleItems = [];
+        const departureItems = [];
+        const arrivalItems = [];
 
         // 출발 항구 스케줄
         Object.entries(ship["Departure Ports"]).forEach(([port, dateStr]) => {
           if (dateStr !== "-") {
             const date = parseDateStr(dateStr);
             if (date) {
-              scheduleItems.push({
+              departureItems.push({
                 date: date,
-                text: `${port} 출발 ${date.getMonth() + 1}월 ${date.getDate()}일`,
+                text: `${port}: ${date.getMonth() + 1}/${date.getDate()}`,
               });
             }
           }
@@ -1348,19 +1352,31 @@
           if (dateStr !== "-") {
             const date = parseDateStr(dateStr);
             if (date) {
-              scheduleItems.push({
+              arrivalItems.push({
                 date: date,
-                text: `${port} 도착 ${date.getMonth() + 1}월 ${date.getDate()}일`,
+                text: `${port}: ${date.getMonth() + 1}/${date.getDate()}`,
               });
             }
           }
         });
 
         // 날짜순으로 정렬
-        scheduleItems.sort((a, b) => a.date - b.date);
+        departureItems.sort((a, b) => a.date - b.date);
+        arrivalItems.sort((a, b) => a.date - b.date);
 
-        // 텍스트만 추출하여 join
-        return scheduleItems.map((item) => item.text).join("<br>");
+        const depText = departureItems.map((item) => item.text).join("<br>");
+        const arrText = arrivalItems.map((item) => item.text).join("<br>");
+
+        const sections = [];
+        if (depText)
+          sections.push(
+            `<p style="font-size:11px; font-weight:bold; margin: 6px 0 3px;">[Departure]🚢</p>${depText}`,
+          );
+        if (arrText)
+          sections.push(
+            `<p style="font-size:11px; font-weight:bold; margin: 6px 0 3px;">[Arrival]📍</p>${arrText}`,
+          );
+        return sections.join("");
       }
 
       function buildEvents() {
@@ -1422,7 +1438,7 @@
                       if (date) {
                         arrivalItems.push({
                           date: date,
-                          text: `${port} 도착 ${date.getMonth() + 1}월 ${date.getDate()}일`,
+                          text: `${port}: ${date.getMonth() + 1}/${date.getDate()}`,
                         });
                       }
                     }
@@ -1434,7 +1450,7 @@
                   const crossScheduleText = arrivalItems
                     .map((item) => item.text)
                     .join("<br>");
-                  fullSchedule += `<br><br><span style="color: #009688; font-weight: bold;">[AFRICA 도착 스케줄]</span><br>${crossScheduleText}`;
+                  fullSchedule += `<br><hr class="hr"><strong class="text-blue-600">AFRICA Arrival Schedule</strong><br>${crossScheduleText}`;
                 }
               }
             }
@@ -1514,8 +1530,8 @@
             const endDatePlusOne = new Date(endDate);
             endDatePlusOne.setDate(endDatePlusOne.getDate() + 1);
 
-            const startFormatted = `${startDate.getFullYear()}년 ${startDate.getMonth() + 1}월 ${startDate.getDate()}일`;
-            const endFormatted = `${endDate.getFullYear()}년 ${endDate.getMonth() + 1}월 ${endDate.getDate()}일`;
+            const startFormatted = `${startDate.getFullYear()}/${startDate.getMonth() + 1}/${startDate.getDate()}`;
+            const endFormatted = `${endDate.getFullYear()}/${endDate.getMonth() + 1}/${endDate.getDate()}`;
 
             // 출발 포트들을 title에 추가
             const portsText =
@@ -1538,7 +1554,7 @@
               borderColor: companyColors[ship.Company], // 회사별 색상 적용
               eventType: "line",
               isArchive: ship.isArchive, // 렌더링 시 투명도 부여용
-              description: `${archiveHtmlTag}<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>출발 기간:</strong><br> ${startFormatted} ~ ${endFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
+              description: `${archiveHtmlTag}<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><hr class="hr"><strong>Departure Period:</strong><br> ${startFormatted} ~ ${endFormatted}<br><hr class="hr"><strong>Total Schedule:</strong><br>${fullSchedule}`,
             });
 
             // 최신 데이터일 때만 Count 하나 증가
@@ -1568,7 +1584,7 @@
                       }
 
                       if (portShouldShow) {
-                        const dateFormatted = `${departureDate.getFullYear()}년 ${departureDate.getMonth() + 1}월 ${departureDate.getDate()}일`;
+                        const dateFormatted = `${departureDate.getFullYear()}/${departureDate.getMonth() + 1}/${departureDate.getDate()}`;
                         events.push({
                           title: `${port} [${ship.Company}]`, // 포트명 [회사명] 표시
                           start: departureDate,
@@ -1576,7 +1592,7 @@
                           borderColor: companyColors[ship.Company],
                           eventType: "port",
                           isArchive: ship.isArchive, // 렌더링 시 투명도 부여용
-                          description: `${archiveHtmlTag}<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><br><strong>출발:<br></strong> ${port} - ${dateFormatted}<br><br><strong>전체 스케줄:</strong><br>${fullSchedule}`,
+                          description: `${archiveHtmlTag}<strong>${ship.Company}</strong><br>${ship["Ship Name"]} [${ship.Voyage}]<br><hr class="hr"><strong>Departure:<br></strong> ${port} - ${dateFormatted}<br><hr class="hr"><strong>Total Schedule:</strong><br>${fullSchedule}`,
                         });
                       }
                     }
