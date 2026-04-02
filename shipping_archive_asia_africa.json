@@ -997,5 +997,59 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "FIRMAMENT ACE",
+    "Voyage": "0151A",
+    "Departure Ports": {
+      "Yokohama": "Mar24",
+      "Kawasaki": "-",
+      "Kisarazu": "Apr2",
+      "Nagoya": "Mar27",
+      "Kobe": "Mar31",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Mar29",
+      "Hitachinaka": "Mar25"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Apr19",
+      "Dar": "Apr27",
+      "Mombasa": "Apr28",
+      "Maput": "Apr20"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS CLIPPER",
+    "Voyage": "119",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar29",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar31",
+      "Hakata": "Apr2",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May1",
+      "Mombasa": "Apr28",
+      "Maput": "-"
+    }
   }
 ]
