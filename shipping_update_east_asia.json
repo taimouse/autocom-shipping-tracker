@@ -354,46 +354,21 @@
     "Ship Name": "DON JUAN",
     "Voyage": "705",
     "Departure Ports": {
-      "Yokohama": "Apr19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr17",
-      "Kobe": "-",
-      "Osaka": "Apr16",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "Apr17"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May9",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "703",
-    "Departure Ports": {
       "Yokohama": "Apr21",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr20",
+      "Nagoya": "Apr19",
       "Kobe": "-",
-      "Osaka": "Apr19",
+      "Osaka": "Apr18",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Hitachinaka": "-"
+      "Hitachinaka": "Apr20"
     },
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "May4",
+      "Hambantota": "May8",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -419,6 +394,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "May11",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "703",
+    "Departure Ports": {
+      "Yokohama": "Apr26",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr25",
+      "Kobe": "-",
+      "Osaka": "Apr24",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May9",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
