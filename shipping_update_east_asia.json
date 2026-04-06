@@ -175,31 +175,6 @@
     }
   },
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "69",
-    "Departure Ports": {
-      "Yokohama": "Mar27",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar28",
-      "Kobe": "-",
-      "Osaka": "Mar30",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "Apr14",
-      "Mongla": "Apr16",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "SPICA LEADER",
     "Voyage": "080",
@@ -221,6 +196,31 @@
       "Hambantota": "Apr13",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "69",
+    "Departure Ports": {
+      "Yokohama": "Mar27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "-",
+      "Osaka": "Mar30",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Apr14",
+      "Mongla": "Apr16",
       "Subic": "-"
     }
   },
@@ -400,16 +400,16 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "703",
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA GRACE",
+    "Voyage": "50",
     "Departure Ports": {
-      "Yokohama": "Apr26",
+      "Yokohama": "Apr23",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr25",
+      "Nagoya": "Apr24",
       "Kobe": "-",
-      "Osaka": "Apr24",
+      "Osaka": "Apr25",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -418,7 +418,32 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "May9",
+      "Hambantota": "-",
+      "Chittagong": "May12",
+      "Mongla": "May14",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "703",
+    "Departure Ports": {
+      "Yokohama": "Apr27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr26",
+      "Kobe": "-",
+      "Osaka": "Apr25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May11",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -426,16 +451,16 @@
   },
   {
     "Company": "HYUNDAI GLOVIS",
-    "Ship Name": "GLOVIS CHAMPION",
-    "Voyage": "",
+    "Ship Name": "GLOVIS COURAGE",
+    "Voyage": "99",
     "Departure Ports": {
       "Yokohama": "-",
       "Kawasaki": "-",
-      "Kisarazu": "Apr24",
+      "Kisarazu": "May17",
       "Nagoya": "-",
       "Kobe": "-",
-      "Osaka": "Apr26",
-      "Hakata": "Apr28",
+      "Osaka": "May14",
+      "Hakata": "May13",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
