@@ -2,7 +2,7 @@ name: Daily Ship Scrape
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 1,7 * * *" # KST 기준 오전 10시 (UTC 1시), 오후 4시 (UTC 7시)
   workflow_dispatch: # 이 줄이 있어야 Actions 탭에 수동 실행 버튼이 생깁니다.
 
 jobs:
