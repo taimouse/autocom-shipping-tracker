@@ -459,33 +459,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "ORION HIGHWAY",
-    "Voyage": "98",
-    "Departure Ports": {
-      "Yokohama": "Mar31",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar29",
-      "Kobe": "Mar26",
-      "Osaka": "Mar27",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Mar23"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "May12",
-      "Mombasa": "May15",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS CLIPPER",
     "Voyage": "119",
@@ -509,6 +482,33 @@
       "Durban": "-",
       "Dar": "May1",
       "Mombasa": "Apr28",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "ORION HIGHWAY",
+    "Voyage": "98",
+    "Departure Ports": {
+      "Yokohama": "Mar31",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar29",
+      "Kobe": "Mar26",
+      "Osaka": "Mar27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Mar23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May12",
+      "Mombasa": "May15",
       "Maput": "-"
     }
   },
@@ -648,33 +648,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "CASSIOPEIA LEADER",
-    "Voyage": "060",
-    "Departure Ports": {
-      "Yokohama": "Apr17",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr18",
-      "Kobe": "Apr22",
-      "Osaka": "Apr21",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "May21",
-      "Dar": "May16",
-      "Mombasa": "May14",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "HOEGH",
     "Ship Name": "HOEGH LONDON",
     "Voyage": "121",
@@ -698,6 +671,33 @@
       "Durban": "May23",
       "Dar": "May18",
       "Mombasa": "May16",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "060",
+    "Departure Ports": {
+      "Yokohama": "Apr18",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr21",
+      "Kobe": "Apr23",
+      "Osaka": "Apr22",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May21",
+      "Dar": "-",
+      "Mombasa": "May14",
       "Maput": "-"
     }
   },
