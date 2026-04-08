@@ -2,7 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+def get_kst_now():
+    """한국 표준시(KST)를 반환하는 함수. 시간 비교 오류를 막기 위해 naive datetime 객체를 반환합니다."""
+    return datetime.now(timezone(timedelta(hours=9))).replace(tzinfo=None)
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -35,10 +39,10 @@ def send_notification_email(change_summary=None, route_name=None):
         msg['From'] = sender_email
         msg['To'] = ", ".join(receiver_emails)  # 여러 수신자 표시
         subject_prefix = f"[{route_name}] " if route_name else ""
-        msg['Subject'] = f"{subject_prefix}선박 운송 일정 변경 알림 - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        msg['Subject'] = f"{subject_prefix}선박 운송 일정 변경 알림 - {get_kst_now().strftime('%Y-%m-%d %H:%M')}"
 
         # 이메일 본문에 변경 요약 포함 (있을 경우)
-        now_text = datetime.now().strftime('%Y년 %m월 %d일 %H시 %M분')
+        now_text = get_kst_now().strftime('%Y년 %m월 %d일 %H시 %M분')
         body_lines = [
             "안녕하세요,",
             "",
@@ -92,14 +96,14 @@ def send_test_email():
         msg = MIMEMultipart()
         msg['From'] = sender_email
         msg['To'] = ", ".join(receiver_emails)  # 여러 수신자 표시
-        msg['Subject'] = f"선박 운송 일정 알림 시스템 테스트 - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        msg['Subject'] = f"선박 운송 일정 알림 시스템 테스트 - {get_kst_now().strftime('%Y-%m-%d %H:%M')}"
 
         body = f"""
 테스트 이메일입니다.
 
 선박 운송 일정 알림 시스템이 정상적으로 작동하고 있습니다.
 
-테스트 시간: {datetime.now().strftime('%Y년 %m월 %d일 %H시 %M분')}
+테스트 시간: {get_kst_now().strftime('%Y년 %m월 %d일 %H시 %M분')}
 
 이 메일이 정상적으로 수신되었다면 시스템 설정이 완료된 것입니다.
 
@@ -194,7 +198,7 @@ def parse_date_from_str(date_str):
         mon_str = date_str[:3]
         day = int(date_str[3:])
         mon_idx = months.index(mon_str)  # 0-based
-        now = datetime.now()
+        now = get_kst_now()
         current_year = now.year
         current_month = now.month - 1  # 0-based
         year = current_year
@@ -228,7 +232,7 @@ def update_archive(existing_data, current_data, archive_file):
         current_data: 새로 크롤링한 데이터 (list)
         archive_file: 아카이브 JSON 파일 경로
     """
-    now = datetime.now()
+    now = get_kst_now()
 
     # 아카이브 파일 로드
     archive_data = []
@@ -318,7 +322,7 @@ def scrape_page(config):
 
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
 
-    print(f"\n[{datetime.now()}] {route_name} 크롤링을 시작합니다...")
+    print(f"\n[{get_kst_now()}] {route_name} 크롤링을 시작합니다...")
     print(f"URL: {url}")
 
     try:
@@ -441,14 +445,14 @@ def scrape_page(config):
 
 def scrape_and_update():
     """모든 설정된 페이지를 크롤링하고 업데이트."""
-    print(f"====== 크롤링 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ======")
+    print(f"====== 크롤링 시작: {get_kst_now().strftime('%Y-%m-%d %H:%M:%S')} ======")
 
     results = []
     for config in SCRAPE_CONFIGS:
         changed = scrape_page(config)
         results.append({"route": config["name"], "changed": changed})
 
-    print(f"\n====== 크롤링 완료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ======")
+    print(f"\n====== 크롤링 완료: {get_kst_now().strftime('%Y-%m-%d %H:%M:%S')} ======")
     print("\n결과 요약:")
     for result in results:
         status = "변경됨" if result["changed"] else "변경 없음"
