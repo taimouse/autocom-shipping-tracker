@@ -311,7 +311,7 @@ def scrape_page(config):
         config (dict): 크롤링 설정 (url, history_file, departure_ports, arrival_ports, name)
 
     Returns:
-        bool: 변경 사항이 있었으면 True, 없으면 False
+        tuple: (변경 여부 bool, 변경 요약 문자열)
     """
     url = config["url"]
     history_file = config["history_file"]
@@ -411,7 +411,7 @@ def scrape_page(config):
             # 변경이 없더라도 아카이브는 업데이트 (출발일이 지난 스케줄 보존)
             print("아카이브를 확인합니다...")
             update_archive(existing_data, current_data, archive_file)
-            return False
+            return False, None
 
         # 변경 요약 생성
         if existing_data is not None:
@@ -428,35 +428,47 @@ def scrape_page(config):
         with open(history_file, "w", encoding="utf-8") as f:
             json.dump(current_data, f, ensure_ascii=False, indent=2)
 
-        # 9. 변경 알림 이메일 전송 (요약 포함)
-        print("8. 변경 알림 이메일을 전송합니다...")
-        send_notification_email(f"[{route_name}] 변경 알림\n\n" + change_summary)
-
         full_path = os.path.abspath(history_file)
         print(f"최종 결과: 파일 저장 완료! 위치: {full_path}")
-        print("변경 알림 이메일이 전송되었습니다.")
-        return True
+        return True, change_summary
 
     except Exception as e:
         print(f"실행 중 에러 발생: {e}")
         import traceback
         traceback.print_exc()
-        return False
+        return False, None
 
 def scrape_and_update():
     """모든 설정된 페이지를 크롤링하고 업데이트."""
     print(f"====== 크롤링 시작: {get_kst_now().strftime('%Y-%m-%d %H:%M:%S')} ======")
 
     results = []
+    combined_summaries = []
     for config in SCRAPE_CONFIGS:
-        changed = scrape_page(config)
+        changed, summary = scrape_page(config)
         results.append({"route": config["name"], "changed": changed})
+        if changed and summary:
+            combined_summaries.append(f"[{config['name']}] 라우트 변경 사항:\n{summary}")
 
     print(f"\n====== 크롤링 완료: {get_kst_now().strftime('%Y-%m-%d %H:%M:%S')} ======")
     print("\n결과 요약:")
     for result in results:
         status = "변경됨" if result["changed"] else "변경 없음"
         print(f"  - {result['route']}: {status}")
+
+    if combined_summaries:
+        print("\n변경 사항을 모아서 이메일 알림을 전송합니다...")
+        full_summary = ""
+        for i, summary in enumerate(combined_summaries):
+            if i > 0:
+                full_summary += "\n\n" + "="*40 + "\n\n"
+            full_summary += summary
+
+        # 통합 알림을 위한 라우트 이름 조합 (예: ASIA & AFRICA)
+        changed_routes = [res['route'] for res in results if res['changed']]
+        combined_route_name = " & ".join(changed_routes)
+        
+        send_notification_email(full_summary, route_name=combined_route_name)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--test":

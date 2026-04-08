@@ -6,8 +6,8 @@
 
 - **실시간 스케줄 추적**: 일본 Autocom 웹사이트에서 선박 운송 스케줄을 자동으로 크롤링
 - **2개 라우트 지원**:
-  - EAST ASIA 라우트 (Hong Kong, Laem Chabang, Hambantota, Chittagong, Mongla, Subic)
-  - ASIA, AFRICA 라우트 (Jebel Ali, Karachi, Port Louis, Durban, Dar, Mombasa, Maput)
+  - ASIA 라우트 (Hong Kong, Laem Chabang, Hambantota, Chittagong, Mongla, Subic)
+  - AFRICA 라우트 (Jebel Ali, Karachi, Port Louis, Durban, Dar, Mombasa, Maput)
 - **캘린더 뷰**: FullCalendar를 사용한 직관적인 스케줄 표시
 - **필터링**: 회사별, 출발/도착 포트별 필터링 지원
 - **반응형 디자인**: PC와 모바일 모두 지원
@@ -21,10 +21,10 @@ autocom-shipping-tracker/
 ├── index.html                          # 메인 웹페이지 (반응형)
 ├── calendar.html                       # 캘린더 전용 페이지
 ├── scraper.py                          # 데이터 크롤링 스크립트
-├── shipping_update_east_asia.json      # EAST ASIA 라우트 최신 데이터
-├── shipping_update_asia_africa.json    # ASIA, AFRICA 라우트 최신 데이터
-├── shipping_archive_east_asia.json     # EAST ASIA 라우트 아카이브 데이터
-├── shipping_archive_asia_africa.json   # ASIA, AFRICA 라우트 아카이브 데이터
+├── shipping_update_east_asia.json      # ASIA 라우트 최신 데이터
+├── shipping_update_asia_africa.json    # AFRICA 라우트 최신 데이터
+├── shipping_archive_east_asia.json     # ASIA 라우트 아카이브 데이터
+├── shipping_archive_asia_africa.json   # AFRICA 라우트 아카이브 데이터
 ├── requirements.txt                     # Python 패키지 의존성
 └── README.md                           # 프로젝트 설명
 ```
@@ -53,13 +53,13 @@ venv\Scripts\activate
 source venv/bin/activate
 
 # 필요한 패키지 설치
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 또는 개별 패키지 설치:
 
 ```bash
-pip install requests beautifulsoup4 html5lib
+python -m pip install requests beautifulsoup4 html5lib
 ```
 
 ### 3. 이메일 설정 (선택사항)
@@ -108,8 +108,8 @@ npx http-server
 
 ### 웹 인터페이스
 
-1. **라우트 선택**: EAST ASIA 또는 ASIA, AFRICA 선택
-2. **필터링**: 
+1. 선택**: ASIA 또는 ASIA, AFRICA 선택
+2. **필터링**:
    - 회사별 필터링 (체크박스)
    - 출발 포트별 필터링
    - 도착 포트별 필터링

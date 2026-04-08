@@ -375,31 +375,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "METIS LEADER",
-    "Voyage": "131",
-    "Departure Ports": {
-      "Yokohama": "Apr22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr24",
-      "Kobe": "Apr26",
-      "Osaka": "Apr25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May11",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "50",
@@ -421,6 +396,31 @@
       "Hambantota": "-",
       "Chittagong": "May12",
       "Mongla": "May14",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "METIS LEADER",
+    "Voyage": "131",
+    "Departure Ports": {
+      "Yokohama": "Apr23",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr25",
+      "Kobe": "Apr28",
+      "Osaka": "Apr27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May11",
+      "Chittagong": "-",
+      "Mongla": "-",
       "Subic": "-"
     }
   },
