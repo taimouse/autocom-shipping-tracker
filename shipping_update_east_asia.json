@@ -279,10 +279,10 @@
     "Ship Name": "VIKING DRIVE",
     "Voyage": "38",
     "Departure Ports": {
-      "Yokohama": "Apr10",
+      "Yokohama": "Apr11",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr9",
+      "Nagoya": "Apr10",
       "Kobe": "-",
       "Osaka": "Apr8",
       "Hakata": "-",
@@ -293,7 +293,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Apr23",
+      "Hambantota": "Apr25",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -350,31 +350,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "DON JUAN",
-    "Voyage": "705",
-    "Departure Ports": {
-      "Yokohama": "Apr21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr19",
-      "Kobe": "-",
-      "Osaka": "Apr18",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "Apr20"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May8",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "50",
@@ -419,6 +394,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "May11",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "Apr23",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr21",
+      "Kobe": "-",
+      "Osaka": "Apr20",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Apr20"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May10",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"

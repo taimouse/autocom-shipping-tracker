@@ -679,12 +679,12 @@
     "Ship Name": "IN-DON JUAN",
     "Voyage": "705",
     "Departure Ports": {
-      "Yokohama": "Apr21",
+      "Yokohama": "Apr23",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr19",
+      "Nagoya": "Apr21",
       "Kobe": "-",
-      "Osaka": "Apr18",
+      "Osaka": "Apr20",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -698,33 +698,6 @@
       "Durban": "-",
       "Dar": "O",
       "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "SL-DON JUAN",
-    "Voyage": "705",
-    "Departure Ports": {
-      "Yokohama": "Apr21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr19",
-      "Kobe": "-",
-      "Osaka": "Apr18",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "Apr20"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "May17",
-      "Mombasa": "May15",
       "Maput": "-"
     }
   },
@@ -752,6 +725,33 @@
       "Durban": "May22",
       "Dar": "May28",
       "Mombasa": "May31",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "SL-DON JUAN",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "Apr23",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr21",
+      "Kobe": "-",
+      "Osaka": "Apr20",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Apr20"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May17",
+      "Mombasa": "May19",
       "Maput": "-"
     }
   },
