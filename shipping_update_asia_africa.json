@@ -1,33 +1,6 @@
 [
   {
     "Company": "HOEGH",
-    "Ship Name": "HOEGH TRADER",
-    "Voyage": "186",
-    "Departure Ports": {
-      "Yokohama": "Feb24",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Feb25",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Mar24",
-      "Dar": "Mar30",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "HOEGH",
     "Ship Name": "HOEGH SUNLIGHT",
     "Voyage": "7",
     "Departure Ports": {
@@ -696,8 +669,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
+      "Dar": "May20",
+      "Mombasa": "May18",
       "Maput": "-"
     }
   },
@@ -713,7 +686,7 @@
       "Kobe": "-",
       "Osaka": "Apr19",
       "Hakata": "-",
-      "Hibikinada": "-",
+      "Hibikinada": "Apr24",
       "Kanda": "-",
       "Nakanoseki": "-",
       "Hitachinaka": "Apr20"
@@ -723,8 +696,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "May17",
-      "Mombasa": "May19",
+      "Dar": "May20",
+      "Mombasa": "May18",
       "Maput": "-"
     }
   },
@@ -758,7 +731,7 @@
   {
     "Company": "MOL",
     "Ship Name": "GRACIOUS ACE",
-    "Voyage": "sub",
+    "Voyage": "0114A",
     "Departure Ports": {
       "Yokohama": "Apr23",
       "Kawasaki": "-",
