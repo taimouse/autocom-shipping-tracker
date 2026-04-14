@@ -378,33 +378,6 @@
     }
   },
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS CLIPPER",
-    "Voyage": "119",
-    "Departure Ports": {
-      "Yokohama": "-",
-      "Kawasaki": "-",
-      "Kisarazu": "Mar29",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "Mar31",
-      "Hakata": "Apr2",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "May1",
-      "Mombasa": "Apr28",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "ORION HIGHWAY",
     "Voyage": "98",
@@ -428,6 +401,33 @@
       "Durban": "-",
       "Dar": "May12",
       "Mombasa": "May15",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS CLIPPER",
+    "Voyage": "119",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "Mar29",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "Mar31",
+      "Hakata": "Apr2",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May1",
+      "Mombasa": "Apr28",
       "Maput": "-"
     }
   },
@@ -887,6 +887,33 @@
       "Durban": "-",
       "Dar": "Jun11",
       "Mombasa": "Jun9",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "MOURI-MAY",
+    "Voyage": "",
+    "Departure Ports": {
+      "Yokohama": "O",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "O",
+      "Kobe": "O",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
       "Maput": "-"
     }
   }
