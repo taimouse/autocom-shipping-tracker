@@ -279,12 +279,12 @@
     "Ship Name": "CASSIOPEIA LEADER",
     "Voyage": "060",
     "Departure Ports": {
-      "Yokohama": "Apr18",
+      "Yokohama": "Apr17",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Apr21",
-      "Kobe": "Apr23",
-      "Osaka": "Apr22",
+      "Nagoya": "Apr20",
+      "Kobe": "Apr22",
+      "Osaka": "Apr23",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -450,17 +450,17 @@
     }
   },
   {
-    "Company": "HYUNDAI GLOVIS",
-    "Ship Name": "GLOVIS COURAGE",
-    "Voyage": "99",
+    "Company": "NYK",
+    "Ship Name": "GLORIOUS LEADER",
+    "Voyage": "",
     "Departure Ports": {
-      "Yokohama": "-",
+      "Yokohama": "May15",
       "Kawasaki": "-",
-      "Kisarazu": "May17",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "May14",
-      "Hakata": "May13",
+      "Kisarazu": "-",
+      "Nagoya": "May16",
+      "Kobe": "May22",
+      "Osaka": "May21",
+      "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -468,7 +468,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "May19",
+      "Hambantota": "Jun4",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -494,6 +494,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Jun1",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "SPICA LEADER",
+    "Voyage": "082",
+    "Departure Ports": {
+      "Yokohama": "May22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May23",
+      "Kobe": "May26",
+      "Osaka": "May25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jun10",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
