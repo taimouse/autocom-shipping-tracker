@@ -1132,5 +1132,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "GRAND PAVO",
+    "Voyage": "0040A",
+    "Departure Ports": {
+      "Yokohama": "Apr10",
+      "Kawasaki": "-",
+      "Kisarazu": "Apr18",
+      "Nagoya": "Apr16",
+      "Kobe": "Apr14",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Apr13",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May4",
+      "Dar": "May11",
+      "Mombasa": "May15",
+      "Maput": "May7"
+    }
   }
 ]

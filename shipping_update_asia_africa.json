@@ -655,22 +655,22 @@
       "Yokohama": "May1",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May3",
+      "Nagoya": "May2",
       "Kobe": "Apr27",
-      "Osaka": "May4",
+      "Osaka": "May3",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "-"
+      "Hitachinaka": "Apr29"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
+      "Dar": "Jun17",
+      "Mombasa": "Jun20",
       "Maput": "-"
     }
   },
@@ -682,22 +682,22 @@
       "Yokohama": "May1",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May3",
+      "Nagoya": "May2",
       "Kobe": "Apr27",
-      "Osaka": "May4",
+      "Osaka": "May3",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "-"
+      "Hitachinaka": "Apr29"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Jun19",
-      "Mombasa": "Jun22",
+      "Dar": "Jun17",
+      "Mombasa": "Jun20",
       "Maput": "-"
     }
   },
