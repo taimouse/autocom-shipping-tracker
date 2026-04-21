@@ -375,6 +375,31 @@
     }
   },
   {
+    "Company": "K-LINE",
+    "Ship Name": "GENIUS HIGHWAY",
+    "Voyage": "86",
+    "Departure Ports": {
+      "Yokohama": "May1",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May3",
+      "Kobe": "May4",
+      "Osaka": "May5",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May22",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "70",
