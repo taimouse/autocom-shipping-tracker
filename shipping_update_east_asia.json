@@ -300,31 +300,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "DON JUAN",
-    "Voyage": "705",
-    "Departure Ports": {
-      "Yokohama": "Apr22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr20",
-      "Kobe": "-",
-      "Osaka": "Apr19",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "Apr20"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May11",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "50",
@@ -346,6 +321,31 @@
       "Hambantota": "-",
       "Chittagong": "May12",
       "Mongla": "May14",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "Apr24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr20",
+      "Kobe": "-",
+      "Osaka": "Apr19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Apr20"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May12",
+      "Chittagong": "-",
+      "Mongla": "-",
       "Subic": "-"
     }
   },
@@ -375,31 +375,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "705",
-    "Departure Ports": {
-      "Yokohama": "May7",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May6",
-      "Kobe": "-",
-      "Osaka": "May5",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May25",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "70",
@@ -421,6 +396,31 @@
       "Hambantota": "-",
       "Chittagong": "O",
       "Mongla": "O",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "May8",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May7",
+      "Kobe": "-",
+      "Osaka": "May6",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May25",
+      "Chittagong": "-",
+      "Mongla": "-",
       "Subic": "-"
     }
   },
