@@ -426,8 +426,8 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "GLORIOUS LEADER",
-    "Voyage": "",
+    "Ship Name": "GUARDIAN LEADER",
+    "Voyage": "130",
     "Departure Ports": {
       "Yokohama": "May15",
       "Kawasaki": "-",
@@ -469,6 +469,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Jun1",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "ALTAIR LEADER",
+    "Voyage": "104",
+    "Departure Ports": {
+      "Yokohama": "May20",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May22",
+      "Kobe": "-",
+      "Osaka": "May23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "O",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
