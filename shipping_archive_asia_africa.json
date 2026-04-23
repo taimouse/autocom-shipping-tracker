@@ -1186,5 +1186,59 @@
       "Mombasa": "May16",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "060",
+    "Departure Ports": {
+      "Yokohama": "Apr17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr20",
+      "Kobe": "Apr22",
+      "Osaka": "Apr23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May21",
+      "Dar": "-",
+      "Mombasa": "May14",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "GRACIOUS ACE",
+    "Voyage": "0114A",
+    "Departure Ports": {
+      "Yokohama": "Apr23",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr22",
+      "Kobe": "Apr20",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May24",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]

@@ -673,5 +673,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "060",
+    "Departure Ports": {
+      "Yokohama": "Apr17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr20",
+      "Kobe": "Apr22",
+      "Osaka": "Apr23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May5",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
