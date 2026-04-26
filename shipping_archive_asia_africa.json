@@ -1240,5 +1240,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "METIS LEADER",
+    "Voyage": "131",
+    "Departure Ports": {
+      "Yokohama": "Apr22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr23",
+      "Kobe": "Apr26",
+      "Osaka": "Apr25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May22",
+      "Dar": "May28",
+      "Mombasa": "May31",
+      "Maput": "-"
+    }
   }
 ]
