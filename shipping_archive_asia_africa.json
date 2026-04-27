@@ -1267,5 +1267,32 @@
       "Mombasa": "May31",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "Apr24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr20",
+      "Kobe": "-",
+      "Osaka": "Apr19",
+      "Hakata": "-",
+      "Hibikinada": "Apr27",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Apr21"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May20",
+      "Mombasa": "May18",
+      "Maput": "-"
+    }
   }
 ]

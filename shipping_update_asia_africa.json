@@ -696,7 +696,7 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Jun15",
+      "Dar": "-",
       "Mombasa": "Jun13",
       "Maput": "-"
     }
@@ -749,9 +749,9 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "O",
-      "Dar": "O",
-      "Mombasa": "O",
+      "Durban": "Jun16",
+      "Dar": "Jun22",
+      "Mombasa": "Jun25",
       "Maput": "-"
     }
   },
@@ -783,33 +783,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "SPICA LEADER",
-    "Voyage": "082",
-    "Departure Ports": {
-      "Yokohama": "May22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May23",
-      "Kobe": "May26",
-      "Osaka": "May25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Jun26",
-      "Mombasa": "Jun29",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "",
@@ -834,6 +807,33 @@
       "Dar": "Jul5",
       "Mombasa": "Jul6",
       "Maput": "Jun27"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "OPAL LEADER",
+    "Voyage": "052",
+    "Departure Ports": {
+      "Yokohama": "May26",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May28",
+      "Kobe": "May30",
+      "Osaka": "May29",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun29",
+      "Mombasa": "Jul2",
+      "Maput": "-"
     }
   }
 ]
