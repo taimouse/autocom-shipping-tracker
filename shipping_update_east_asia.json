@@ -50,31 +50,6 @@
     }
   },
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "69",
-    "Departure Ports": {
-      "Yokohama": "Mar27",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar28",
-      "Kobe": "-",
-      "Osaka": "Mar30",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "May1",
-      "Mongla": "May12",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "SPICA LEADER",
     "Voyage": "080",
@@ -96,6 +71,31 @@
       "Hambantota": "Apr13",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "69",
+    "Departure Ports": {
+      "Yokohama": "Mar27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Mar28",
+      "Kobe": "-",
+      "Osaka": "Mar30",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "May1",
+      "Mongla": "May12",
       "Subic": "-"
     }
   },
@@ -496,6 +496,31 @@
       "Hambantota": "Jun5",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA BRAVE",
+    "Voyage": "91",
+    "Departure Ports": {
+      "Yokohama": "May22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May22",
+      "Kobe": "-",
+      "Osaka": "May22",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Jun12",
+      "Mongla": "Jun14",
       "Subic": "-"
     }
   },
