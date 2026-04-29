@@ -1294,5 +1294,86 @@
       "Mombasa": "May18",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "ASIAN EMPIRE",
+    "Voyage": "IF604",
+    "Departure Ports": {
+      "Yokohama": "Apr24",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr25",
+      "Kobe": "Apr26",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "Apr29",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Apr23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May28",
+      "Dar": "May19",
+      "Mombasa": "May22",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "PLEIADES SPIRIT",
+    "Voyage": "0111A",
+    "Departure Ports": {
+      "Yokohama": "Apr28",
+      "Kawasaki": "-",
+      "Kisarazu": "Apr29",
+      "Nagoya": "Apr27",
+      "Kobe": "Apr25",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "Apr24",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE TEXAS",
+    "Voyage": "GTX0226",
+    "Departure Ports": {
+      "Yokohama": "Apr29",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "May27",
+      "Mombasa": "May31",
+      "Maput": "-"
+    }
   }
 ]
