@@ -756,6 +756,33 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "OLYMPIAN HIGHWAY",
+    "Voyage": "73",
+    "Departure Ports": {
+      "Yokohama": "May22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May26",
+      "Kobe": "May24",
+      "Osaka": "May24",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun29",
+      "Mombasa": "Jun27",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "",
@@ -838,16 +865,16 @@
   },
   {
     "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS June",
-    "Voyage": "sub",
+    "Ship Name": "RCC ANTWERP",
+    "Voyage": "049",
     "Departure Ports": {
       "Yokohama": "-",
       "Kawasaki": "-",
-      "Kisarazu": "O",
+      "Kisarazu": "Jun5",
       "Nagoya": "-",
       "Kobe": "-",
-      "Osaka": "O",
-      "Hakata": "O",
+      "Osaka": "Jun8",
+      "Hakata": "Jun10",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
