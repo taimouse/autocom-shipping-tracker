@@ -375,6 +375,31 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "705",
+    "Departure Ports": {
+      "Yokohama": "May5",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May4",
+      "Kobe": "-",
+      "Osaka": "May2",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "May25",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "70",
@@ -396,31 +421,6 @@
       "Hambantota": "-",
       "Chittagong": "O",
       "Mongla": "O",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "705",
-    "Departure Ports": {
-      "Yokohama": "May8",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May7",
-      "Kobe": "-",
-      "Osaka": "May6",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May25",
-      "Chittagong": "-",
-      "Mongla": "-",
       "Subic": "-"
     }
   },
@@ -450,31 +450,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
-    "Voyage": "704",
-    "Departure Ports": {
-      "Yokohama": "May16",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May14",
-      "Kobe": "-",
-      "Osaka": "May13",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jun1",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "ALTAIR LEADER",
     "Voyage": "104",
@@ -494,6 +469,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Jun5",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "TURANDOT",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "May20",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May23",
+      "Kobe": "-",
+      "Osaka": "May24",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "May22"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jul5",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"

@@ -676,28 +676,28 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
-    "Voyage": "704",
+    "Ship Name": "OLYMPIAN HIGHWAY",
+    "Voyage": "73",
     "Departure Ports": {
-      "Yokohama": "May16",
+      "Yokohama": "May19",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May14",
-      "Kobe": "-",
-      "Osaka": "May13",
+      "Nagoya": "May26",
+      "Kobe": "May24",
+      "Osaka": "May24",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "-"
+      "Hitachinaka": "May21"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Jun11",
-      "Mombasa": "Jun9",
+      "Dar": "Jun29",
+      "Mombasa": "Jun27",
       "Maput": "-"
     }
   },
@@ -729,6 +729,33 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "TURANDOT",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "May20",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May23",
+      "Kobe": "-",
+      "Osaka": "May24",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun13",
+      "Mombasa": "Jun15",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "MOL",
     "Ship Name": "MARTORELL",
     "Voyage": "0185A",
@@ -752,33 +779,6 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "OLYMPIAN HIGHWAY",
-    "Voyage": "73",
-    "Departure Ports": {
-      "Yokohama": "May22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May26",
-      "Kobe": "May24",
-      "Osaka": "May24",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Jun29",
-      "Mombasa": "Jun27",
       "Maput": "-"
     }
   },
