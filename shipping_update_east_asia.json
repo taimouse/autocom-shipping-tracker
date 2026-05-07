@@ -379,12 +379,12 @@
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "70",
     "Departure Ports": {
-      "Yokohama": "May8",
+      "Yokohama": "May13",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "May11",
       "Kobe": "-",
-      "Osaka": "May13",
+      "Osaka": "May15",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -394,8 +394,8 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "-",
-      "Chittagong": "O",
-      "Mongla": "O",
+      "Chittagong": "Jun12",
+      "Mongla": "Jun14",
       "Subic": "-"
     }
   },
