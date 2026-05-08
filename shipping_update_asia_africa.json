@@ -594,33 +594,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "ALTAIR LEADER",
-    "Voyage": "104",
-    "Departure Ports": {
-      "Yokohama": "May20",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May22",
-      "Kobe": "-",
-      "Osaka": "May23",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Jun16",
-      "Dar": "Jun22",
-      "Mombasa": "Jun25",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "TURANDOT",
     "Voyage": "704",
@@ -644,6 +617,33 @@
       "Durban": "-",
       "Dar": "Jun13",
       "Mombasa": "Jun15",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "ALTAIR LEADER",
+    "Voyage": "104",
+    "Departure Ports": {
+      "Yokohama": "May21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May23",
+      "Kobe": "May26",
+      "Osaka": "May25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Jun16",
+      "Dar": "Jun22",
+      "Mombasa": "Jun25",
       "Maput": "-"
     }
   },
