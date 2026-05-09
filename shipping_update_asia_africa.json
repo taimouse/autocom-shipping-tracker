@@ -1,59 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "FIRMAMENT ACE",
-    "Voyage": "0151A",
-    "Departure Ports": {
-      "Yokohama": "Mar24",
-      "Kawasaki": "-",
-      "Kisarazu": "Apr2",
-      "Nagoya": "Mar27",
-      "Kobe": "Mar31",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "Mar29",
-      "Hitachinaka": "Mar25"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Apr19",
-      "Dar": "Apr27",
-      "Mombasa": "Apr28",
-      "Maput": "Apr20"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "GLOBAL LEADER",
-    "Voyage": "081",
-    "Departure Ports": {
-      "Yokohama": "Mar24",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar23",
-      "Kobe": "-",
-      "Osaka": "Mar27",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "Apr21",
-      "Dar": "Apr27",
-      "Mombasa": "Apr30",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS CLIPPER",
     "Voyage": "119",
