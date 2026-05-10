@@ -27,7 +27,7 @@ def send_notification_email(change_summary=None, route_name=None):
         # 이메일 설정 (아래 값들을 실제 값으로 변경하세요)
         sender_email = "jiworld.kim@gmail.com"  # 발신자 Gmail 주소
         receiver_emails = ["jiworld.kim@gmail.com", "ateam.marko@gmail.com"]  # 여러 수신자 이메일
-        password = "lcia yurn ifks eqdi"  # Gmail 앱 비밀번호 (일반 비밀번호 아님!)
+        password = "kayz vqrn bidp wpyx"  # Gmail 앱 비밀번호 (일반 비밀번호 아님!)
 
         # Gmail 앱 비밀번호 설정 방법:
         # 1. Google 계정 설정 → 보안 → 2단계 인증 켜기
@@ -467,7 +467,7 @@ def scrape_and_update():
         # 통합 알림을 위한 라우트 이름 조합 (예: ASIA & AFRICA)
         changed_routes = [res['route'] for res in results if res['changed']]
         combined_route_name = " & ".join(changed_routes)
-        
+
         send_notification_email(full_summary, route_name=combined_route_name)
 
 if __name__ == "__main__":
