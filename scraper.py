@@ -3,6 +3,10 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime, timezone, timedelta
+from dotenv import load_dotenv
+
+# .env 파일에서 환경 변수 로드
+load_dotenv()
 
 def get_kst_now():
     """한국 표준시(KST)를 반환하는 함수. 시간 비교 오류를 막기 위해 naive datetime 객체를 반환합니다."""
@@ -27,7 +31,10 @@ def send_notification_email(change_summary=None, route_name=None):
         # 이메일 설정 (아래 값들을 실제 값으로 변경하세요)
         sender_email = "jiworld.kim@gmail.com"  # 발신자 Gmail 주소
         receiver_emails = ["jiworld.kim@gmail.com", "ateam.marko@gmail.com"]  # 여러 수신자 이메일
-        password = "kayz vqrn bidp wpyx"  # Gmail 앱 비밀번호 (일반 비밀번호 아님!)
+        password = os.environ.get("EMAIL_PASSWORD")  # 환경변수에서 비밀번호 로드
+
+        if not password:
+            raise ValueError("환경 변수 EMAIL_PASSWORD가 설정되지 않았습니다.")
 
         # Gmail 앱 비밀번호 설정 방법:
         # 1. Google 계정 설정 → 보안 → 2단계 인증 켜기
@@ -90,7 +97,10 @@ def send_test_email():
         # 이메일 설정 (아래 값들을 실제 값으로 변경하세요)
         sender_email = "jiworld.kim@gmail.com"  # 발신자 Gmail 주소
         receiver_emails = ["jiworld.kim@gmail.com", "rokgy85@gmail.com"]  # 여러 수신자 이메일
-        password = "lcia yurn ifks eqdi"  # Gmail 앱 비밀번호 (일반 비밀번호 아님!)
+        password = os.environ.get("EMAIL_PASSWORD")  # 환경변수에서 비밀번호 로드
+
+        if not password:
+            raise ValueError("환경 변수 EMAIL_PASSWORD가 설정되지 않았습니다.")
 
         # 이메일 내용 구성
         msg = MIMEMultipart()
