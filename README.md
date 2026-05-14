@@ -59,7 +59,7 @@ python -m pip install -r requirements.txt
 또는 개별 패키지 설치:
 
 ```bash
-python -m pip install requests beautifulsoup4 html5lib
+python -m pip install requests beautifulsoup4 html5lib python-dotenv pandas lxml
 ```
 
 ### 3. 이메일 설정 (선택사항)

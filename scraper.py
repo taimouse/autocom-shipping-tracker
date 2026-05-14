@@ -16,6 +16,14 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import sys
 
+# Windows 환경에서 한글 출력 시 발생하는 UnicodeEncodeError 방지
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
+
+
 # 사용법:
 # python scraper.py          # 일반 크롤링 실행
 # python scraper.py --test   # 이메일 설정 테스트
