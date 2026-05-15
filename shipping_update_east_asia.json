@@ -375,31 +375,6 @@
     }
   },
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA BRAVE",
-    "Voyage": "91",
-    "Departure Ports": {
-      "Yokohama": "May25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May25",
-      "Kobe": "-",
-      "Osaka": "May25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "Jun12",
-      "Mongla": "Jun14",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "TURANDOT",
     "Voyage": "704",
@@ -427,7 +402,7 @@
   {
     "Company": "NYK",
     "Ship Name": "DIGNITY LEADER",
-    "Voyage": "052",
+    "Voyage": "017",
     "Departure Ports": {
       "Yokohama": "May26",
       "Kawasaki": "-",
@@ -446,6 +421,31 @@
       "Hambantota": "Jun13",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA BRAVE",
+    "Voyage": "91",
+    "Departure Ports": {
+      "Yokohama": "May27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May28",
+      "Kobe": "-",
+      "Osaka": "May29",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Jun17",
+      "Mongla": "Jun19",
       "Subic": "-"
     }
   },
