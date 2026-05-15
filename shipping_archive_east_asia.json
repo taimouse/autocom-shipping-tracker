@@ -848,5 +848,30 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "70",
+    "Departure Ports": {
+      "Yokohama": "May13",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May14",
+      "Kobe": "-",
+      "Osaka": "May15",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Jun12",
+      "Mongla": "Jun14",
+      "Subic": "-"
+    }
   }
 ]
