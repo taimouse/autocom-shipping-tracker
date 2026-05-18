@@ -1402,5 +1402,32 @@
       "Mombasa": "Jun20",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "GLORIOUS ACE",
+    "Voyage": "0109A",
+    "Departure Ports": {
+      "Yokohama": "May14",
+      "Kawasaki": "-",
+      "Kisarazu": "May13",
+      "Nagoya": "May12",
+      "Kobe": "May18",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "Jun4",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
