@@ -1429,5 +1429,32 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS COURAGE",
+    "Voyage": "099",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "May17",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "May19",
+      "Hakata": "May13",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "O",
+      "Mombasa": "O",
+      "Maput": "-"
+    }
   }
 ]
