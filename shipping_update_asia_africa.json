@@ -365,7 +365,7 @@
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "May21"
+      "Hitachinaka": "May22"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -466,8 +466,8 @@
       "Yokohama": "May22",
       "Kawasaki": "-",
       "Kisarazu": "May23",
-      "Nagoya": "May25",
-      "Kobe": "May27",
+      "Nagoya": "May27",
+      "Kobe": "May28",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
@@ -600,7 +600,7 @@
     "Departure Ports": {
       "Yokohama": "-",
       "Kawasaki": "-",
-      "Kisarazu": "May29",
+      "Kisarazu": "Jun1",
       "Nagoya": "-",
       "Kobe": "-",
       "Osaka": "Jun3",
@@ -671,6 +671,33 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH TRAPPER",
+    "Voyage": "55",
+    "Departure Ports": {
+      "Yokohama": "Jun12",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "Jun15",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "Jun11"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "Jul15",
+      "Dar": "Jul9",
+      "Mombasa": "Jul8",
       "Maput": "-"
     }
   },
