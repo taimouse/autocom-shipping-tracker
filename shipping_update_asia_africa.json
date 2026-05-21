@@ -571,10 +571,10 @@
     "Ship Name": "DIGNITY LEADER",
     "Voyage": "017",
     "Departure Ports": {
-      "Yokohama": "May26",
+      "Yokohama": "May27",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May28",
+      "Nagoya": "May31",
       "Kobe": "-",
       "Osaka": "May29",
       "Hakata": "-",
@@ -588,8 +588,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "Jun29",
-      "Mombasa": "Jul2",
+      "Dar": "Jun30",
+      "Mombasa": "Jul3",
       "Maput": "-"
     }
   },
@@ -676,7 +676,7 @@
   },
   {
     "Company": "HOEGH",
-    "Ship Name": "HOEGH TRAPPER",
+    "Ship Name": "HOEGH TROTTER",
     "Voyage": "55",
     "Departure Ports": {
       "Yokohama": "Jun12",

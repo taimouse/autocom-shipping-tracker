@@ -300,31 +300,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "AQUARIUS LEADER",
-    "Voyage": "072",
-    "Departure Ports": {
-      "Yokohama": "May23",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May24",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jun13",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "TURANDOT",
     "Voyage": "704",
@@ -371,6 +346,31 @@
       "Hambantota": "-",
       "Chittagong": "Jun17",
       "Mongla": "Jun19",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "71",
+    "Departure Ports": {
+      "Yokohama": "Jun06Cut:May28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun08Cut:May28",
+      "Kobe": "-",
+      "Osaka": "Jun10Cut:Jun01",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Jul12",
+      "Mongla": "Jul14",
       "Subic": "-"
     }
   },
@@ -471,6 +471,31 @@
       "Hambantota": "Jul11",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA GRACE",
+    "Voyage": "51",
+    "Departure Ports": {
+      "Yokohama": "Jun22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun22",
+      "Kobe": "-",
+      "Osaka": "Jun22",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "O",
+      "Mongla": "O",
       "Subic": "-"
     }
   },
