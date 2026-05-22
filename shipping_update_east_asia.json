@@ -218,7 +218,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "May25",
+      "Hambantota": "May30",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -304,21 +304,21 @@
     "Ship Name": "TURANDOT",
     "Voyage": "704",
     "Departure Ports": {
-      "Yokohama": "May25",
+      "Yokohama": "May27",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May27",
+      "Nagoya": "May28",
       "Kobe": "-",
-      "Osaka": "May28",
+      "Osaka": "May29",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Hitachinaka": "May25"
+      "Hitachinaka": "May26"
     },
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Jun9",
+      "Hambantota": "Jun11",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -350,6 +350,31 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "39",
+    "Departure Ports": {
+      "Yokohama": "Jun4",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun5",
+      "Kobe": "-",
+      "Osaka": "Jun6",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jun17",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "71",
@@ -371,31 +396,6 @@
       "Hambantota": "-",
       "Chittagong": "Jul12",
       "Mongla": "Jul14",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "VIKING DRIVE",
-    "Voyage": "39",
-    "Departure Ports": {
-      "Yokohama": "Jun6",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Jun5",
-      "Kobe": "-",
-      "Osaka": "Jun4",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jun18",
-      "Chittagong": "-",
-      "Mongla": "-",
       "Subic": "-"
     }
   },
@@ -444,6 +444,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Jul2",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "706",
+    "Departure Ports": {
+      "Yokohama": "Jun16",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun18",
+      "Kobe": "-",
+      "Osaka": "Jun19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Jun15"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jul11",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
