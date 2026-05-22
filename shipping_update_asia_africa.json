@@ -359,13 +359,13 @@
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "May28",
-      "Kobe": "May24",
+      "Kobe": "May25",
       "Osaka": "May25",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "May22"
+      "Hitachinaka": "May23"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -571,17 +571,17 @@
     "Ship Name": "TURANDOT",
     "Voyage": "704",
     "Departure Ports": {
-      "Yokohama": "May27",
+      "Yokohama": "May28",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May28",
+      "Nagoya": "May29",
       "Kobe": "-",
-      "Osaka": "May29",
+      "Osaka": "May30",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "May26"
+      "Hitachinaka": "May27"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -621,6 +621,33 @@
     }
   },
   {
+    "Company": "MOL",
+    "Ship Name": "PRIME ACE",
+    "Voyage": "0099A",
+    "Departure Ports": {
+      "Yokohama": "Jun10",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun9",
+      "Kobe": "Jun16",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "Jul2",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "NYK",
     "Ship Name": "VICTORY RAY",
     "Voyage": "013",
@@ -644,33 +671,6 @@
       "Durban": "-",
       "Dar": "Jul6",
       "Mombasa": "Jul8",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "MOL",
-    "Ship Name": "PRIME ACE",
-    "Voyage": "0099A",
-    "Departure Ports": {
-      "Yokohama": "Jun11",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Jun9",
-      "Kobe": "Jun16",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "Jul2",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
       "Maput": "-"
     }
   },
