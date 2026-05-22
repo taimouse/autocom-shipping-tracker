@@ -41,6 +41,9 @@
       .fc .fc-daygrid-day-frame {
         min-height: 160px;
       }
+      .fc .fc-toolbar-title {
+        font-size: clamp(1rem, 2.5vw, 2rem);
+      }
 
       /* 모달 스타일 */
       .modal {
@@ -266,7 +269,7 @@
             ></div>
           </div>
 
-          <!-- 아프리카 도착 포트 (EAST ASIA 전용) -->
+          <!-- 아프리카 도착 포트 (ASIA 전용) -->
           <div id="crossArrivalFilterSectionSidebar" class="mt-4 hidden">
             <h3 class="text-sm font-semibold mb-2 text-gray-600">
               Africa Arrival Port
@@ -295,9 +298,9 @@
       <div id="main-content" class="flex-1">
         <!-- SP 헤더 -->
         <div
-          class="flex justify-between items-center gap-4 p-3 mb-4 mx-auto max-w-[1440px]"
+          class="flex justify-between items-center gap-4 p-3 md:mb-4 mb-0 mx-auto max-w-[1440px]"
         >
-          <h1 class="text-gray-800 text-2xl font-bold md:hidden">
+          <h1 class="text-gray-800 text-xl md:text-2xl font-bold md:hidden">
             Shipping Schedule
           </h1>
 
@@ -308,8 +311,8 @@
               class="md:hidden px-2.5 py-1.5 border border-gray-300 rounded-lg bg-white text-gray-700 font-medium hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               onchange="changeRoute()"
             >
-              <option value="east_asia">EAST ASIA</option>
-              <option value="asia_africa">ASIA, AFRICA</option>
+              <option value="east_asia">ASIA</option>
+              <option value="asia_africa">AFRICA</option>
             </select>
 
             <!-- 필터 아이콘 (SP만) -->
@@ -423,7 +426,7 @@
                     ></div>
                   </div>
 
-                  <!-- 아프리카 도착 포트 (EAST ASIA 전용) -->
+                  <!-- 아프리카 도착 포트 (ASIA 전용) -->
                   <div id="crossArrivalFilterSectionModal" class="mt-4 hidden">
                     <h3 class="text-teal-700 font-semibold mb-2 text-sm">
                       Africa Arrival Port
@@ -492,7 +495,7 @@
       let selectedCompanies = [];
       let selectedDeparturePorts = []; // 출발 포트 선택
       let selectedArrivalPorts = []; // 도착 포트 선택
-      let selectedCrossArrivalPorts = []; // 아프리카 도착 포트 선택 (EAST ASIA 연장)
+      let selectedCrossArrivalPorts = []; // 아프리카 도착 포트 선택 (ASIA 연장)
       let companyColors = {}; // 회사별 색상 맵
       let currentRoute = "east_asia"; // 현재 선택된 루트
 
@@ -854,7 +857,7 @@
       function populatePortSelect() {
         const departurePorts = new Set();
         const arrivalPorts = new Set();
-        const crossArrivalPorts = new Set(); // EAST ASIA의 ASIA AFRICA 연장 도착 포트
+        const crossArrivalPorts = new Set(); // ASIA의 ASIA AFRICA 연장 도착 포트
 
         // 출발 포트와 도착 포트 각각 수집
         shippingData.forEach((ship) => {
@@ -1396,7 +1399,7 @@
 
           let hasMatchingCrossArrivalPort = false; // 추가: 아프리카 도착 포트 매칭 여부
 
-          // EAST ASIA 루트인 경우, ASIA AFRICA 연장 스케줄 매칭 및 도착 포트 표시
+          // ASIA 루트인 경우, ASIA AFRICA 연장 스케줄 매칭 및 도착 포트 표시
           if (
             currentRoute === "east_asia" &&
             crossRouteShippingData.length > 0
@@ -1512,7 +1515,7 @@
             shouldShow = hasMatchingDeparturePort && hasMatchingArrivalPort;
           }
 
-          // EAST ASIA 전용 아프리카 도착 포트 필터 적용
+          // ASIA 전용 아프리카 도착 포트 필터 적용
           if (
             shouldShow &&
             currentRoute === "east_asia" &&

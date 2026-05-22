@@ -108,7 +108,7 @@ npx http-server
 
 ### 웹 인터페이스
 
-1. 선택**: ASIA 또는 ASIA, AFRICA 선택
+1. 선택**: ASIA 또는 AFRICA 선택
 2. **필터링**:
    - 회사별 필터링 (체크박스)
    - 출발 포트별 필터링
