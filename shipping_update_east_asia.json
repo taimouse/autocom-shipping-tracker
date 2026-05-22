@@ -1,80 +1,5 @@
 [
   {
-    "Company": "K-LINE",
-    "Ship Name": "ORION HIGHWAY",
-    "Voyage": "98",
-    "Departure Ports": {
-      "Yokohama": "Mar31",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar29",
-      "Kobe": "Mar26",
-      "Osaka": "Mar27",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Apr16",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "MOL",
-    "Ship Name": "PROMINENT ACE",
-    "Voyage": "0184A",
-    "Departure Ports": {
-      "Yokohama": "Apr1",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Mar30",
-      "Kobe": "Mar29",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Apr15",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "HERMES LEADER",
-    "Voyage": "081",
-    "Departure Ports": {
-      "Yokohama": "Apr3",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr6",
-      "Kobe": "Apr7",
-      "Osaka": "Apr8",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Apr21",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "38",
@@ -293,7 +218,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "May25",
+      "Hambantota": "May30",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -307,7 +232,7 @@
       "Yokohama": "May13",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May11",
+      "Nagoya": "May14",
       "Kobe": "-",
       "Osaka": "May15",
       "Hakata": "-",
@@ -379,57 +304,7 @@
     "Ship Name": "MALAYSIA BRAVE",
     "Voyage": "91",
     "Departure Ports": {
-      "Yokohama": "May25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May25",
-      "Kobe": "-",
-      "Osaka": "May25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "Jun12",
-      "Mongla": "Jun14",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
-    "Voyage": "704",
-    "Departure Ports": {
-      "Yokohama": "May25",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May27",
-      "Kobe": "-",
-      "Osaka": "May28",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "May25"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jun9",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "DIGNITY LEADER",
-    "Voyage": "052",
-    "Departure Ports": {
-      "Yokohama": "May26",
+      "Yokohama": "May27",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "May28",
@@ -443,23 +318,48 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Jun13",
+      "Hambantota": "-",
+      "Chittagong": "Jun17",
+      "Mongla": "Jun19",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "TURANDOT",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "May28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May29",
+      "Kobe": "-",
+      "Osaka": "May30",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "May27"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jun11",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "VIKING DRIVE",
-    "Voyage": "39",
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "71",
     "Departure Ports": {
-      "Yokohama": "Jun6",
+      "Yokohama": "Jun06Cut:May28",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Jun5",
+      "Nagoya": "Jun08Cut:May28",
       "Kobe": "-",
-      "Osaka": "Jun4",
+      "Osaka": "Jun10Cut:Jun01",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -468,7 +368,107 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Jun23",
+      "Hambantota": "-",
+      "Chittagong": "Jul12",
+      "Mongla": "Jul14",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "39",
+    "Departure Ports": {
+      "Yokohama": "Jun7",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun8",
+      "Kobe": "-",
+      "Osaka": "Jun9",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jun20",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "VICTORY RAY",
+    "Voyage": "013",
+    "Departure Ports": {
+      "Yokohama": "Jun10",
+      "Kawasaki": "Jun11",
+      "Kisarazu": "-",
+      "Nagoya": "Jun12",
+      "Kobe": "Jun14",
+      "Osaka": "Jun13",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jun27",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GENTLE LEADER",
+    "Voyage": "121",
+    "Departure Ports": {
+      "Yokohama": "Jun15",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun16",
+      "Kobe": "Jun19",
+      "Osaka": "Jun18",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jul2",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "706",
+    "Departure Ports": {
+      "Yokohama": "Jun16",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun18",
+      "Kobe": "-",
+      "Osaka": "Jun19",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "Jun15"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jul11",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -479,12 +479,12 @@
     "Ship Name": "MODERN LINK",
     "Voyage": "706",
     "Departure Ports": {
-      "Yokohama": "Jun17",
+      "Yokohama": "Jun20",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Jun16",
+      "Nagoya": "Jun21",
       "Kobe": "-",
-      "Osaka": "Jun15",
+      "Osaka": "Jun22",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -493,7 +493,57 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Jul9",
+      "Hambantota": "Jul11",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA GRACE",
+    "Voyage": "51",
+    "Departure Ports": {
+      "Yokohama": "Jun22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun22",
+      "Kobe": "-",
+      "Osaka": "Jun22",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "O",
+      "Mongla": "O",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "PLUTO LEADER",
+    "Voyage": "069",
+    "Departure Ports": {
+      "Yokohama": "Jun25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun26",
+      "Kobe": "-",
+      "Osaka": "Jun27",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jul10",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"

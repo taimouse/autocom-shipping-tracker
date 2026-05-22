@@ -848,5 +848,55 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "70",
+    "Departure Ports": {
+      "Yokohama": "May13",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May14",
+      "Kobe": "-",
+      "Osaka": "May15",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "Jun12",
+      "Mongla": "Jun14",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GUARDIAN LEADER",
+    "Voyage": "130",
+    "Departure Ports": {
+      "Yokohama": "May15",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May16",
+      "Kobe": "May22",
+      "Osaka": "May21",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jun4",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
