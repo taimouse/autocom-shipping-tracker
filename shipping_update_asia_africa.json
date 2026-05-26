@@ -1,32 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "GRAND PAVO",
-    "Voyage": "0040A",
-    "Departure Ports": {
-      "Yokohama": "Apr10",
-      "Kawasaki": "-",
-      "Kisarazu": "Apr18",
-      "Nagoya": "Apr16",
-      "Kobe": "Apr14",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "Apr13",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "May4",
-      "Dar": "May11",
-      "Mombasa": "May15",
-      "Maput": "May7"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "CASSIOPEIA LEADER",
     "Voyage": "060",
@@ -861,6 +834,33 @@
       "Dar": "O",
       "Mombasa": "O",
       "Maput": "O"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "AF A VESSEL",
+    "Voyage": "",
+    "Departure Ports": {
+      "Yokohama": "Jul3",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jul5",
+      "Kobe": "Jul6",
+      "Osaka": "Jul7",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Aug21",
+      "Mombasa": "Aug23",
+      "Maput": "-"
     }
   }
 ]
