@@ -1,32 +1,5 @@
 [
   {
-    "Company": "NYK",
-    "Ship Name": "CASSIOPEIA LEADER",
-    "Voyage": "060",
-    "Departure Ports": {
-      "Yokohama": "Apr17",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr20",
-      "Kobe": "Apr22",
-      "Osaka": "Apr23",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "May21",
-      "Dar": "-",
-      "Mombasa": "May14",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "SWAN ACE",
     "Voyage": "0148A",
@@ -50,6 +23,33 @@
       "Durban": "-",
       "Dar": "-",
       "Mombasa": "-",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "CASSIOPEIA LEADER",
+    "Voyage": "060",
+    "Departure Ports": {
+      "Yokohama": "Apr17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Apr20",
+      "Kobe": "Apr22",
+      "Osaka": "Apr23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "May21",
+      "Dar": "-",
+      "Mombasa": "May14",
       "Maput": "-"
     }
   },
@@ -324,33 +324,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "OLYMPIAN HIGHWAY",
-    "Voyage": "73",
-    "Departure Ports": {
-      "Yokohama": "May19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "May28",
-      "Kobe": "May25",
-      "Osaka": "May25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "May23"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Jun30",
-      "Mombasa": "Jun27",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS COURAGE",
     "Voyage": "099",
@@ -374,6 +347,33 @@
       "Durban": "-",
       "Dar": "O",
       "Mombasa": "O",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "OLYMPIAN HIGHWAY",
+    "Voyage": "73",
+    "Departure Ports": {
+      "Yokohama": "May19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May28",
+      "Kobe": "May25",
+      "Osaka": "May25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "May23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun30",
+      "Mombasa": "Jun27",
       "Maput": "-"
     }
   },
@@ -725,6 +725,33 @@
       "Durban": "-",
       "Dar": "Jul10",
       "Mombasa": "Jul12",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE HALIFAX",
+    "Voyage": "GHL0426",
+    "Departure Ports": {
+      "Yokohama": "Jun17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jul7",
+      "Mombasa": "Jul10",
       "Maput": "-"
     }
   },

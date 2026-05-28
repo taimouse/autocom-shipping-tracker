@@ -1591,5 +1591,32 @@
       "Mombasa": "Jun25",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "OLYMPIAN HIGHWAY",
+    "Voyage": "73",
+    "Departure Ports": {
+      "Yokohama": "May19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May28",
+      "Kobe": "May25",
+      "Osaka": "May25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "May23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun30",
+      "Mombasa": "Jun27",
+      "Maput": "-"
+    }
   }
 ]
