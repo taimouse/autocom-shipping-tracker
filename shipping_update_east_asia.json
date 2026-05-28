@@ -282,9 +282,9 @@
       "Yokohama": "May27",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "May28",
+      "Nagoya": "May29",
       "Kobe": "-",
-      "Osaka": "May29",
+      "Osaka": "May30",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -375,31 +375,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "VICTORY RAY",
-    "Voyage": "013",
-    "Departure Ports": {
-      "Yokohama": "Jun10",
-      "Kawasaki": "Jun11",
-      "Kisarazu": "-",
-      "Nagoya": "Jun12",
-      "Kobe": "Jun14",
-      "Osaka": "Jun13",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "Jun27",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS SPLENDOR",
     "Voyage": "049",
@@ -429,12 +404,12 @@
     "Ship Name": "GENTLE LEADER",
     "Voyage": "121",
     "Departure Ports": {
-      "Yokohama": "Jun15",
+      "Yokohama": "Jun16",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Jun16",
-      "Kobe": "Jun19",
-      "Osaka": "Jun18",
+      "Nagoya": "Jun18",
+      "Kobe": "Jun20",
+      "Osaka": "Jun19",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -443,7 +418,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Jul2",
+      "Hambantota": "O",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -469,6 +444,31 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Jul11",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "OPAL LEADER",
+    "Voyage": "064",
+    "Departure Ports": {
+      "Yokohama": "Jun20",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun21",
+      "Kobe": "Jun24",
+      "Osaka": "Jun23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "O",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -526,14 +526,14 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "PLUTO LEADER",
-    "Voyage": "069",
+    "Ship Name": "STRAITS CHALLENGER",
+    "Voyage": "351",
     "Departure Ports": {
       "Yokohama": "Jun25",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Jun26",
-      "Kobe": "-",
+      "Kobe": "Jun28",
       "Osaka": "Jun27",
       "Hakata": "-",
       "Hibikinada": "-",

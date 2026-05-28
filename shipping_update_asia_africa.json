@@ -621,33 +621,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "VICTORY RAY",
-    "Voyage": "013",
-    "Departure Ports": {
-      "Yokohama": "Jun10",
-      "Kawasaki": "Jun11",
-      "Kisarazu": "-",
-      "Nagoya": "Jun12",
-      "Kobe": "Jun14",
-      "Osaka": "Jun13",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "Jul6",
-      "Mombasa": "Jul8",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "HOEGH",
     "Ship Name": "HOEGH TROTTER",
     "Voyage": "55",
@@ -679,10 +652,10 @@
     "Ship Name": "GENTLE LEADER",
     "Voyage": "121",
     "Departure Ports": {
-      "Yokohama": "Jun15",
+      "Yokohama": "Jun16",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Jun16",
+      "Nagoya": "Jun18",
       "Kobe": "Jun19",
       "Osaka": "Jun18",
       "Hakata": "-",
@@ -695,9 +668,9 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "Jul18",
-      "Dar": "Jul13",
-      "Mombasa": "Jul11",
+      "Durban": "-",
+      "Dar": "O",
+      "Mombasa": "O",
       "Maput": "-"
     }
   },
@@ -760,17 +733,17 @@
     "Ship Name": "MERCURY ACE",
     "Voyage": "",
     "Departure Ports": {
-      "Yokohama": "Jun19",
+      "Yokohama": "Jun18",
       "Kawasaki": "-",
-      "Kisarazu": "Jun21",
+      "Kisarazu": "Jun19",
       "Nagoya": "Jun16",
       "Kobe": "-",
-      "Osaka": "Jun23",
+      "Osaka": "Jun21",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "Jun18"
+      "Hitachinaka": "Jun17"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -780,6 +753,33 @@
       "Dar": "O",
       "Mombasa": "-",
       "Maput": "O"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "OPAL LEADER",
+    "Voyage": "064",
+    "Departure Ports": {
+      "Yokohama": "Jun20",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "Jun21",
+      "Kobe": "Jun24",
+      "Osaka": "Jun23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "O",
+      "Dar": "O",
+      "Mombasa": "O",
+      "Maput": "-"
     }
   },
   {
@@ -811,14 +811,14 @@
   },
   {
     "Company": "NYK",
-    "Ship Name": "PLUTO LEADER",
-    "Voyage": "069",
+    "Ship Name": "STRAITS CHALLENGER",
+    "Voyage": "351",
     "Departure Ports": {
       "Yokohama": "Jun25",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "Jun26",
-      "Kobe": "-",
+      "Kobe": "Jun28",
       "Osaka": "Jun27",
       "Hakata": "-",
       "Hibikinada": "-",
@@ -843,7 +843,7 @@
     "Departure Ports": {
       "Yokohama": "Jun27",
       "Kawasaki": "-",
-      "Kisarazu": "-",
+      "Kisarazu": "Jul2",
       "Nagoya": "Jun25",
       "Kobe": "Jun30",
       "Osaka": "-",
