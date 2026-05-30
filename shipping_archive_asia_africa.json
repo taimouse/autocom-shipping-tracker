@@ -1645,5 +1645,32 @@
       "Mombasa": "Jul2",
       "Maput": "Jun23"
     }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "TURANDOT",
+    "Voyage": "704",
+    "Departure Ports": {
+      "Yokohama": "May28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May29",
+      "Kobe": "-",
+      "Osaka": "May30",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "May27"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun19",
+      "Mombasa": "Jun21",
+      "Maput": "-"
+    }
   }
 ]
