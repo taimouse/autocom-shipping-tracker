@@ -1672,5 +1672,32 @@
       "Mombasa": "Jun21",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "DIGNITY LEADER",
+    "Voyage": "017",
+    "Departure Ports": {
+      "Yokohama": "May27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "May31",
+      "Kobe": "-",
+      "Osaka": "May29",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "Jun30",
+      "Mombasa": "Jul3",
+      "Maput": "-"
+    }
   }
 ]
