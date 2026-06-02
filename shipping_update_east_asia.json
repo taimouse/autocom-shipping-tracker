@@ -1,31 +1,6 @@
 [
   {
     "Company": "NYK",
-    "Ship Name": "CASSIOPEIA LEADER",
-    "Voyage": "060",
-    "Departure Ports": {
-      "Yokohama": "Apr17",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "Apr20",
-      "Kobe": "Apr22",
-      "Osaka": "Apr23",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "May5",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
     "Ship Name": "AQUARIUS LEADER",
     "Voyage": "071",
     "Departure Ports": {
@@ -354,12 +329,12 @@
     "Ship Name": "VIKING DRIVE",
     "Voyage": "40",
     "Departure Ports": {
-      "Yokohama": "Jun7",
+      "Yokohama": "Jun8",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Jun8",
+      "Nagoya": "Jun9",
       "Kobe": "-",
-      "Osaka": "Jun9",
+      "Osaka": "Jun10",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -369,31 +344,6 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "Jun20",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS SPLENDOR",
-    "Voyage": "049",
-    "Departure Ports": {
-      "Yokohama": "Jun13",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "O",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -429,21 +379,21 @@
     "Ship Name": "DON JUAN",
     "Voyage": "706",
     "Departure Ports": {
-      "Yokohama": "Jun16",
+      "Yokohama": "Jun17",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "Jun18",
+      "Nagoya": "Jun19",
       "Kobe": "-",
-      "Osaka": "Jun19",
+      "Osaka": "Jun20",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Hitachinaka": "Jun15"
+      "Hitachinaka": "Jun16"
     },
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "Jul11",
+      "Hambantota": "Jul16",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -525,6 +475,31 @@
     }
   },
   {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "G POSEIDON",
+    "Voyage": "078",
+    "Departure Ports": {
+      "Yokohama": "Jun22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "Jul22",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "51",
@@ -593,7 +568,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "O",
+      "Hambantota": "Jul22",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
