@@ -603,13 +603,15 @@
               crossCurrentData,
               crossArchiveData,
             ]) => {
-              // 중복 제거 병합 (Company + Ship Name + Voyage 키 기준)
+              // 중복 제거 병합 (고유 id = [출발일-선명-보야드] 기준, 없으면 회사|선명|보야드)
               const seen = new Set();
               const merged = [];
 
               // 최신 데이터 우선 (isArchive = false)
               currentData.forEach((ship) => {
-                const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                const key =
+                  ship.id ||
+                  `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
                 if (!seen.has(key)) {
                   seen.add(key);
                   ship.isArchive = false;
@@ -619,7 +621,9 @@
 
               // 아카이브 데이터 추가 (중복 제외, isArchive = true)
               archiveData.forEach((ship) => {
-                const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                const key =
+                  ship.id ||
+                  `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
                 if (!seen.has(key)) {
                   seen.add(key);
                   ship.isArchive = true;
@@ -634,14 +638,18 @@
                 const crossSeen = new Set();
                 const crossMerged = [];
                 crossCurrentData.forEach((ship) => {
-                  const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                  const key =
+                  ship.id ||
+                  `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
                   if (!crossSeen.has(key)) {
                     crossSeen.add(key);
                     crossMerged.push(ship);
                   }
                 });
                 crossArchiveData.forEach((ship) => {
-                  const key = `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                  const key =
+                  ship.id ||
+                  `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
                   if (!crossSeen.has(key)) {
                     crossSeen.add(key);
                     crossMerged.push(ship);
@@ -1299,40 +1307,12 @@
       }
 
       function parseDateStr(dateStr) {
-        if (dateStr === "-") return null;
-        const months = [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ];
-        const monIdx = months.indexOf(dateStr.slice(0, 3));
-        const day = parseInt(dateStr.slice(3));
-        const now = new Date();
-        const currentYear = now.getFullYear();
-        const currentMonth = now.getMonth(); // 0-based
-        let year = currentYear;
-
-        // JSON 데이터는 0-4개월 범위의 스케줄을 제공
-        // 현재 월 기준 ±4개월 범위를 벗어나면 연도 조정
-        const monthDiff = monIdx - currentMonth;
-        if (monthDiff > 4) {
-          // 월 차이가 4보다 크면 작년 (예: 2월에 12월 데이터 → 2025년 12월)
-          year = currentYear - 1;
-        } else if (monthDiff < -4) {
-          // 월 차이가 -4보다 작으면 내년 (예: 10월에 2월 데이터 → 2027년 2월)
-          year = currentYear + 1;
-        }
-
-        return new Date(year, monIdx, day);
+        // 날짜는 크롤링 시점에 연도가 확정된 'YYYY-MM-DD' 형식으로 저장된다.
+        // (연도 추측 로직 제거 — 연말/연초 및 과거 아카이브의 연도 오류 방지)
+        if (!dateStr || dateStr === "-") return null;
+        const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
+        if (!m) return null; // 'O' 등 날짜가 아닌 마커는 무시
+        return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
       }
 
       function buildShipSchedule(ship) {
