@@ -346,9 +346,9 @@
       "Yokohama": "2026-06-08",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-09",
+      "Nagoya": "2026-06-10",
       "Kobe": "-",
-      "Osaka": "2026-06-10",
+      "Osaka": "2026-06-11",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -357,7 +357,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "2026-06-20",
+      "Hambantota": "2026-06-22",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -436,32 +436,6 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "2026-07-02",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "706",
-    "id": "2026-06-20_MODERN LINK_706",
-    "Departure Ports": {
-      "Yokohama": "2026-06-20",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-21",
-      "Kobe": "-",
-      "Osaka": "2026-06-22",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-07-11",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -566,6 +540,32 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "2026-07-12",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "706",
+    "id": "2026-06-30_MODERN LINK_706",
+    "Departure Ports": {
+      "Yokohama": "2026-06-30",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-07-01",
+      "Kobe": "-",
+      "Osaka": "2026-07-02",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-20",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
