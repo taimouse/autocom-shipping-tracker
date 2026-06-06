@@ -1,32 +1,6 @@
 [
   {
     "Company": "NYK",
-    "Ship Name": "AQUARIUS LEADER",
-    "Voyage": "071",
-    "id": "2026-04-17_AQUARIUS LEADER_071",
-    "Departure Ports": {
-      "Yokohama": "2026-04-21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-04-20",
-      "Kobe": "-",
-      "Osaka": "2026-04-17",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
     "Ship Name": "METIS LEADER",
     "Voyage": "131",
     "id": "2026-04-22_METIS LEADER_131",
@@ -104,32 +78,6 @@
     }
   },
   {
-    "Company": "NYK",
-    "Ship Name": "VENUS LEADER",
-    "Voyage": "080",
-    "id": "2026-05-01_VENUS LEADER_080",
-    "Departure Ports": {
-      "Yokohama": "2026-05-01",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-02",
-      "Kobe": "-",
-      "Osaka": "2026-05-04",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-05-16",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "K-LINE",
     "Ship Name": "GENIUS HIGHWAY",
     "Voyage": "86",
@@ -150,6 +98,32 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "2026-05-22",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "VENUS LEADER",
+    "Voyage": "080",
+    "id": "2026-05-01_VENUS LEADER_080",
+    "Departure Ports": {
+      "Yokohama": "2026-05-01",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-05-02",
+      "Kobe": "-",
+      "Osaka": "2026-05-04",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-05-16",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -312,32 +286,6 @@
     }
   },
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "71",
-    "id": "2026-06-08_MALAYSIA PASSION_71",
-    "Departure Ports": {
-      "Yokohama": "2026-06-08",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-10",
-      "Kobe": "-",
-      "Osaka": "2026-06-11",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "2026-07-12",
-      "Mongla": "2026-07-14",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "40",
@@ -360,6 +308,32 @@
       "Hambantota": "2026-06-22",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "71",
+    "id": "2026-06-08_MALAYSIA PASSION_71",
+    "Departure Ports": {
+      "Yokohama": "2026-06-08",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-10",
+      "Kobe": "-",
+      "Osaka": "2026-06-11",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-07-12",
+      "Mongla": "2026-07-14",
       "Subic": "-"
     }
   },
