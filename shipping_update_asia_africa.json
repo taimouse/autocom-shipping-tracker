@@ -1,33 +1,5 @@
 [
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "DON JUAN",
-    "Voyage": "705",
-    "id": "2026-04-19_DON JUAN_705",
-    "Departure Ports": {
-      "Yokohama": "2026-04-24",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-04-20",
-      "Kobe": "-",
-      "Osaka": "2026-04-19",
-      "Hakata": "-",
-      "Hibikinada": "2026-04-27",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-04-21"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-05-20",
-      "Mombasa": "2026-05-18",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "ASIAN EMPIRE",
     "Voyage": "IF604",
@@ -252,34 +224,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "WISTERIA ACE",
-    "Voyage": "0149A",
-    "id": "2026-05-21_WISTERIA ACE_0149A",
-    "Departure Ports": {
-      "Yokohama": "2026-05-21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-23",
-      "Kobe": "-",
-      "Osaka": "2026-05-26",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-05-23"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "2026-06-13",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "ALTAIR LEADER",
     "Voyage": "104",
@@ -304,6 +248,34 @@
       "Durban": "2026-06-16",
       "Dar": "2026-06-22",
       "Mombasa": "2026-06-25",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "WISTERIA ACE",
+    "Voyage": "0149A",
+    "id": "2026-05-21_WISTERIA ACE_0149A",
+    "Departure Ports": {
+      "Yokohama": "2026-05-21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-05-23",
+      "Kobe": "-",
+      "Osaka": "2026-05-26",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-05-23"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "2026-06-13",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
       "Maput": "-"
     }
   },
@@ -696,34 +668,6 @@
       "Durban": "2026-07-18",
       "Dar": "2026-07-13",
       "Mombasa": "2026-07-11",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "NYK",
-    "Ship Name": "VENUS LEADER",
-    "Voyage": "082",
-    "id": "2026-06-22_VENUS LEADER_082",
-    "Departure Ports": {
-      "Yokohama": "2026-06-22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-23",
-      "Kobe": "2026-06-25",
-      "Osaka": "2026-06-24",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "2026-07-16",
-      "Dar": "-",
-      "Mombasa": "-",
       "Maput": "-"
     }
   },
