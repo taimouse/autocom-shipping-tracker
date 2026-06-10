@@ -451,19 +451,19 @@
     "Company": "HOEGH",
     "Ship Name": "HOEGH TROTTER",
     "Voyage": "55",
-    "id": "2026-06-12_HOEGH TROTTER_55",
+    "id": "2026-06-13_HOEGH TROTTER_55",
     "Departure Ports": {
-      "Yokohama": "2026-06-12",
+      "Yokohama": "2026-06-13",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "-",
-      "Kobe": "2026-06-15",
+      "Kobe": "2026-06-16",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-13"
+      "Hitachinaka": "2026-06-14"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
