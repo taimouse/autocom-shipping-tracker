@@ -451,19 +451,19 @@
     "Company": "HOEGH",
     "Ship Name": "HOEGH TROTTER",
     "Voyage": "55",
-    "id": "2026-06-13_HOEGH TROTTER_55",
+    "id": "2026-06-14_HOEGH TROTTER_55",
     "Departure Ports": {
-      "Yokohama": "2026-06-13",
+      "Yokohama": "2026-06-14",
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "-",
-      "Kobe": "2026-06-16",
+      "Kobe": "2026-06-17",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-14"
+      "Hitachinaka": "2026-06-15"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -535,47 +535,19 @@
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "DON JUAN",
     "Voyage": "706",
-    "id": "2026-06-17_DON JUAN_706",
+    "id": "2026-06-18_DON JUAN_706",
     "Departure Ports": {
-      "Yokohama": "2026-06-18",
+      "Yokohama": "2026-06-19",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-20",
+      "Nagoya": "2026-06-21",
       "Kobe": "-",
-      "Osaka": "2026-06-21",
+      "Osaka": "2026-06-22",
       "Hakata": "-",
       "Hibikinada": "2026-06-23",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-17"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-07-11",
-      "Mombasa": "2026-07-13",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "DON JUAN",
-    "Voyage": "706",
-    "id": "2026-06-17_DON JUAN_706",
-    "Departure Ports": {
-      "Yokohama": "2026-06-18",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-20",
-      "Kobe": "-",
-      "Osaka": "2026-06-21",
-      "Hakata": "-",
-      "Hibikinada": "2026-06-23",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-17"
+      "Hitachinaka": "2026-06-18"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -612,6 +584,34 @@
       "Durban": "-",
       "Dar": "2026-07-07",
       "Mombasa": "2026-07-10",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "DON JUAN",
+    "Voyage": "706",
+    "id": "2026-06-18_DON JUAN_706",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-21",
+      "Kobe": "-",
+      "Osaka": "2026-06-22",
+      "Hakata": "-",
+      "Hibikinada": "2026-06-23",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-06-18"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-07-11",
+      "Mombasa": "2026-07-13",
       "Maput": "-"
     }
   },
@@ -757,29 +757,29 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "ONYX ARROW",
-    "Voyage": "128",
-    "id": "2026-07-04_ONYX ARROW_128",
+    "Ship Name": "GRAND LEGACY",
+    "Voyage": "19",
+    "id": "2026-06-23_GRAND LEGACY_19",
     "Departure Ports": {
-      "Yokohama": "2026-07-04",
+      "Yokohama": "2026-07-01",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-06",
-      "Kobe": "2026-07-07",
-      "Osaka": "2026-07-08",
+      "Nagoya": "2026-06-30",
+      "Kobe": "2026-06-25",
+      "Osaka": "2026-06-26",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "-"
+      "Hitachinaka": "2026-06-23"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "2026-08-22",
-      "Mombasa": "2026-08-26",
+      "Dar": "2026-08-11",
+      "Mombasa": "2026-08-15",
       "Maput": "-"
     }
   },
