@@ -1,33 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "PLEIADES SPIRIT",
-    "Voyage": "0111A",
-    "id": "2026-04-24_PLEIADES SPIRIT_0111A",
-    "Departure Ports": {
-      "Yokohama": "2026-04-28",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-04-29",
-      "Nagoya": "2026-04-27",
-      "Kobe": "2026-04-25",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "2026-04-24",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "GRIMALDI",
     "Ship Name": "GRANDE TEXAS",
     "Voyage": "GTX0226",
