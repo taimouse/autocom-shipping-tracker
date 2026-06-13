@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busan VLSFO Price Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #000000;
+        --canvas: #ffffff;
+        --soft: #efefef;
+        --softer: #f7f7f7;
+        --body: #5e5e5e;
+        --mute: #afafaf;
+        --line: #e2e2e2;
+        --up: #116b35;
+        --down: #9f1d1d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--canvas);
+        height: 100%;
+        color: var(--ink);
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        font-family: "Inter", "Noto Sans KR", sans-serif;
+        letter-spacing: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(12px);
+      }
+
+      .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        font-size: 18px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .pill {
+        border: 0;
+        border-radius: 999px;
+        background: var(--ink);
+        color: var(--canvas);
+        padding: 12px 18px;
+        font: inherit;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      .ghost-pill {
+        border: 0;
+        border-radius: 999px;
+        background: var(--soft);
+        color: var(--ink);
+        padding: 12px 18px;
+        font: inherit;
+        font-weight: 500;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px;
+      }
+
+      main.container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+        gap: 32px;
+        align-items: end;
+        padding: 28px 0 32px;
+        flex: 0 0 auto;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(40px, 7vw, 76px);
+        line-height: 1.08;
+        font-weight: 700;
+      }
+
+      .lead {
+        max-width: 640px;
+        margin: 18px 0 0;
+        color: var(--body);
+        font-size: 18px;
+        line-height: 1.55;
+      }
+
+      .summary-card {
+        border-radius: 16px;
+        background: var(--ink);
+        color: var(--canvas);
+        padding: 24px;
+        min-height: 220px;
+        display: grid;
+        align-content: space-between;
+      }
+
+      .summary-label {
+        color: #d8d8d8;
+        font-size: 14px;
+      }
+
+      .summary-price {
+        margin-top: 8px;
+        font-size: 56px;
+        line-height: 1;
+        font-weight: 700;
+      }
+
+      .summary-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 20px;
+      }
+
+      .summary-meta span {
+        border-radius: 999px;
+        background: #282828;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      .toolbar {
+        border-radius: 16px;
+        background: var(--soft);
+        padding: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 1fr)) auto;
+        gap: 12px;
+        align-items: end;
+        flex: 0 0 auto;
+      }
+
+      label {
+        display: grid;
+        gap: 8px;
+        min-width: 0;
+        color: var(--body);
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      select,
+      input {
+        width: 100%;
+        border: 0;
+        border-radius: 8px;
+        background: var(--canvas);
+        color: var(--ink);
+        padding: 13px 14px;
+        font: inherit;
+      }
+
+      #priceSections {
+        flex: 1 1 auto;
+      }
+
+      .month-section {
+        margin-top: 24px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        background: var(--canvas);
+      }
+
+      .month-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 20px 24px;
+        background: var(--ink);
+        color: var(--canvas);
+      }
+
+      .month-header h2 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+
+      .month-header p {
+        margin: 4px 0 0;
+        color: #d8d8d8;
+        font-size: 14px;
+      }
+
+      .table-wrap {
+        max-height: max(16rem, calc(100dvh - 48rem));
+        overflow: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        min-width: 760px;
+      }
+
+      th,
+      td {
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--line);
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      th:first-child,
+      td:first-child {
+        text-align: left;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: var(--softer);
+        color: var(--body);
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .positive {
+        color: var(--up);
+        font-weight: 500;
+      }
+
+      .negative {
+        color: var(--down);
+        font-weight: 500;
+      }
+
+      .empty {
+        border-radius: 16px;
+        background: var(--soft);
+        padding: 32px;
+        color: var(--body);
+        text-align: center;
+      }
+
+      .footer-band {
+        margin-top: 32px;
+        background: var(--ink);
+        color: var(--canvas);
+      }
+
+      .footer-band .container {
+        padding-top: 28px;
+        padding-bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        color: #d8d8d8;
+        font-size: 14px;
+      }
+
+      @media (max-width: 860px) {
+        .nav,
+        .container {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 20px 0 20px;
+        }
+
+        .toolbar {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .table-wrap {
+          max-height: max(18rem, calc(100dvh - 38rem));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .nav {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        .pill {
+          padding: 10px 12px;
+          font-size: 13px;
+        }
+
+        .container {
+          padding-top: 14px;
+          padding-bottom: 14px;
+        }
+
+        .hero {
+          gap: 12px;
+          padding: 10px 0 12px;
+        }
+
+        h1 {
+          font-size: 34px;
+          line-height: 1.12;
+        }
+
+        .lead {
+          margin-top: 8px;
+          font-size: 14px;
+          line-height: 1.45;
+        }
+
+        .summary-card {
+          min-height: 0;
+          padding: 16px;
+        }
+
+        .toolbar {
+          grid-template-columns: 1fr 1fr;
+          gap: 8px;
+          padding: 12px;
+          border-radius: 12px;
+        }
+
+        .toolbar label {
+          font-size: 12px;
+          gap: 6px;
+        }
+
+        .toolbar .ghost-pill {
+          grid-column: 1 / -1;
+          padding: 11px 14px;
+        }
+
+        select,
+        input {
+          min-width: 0;
+          padding: 10px 9px;
+          font-size: 13px;
+        }
+
+        .summary-price {
+          font-size: 40px;
+        }
+
+        .summary-meta {
+          margin-top: 12px;
+          gap: 6px;
+        }
+
+        .summary-meta span {
+          padding: 6px 9px;
+          font-size: 11px;
+        }
+
+        .month-section {
+          margin-top: 12px;
+          border-radius: 12px;
+        }
+
+        .month-header {
+          padding: 12px 14px;
+        }
+
+        .month-header h2 {
+          font-size: 18px;
+        }
+
+        .month-header p {
+          font-size: 12px;
+        }
+
+        .table-wrap {
+          max-height: max(18rem, calc(100dvh - 27rem));
+        }
+
+        table {
+          min-width: 620px;
+        }
+
+        th,
+        td {
+          padding: 11px 12px;
+          font-size: 13px;
+        }
+
+        .footer-band {
+          margin-top: 14px;
+        }
+
+        .footer-band .container {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          font-size: 12px;
+          gap: 8px;
+        }
+      }
+
+      @media (max-width: 390px) {
+        .brand {
+          font-size: 16px;
+        }
+
+        .pill {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        .lead {
+          display: none;
+        }
+
+        .summary-price {
+          font-size: 34px;
+        }
+
+        .table-wrap {
+          max-height: max(18rem, calc(100dvh - 22rem));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav" aria-label="Primary">
+        <div class="brand">VLSFO Tracker</div>
+        <a class="pill" href="../index.html">Shipping calendar</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Busan VLSFO prices</h1>
+          <p class="lead">
+            Bunker Index의 Busan VLSFO spot price를 매일 저장하고, 누적된
+            데이터를 년/월별로 확인하는 페이지입니다.
+          </p>
+        </div>
+        <aside class="summary-card" aria-label="Latest VLSFO price">
+          <div>
+            <div class="summary-label">Latest price</div>
+            <div class="summary-price" id="latestPrice">-</div>
+          </div>
+          <div class="summary-meta">
+            <span id="latestDate">Date -</span>
+            <span id="latestChange">Change -</span>
+            <span id="lastUpdated">Updated -</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="toolbar" aria-label="Filters">
+        <label>
+          Year
+          <select id="yearFilter"></select>
+        </label>
+        <label>
+          Month
+          <select id="monthFilter"></select>
+        </label>
+        <label>
+          From
+          <input id="fromDate" type="date" />
+        </label>
+        <label>
+          To
+          <input id="toDate" type="date" />
+        </label>
+        <button class="ghost-pill" id="resetFilters" type="button">
+          Reset
+        </button>
+      </section>
+
+      <section id="priceSections" aria-live="polite"></section>
+    </main>
+
+    <footer class="footer-band">
+      <div class="container">
+        <span>Busan, Republic of Korea · VLSFO · USD/MT</span>
+        <a
+          id="sourceLink"
+          href="https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+          >Source: Bunker Index</a
+        >
+      </div>
+    </footer>
+
+    <script>
+      const DATA_URL = "./vlsfo_prices.json";
+      const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const state = {
+        records: [],
+        metadata: {},
+      };
+
+      const formatMoney = (value) =>
+        Number.isFinite(value)
+          ? value.toLocaleString("en-US", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+          : "-";
+
+      const formatChange = (value) => {
+        if (!Number.isFinite(value)) return "-";
+        return `${value > 0 ? "+" : ""}${value.toFixed(2)}`;
+      };
+
+      const changeClass = (value) => {
+        if (value > 0) return "positive";
+        if (value < 0) return "negative";
+        return "";
+      };
+
+      function fillFilters(records) {
+        const yearFilter = document.getElementById("yearFilter");
+        const monthFilter = document.getElementById("monthFilter");
+        const years = [...new Set(records.map((record) => record.year))].sort(
+          (a, b) => b - a,
+        );
+
+        yearFilter.innerHTML = `<option value="all">All years</option>${years
+          .map((year) => `<option value="${year}">${year}</option>`)
+          .join("")}`;
+        monthFilter.innerHTML = `<option value="all">All months</option>${monthNames
+          .map((name, index) => `<option value="${index + 1}">${name}</option>`)
+          .join("")}`;
+      }
+
+      function updateLatest() {
+        const latest = state.records[0];
+        if (!latest) return;
+        document.getElementById("latestPrice").textContent = formatMoney(
+          latest.price,
+        );
+        document.getElementById("latestDate").textContent =
+          `Date ${latest.date}`;
+        document.getElementById("latestChange").textContent =
+          `Change ${formatChange(latest.change)} (${formatChange(latest.change_percent)}%)`;
+        document.getElementById("lastUpdated").textContent =
+          `Updated ${state.metadata.last_updated || "-"}`;
+        document.getElementById("sourceLink").href =
+          state.metadata.source || document.getElementById("sourceLink").href;
+      }
+
+      function getFilteredRecords() {
+        const year = document.getElementById("yearFilter").value;
+        const month = document.getElementById("monthFilter").value;
+        const from = document.getElementById("fromDate").value;
+        const to = document.getElementById("toDate").value;
+
+        return state.records.filter((record) => {
+          if (year !== "all" && String(record.year) !== year) return false;
+          if (month !== "all" && String(record.month) !== month) return false;
+          if (from && record.date < from) return false;
+          if (to && record.date > to) return false;
+          return true;
+        });
+      }
+
+      function groupByMonth(records) {
+        return records.reduce((groups, record) => {
+          const key = `${record.year}-${String(record.month).padStart(2, "0")}`;
+          if (!groups[key]) groups[key] = [];
+          groups[key].push(record);
+          return groups;
+        }, {});
+      }
+
+      function render() {
+        const records = getFilteredRecords();
+        const target = document.getElementById("priceSections");
+        const groups = groupByMonth(records);
+        const keys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+        if (!keys.length) {
+          target.innerHTML = `<div class="empty">선택한 조건에 맞는 VLSFO 데이터가 없습니다.</div>`;
+          return;
+        }
+
+        target.innerHTML = keys
+          .map((key) => {
+            const [year, month] = key.split("-");
+            const rows = groups[key];
+            const avg =
+              rows.reduce(
+                (sum, record) =>
+                  sum + (Number.isFinite(record.price) ? record.price : 0),
+                0,
+              ) / rows.filter((record) => Number.isFinite(record.price)).length;
+
+            return `
+              <article class="month-section">
+                <header class="month-header">
+                  <div>
+                    <h2>${year} ${monthNames[Number(month) - 1]}</h2>
+                    <p>${rows.length} records · Average ${formatMoney(avg)}</p>
+                  </div>
+                </header>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>+/-</th>
+                        <th>+/- %</th>
+                        <th>Low</th>
+                        <th>High</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${rows
+                        .map(
+                          (record) => `
+                            <tr>
+                              <td>${record.date}</td>
+                              <td>${formatMoney(record.price)}</td>
+                              <td class="${changeClass(record.change)}">${formatChange(record.change)}</td>
+                              <td class="${changeClass(record.change_percent)}">${formatChange(record.change_percent)}%</td>
+                              <td>${formatMoney(record.low)}</td>
+                              <td>${formatMoney(record.high)}</td>
+                            </tr>
+                          `,
+                        )
+                        .join("")}
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      async function loadData() {
+        try {
+          const response = await fetch(DATA_URL, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const payload = await response.json();
+          state.metadata = payload.metadata || {};
+          state.records = (payload.records || []).sort((a, b) =>
+            b.date.localeCompare(a.date),
+          );
+          fillFilters(state.records);
+          updateLatest();
+          render();
+        } catch (error) {
+          document.getElementById("priceSections").innerHTML =
+            `<div class="empty">VLSFO JSON 데이터를 불러오지 못했습니다: ${error.message}</div>`;
+        }
+      }
+
+      ["yearFilter", "monthFilter", "fromDate", "toDate"].forEach((id) => {
+        document.getElementById(id).addEventListener("change", render);
+      });
+
+      document.getElementById("resetFilters").addEventListener("click", () => {
+        document.getElementById("yearFilter").value = "all";
+        document.getElementById("monthFilter").value = "all";
+        document.getElementById("fromDate").value = "";
+        document.getElementById("toDate").value = "";
+        render();
+      });
+
+      loadData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "port": "Busan, Republic of Korea",
+    "product": "VLSFO",
+    "unit": "USD/MT",
+    "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea",
+    "last_updated": "2026-06-13T22:50:31+09:00",
+    "record_count": 10,
+    "latest_date": "2026-06-12"
+  },
+  "records": [
+    {
+      "date": "2026-06-12",
+      "year": 2026,
+      "month": 6,
+      "price": 750.0,
+      "change": -35.0,
+      "change_percent": -4.46,
+      "low": 749.0,
+      "high": 751.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-11",
+      "year": 2026,
+      "month": 6,
+      "price": 785.0,
+      "change": 5.0,
+      "change_percent": 0.64,
+      "low": 784.0,
+      "high": 786.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-10",
+      "year": 2026,
+      "month": 6,
+      "price": 780.0,
+      "change": 10.0,
+      "change_percent": 1.3,
+      "low": 779.0,
+      "high": 781.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-09",
+      "year": 2026,
+      "month": 6,
+      "price": 770.0,
+      "change": -40.0,
+      "change_percent": -4.94,
+      "low": 769.0,
+      "high": 771.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-08",
+      "year": 2026,
+      "month": 6,
+      "price": 810.0,
+      "change": 10.0,
+      "change_percent": 1.25,
+      "low": 809.0,
+      "high": 811.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-05",
+      "year": 2026,
+      "month": 6,
+      "price": 800.0,
+      "change": -10.0,
+      "change_percent": -1.23,
+      "low": 799.0,
+      "high": 801.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-04",
+      "year": 2026,
+      "month": 6,
+      "price": 810.0,
+      "change": -25.0,
+      "change_percent": -2.99,
+      "low": 809.0,
+      "high": 811.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-03",
+      "year": 2026,
+      "month": 6,
+      "price": 835.0,
+      "change": 15.0,
+      "change_percent": 1.83,
+      "low": 834.0,
+      "high": 836.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-02",
+      "year": 2026,
+      "month": 6,
+      "price": 820.0,
+      "change": 10.0,
+      "change_percent": 1.23,
+      "low": 819.0,
+      "high": 821.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
+    {
+      "date": "2026-06-01",
+      "year": 2026,
+      "month": 6,
+      "price": 810.0,
+      "change": 25.0,
+      "change_percent": 3.18,
+      "low": 809.0,
+      "high": 811.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    }
+  ]
+}
