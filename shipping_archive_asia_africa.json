@@ -1762,5 +1762,33 @@
       "Mombasa": "O",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "PRIME ACE",
+    "Voyage": "0099A",
+    "id": "2026-06-09_PRIME ACE_0099A",
+    "Departure Ports": {
+      "Yokohama": "2026-06-11",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-09",
+      "Kobe": "2026-06-15",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "2026-07-02",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
