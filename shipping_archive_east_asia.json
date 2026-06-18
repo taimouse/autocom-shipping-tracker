@@ -1064,5 +1064,31 @@
       "Mongla": "2026-07-14",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "OPAL LEADER",
+    "Voyage": "053",
+    "id": "2026-06-16_OPAL LEADER_053",
+    "Departure Ports": {
+      "Yokohama": "2026-06-16",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-17",
+      "Kobe": "-",
+      "Osaka": "2026-06-18",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-04",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]

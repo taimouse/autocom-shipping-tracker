@@ -1790,5 +1790,61 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "HOEGH",
+    "Ship Name": "HOEGH TROTTER",
+    "Voyage": "55",
+    "id": "2026-06-14_HOEGH TROTTER_55",
+    "Departure Ports": {
+      "Yokohama": "2026-06-14",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-18",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-06-16"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-07-15",
+      "Dar": "2026-07-09",
+      "Mombasa": "2026-07-08",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "OPAL LEADER",
+    "Voyage": "053",
+    "id": "2026-06-16_OPAL LEADER_053",
+    "Departure Ports": {
+      "Yokohama": "2026-06-16",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-17",
+      "Kobe": "-",
+      "Osaka": "2026-06-18",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-07-14",
+      "Mombasa": "2026-07-16",
+      "Maput": "-"
+    }
   }
 ]

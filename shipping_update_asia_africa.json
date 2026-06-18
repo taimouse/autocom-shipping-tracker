@@ -618,8 +618,8 @@
   {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "MORNING CALM",
-    "Voyage": "END",
-    "id": "2026-06-25_MORNING CALM_END",
+    "Voyage": "sub",
+    "id": "2026-06-25_MORNING CALM_sub",
     "Departure Ports": {
       "Yokohama": "2026-06-26",
       "Kawasaki": "-",
