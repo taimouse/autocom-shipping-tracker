@@ -188,11 +188,11 @@
           class="block w-full text-center mb-6 px-4 py-2 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition"
           >VLSFO Prices</a
         >
-        <a
+        <!-- <a
           href="./NYK/"
           class="block w-full text-center -mt-3 mb-6 px-4 py-2 bg-green-700 text-white rounded-full font-medium hover:bg-green-800 transition"
           >NYK Vessel Schedule</a
-        >
+        > -->
 
         <!-- 루트 선택 -->
         <div class="sidebar-section">
@@ -659,8 +659,8 @@
                 const crossMerged = [];
                 crossCurrentData.forEach((ship) => {
                   const key =
-                  ship.id ||
-                  `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                    ship.id ||
+                    `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
                   if (!crossSeen.has(key)) {
                     crossSeen.add(key);
                     crossMerged.push(ship);
@@ -668,8 +668,8 @@
                 });
                 crossArchiveData.forEach((ship) => {
                   const key =
-                  ship.id ||
-                  `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
+                    ship.id ||
+                    `${ship.Company}|${ship["Ship Name"]}|${ship.Voyage}`;
                   if (!crossSeen.has(key)) {
                     crossSeen.add(key);
                     crossMerged.push(ship);
