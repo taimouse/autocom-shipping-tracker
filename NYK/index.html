@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYK Vessel Schedule</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: "Noto Sans KR", sans-serif; }
+      #layout { display: flex; min-height: 100vh; }
+      #sidebar {
+        width: 270px;
+        min-width: 270px;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 20px;
+        background: #f8f9fa;
+        border-right: 1px solid #e5e7eb;
+      }
+      #content { flex: 1; height: 100vh; overflow-y: auto; }
+      #calendar { font-size: 14px; }
+      .fc .fc-toolbar.fc-header-toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        margin-bottom: 0;
+        padding: 16px 0;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+      }
+      .fc .fc-daygrid-day-frame { min-height: 150px; }
+      .fc-event-time { display: none; }
+      .fc-tooltip {
+        position: fixed;
+        z-index: 10000;
+        max-width: 340px;
+        padding: 12px 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        background: white;
+        box-shadow: 0 8px 24px #0002;
+        font-size: 13px;
+        line-height: 1.55;
+        pointer-events: none;
+      }
+      .filter-group { margin-bottom: 24px; }
+      .filter-title { margin-bottom: 10px; font-weight: 700; color: #374151; }
+      .check-row { display: flex; align-items: center; gap: 8px; margin: 7px 0; font-size: 13px; }
+      .color-dot { width: 10px; height: 10px; flex: none; border-radius: 50%; }
+      .service-select {
+        width: 100%;
+        padding: 9px 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        background: white;
+        font: inherit;
+        font-size: 13px;
+      }
+      .mobile-bar { display: none; }
+      .modal { display: none; }
+      @media (max-width: 767px) {
+        #sidebar { display: none; }
+        #content { height: auto; min-height: 100vh; }
+        .mobile-bar {
+          display: flex;
+          position: sticky;
+          top: 0;
+          z-index: 20;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px;
+          background: #f3f4f6;
+          border-bottom: 1px solid #e5e7eb;
+        }
+        .modal {
+          display: none;
+          position: fixed;
+          inset: 0;
+          z-index: 50;
+          padding: 24px;
+          background: #0008;
+        }
+        .modal.open { display: block; }
+        .modal-card {
+          max-height: calc(100vh - 48px);
+          overflow-y: auto;
+          padding: 20px;
+          border-radius: 12px;
+          background: white;
+        }
+        .fc .fc-toolbar { gap: 8px; flex-wrap: wrap; }
+        .fc .fc-toolbar-title { font-size: 1.15rem; }
+        .fc .fc-daygrid-day-frame { min-height: 120px; }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div id="layout">
+      <aside id="sidebar">
+        <h1 class="mb-5 text-xl font-bold">NYK Vessel Schedule</h1>
+        <div class="grid gap-2 mb-7">
+          <a href="../" class="rounded-full bg-black px-4 py-2 text-center text-sm font-medium text-white">Shipping Schedule</a>
+          <a href="../VLSFO/" class="rounded-full bg-gray-200 px-4 py-2 text-center text-sm font-medium">VLSFO Prices</a>
+        </div>
+        <p class="mb-6 text-sm text-gray-600">
+          Filtered Schedules:
+          <span id="countDesktop" class="font-bold text-green-700">0</span>
+        </p>
+        <div id="desktopFilters"></div>
+        <a
+          href="https://www.ycsco.com/schedule"
+          target="_blank"
+          rel="noopener"
+          class="block text-xs text-blue-700 underline"
+        >YCS original schedule</a>
+      </aside>
+
+      <main id="content">
+        <div class="mobile-bar">
+          <div>
+            <h1 class="font-bold">NYK Vessel Schedule</h1>
+            <p class="text-xs text-gray-500"><span id="countMobile">0</span> schedules</p>
+          </div>
+          <div class="flex gap-2">
+            <a href="../" class="rounded-full bg-gray-200 px-3 py-2 text-xs">Shipping</a>
+            <button id="openFilters" class="rounded-full bg-black px-3 py-2 text-xs text-white">Filter</button>
+          </div>
+        </div>
+        <div class="mx-auto max-w-[1440px] p-3 md:p-5">
+          <div id="calendar" class="overflow-auto rounded-lg bg-white px-4 py-3 shadow-lg"></div>
+        </div>
+      </main>
+    </div>
+
+    <div id="filterModal" class="modal">
+      <div class="modal-card">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="text-lg font-bold">Filter</h2>
+          <button id="closeFilters" class="text-2xl" aria-label="Close">&times;</button>
+        </div>
+        <div id="mobileFilters"></div>
+      </div>
+    </div>
+
+    <script>
+      const CURRENT_URL = "./nyk_schedule.json";
+      const ARCHIVE_URL = "./nyk_schedule_archive.json";
+      let calendar;
+      let schedules = [];
+      let selectedService = "ALL";
+      let selectedShips = new Set();
+      let selectedDepartures = new Set();
+      let selectedArrivals = new Set();
+
+      const escapeHtml = (value) =>
+        String(value).replace(/[&<>"']/g, (char) => ({
+          "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
+        })[char]);
+
+      function vesselKey(ship) {
+        return `${ship["Ship Name"]}|${ship.Voyage}`;
+      }
+
+      function vesselColor(shipOrKey) {
+        const key = typeof shipOrKey === "string" ? shipOrKey : vesselKey(shipOrKey);
+        let hash = 0;
+        for (let index = 0; index < key.length; index += 1) {
+          hash = ((hash << 5) - hash + key.charCodeAt(index)) | 0;
+        }
+        const hue = Math.abs(hash) % 360;
+        return `hsl(${hue} 68% 40%)`;
+      }
+
+      function dateLabel(value) {
+        if (!value || value === "-") return "-";
+        const [, month, day] = value.split("-");
+        return `${Number(month)}/${Number(day)}`;
+      }
+
+      function serviceSchedules() {
+        return selectedService === "ALL"
+          ? schedules
+          : schedules.filter((item) => item.Service === selectedService);
+      }
+
+      function resetFilterSelections() {
+        const scoped = serviceSchedules();
+        selectedShips = new Set(scoped.map(vesselKey));
+        selectedDepartures = new Set(scoped.flatMap((item) =>
+          Object.entries(item["Departure Ports"])
+            .filter(([, value]) => value !== "-")
+            .map(([port]) => port)));
+        selectedArrivals = new Set(scoped.flatMap((item) =>
+          Object.entries(item["Arrival Ports"])
+            .filter(([, value]) => value !== "-")
+            .map(([port]) => port)));
+      }
+
+      function scheduleHtml(ship) {
+        const departures = Object.entries(ship["Departure Ports"])
+          .filter(([, value]) => value !== "-")
+          .map(([port, value]) => `${escapeHtml(port)}: ${dateLabel(value)}`)
+          .join("<br>");
+        const arrivals = Object.entries(ship["Arrival Ports"])
+          .filter(([, value]) => value !== "-")
+          .map(([port, value]) => `${escapeHtml(port)}: ${dateLabel(value)}`)
+          .join("<br>");
+        return `
+          ${ship.isArchive ? '<strong class="text-red-600">[Archive]</strong><br>' : ""}
+          <strong>${escapeHtml(ship.Service)}</strong><br>
+          <span style="color:${vesselColor(ship)}">●</span>
+          ${escapeHtml(ship["Ship Name"])} [${escapeHtml(ship.Voyage)}]
+          <hr class="my-2">
+          <strong>Departure</strong><br>${departures || "TBA"}
+          <hr class="my-2">
+          <strong>Arrival</strong><br>${arrivals || "TBA"}
+          <hr class="my-2">
+          <span class="text-gray-500">PDF updated: ${escapeHtml(ship["Schedule Updated"] || "-")}</span>
+        `;
+      }
+
+      function filterMarkup() {
+        const scoped = serviceSchedules();
+        const services = [...new Set(schedules.map((item) => item.Service))].sort();
+        const vessels = [...new Map(scoped.map((item) => [vesselKey(item), item])).values()]
+          .sort((a, b) => a["Ship Name"].localeCompare(b["Ship Name"]));
+        const departures = [...new Set(scoped.flatMap((item) =>
+          Object.entries(item["Departure Ports"]).filter(([, value]) => value !== "-").map(([port]) => port)))].sort();
+        const arrivals = [...new Set(scoped.flatMap((item) =>
+          Object.entries(item["Arrival Ports"]).filter(([, value]) => value !== "-").map(([port]) => port)))].sort();
+        const portRows = (type, values, selected) => values.map((value) => `
+          <label class="check-row">
+            <input type="checkbox" data-filter="${type}" value="${escapeHtml(value)}"
+              ${selected.has(value) ? "checked" : ""}>
+            <span>${escapeHtml(value)}</span>
+          </label>`).join("") || '<p class="text-xs text-gray-400">No confirmed ports</p>';
+        const vesselRows = vessels.map((ship) => {
+          const key = vesselKey(ship);
+          return `
+            <label class="check-row">
+              <input type="checkbox" data-filter="ship" value="${escapeHtml(key)}"
+                ${selectedShips.has(key) ? "checked" : ""}>
+              <span class="color-dot" style="background:${vesselColor(key)}"></span>
+              <span>${escapeHtml(ship["Ship Name"])} [${escapeHtml(ship.Voyage)}]</span>
+            </label>`;
+        }).join("");
+        return `
+          <section class="filter-group">
+            <h3 class="filter-title">Service</h3>
+            <select class="service-select" data-service-select>
+              <option value="ALL" ${selectedService === "ALL" ? "selected" : ""}>ALL SERVICES</option>
+              ${services.map((service) => `
+                <option value="${escapeHtml(service)}" ${selectedService === service ? "selected" : ""}>
+                  ${escapeHtml(service)}
+                </option>`).join("")}
+            </select>
+          </section>
+          <section class="filter-group">
+            <h3 class="filter-title">Vessel</h3>${vesselRows}
+          </section>
+          <section class="filter-group">
+            <h3 class="filter-title">Departure Port</h3>
+            ${portRows("departure", departures, selectedDepartures)}
+          </section>
+          <section class="filter-group">
+            <h3 class="filter-title">Arrival Port</h3>
+            ${portRows("arrival", arrivals, selectedArrivals)}
+          </section>
+        `;
+      }
+
+      function renderFilters() {
+        const markup = filterMarkup();
+        document.getElementById("desktopFilters").innerHTML = markup;
+        document.getElementById("mobileFilters").innerHTML = markup;
+        document.querySelectorAll("[data-service-select]").forEach((select) => {
+          select.addEventListener("change", () => {
+            selectedService = select.value;
+            resetFilterSelections();
+            renderFilters();
+            updateCalendar();
+          });
+        });
+        document.querySelectorAll("[data-filter]").forEach((checkbox) => {
+          checkbox.addEventListener("change", () => {
+            const target = checkbox.dataset.filter === "ship"
+              ? selectedShips
+              : checkbox.dataset.filter === "departure"
+                ? selectedDepartures
+                : selectedArrivals;
+            checkbox.checked ? target.add(checkbox.value) : target.delete(checkbox.value);
+            renderFilters();
+            updateCalendar();
+          });
+        });
+      }
+
+      function matchesPortFilter(ship, field, selected) {
+        const dated = Object.entries(ship[field]).filter(([, value]) => value !== "-");
+        return dated.length === 0 || dated.some(([port]) => selected.has(port));
+      }
+
+      function buildEvents() {
+        const visible = serviceSchedules().filter((ship) =>
+          selectedShips.has(vesselKey(ship)) &&
+          matchesPortFilter(ship, "Departure Ports", selectedDepartures) &&
+          matchesPortFilter(ship, "Arrival Ports", selectedArrivals));
+        const events = [];
+
+        visible.forEach((ship) => {
+          const color = vesselColor(ship);
+          const departures = Object.entries(ship["Departure Ports"])
+            .filter(([, value]) => value !== "-")
+            .sort((a, b) => a[1].localeCompare(b[1]));
+          const arrivals = Object.entries(ship["Arrival Ports"])
+            .filter(([, value]) => value !== "-")
+            .sort((a, b) => a[1].localeCompare(b[1]));
+
+          if (departures.length) {
+            const endDate = new Date(`${departures[departures.length - 1][1]}T00:00:00`);
+            endDate.setDate(endDate.getDate() + 1);
+            events.push({
+              title: `${ship.Service} - ${ship["Ship Name"]} [${ship.Voyage}]`,
+              start: departures[0][1],
+              end: endDate.toISOString().slice(0, 10),
+              backgroundColor: color,
+              borderColor: color,
+              textColor: "#fff",
+              eventType: "line",
+              description: scheduleHtml(ship),
+              isArchive: ship.isArchive,
+            });
+          }
+
+          [...departures.map((item) => [...item, "Departure"]),
+            ...arrivals.map((item) => [...item, "Arrival"])]
+            .forEach(([port, value, kind]) => {
+              events.push({
+                title: port,
+                start: value,
+                backgroundColor: color,
+                borderColor: color,
+                textColor: color,
+                eventType: "port",
+                portKind: kind,
+                description: scheduleHtml(ship),
+                isArchive: ship.isArchive,
+              });
+            });
+        });
+        return { events, visibleCount: visible.filter((ship) => !ship.isArchive).length };
+      }
+
+      function updateCalendar() {
+        const { events, visibleCount } = buildEvents();
+        document.getElementById("countDesktop").textContent = visibleCount;
+        document.getElementById("countMobile").textContent = visibleCount;
+        if (calendar) {
+          calendar.removeAllEvents();
+          calendar.addEventSource(events);
+        }
+      }
+
+      function showTooltip(info) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "fc-tooltip";
+        tooltip.innerHTML = info.event.extendedProps.description;
+        document.body.appendChild(tooltip);
+        const x = Math.min(info.jsEvent.clientX + 12, window.innerWidth - tooltip.offsetWidth - 8);
+        const y = Math.min(info.jsEvent.clientY + 12, window.innerHeight - tooltip.offsetHeight - 8);
+        tooltip.style.left = `${Math.max(8, x)}px`;
+        tooltip.style.top = `${Math.max(8, y)}px`;
+        info.el.tooltip = tooltip;
+      }
+
+      async function loadData() {
+        const [current, archive] = await Promise.all([
+          fetch(CURRENT_URL).then((response) => response.json()),
+          fetch(ARCHIVE_URL).then((response) => response.ok ? response.json() : []).catch(() => []),
+        ]);
+        const seen = new Set();
+        schedules = [...current.map((item) => ({ ...item, isArchive: false })),
+          ...archive.map((item) => ({ ...item, isArchive: true }))]
+          .filter((item) => !seen.has(item.id) && seen.add(item.id));
+        resetFilterSelections();
+        renderFilters();
+
+        const { events } = buildEvents();
+        calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
+          initialView: "dayGridMonth",
+          events,
+          height: "90vh",
+          headerToolbar: { left: "dayGridMonth,dayGridWeek", center: "title", right: "today,prev,next" },
+          eventContent(info) {
+            if (info.event.extendedProps.eventType === "port") {
+              const color = info.event.backgroundColor;
+              const kind = info.event.extendedProps.portKind === "Arrival" ? "A" : "D";
+              return {
+                html: `<span style="display:flex;align-items:center;gap:5px;color:#374151">
+                  <span style="width:10px;height:10px;border-radius:50%;background:${color};flex:none"></span>
+                  ${escapeHtml(info.event.title)} <small style="color:#9ca3af">${kind}</small>
+                </span>`,
+              };
+            }
+            return { html: `<span style="padding:0 3px">${escapeHtml(info.event.title)}</span>` };
+          },
+          eventDidMount(info) {
+            if (info.event.extendedProps.eventType === "port") {
+              info.el.style.background = "transparent";
+              info.el.style.border = "0";
+            }
+            if (info.event.extendedProps.isArchive) info.el.style.opacity = "0.48";
+          },
+          eventMouseEnter: showTooltip,
+          eventMouseLeave(info) {
+            if (info.el.tooltip) info.el.tooltip.remove();
+          },
+        });
+        calendar.render();
+        updateCalendar();
+      }
+
+      document.getElementById("openFilters").addEventListener("click", () =>
+        document.getElementById("filterModal").classList.add("open"));
+      document.getElementById("closeFilters").addEventListener("click", () =>
+        document.getElementById("filterModal").classList.remove("open"));
+      document.getElementById("filterModal").addEventListener("click", (event) => {
+        if (event.target.id === "filterModal") event.currentTarget.classList.remove("open");
+      });
+      loadData().catch((error) => console.error("NYK schedule load failed:", error));
+    </script>
+  </body>
+</html>

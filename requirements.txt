@@ -4,3 +4,5 @@ html5lib>=1.1
 python-dotenv>=1.0.0
 pandas
 lxml
+pypdf>=5.0.0
+pdfplumber>=0.11.0
