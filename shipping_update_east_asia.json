@@ -1,31 +1,5 @@
 [
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "705",
-    "id": "2026-05-02_MODERN LINK_705",
-    "Departure Ports": {
-      "Yokohama": "2026-05-05",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-04",
-      "Kobe": "-",
-      "Osaka": "2026-05-02",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-05-30",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "70",
