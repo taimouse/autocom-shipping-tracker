@@ -1874,5 +1874,33 @@
       "Mombasa": "2026-07-10",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "GENTLE LEADER",
+    "Voyage": "121",
+    "id": "2026-06-18_GENTLE LEADER_121",
+    "Departure Ports": {
+      "Yokohama": "2026-06-21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-18",
+      "Kobe": "2026-06-19",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-07-18",
+      "Dar": "2026-07-13",
+      "Mombasa": "2026-07-11",
+      "Maput": "-"
+    }
   }
 ]
