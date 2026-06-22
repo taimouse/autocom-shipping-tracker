@@ -1142,5 +1142,31 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "G POSEIDON",
+    "Voyage": "078",
+    "id": "2026-06-22_G POSEIDON_078",
+    "Departure Ports": {
+      "Yokohama": "2026-06-22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-22",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
   }
 ]
