@@ -1902,5 +1902,33 @@
       "Mombasa": "2026-07-11",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "MERMAID ACE",
+    "Voyage": "0129A",
+    "id": "2026-06-16_MERMAID ACE_0129A",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-06-20",
+      "Nagoya": "2026-06-16",
+      "Kobe": "-",
+      "Osaka": "2026-06-23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-06-17"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "2026-07-10",
+      "Durban": "2026-07-14",
+      "Dar": "2026-07-22",
+      "Mombasa": "-",
+      "Maput": "2026-07-18"
+    }
   }
 ]

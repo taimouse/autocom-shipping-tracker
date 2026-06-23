@@ -390,6 +390,32 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "706",
+    "id": "2026-07-05_MODERN LINK_706",
+    "Departure Ports": {
+      "Yokohama": "2026-07-05",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-07-06",
+      "Kobe": "-",
+      "Osaka": "2026-07-07",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-19",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS SIRIUS",
     "Voyage": "070",
@@ -419,14 +445,14 @@
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "41",
-    "id": "2026-07-13_VIKING DRIVE_41",
+    "id": "2026-07-15_VIKING DRIVE_41",
     "Departure Ports": {
-      "Yokohama": "2026-07-13",
+      "Yokohama": "2026-07-17",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-15",
+      "Nagoya": "2026-07-16",
       "Kobe": "-",
-      "Osaka": "2026-07-16",
+      "Osaka": "2026-07-15",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -435,7 +461,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "2026-07-27",
+      "Hambantota": "2026-08-03",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
