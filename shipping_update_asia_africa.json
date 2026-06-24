@@ -756,6 +756,34 @@
     }
   },
   {
+    "Company": "NYK",
+    "Ship Name": "MERCURY LEADER",
+    "Voyage": "075",
+    "id": "2026-07-06_MERCURY LEADER_075",
+    "Departure Ports": {
+      "Yokohama": "2026-07-06",
+      "Kawasaki": "2026-07-07",
+      "Kisarazu": "-",
+      "Nagoya": "2026-07-08",
+      "Kobe": "2026-07-10",
+      "Osaka": "2026-07-09",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-08-08",
+      "Dar": "2026-08-03",
+      "Mombasa": "2026-08-02",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "MOL",
     "Ship Name": "CATTLEYA ACE",
     "Voyage": "",

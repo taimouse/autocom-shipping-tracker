@@ -466,5 +466,31 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "72",
+    "id": "2026-07-21_MALAYSIA PASSION_72",
+    "Departure Ports": {
+      "Yokohama": "2026-07-21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-07-21",
+      "Kobe": "-",
+      "Osaka": "2026-07-21",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "O",
+      "Mongla": "O",
+      "Subic": "-"
+    }
   }
 ]
