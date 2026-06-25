@@ -420,7 +420,7 @@
     }
   },
   {
-    "Company": "THE KEIHIN CO., LTD.",
+    "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "DON JUAN",
     "Voyage": "706",
     "id": "2026-06-18_DON JUAN_706",
@@ -442,8 +442,36 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "2026-07-11",
-      "Mombasa": "2026-07-13",
+      "Dar": "2026-07-12",
+      "Mombasa": "2026-07-14",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE HALIFAX",
+    "Voyage": "GHL0426",
+    "id": "2026-06-19_GRANDE HALIFAX_GHL0426",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-20",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-07-07",
+      "Mombasa": "2026-07-10",
       "Maput": "-"
     }
   },
@@ -476,35 +504,7 @@
     }
   },
   {
-    "Company": "GRIMALDI",
-    "Ship Name": "GRANDE HALIFAX",
-    "Voyage": "GHL0426",
-    "id": "2026-06-19_GRANDE HALIFAX_GHL0426",
-    "Departure Ports": {
-      "Yokohama": "2026-06-19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-20",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-07-07",
-      "Mombasa": "2026-07-10",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
+    "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "DON JUAN",
     "Voyage": "706",
     "id": "2026-06-18_DON JUAN_706",
@@ -526,8 +526,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "2026-07-12",
-      "Mombasa": "2026-07-14",
+      "Dar": "2026-07-11",
+      "Mombasa": "2026-07-13",
       "Maput": "-"
     }
   },
@@ -644,34 +644,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "GARNET ACE",
-    "Voyage": "0130A",
-    "id": "2026-06-28_GARNET ACE_0130A",
-    "Departure Ports": {
-      "Yokohama": "2026-06-29",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-06-30",
-      "Nagoya": "2026-06-28",
-      "Kobe": "2026-07-02",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "2026-07-04",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "O",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "O"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "SAGITTARIUS LEADER",
     "Voyage": "072",
@@ -710,7 +682,7 @@
       "Kisarazu": "-",
       "Nagoya": "2026-06-30",
       "Kobe": "2026-06-26",
-      "Osaka": "2026-06-27",
+      "Osaka": "2026-06-26",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -728,31 +700,31 @@
     }
   },
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS SIRIUS",
-    "Voyage": "070",
-    "id": "2026-07-03_GLOVIS SIRIUS_070",
+    "Company": "MOL",
+    "Ship Name": "GARNET ACE",
+    "Voyage": "0130A",
+    "id": "2026-06-29_GARNET ACE_0130A",
     "Departure Ports": {
-      "Yokohama": "-",
+      "Yokohama": "2026-07-05",
       "Kawasaki": "-",
-      "Kisarazu": "2026-07-03",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "2026-07-05",
-      "Hakata": "2026-07-08",
+      "Kisarazu": "2026-07-06",
+      "Nagoya": "2026-06-29",
+      "Kobe": "2026-07-03",
+      "Osaka": "-",
+      "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Nakanoseki": "-",
+      "Nakanoseki": "2026-07-02",
       "Hitachinaka": "-"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-07-29",
-      "Mombasa": "2026-07-27",
-      "Maput": "-"
+      "Durban": "O",
+      "Dar": "O",
+      "Mombasa": "O",
+      "Maput": "O"
     }
   },
   {
@@ -780,6 +752,34 @@
       "Durban": "2026-08-08",
       "Dar": "2026-08-03",
       "Mombasa": "2026-08-02",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS SIRIUS",
+    "Voyage": "070",
+    "id": "2026-07-08_GLOVIS SIRIUS_070",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-07-12",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "2026-07-10",
+      "Hakata": "2026-07-08",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-08-08",
+      "Mombasa": "2026-08-06",
       "Maput": "-"
     }
   },

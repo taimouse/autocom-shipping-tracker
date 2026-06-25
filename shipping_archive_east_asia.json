@@ -1168,5 +1168,31 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA GRACE",
+    "Voyage": "51",
+    "id": "2026-06-22_MALAYSIA GRACE_51",
+    "Departure Ports": {
+      "Yokohama": "2026-06-22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-24",
+      "Kobe": "-",
+      "Osaka": "2026-06-25",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-07-15",
+      "Mongla": "2026-07-17",
+      "Subic": "-"
+    }
   }
 ]
