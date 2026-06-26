@@ -619,19 +619,19 @@
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "ASIAN MAJESTY",
     "Voyage": "IF606",
-    "id": "2026-06-27_ASIAN MAJESTY_IF606",
+    "id": "2026-06-28_ASIAN MAJESTY_IF606",
     "Departure Ports": {
-      "Yokohama": "2026-06-28",
+      "Yokohama": "2026-06-29",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-29",
-      "Kobe": "2026-06-30",
+      "Nagoya": "2026-06-30",
+      "Kobe": "2026-07-01",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "2026-07-05",
       "Kanda": "-",
       "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-27"
+      "Hitachinaka": "2026-06-28"
     },
     "Arrival Ports": {
       "Jebel Ali": "-",
@@ -793,7 +793,7 @@
       "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "2026-07-09",
-      "Kobe": "2026-07-13",
+      "Kobe": "2026-07-14",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
