@@ -123,6 +123,33 @@
     "Schedule Updated": "2026-06-19"
   },
   {
+    "Service": "ASIA",
+    "Company": "NYK",
+    "Ship Name": "AQUARIUS LEADER",
+    "Voyage": "073",
+    "id": "NYK|ASIA|AQUARIUS LEADER|073|2026-06-28",
+    "Updated": false,
+    "Departure Ports": {
+      "Nakanoseki (Hakata, Moji)": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Yokohama": "-",
+      "Nagoya (Nishisanku)": "2026-06-28"
+    },
+    "Arrival Ports": {
+      "Taipei": "2026-06-29",
+      "Shanghai": "-",
+      "Singapore": "-",
+      "Port Kelang (North)": "2026-07-12",
+      "Port Kelang (West)": "-",
+      "Ho Chi Minh": "-",
+      "Haiphong": "-",
+      "Jakarta": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/REVISED-all-260625.pdf",
+    "Schedule Updated": "2026-06-25"
+  },
+  {
     "Service": "CANADA",
     "Company": "NYK",
     "Ship Name": "TBN",
