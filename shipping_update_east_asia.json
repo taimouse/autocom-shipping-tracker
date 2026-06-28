@@ -1,31 +1,5 @@
 [
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "70",
-    "id": "2026-05-13_MALAYSIA PASSION_70",
-    "Departure Ports": {
-      "Yokohama": "2026-05-13",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-14",
-      "Kobe": "-",
-      "Osaka": "2026-05-15",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "2026-06-12",
-      "Mongla": "2026-06-14",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "GUARDIAN LEADER",
     "Voyage": "130",
