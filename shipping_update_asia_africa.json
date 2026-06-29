@@ -1,33 +1,5 @@
 [
   {
-    "Company": "MOL",
-    "Ship Name": "GLORIOUS ACE",
-    "Voyage": "0109A",
-    "id": "2026-05-12_GLORIOUS ACE_0109A",
-    "Departure Ports": {
-      "Yokohama": "2026-05-14",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-05-13",
-      "Nagoya": "2026-05-12",
-      "Kobe": "2026-05-18",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "2026-06-04",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "GUARDIAN LEADER",
     "Voyage": "130",
@@ -420,62 +392,6 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "DON JUAN",
-    "Voyage": "706",
-    "id": "2026-06-18_DON JUAN_706",
-    "Departure Ports": {
-      "Yokohama": "2026-06-19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-21",
-      "Kobe": "-",
-      "Osaka": "2026-06-23",
-      "Hakata": "-",
-      "Hibikinada": "2026-06-25",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-18"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-07-12",
-      "Mombasa": "2026-07-14",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "GRIMALDI",
-    "Ship Name": "GRANDE HALIFAX",
-    "Voyage": "GHL0426",
-    "id": "2026-06-19_GRANDE HALIFAX_GHL0426",
-    "Departure Ports": {
-      "Yokohama": "2026-06-19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-20",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-07-07",
-      "Mombasa": "2026-07-10",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "MERMAID ACE",
     "Voyage": "0129A",
@@ -528,6 +444,62 @@
       "Durban": "-",
       "Dar": "2026-07-11",
       "Mombasa": "2026-07-13",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE HALIFAX",
+    "Voyage": "GHL0426",
+    "id": "2026-06-19_GRANDE HALIFAX_GHL0426",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-20",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-07-07",
+      "Mombasa": "2026-07-10",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "706",
+    "id": "2026-06-18_DON JUAN_706",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-21",
+      "Kobe": "-",
+      "Osaka": "2026-06-23",
+      "Hakata": "-",
+      "Hibikinada": "2026-06-25",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-06-18"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-07-12",
+      "Mombasa": "2026-07-14",
       "Maput": "-"
     }
   },
@@ -665,9 +637,9 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "2026-08-08",
-      "Dar": "2026-08-03",
-      "Mombasa": "2026-08-02",
+      "Durban": "2026-08-22",
+      "Dar": "2026-08-16",
+      "Mombasa": "2026-08-11",
       "Maput": "-"
     }
   },
