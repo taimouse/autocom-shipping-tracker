@@ -419,14 +419,14 @@
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "41",
-    "id": "2026-07-19_VIKING DRIVE_41",
+    "id": "2026-07-20_VIKING DRIVE_41",
     "Departure Ports": {
-      "Yokohama": "2026-07-21",
+      "Yokohama": "2026-07-22",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-20",
+      "Nagoya": "2026-07-21",
       "Kobe": "-",
-      "Osaka": "2026-07-19",
+      "Osaka": "2026-07-20",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -435,7 +435,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "2026-08-05",
+      "Hambantota": "2026-08-07",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
