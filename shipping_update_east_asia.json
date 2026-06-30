@@ -1,32 +1,6 @@
 [
   {
     "Company": "NYK",
-    "Ship Name": "GUARDIAN LEADER",
-    "Voyage": "130",
-    "id": "2026-05-15_GUARDIAN LEADER_130",
-    "Departure Ports": {
-      "Yokohama": "2026-05-15",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-16",
-      "Kobe": "2026-05-22",
-      "Osaka": "2026-05-21",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-06-04",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "NYK",
     "Ship Name": "ALTAIR LEADER",
     "Voyage": "104",
     "id": "2026-05-21_ALTAIR LEADER_104",
@@ -384,6 +358,32 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "2026-07-22",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "HARMONY LEADER",
+    "Voyage": "104",
+    "id": "2026-07-13_HARMONY LEADER_104",
+    "Departure Ports": {
+      "Yokohama": "2026-07-13",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-07-14",
+      "Kobe": "2026-07-17",
+      "Osaka": "2026-07-16",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-30",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
