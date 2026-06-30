@@ -96,6 +96,117 @@
     "Schedule Updated": "2026-06-19"
   },
   {
+    "Service": "SRI LANKA",
+    "Company": "NYK",
+    "Ship Name": "VENUS LEADER",
+    "Voyage": "082",
+    "id": "NYK|SRI LANKA|VENUS LEADER|082|2026-06-22",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "2026-06-22",
+      "Osaka": "2026-06-25",
+      "Kobe": "2026-06-26",
+      "Nagoya (Kinjyo)": "2026-06-23",
+      "Kawasaki": "-",
+      "Moji": "-"
+    },
+    "Arrival Ports": {
+      "Sri Lanka (Hambantota)": "2026-07-07"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "AFRICA",
+    "Company": "NYK",
+    "Ship Name": "VENUS LEADER",
+    "Voyage": "082",
+    "id": "NYK|AFRICA|VENUS LEADER|082|2026-06-22",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "2026-06-22",
+      "Osaka": "2026-06-25",
+      "Kobe": "2026-06-26",
+      "Nagoya (Kinjyo)": "2026-06-23",
+      "Kawasaki": "-",
+      "Moji": "-"
+    },
+    "Arrival Ports": {
+      "Mombasa": "-",
+      "Dar Es Salaam": "-",
+      "Durban": "-",
+      "Port Louis": "2026-07-21",
+      "Lagos": "2026-07-16",
+      "Tema": "-",
+      "Abidjan": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "KARACHI",
+    "Company": "NYK",
+    "Ship Name": "GAIA LEADER",
+    "Voyage": "110",
+    "id": "NYK|KARACHI|GAIA LEADER|110|2026-06-26",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Nagoya (Kinjyo)": "2026-06-26",
+      "Kobe": "-",
+      "Yokohama (Second Call)": "-",
+      "Kawasaki": "-"
+    },
+    "Arrival Ports": {
+      "Karachi": "2026-07-25"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "EAST AUST",
+    "Company": "NYK",
+    "Ship Name": "HESTIA LEADER",
+    "Voyage": "129",
+    "id": "NYK|EAST AUST|HESTIA LEADER|129|2026-06-26",
+    "Updated": true,
+    "Departure Ports": {
+      "Nagoya (Kinjo)": "2026-06-26",
+      "Nagoya (Nishisanku)": "-",
+      "Yokohama": "2026-06-28",
+      "Osaka": "-",
+      "Kobe": "-"
+    },
+    "Arrival Ports": {
+      "Townsville": "-",
+      "Brisbane": "-",
+      "Port Kembla": "2026-07-11",
+      "Melbourne": "2026-07-14",
+      "Adelaide": "2026-07-25"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "PNG",
+    "Company": "NYK",
+    "Ship Name": "HESTIA LEADER",
+    "Voyage": "129",
+    "id": "NYK|PNG|HESTIA LEADER|129|2026-06-26",
+    "Updated": true,
+    "Departure Ports": {
+      "Nagoya": "2026-06-26",
+      "Yokohama": "2026-06-28"
+    },
+    "Arrival Ports": {
+      "Guam": "-",
+      "Lae": "2026-07-02",
+      "Port Moresby": "2026-07-07"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
     "Service": "ASIA",
     "Company": "NYK",
     "Ship Name": "AQUARIUS LEADER",
@@ -123,6 +234,27 @@
     "Schedule Updated": "2026-06-19"
   },
   {
+    "Service": "IQUIQUE (SOUTH AMERICA)",
+    "Company": "NYK",
+    "Ship Name": "LYDDEN",
+    "Voyage": "042",
+    "id": "NYK|IQUIQUE (SOUTH AMERICA)|LYDDEN|042|2026-06-27",
+    "Updated": false,
+    "Departure Ports": {
+      "Nagoya": "2026-06-27",
+      "Yokohama": "2026-06-28"
+    },
+    "Arrival Ports": {
+      "Pt. Quetzal": "-",
+      "Acajutla": "-",
+      "Callao": "-",
+      "Iquique": "-",
+      "San Antonio": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
     "Service": "ASIA",
     "Company": "NYK",
     "Ship Name": "AQUARIUS LEADER",
@@ -148,6 +280,76 @@
     },
     "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/REVISED-all-260625.pdf",
     "Schedule Updated": "2026-06-25"
+  },
+  {
+    "Service": "ASIA",
+    "Company": "NYK",
+    "Ship Name": "AQUARIUS LEADER",
+    "Voyage": "073",
+    "id": "NYK|ASIA|AQUARIUS LEADER|073|2026-06-29",
+    "Updated": true,
+    "Departure Ports": {
+      "Nakanoseki (Hakata, Moji)": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Yokohama": "2026-06-29",
+      "Nagoya (Nishisanku)": "-"
+    },
+    "Arrival Ports": {
+      "Taipei": "-",
+      "Shanghai": "-",
+      "Singapore": "-",
+      "Port Kelang (North)": "2026-07-14",
+      "Port Kelang (West)": "-",
+      "Ho Chi Minh": "-",
+      "Haiphong": "-",
+      "Jakarta": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "CENTRAL AMERICA",
+    "Company": "NYK",
+    "Ship Name": "VIKING ADVENTURE",
+    "Voyage": "043",
+    "id": "NYK|CENTRAL AMERICA|VIKING ADVENTURE|043|2026-06-30",
+    "Updated": false,
+    "Departure Ports": {
+      "Osaka": "-",
+      "Yokohama": "2026-06-30",
+      "Nagoya": "2026-06-28"
+    },
+    "Arrival Ports": {
+      "Pt. Quetzal": "-",
+      "Acajutla": "2026-07-17",
+      "San Lorenzo": "-",
+      "Corinto": "-",
+      "Pt. Caldera": "-",
+      "Lazaro Cardenas": "-",
+      "Buenaventura": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "NAEC (北米東岸)",
+    "Company": "NYK",
+    "Ship Name": "ORION LEADER",
+    "Voyage": "061",
+    "id": "NYK|NAEC (北米東岸)|ORION LEADER|061|2026-07-10",
+    "Updated": false,
+    "Departure Ports": {
+      "Nagoya": "-",
+      "Yokohama": "-",
+      "Kawasaki": "-"
+    },
+    "Arrival Ports": {
+      "Jacksonville": "2026-07-10",
+      "Baltimore": "2026-08-12"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
+    "Schedule Updated": "2026-06-26"
   },
   {
     "Service": "CANADA",
