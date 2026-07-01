@@ -730,8 +730,8 @@
   {
     "Company": "MOL",
     "Ship Name": "CATTLEYA ACE",
-    "Voyage": "",
-    "id": "2026-07-09_CATTLEYA ACE_",
+    "Voyage": "0112A",
+    "id": "2026-07-09_CATTLEYA ACE_0112A",
     "Departure Ports": {
       "Yokohama": "2026-07-16",
       "Kawasaki": "-",
@@ -758,8 +758,8 @@
   {
     "Company": "MOL",
     "Ship Name": "SWIFT ACE",
-    "Voyage": "",
-    "id": "2026-07-16_SWIFT ACE_",
+    "Voyage": "0150A",
+    "id": "2026-07-16_SWIFT ACE_0150A",
     "Departure Ports": {
       "Yokohama": "2026-07-17",
       "Kawasaki": "-",
