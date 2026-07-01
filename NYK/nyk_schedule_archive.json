@@ -333,6 +333,23 @@
     "Schedule Updated": "2026-06-26"
   },
   {
+    "Service": "HONOLULU",
+    "Company": "NYK",
+    "Ship Name": "PAVO LEADER",
+    "Voyage": "011",
+    "id": "NYK|HONOLULU|PAVO LEADER|011|2026-07-11",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "2026-07-11",
+      "Nagoya": "2026-07-08"
+    },
+    "Arrival Ports": {
+      "Honolulu": "2026-07-27"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260630.pdf",
+    "Schedule Updated": "2026-06-30"
+  },
+  {
     "Service": "NAEC (北米東岸)",
     "Company": "NYK",
     "Ship Name": "ORION LEADER",
