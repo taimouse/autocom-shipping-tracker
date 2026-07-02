@@ -2014,5 +2014,33 @@
       "Mombasa": "2026-08-15",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "STRAITS CHALLENGER",
+    "Voyage": "351",
+    "id": "2026-06-25_STRAITS CHALLENGER_351",
+    "Departure Ports": {
+      "Yokohama": "2026-06-25",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-07-02",
+      "Kobe": "2026-07-01",
+      "Osaka": "2026-06-29",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-08-10",
+      "Mombasa": "2026-08-13",
+      "Maput": "-"
+    }
   }
 ]

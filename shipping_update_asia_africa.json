@@ -787,14 +787,14 @@
     "Company": "MOL",
     "Ship Name": "SWIFT ACE",
     "Voyage": "0150A",
-    "id": "2026-07-16_SWIFT ACE_0150A",
+    "id": "2026-07-15_SWIFT ACE_0150A",
     "Departure Ports": {
-      "Yokohama": "2026-07-17",
+      "Yokohama": "2026-07-20",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-16",
+      "Nagoya": "2026-07-19",
       "Kobe": "-",
-      "Osaka": "2026-07-19",
+      "Osaka": "2026-07-15",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -805,10 +805,10 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "2026-08-14",
-      "Dar": "2026-08-22",
-      "Mombasa": "2026-08-27",
-      "Maput": "2026-08-18"
+      "Durban": "2026-08-13",
+      "Dar": "2026-08-21",
+      "Mombasa": "2026-08-26",
+      "Maput": "2026-08-17"
     }
   },
   {
