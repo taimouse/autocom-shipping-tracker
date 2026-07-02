@@ -338,6 +338,32 @@
     }
   },
   {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "706",
+    "id": "2026-07-09_MODERN LINK_706",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "2026-07-09",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS SIRIUS",
     "Voyage": "070",
