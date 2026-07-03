@@ -367,15 +367,15 @@
     "Company": "G ALLIANCE SHIPPING",
     "Ship Name": "GLOVIS SIRIUS",
     "Voyage": "070",
-    "id": "2026-07-08_GLOVIS SIRIUS_070",
+    "id": "2026-07-10_GLOVIS SIRIUS_070",
     "Departure Ports": {
       "Yokohama": "-",
       "Kawasaki": "-",
-      "Kisarazu": "2026-07-12",
+      "Kisarazu": "2026-07-13",
       "Nagoya": "-",
       "Kobe": "-",
-      "Osaka": "2026-07-10",
-      "Hakata": "2026-07-08",
+      "Osaka": "2026-07-12",
+      "Hakata": "2026-07-10",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -383,7 +383,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "2026-07-22",
+      "Hambantota": "2026-07-28",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
