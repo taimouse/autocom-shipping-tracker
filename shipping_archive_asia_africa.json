@@ -2042,5 +2042,33 @@
       "Mombasa": "2026-08-13",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "SAIC ANJI SINCERITY",
+    "Voyage": "0005A",
+    "id": "2026-06-23_SAIC ANJI SINCERITY_0005A",
+    "Departure Ports": {
+      "Yokohama": "2026-06-23",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-07-04",
+      "Nagoya": "2026-06-24",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "O",
+      "Dar": "O",
+      "Mombasa": "O",
+      "Maput": "-"
+    }
   }
 ]

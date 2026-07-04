@@ -1,61 +1,5 @@
 [
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS COURAGE",
-    "Voyage": "099",
-    "id": "2026-05-13_GLOVIS COURAGE_099",
-    "Departure Ports": {
-      "Yokohama": "-",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-05-17",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "2026-05-19",
-      "Hakata": "2026-05-13",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "OLYMPIAN HIGHWAY",
-    "Voyage": "73",
-    "id": "2026-05-19_OLYMPIAN HIGHWAY_73",
-    "Departure Ports": {
-      "Yokohama": "2026-05-19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-28",
-      "Kobe": "2026-05-25",
-      "Osaka": "2026-05-25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-05-23"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-06-30",
-      "Mombasa": "2026-06-27",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "ALTAIR LEADER",
     "Voyage": "104",
@@ -364,34 +308,6 @@
     }
   },
   {
-    "Company": "MOL",
-    "Ship Name": "MERMAID ACE",
-    "Voyage": "0129A",
-    "id": "2026-06-16_MERMAID ACE_0129A",
-    "Departure Ports": {
-      "Yokohama": "2026-06-19",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-06-20",
-      "Nagoya": "2026-06-16",
-      "Kobe": "-",
-      "Osaka": "2026-06-23",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-06-17"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "2026-07-10",
-      "Durban": "2026-07-14",
-      "Dar": "2026-07-22",
-      "Mombasa": "-",
-      "Maput": "2026-07-18"
-    }
-  },
-  {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "DON JUAN",
     "Voyage": "706",
@@ -417,6 +333,34 @@
       "Dar": "2026-07-11",
       "Mombasa": "2026-07-13",
       "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "MERMAID ACE",
+    "Voyage": "0129A",
+    "id": "2026-06-16_MERMAID ACE_0129A",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-06-20",
+      "Nagoya": "2026-06-16",
+      "Kobe": "-",
+      "Osaka": "2026-06-23",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-06-17"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "2026-07-10",
+      "Durban": "2026-07-14",
+      "Dar": "2026-07-22",
+      "Mombasa": "-",
+      "Maput": "2026-07-18"
     }
   },
   {
