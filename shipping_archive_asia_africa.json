@@ -2070,5 +2070,33 @@
       "Mombasa": "O",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "ASIAN MAJESTY",
+    "Voyage": "IF606",
+    "id": "2026-06-28_ASIAN MAJESTY_IF606",
+    "Departure Ports": {
+      "Yokohama": "2026-06-29",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-30",
+      "Kobe": "2026-07-02",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "2026-07-05",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-06-28"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-08-09",
+      "Dar": "2026-08-03",
+      "Mombasa": "2026-08-04",
+      "Maput": "-"
+    }
   }
 ]
