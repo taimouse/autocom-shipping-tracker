@@ -2098,5 +2098,33 @@
       "Mombasa": "2026-08-04",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "GARNET ACE",
+    "Voyage": "0130A",
+    "id": "2026-06-29_GARNET ACE_0130A",
+    "Departure Ports": {
+      "Yokohama": "2026-07-05",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-07-06",
+      "Nagoya": "2026-06-29",
+      "Kobe": "2026-07-03",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "2026-07-02",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "O",
+      "Dar": "O",
+      "Mombasa": "O",
+      "Maput": "O"
+    }
   }
 ]

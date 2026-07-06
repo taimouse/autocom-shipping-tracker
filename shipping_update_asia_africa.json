@@ -1,61 +1,5 @@
 [
   {
-    "Company": "NYK",
-    "Ship Name": "ALTAIR LEADER",
-    "Voyage": "104",
-    "id": "2026-05-21_ALTAIR LEADER_104",
-    "Departure Ports": {
-      "Yokohama": "2026-05-21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-23",
-      "Kobe": "2026-05-26",
-      "Osaka": "2026-05-25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "2026-06-16",
-      "Dar": "2026-06-22",
-      "Mombasa": "2026-06-25",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "MOL",
-    "Ship Name": "WISTERIA ACE",
-    "Voyage": "0149A",
-    "id": "2026-05-21_WISTERIA ACE_0149A",
-    "Departure Ports": {
-      "Yokohama": "2026-05-21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-23",
-      "Kobe": "-",
-      "Osaka": "2026-05-26",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-05-23"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "2026-06-13",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "0042A",
@@ -753,34 +697,6 @@
       "Dar": "2026-08-21",
       "Mombasa": "2026-08-26",
       "Maput": "2026-08-17"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-TURANDOT",
-    "Voyage": "705",
-    "id": "2026-07-20_IN-TURANDOT_705",
-    "Departure Ports": {
-      "Yokohama": "2026-07-21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-07-22",
-      "Kobe": "2026-07-24",
-      "Osaka": "2026-07-23",
-      "Hakata": "-",
-      "Hibikinada": "2026-07-26",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "2026-07-20"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "-"
     }
   },
   {

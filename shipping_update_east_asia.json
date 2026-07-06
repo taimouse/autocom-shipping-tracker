@@ -1,31 +1,5 @@
 [
   {
-    "Company": "NYK",
-    "Ship Name": "ALTAIR LEADER",
-    "Voyage": "104",
-    "id": "2026-05-21_ALTAIR LEADER_104",
-    "Departure Ports": {
-      "Yokohama": "2026-05-21",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-05-23",
-      "Kobe": "-",
-      "Osaka": "2026-05-25",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-06-05",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA BRAVE",
     "Voyage": "91",
