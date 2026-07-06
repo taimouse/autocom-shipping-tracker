@@ -144,6 +144,54 @@
     "Schedule Updated": "2026-06-26"
   },
   {
+    "Service": "SRI LANKA",
+    "Company": "NYK",
+    "Ship Name": "STRAITS CHALLENGER",
+    "Voyage": "351",
+    "id": "NYK|SRI LANKA|STRAITS CHALLENGER|351|2026-06-25",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "2026-06-25",
+      "Osaka": "2026-06-29",
+      "Kobe": "2026-07-01",
+      "Nagoya (Kinjyo)": "2026-07-02",
+      "Kawasaki": "2026-06-26",
+      "Moji": "-"
+    },
+    "Arrival Ports": {
+      "Sri Lanka (Hambantota)": "2026-07-12"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2017/11/all-260701-1.pdf",
+    "Schedule Updated": "2026-07-01"
+  },
+  {
+    "Service": "AFRICA",
+    "Company": "NYK",
+    "Ship Name": "STRAITS CHALLENGER",
+    "Voyage": "351",
+    "id": "NYK|AFRICA|STRAITS CHALLENGER|351|2026-06-25",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "2026-06-25",
+      "Osaka": "2026-06-29",
+      "Kobe": "2026-07-01",
+      "Nagoya (Kinjyo)": "2026-07-02",
+      "Kawasaki": "2026-06-26",
+      "Moji": "-"
+    },
+    "Arrival Ports": {
+      "Mombasa": "2026-08-13",
+      "Dar Es Salaam": "2026-08-10",
+      "Durban": "2026-08-02",
+      "Port Louis": "-",
+      "Lagos": "-",
+      "Tema": "-",
+      "Abidjan": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2017/11/all-260701-1.pdf",
+    "Schedule Updated": "2026-07-01"
+  },
+  {
     "Service": "KARACHI",
     "Company": "NYK",
     "Ship Name": "GAIA LEADER",
@@ -309,6 +357,33 @@
     "Schedule Updated": "2026-06-26"
   },
   {
+    "Service": "SOUTH PACIFIC",
+    "Company": "NYK",
+    "Ship Name": "CORAL ISLANDER II",
+    "Voyage": "170",
+    "id": "NYK|SOUTH PACIFIC|CORAL ISLANDER II|170|2026-06-30",
+    "Updated": false,
+    "Departure Ports": {
+      "Kobe": "2026-06-30",
+      "Nagoya": "2026-07-01",
+      "Yokohama": "2026-07-02"
+    },
+    "Arrival Ports": {
+      "Honiara": "2026-07-11",
+      "Santo": "-",
+      "Port Vila": "2026-07-14",
+      "Noumea": "2026-07-16",
+      "Lautoka": "-",
+      "Suva": "2026-07-19",
+      "Nuku'Alofa": "2026-07-22",
+      "Apia": "2026-07-24",
+      "Pagopago": "2026-07-24",
+      "Tarawa": "2026-08-08"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2017/11/all-260701-1.pdf",
+    "Schedule Updated": "2026-07-01"
+  },
+  {
     "Service": "CENTRAL AMERICA",
     "Company": "NYK",
     "Ship Name": "VIKING ADVENTURE",
@@ -331,6 +406,72 @@
     },
     "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260626.pdf",
     "Schedule Updated": "2026-06-26"
+  },
+  {
+    "Service": "CANADA",
+    "Company": "NYK",
+    "Ship Name": "OCEANUS LEADER",
+    "Voyage": "104",
+    "id": "NYK|CANADA|OCEANUS LEADER|104|2026-07-03",
+    "Updated": false,
+    "Departure Ports": {
+      "Kawasaki": "2026-07-03",
+      "Yokohama": "-",
+      "Nagoya": "-"
+    },
+    "Arrival Ports": {
+      "New Westminster (Vancouver)": "2026-07-24"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2017/11/all-260701-1.pdf",
+    "Schedule Updated": "2026-07-01"
+  },
+  {
+    "Service": "EAST AUST",
+    "Company": "NYK",
+    "Ship Name": "POSEIDON LEADER",
+    "Voyage": "140",
+    "id": "NYK|EAST AUST|POSEIDON LEADER|140|2026-07-04",
+    "Updated": false,
+    "Departure Ports": {
+      "Nagoya (Kinjo)": "-",
+      "Nagoya (Nishisanku)": "-",
+      "Yokohama": "2026-07-04",
+      "Osaka": "-",
+      "Kobe": "-"
+    },
+    "Arrival Ports": {
+      "Townsville": "-",
+      "Brisbane": "2026-07-16",
+      "Port Kembla": "2026-07-20",
+      "Melbourne": "2026-07-22",
+      "Adelaide": "2026-07-25"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2017/11/all-260701-1.pdf",
+    "Schedule Updated": "2026-07-01"
+  },
+  {
+    "Service": "EAST AUST",
+    "Company": "NYK",
+    "Ship Name": "GRACEFUL LEADER",
+    "Voyage": "137",
+    "id": "NYK|EAST AUST|GRACEFUL LEADER|137|2026-07-11",
+    "Updated": false,
+    "Departure Ports": {
+      "Nagoya (Kinjo)": "2026-07-11",
+      "Nagoya (Nishisanku)": "-",
+      "Yokohama": "2026-07-12",
+      "Osaka": "-",
+      "Kobe": "-"
+    },
+    "Arrival Ports": {
+      "Townsville": "-",
+      "Brisbane": "2026-07-22",
+      "Port Kembla": "2026-07-25",
+      "Melbourne": "2026-07-28",
+      "Adelaide": "2026-08-10"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2017/11/all-260701-1.pdf",
+    "Schedule Updated": "2026-07-01"
   },
   {
     "Service": "HONOLULU",
