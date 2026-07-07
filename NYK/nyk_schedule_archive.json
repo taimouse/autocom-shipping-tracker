@@ -562,5 +562,29 @@
     },
     "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260619.pdf",
     "Schedule Updated": "2026-06-19"
+  },
+  {
+    "Service": "CENTRAL AMERICA",
+    "Company": "NYK",
+    "Ship Name": "TBN",
+    "Voyage": "000",
+    "id": "NYK|CENTRAL AMERICA|TBN|000|undated",
+    "Updated": false,
+    "Departure Ports": {
+      "Osaka": "-",
+      "Yokohama": "-",
+      "Nagoya": "-"
+    },
+    "Arrival Ports": {
+      "Pt. Quetzal": "-",
+      "Acajutla": "-",
+      "San Lorenzo": "-",
+      "Corinto": "-",
+      "Pt. Caldera": "-",
+      "Lazaro Cardenas": "-",
+      "Buenaventura": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260706.pdf",
+    "Schedule Updated": "2026-07-06"
   }
 ]
