@@ -8,10 +8,10 @@
       "Yokohama": "2026-05-27",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-05-29",
-      "Kobe": "-",
-      "Osaka": "2026-05-30",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-05-29",
+      "Osaka": "-",
+      "Hakata": "2026-05-30",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -34,36 +34,10 @@
       "Yokohama": "2026-05-28",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-05-29",
-      "Kobe": "-",
-      "Osaka": "2026-05-30",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "2026-05-27"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-06-11",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "71",
-    "id": "2026-06-08_MALAYSIA PASSION_71",
-    "Departure Ports": {
-      "Yokohama": "2026-06-08",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-10",
-      "Kobe": "-",
-      "Osaka": "2026-06-11",
-      "Hakata": "-",
+      "Nagoya": "2026-05-27",
+      "Kobe": "2026-05-29",
+      "Osaka": "-",
+      "Hakata": "2026-05-30",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -71,9 +45,9 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "2026-07-12",
-      "Mongla": "2026-07-14",
+      "Hambantota": "2026-06-11",
+      "Chittagong": "-",
+      "Mongla": "-",
       "Subic": "-"
     }
   },
@@ -86,10 +60,10 @@
       "Yokohama": "2026-06-08",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-10",
-      "Kobe": "-",
-      "Osaka": "2026-06-11",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-10",
+      "Osaka": "-",
+      "Hakata": "2026-06-11",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -104,6 +78,32 @@
     }
   },
   {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "71",
+    "id": "2026-06-08_MALAYSIA PASSION_71",
+    "Departure Ports": {
+      "Yokohama": "2026-06-08",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-10",
+      "Osaka": "-",
+      "Hakata": "2026-06-11",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-07-12",
+      "Mongla": "2026-07-14",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "NYK",
     "Ship Name": "OPAL LEADER",
     "Voyage": "053",
@@ -112,10 +112,10 @@
       "Yokohama": "2026-06-16",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-17",
-      "Kobe": "-",
-      "Osaka": "2026-06-18",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-17",
+      "Osaka": "-",
+      "Hakata": "2026-06-18",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -138,13 +138,13 @@
       "Yokohama": "2026-06-18",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-20",
-      "Kobe": "-",
-      "Osaka": "2026-06-21",
-      "Hakata": "-",
+      "Nagoya": "2026-06-17",
+      "Kobe": "2026-06-20",
+      "Osaka": "-",
+      "Hakata": "2026-06-21",
       "Hibikinada": "-",
       "Kanda": "-",
-      "Hitachinaka": "2026-06-17"
+      "Hitachinaka": "-"
     },
     "Arrival Ports": {
       "Hong Kong": "-",
@@ -164,9 +164,9 @@
       "Yokohama": "2026-06-21",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-18",
-      "Kobe": "2026-06-19",
-      "Osaka": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-18",
+      "Osaka": "2026-06-19",
       "Hakata": "-",
       "Hibikinada": "-",
       "Kanda": "-",
@@ -190,10 +190,10 @@
       "Yokohama": "2026-06-22",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-24",
-      "Kobe": "-",
-      "Osaka": "2026-06-25",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-24",
+      "Osaka": "-",
+      "Hakata": "2026-06-25",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -242,10 +242,10 @@
       "Yokohama": "2026-06-22",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-06-23",
-      "Kobe": "2026-06-26",
-      "Osaka": "2026-06-25",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-23",
+      "Osaka": "2026-06-26",
+      "Hakata": "2026-06-25",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -268,10 +268,10 @@
       "Yokohama": "2026-06-25",
       "Kawasaki": "2026-06-26",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-02",
-      "Kobe": "2026-07-01",
-      "Osaka": "2026-06-29",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-02",
+      "Osaka": "2026-07-01",
+      "Hakata": "2026-06-29",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -294,10 +294,10 @@
       "Yokohama": "2026-07-08",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-07",
-      "Kobe": "-",
-      "Osaka": "2026-07-10",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-07",
+      "Osaka": "-",
+      "Hakata": "2026-07-10",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -322,8 +322,8 @@
       "Kisarazu": "-",
       "Nagoya": "-",
       "Kobe": "-",
-      "Osaka": "2026-07-09",
-      "Hakata": "-",
+      "Osaka": "-",
+      "Hakata": "2026-07-09",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -338,32 +338,6 @@
     }
   },
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS SIRIUS",
-    "Voyage": "070",
-    "id": "2026-07-10_GLOVIS SIRIUS_070",
-    "Departure Ports": {
-      "Yokohama": "-",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-07-13",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "2026-07-12",
-      "Hakata": "2026-07-10",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-07-28",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "HARMONY LEADER",
     "Voyage": "104",
@@ -372,10 +346,10 @@
       "Yokohama": "2026-07-13",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-14",
-      "Kobe": "2026-07-17",
-      "Osaka": "2026-07-16",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-14",
+      "Osaka": "2026-07-17",
+      "Hakata": "2026-07-16",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -390,18 +364,44 @@
     }
   },
   {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS SIRIUS",
+    "Voyage": "070",
+    "id": "2026-07-11_GLOVIS SIRIUS_070",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-07-14",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "2026-07-15",
+      "Hibikinada": "2026-07-11",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-28",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "72",
-    "id": "2026-07-21_MALAYSIA PASSION_72",
+    "id": "2026-07-22_MALAYSIA PASSION_72",
     "Departure Ports": {
-      "Yokohama": "2026-07-21",
+      "Yokohama": "2026-07-22",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-21",
-      "Kobe": "-",
-      "Osaka": "2026-07-21",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-25",
+      "Osaka": "-",
+      "Hakata": "2026-07-26",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -424,10 +424,10 @@
       "Yokohama": "2026-07-22",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-07-21",
-      "Kobe": "-",
-      "Osaka": "2026-07-20",
-      "Hakata": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-21",
+      "Osaka": "-",
+      "Hakata": "2026-07-20",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -438,6 +438,32 @@
       "Hambantota": "2026-08-07",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA GRACE",
+    "Voyage": "52",
+    "id": "2026-08-01_MALAYSIA GRACE_52",
+    "Departure Ports": {
+      "Yokohama": "2026-08-01",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-08-03",
+      "Osaka": "-",
+      "Hakata": "2026-08-05",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-08-23",
+      "Mongla": "2026-08-25",
       "Subic": "-"
     }
   }
