@@ -535,6 +535,14 @@
           "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/shipping_archive_asia_africa.json",
       };
 
+      // NYK 자체 크롤링 스케줄 JSON URL (east_asia 루트에서 NYK Hambantota 값 덮어쓰기용)
+      const nykUrls = {
+        current:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/NYK/nyk_schedule.json",
+        archive:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/NYK/nyk_schedule_archive.json",
+      };
+
       // 색상 팔레트 (회사 수만큼 반복 사용) - 500톤 색상
       const colorPalette = [
         "#2196F3", // 파란색 500
@@ -598,6 +606,7 @@
           : Promise.resolve([]);
 
         // 현재 루트가 east_asia일 때 asia_africa 데이터도 함께 로드하여 툴팁에 연결 스케줄 표시
+        // 아울러 NYK 자체 크롤링 스케줄도 로드하여 NYK 선박의 Hambantota 값을 덮어쓴다.
         let fetches = [fetchCurrent, fetchArchive];
         if (currentRoute === "east_asia") {
           const crossUrl = routeUrls["asia_africa"];
@@ -610,9 +619,25 @@
                 .then((r) => r.json())
                 .catch(() => [])
             : Promise.resolve([]);
-          fetches.push(fetchCrossCurrent, fetchCrossArchive);
+          const fetchNykCurrent = fetch(nykUrls.current)
+            .then((r) => r.json())
+            .catch(() => []);
+          const fetchNykArchive = fetch(nykUrls.archive)
+            .then((r) => r.json())
+            .catch(() => []);
+          fetches.push(
+            fetchCrossCurrent,
+            fetchCrossArchive,
+            fetchNykCurrent,
+            fetchNykArchive,
+          );
         } else {
-          fetches.push(Promise.resolve([]), Promise.resolve([]));
+          fetches.push(
+            Promise.resolve([]),
+            Promise.resolve([]),
+            Promise.resolve([]),
+            Promise.resolve([]),
+          );
         }
 
         Promise.all(fetches)
@@ -622,6 +647,8 @@
               archiveData,
               crossCurrentData,
               crossArchiveData,
+              nykCurrentData,
+              nykArchiveData,
             ]) => {
               // 중복 제거 병합 (고유 id = [출발일-선명-보야드] 기준, 없으면 회사|선명|보야드)
               const seen = new Set();
@@ -652,6 +679,51 @@
               });
 
               shippingData = merged;
+
+              // NYK Hambantota 값 덮어쓰기 (autocom 크롤링 값 대신 NYK 자체 크롤링 값 사용)
+              // NYK 폴더의 스케줄(current + archive)에서 "Sri Lanka (Hambantota)" 등
+              // Hambantota 도착일을 찾아 선명+항차로 매칭되는 east_asia NYK 선박에 적용한다.
+              if (currentRoute === "east_asia") {
+                const nykHambantotaMap = {};
+                // current를 먼저 처리하여 우선순위를 부여 (archive는 보조)
+                [nykCurrentData, nykArchiveData].forEach((records) => {
+                  (records || []).forEach((rec) => {
+                    const arrivals = rec["Arrival Ports"] || {};
+                    let hambantotaDate = "-";
+                    Object.keys(arrivals).forEach((port) => {
+                      if (
+                        port.toLowerCase().includes("hambantota") &&
+                        arrivals[port] !== "-"
+                      ) {
+                        hambantotaDate = arrivals[port];
+                      }
+                    });
+                    if (hambantotaDate === "-") return;
+                    const key = `${(rec["Ship Name"] || "")
+                      .trim()
+                      .toUpperCase()}|${(rec.Voyage || "").trim()}`;
+                    if (!(key in nykHambantotaMap)) {
+                      nykHambantotaMap[key] = hambantotaDate;
+                    }
+                  });
+                });
+
+                shippingData.forEach((ship) => {
+                  if (
+                    ship.Company === "NYK" &&
+                    ship["Arrival Ports"] &&
+                    "Hambantota" in ship["Arrival Ports"]
+                  ) {
+                    const key = `${(ship["Ship Name"] || "")
+                      .trim()
+                      .toUpperCase()}|${(ship.Voyage || "").trim()}`;
+                    if (nykHambantotaMap[key]) {
+                      ship["Arrival Ports"]["Hambantota"] =
+                        nykHambantotaMap[key];
+                    }
+                  }
+                });
+              }
 
               // 교차 루트 데이터(asia_africa) 병합
               if (currentRoute === "east_asia") {
