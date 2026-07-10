@@ -728,34 +728,6 @@
     }
   },
   {
-    "Company": "GRIMALDI",
-    "Ship Name": "GRANDE MIRAFIORI",
-    "Voyage": "GRM0426",
-    "id": "2026-07-28_GRANDE MIRAFIORI_GRM0426",
-    "Departure Ports": {
-      "Yokohama": "2026-07-28",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "2026-08-02",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-08-18",
-      "Mombasa": "2026-08-21",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "PEGASUS ACE",
     "Voyage": "",
@@ -836,6 +808,34 @@
       "Durban": "-",
       "Dar": "2026-09-16",
       "Mombasa": "2026-09-20",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "GRIMALDI",
+    "Ship Name": "GRANDE SHANGHAI",
+    "Voyage": "",
+    "id": "2026-08-01_GRANDE SHANGHAI_",
+    "Departure Ports": {
+      "Yokohama": "2026-08-01",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-08-02",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-08-18",
+      "Mombasa": "2026-08-21",
       "Maput": "-"
     }
   }
