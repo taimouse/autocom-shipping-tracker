@@ -1272,5 +1272,31 @@
       "Mongla": "-",
       "Subic": "-"
     }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA BRAVE",
+    "Voyage": "93",
+    "id": "2026-07-07_MALAYSIA BRAVE_93",
+    "Departure Ports": {
+      "Yokohama": "2026-07-08",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-07",
+      "Osaka": "-",
+      "Hakata": "2026-07-10",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-07-24",
+      "Mongla": "2026-07-26",
+      "Subic": "-"
+    }
   }
 ]
