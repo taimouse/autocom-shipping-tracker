@@ -1,31 +1,5 @@
 [
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA BRAVE",
-    "Voyage": "91",
-    "id": "2026-05-27_MALAYSIA BRAVE_91",
-    "Departure Ports": {
-      "Yokohama": "2026-05-27",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "2026-05-29",
-      "Osaka": "-",
-      "Hakata": "2026-05-30",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "2026-06-17",
-      "Mongla": "2026-06-19",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "TURANDOT",
     "Voyage": "704",
