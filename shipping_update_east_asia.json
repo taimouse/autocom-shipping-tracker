@@ -319,7 +319,7 @@
     "Departure Ports": {
       "Yokohama": "-",
       "Kawasaki": "-",
-      "Kisarazu": "2026-07-14",
+      "Kisarazu": "2026-07-13",
       "Nagoya": "-",
       "Kobe": "-",
       "Osaka": "-",
@@ -340,8 +340,8 @@
   {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "72",
-    "id": "2026-07-22_MALAYSIA PASSION_72",
+    "Voyage": "73",
+    "id": "2026-07-22_MALAYSIA PASSION_73",
     "Departure Ports": {
       "Yokohama": "2026-07-22",
       "Kawasaki": "-",
