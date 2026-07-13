@@ -1,17 +1,17 @@
 [
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "TURANDOT",
-    "Voyage": "704",
-    "id": "2026-05-27_TURANDOT_704",
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "71",
+    "id": "2026-06-08_MALAYSIA PASSION_71",
     "Departure Ports": {
-      "Yokohama": "2026-05-28",
+      "Yokohama": "2026-06-08",
       "Kawasaki": "-",
       "Kisarazu": "-",
-      "Nagoya": "2026-05-27",
-      "Kobe": "2026-05-29",
+      "Nagoya": "-",
+      "Kobe": "2026-06-10",
       "Osaka": "-",
-      "Hakata": "2026-05-30",
+      "Hakata": "2026-06-11",
       "Hibikinada": "-",
       "Kanda": "-",
       "Hitachinaka": "-"
@@ -19,9 +19,9 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "2026-06-11",
-      "Chittagong": "-",
-      "Mongla": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-07-12",
+      "Mongla": "2026-07-14",
       "Subic": "-"
     }
   },
@@ -48,32 +48,6 @@
       "Hambantota": "2026-06-22",
       "Chittagong": "-",
       "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "71",
-    "id": "2026-06-08_MALAYSIA PASSION_71",
-    "Departure Ports": {
-      "Yokohama": "2026-06-08",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "2026-06-10",
-      "Osaka": "-",
-      "Hakata": "2026-06-11",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "2026-07-12",
-      "Mongla": "2026-07-14",
       "Subic": "-"
     }
   },
