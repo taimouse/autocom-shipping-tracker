@@ -746,47 +746,60 @@
                 });
 
                 // SEALS 자체 크롤링 스케줄 반영 (RORO PDF의 Hambantota 스케줄)
-                // 선명+항차로 매칭되는 SEVEN SEALS 선박에 일본 출항일
-                // (Yokohama/Nagoya/Senboku 등)과 Hambantota 도착일을 덮어쓴다.
+                // 독립 크롤링 데이터를 우선한다: 크롤링에 있는 항차는 autocom
+                // 값을 병합하지 않고 통째로 교체하고(포트명이 달라 이중 표시되는
+                // 것 방지), autocom에 없는 항차는 새 엔트리로 추가한다.
                 const sealsMap = {};
                 // current를 먼저 처리하여 우선순위를 부여 (archive는 보조)
-                [sealsCurrentData, sealsArchiveData].forEach((records) => {
+                [
+                  [sealsCurrentData, false],
+                  [sealsArchiveData, true],
+                ].forEach(([records, isArchive]) => {
                   (records || []).forEach((rec) => {
                     const key = `${(rec["Ship Name"] || "")
                       .trim()
                       .toUpperCase()}|${(rec.Voyage || "").trim()}`;
                     if (!(key in sealsMap)) {
-                      sealsMap[key] = rec;
+                      sealsMap[key] = { rec, isArchive };
                     }
                   });
                 });
 
-                shippingData.forEach((ship) => {
+                const usedSealsKeys = new Set();
+                shippingData = shippingData.filter((ship) => {
                   if (
                     ship.Company !== "SEVEN SEALS CO.,LTD" &&
                     ship.Company !== "SEALS"
                   ) {
-                    return;
+                    return true;
                   }
                   const key = `${(ship["Ship Name"] || "")
                     .trim()
                     .toUpperCase()}|${(ship.Voyage || "").trim()}`;
-                  const rec = sealsMap[key];
-                  if (!rec) return;
-                  Object.entries(rec["Departure Ports"] || {}).forEach(
-                    ([port, dateStr]) => {
-                      if (dateStr !== "-") {
-                        ship["Departure Ports"][port] = dateStr;
-                      }
-                    },
-                  );
-                  Object.entries(rec["Arrival Ports"] || {}).forEach(
-                    ([port, dateStr]) => {
-                      if (dateStr !== "-") {
-                        ship["Arrival Ports"][port] = dateStr;
-                      }
-                    },
-                  );
+                  const entry = sealsMap[key];
+                  if (!entry) return true;
+                  // 같은 항차가 current/archive에 다른 id로 남아 있으면 중복 제거
+                  if (usedSealsKeys.has(key)) return false;
+                  usedSealsKeys.add(key);
+                  ship["Departure Ports"] = {
+                    ...entry.rec["Departure Ports"],
+                  };
+                  ship["Arrival Ports"] = { ...entry.rec["Arrival Ports"] };
+                  return true;
+                });
+
+                // autocom이 아직 싣지 않은 항차(예: 다음 항차)를 추가
+                Object.entries(sealsMap).forEach(([key, entry]) => {
+                  if (usedSealsKeys.has(key)) return;
+                  shippingData.push({
+                    Company: "SEALS",
+                    "Ship Name": entry.rec["Ship Name"],
+                    Voyage: entry.rec.Voyage,
+                    id: entry.rec.id,
+                    isArchive: entry.isArchive,
+                    "Departure Ports": { ...entry.rec["Departure Ports"] },
+                    "Arrival Ports": { ...entry.rec["Arrival Ports"] },
+                  });
                 });
               }
 
