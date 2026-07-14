@@ -1,0 +1,31 @@
+name: Daily SEALS Vessel Schedule Scrape
+
+on:
+  schedule:
+    - cron: "25 1,7 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape-seals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run SEALS scraper
+        run: python SEALS/seals_scraper.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add SEALS/seals_schedule.json SEALS/seals_schedule_archive.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update SEALS vessel schedule" && git pull --rebase && git push)

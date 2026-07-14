@@ -543,6 +543,15 @@
           "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/NYK/nyk_schedule_archive.json",
       };
 
+      // SEALS 자체 크롤링 스케줄 JSON URL (east_asia 루트에서 SEALS 선박의
+      // 일본 출항일/Hambantota 도착일 덮어쓰기용)
+      const sealsUrls = {
+        current:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/SEALS/seals_schedule.json",
+        archive:
+          "https://raw.githubusercontent.com/taimouse/autocom-shipping-tracker/refs/heads/master/SEALS/seals_schedule_archive.json",
+      };
+
       // 색상 팔레트 (회사 수만큼 반복 사용) - 500톤 색상
       const colorPalette = [
         "#2196F3", // 파란색 500
@@ -625,14 +634,24 @@
           const fetchNykArchive = fetch(nykUrls.archive)
             .then((r) => r.json())
             .catch(() => []);
+          const fetchSealsCurrent = fetch(sealsUrls.current)
+            .then((r) => r.json())
+            .catch(() => []);
+          const fetchSealsArchive = fetch(sealsUrls.archive)
+            .then((r) => r.json())
+            .catch(() => []);
           fetches.push(
             fetchCrossCurrent,
             fetchCrossArchive,
             fetchNykCurrent,
             fetchNykArchive,
+            fetchSealsCurrent,
+            fetchSealsArchive,
           );
         } else {
           fetches.push(
+            Promise.resolve([]),
+            Promise.resolve([]),
             Promise.resolve([]),
             Promise.resolve([]),
             Promise.resolve([]),
@@ -649,6 +668,8 @@
               crossArchiveData,
               nykCurrentData,
               nykArchiveData,
+              sealsCurrentData,
+              sealsArchiveData,
             ]) => {
               // 중복 제거 병합 (고유 id = [출발일-선명-보야드] 기준, 없으면 회사|선명|보야드)
               const seen = new Set();
@@ -722,6 +743,50 @@
                         nykHambantotaMap[key];
                     }
                   }
+                });
+
+                // SEALS 자체 크롤링 스케줄 반영 (RORO PDF의 Hambantota 스케줄)
+                // 선명+항차로 매칭되는 SEVEN SEALS 선박에 일본 출항일
+                // (Yokohama/Nagoya/Senboku 등)과 Hambantota 도착일을 덮어쓴다.
+                const sealsMap = {};
+                // current를 먼저 처리하여 우선순위를 부여 (archive는 보조)
+                [sealsCurrentData, sealsArchiveData].forEach((records) => {
+                  (records || []).forEach((rec) => {
+                    const key = `${(rec["Ship Name"] || "")
+                      .trim()
+                      .toUpperCase()}|${(rec.Voyage || "").trim()}`;
+                    if (!(key in sealsMap)) {
+                      sealsMap[key] = rec;
+                    }
+                  });
+                });
+
+                shippingData.forEach((ship) => {
+                  if (
+                    ship.Company !== "SEVEN SEALS CO.,LTD" &&
+                    ship.Company !== "SEALS"
+                  ) {
+                    return;
+                  }
+                  const key = `${(ship["Ship Name"] || "")
+                    .trim()
+                    .toUpperCase()}|${(ship.Voyage || "").trim()}`;
+                  const rec = sealsMap[key];
+                  if (!rec) return;
+                  Object.entries(rec["Departure Ports"] || {}).forEach(
+                    ([port, dateStr]) => {
+                      if (dateStr !== "-") {
+                        ship["Departure Ports"][port] = dateStr;
+                      }
+                    },
+                  );
+                  Object.entries(rec["Arrival Ports"] || {}).forEach(
+                    ([port, dateStr]) => {
+                      if (dateStr !== "-") {
+                        ship["Arrival Ports"][port] = dateStr;
+                      }
+                    },
+                  );
                 });
               }
 

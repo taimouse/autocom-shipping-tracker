@@ -1,0 +1,65 @@
+[
+  {
+    "Service": "SOUTHEAST ASIA / BENGAL",
+    "Company": "SEALS",
+    "Ship Name": "MODERN LINK",
+    "Voyage": "706",
+    "id": "SEALS|MODERN LINK|706|2026-07-06",
+    "Departure Ports": {
+      "Hitachinaka": "-",
+      "Yokohama": "2026-07-06",
+      "Nagoya": "2026-07-08",
+      "Senboku": "2026-07-09",
+      "Kobe": "-",
+      "Moji": "-",
+      "Oita": "-"
+    },
+    "Arrival Ports": {
+      "Hambantota": "2026-07-19"
+    },
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS-20260708.pdf",
+    "Schedule Updated": "2026-07-08"
+  },
+  {
+    "Service": "SOUTHEAST ASIA / BENGAL",
+    "Company": "SEALS",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "41",
+    "id": "SEALS|VIKING DRIVE|41|2026-07-24",
+    "Departure Ports": {
+      "Hitachinaka": "-",
+      "Yokohama": "2026-07-24",
+      "Nagoya": "2026-07-23",
+      "Senboku": "2026-07-21",
+      "Kobe": "-",
+      "Moji": "-",
+      "Oita": "-"
+    },
+    "Arrival Ports": {
+      "Hambantota": "2026-08-08"
+    },
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS-20260708.pdf",
+    "Schedule Updated": "2026-07-08"
+  },
+  {
+    "Service": "SOUTHEAST ASIA / BENGAL",
+    "Company": "SEALS",
+    "Ship Name": "VIKING DRIVE",
+    "Voyage": "42",
+    "id": "SEALS|VIKING DRIVE|42|2026-08-25",
+    "Departure Ports": {
+      "Hitachinaka": "-",
+      "Yokohama": "2026-08-25",
+      "Nagoya": "2026-08-24",
+      "Senboku": "2026-08-22",
+      "Kobe": "-",
+      "Moji": "-",
+      "Oita": "-"
+    },
+    "Arrival Ports": {
+      "Hambantota": "2026-09-07"
+    },
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS-20260708.pdf",
+    "Schedule Updated": "2026-07-08"
+  }
+]
