@@ -299,6 +299,10 @@ SERVICES = [
 
 
 class ScheduleLinkParser(HTMLParser):
+    # 2026-07 사이트 개편으로 링크 텍스트가 전부 "PDF"로 바뀌어,
+    # href 파일명(all-YYMMDD.pdf)으로 ALL PDF를 식별한다.
+    ALL_HREF = re.compile(r"/all-\d{6}\.pdf$", re.IGNORECASE)
+
     def __init__(self):
         super().__init__()
         self.current_href = None
@@ -309,6 +313,8 @@ class ScheduleLinkParser(HTMLParser):
         if tag.lower() == "a":
             self.current_href = dict(attrs).get("href")
             self.current_text = []
+            if self.current_href and self.ALL_HREF.search(self.current_href):
+                self.all_pdf_url = urljoin(SCHEDULE_URL, self.current_href)
 
     def handle_data(self, data):
         if self.current_href:
@@ -316,7 +322,9 @@ class ScheduleLinkParser(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag.lower() == "a" and self.current_href:
-            if " ".join(self.current_text).strip().upper() == "ALL":
+            if not self.all_pdf_url and (
+                " ".join(self.current_text).strip().upper() == "ALL"
+            ):
                 self.all_pdf_url = urljoin(SCHEDULE_URL, self.current_href)
             self.current_href = None
             self.current_text = []
