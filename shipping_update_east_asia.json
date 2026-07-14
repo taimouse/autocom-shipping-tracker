@@ -1,31 +1,5 @@
 [
   {
-    "Company": "ECL",
-    "Ship Name": "MALAYSIA PASSION",
-    "Voyage": "71",
-    "id": "2026-06-08_MALAYSIA PASSION_71",
-    "Departure Ports": {
-      "Yokohama": "2026-06-08",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "2026-06-10",
-      "Osaka": "-",
-      "Hakata": "2026-06-11",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "-",
-      "Chittagong": "2026-07-12",
-      "Mongla": "2026-07-14",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "40",
@@ -48,6 +22,32 @@
       "Hambantota": "2026-06-22",
       "Chittagong": "-",
       "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "71",
+    "id": "2026-06-08_MALAYSIA PASSION_71",
+    "Departure Ports": {
+      "Yokohama": "2026-06-08",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-06-10",
+      "Osaka": "-",
+      "Hakata": "2026-06-11",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "2026-07-12",
+      "Mongla": "2026-07-14",
       "Subic": "-"
     }
   },
@@ -156,32 +156,6 @@
     }
   },
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "G POSEIDON",
-    "Voyage": "078",
-    "id": "2026-06-22_G POSEIDON_078",
-    "Departure Ports": {
-      "Yokohama": "2026-06-22",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-07-22",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "VENUS LEADER",
     "Voyage": "082",
@@ -202,6 +176,32 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "2026-07-07",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "G POSEIDON",
+    "Voyage": "078",
+    "id": "2026-06-22_G POSEIDON_078",
+    "Departure Ports": {
+      "Yokohama": "2026-06-22",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-07-22",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -390,6 +390,32 @@
     }
   },
   {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS STELLA",
+    "Voyage": "000",
+    "id": "2026-07-28_GLOVIS STELLA_000",
+    "Departure Ports": {
+      "Yokohama": "2026-07-28",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-09-10",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA GRACE",
     "Voyage": "52",
@@ -412,6 +438,32 @@
       "Hambantota": "-",
       "Chittagong": "2026-08-23",
       "Mongla": "2026-08-25",
+      "Subic": "-"
+    }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "RCC CLASSIC",
+    "Voyage": "058",
+    "id": "2026-08-09_RCC CLASSIC_058",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-08-09",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "2026-08-11",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-09-10",
+      "Chittagong": "-",
+      "Mongla": "-",
       "Subic": "-"
     }
   }
