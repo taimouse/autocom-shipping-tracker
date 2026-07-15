@@ -2154,5 +2154,33 @@
       "Mombasa": "2026-08-02",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS SIRIUS",
+    "Voyage": "070",
+    "id": "2026-07-11_GLOVIS SIRIUS_070",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-07-13",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "2026-07-15",
+      "Hibikinada": "2026-07-11",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-08-08",
+      "Mombasa": "2026-08-06",
+      "Maput": "-"
+    }
   }
 ]
