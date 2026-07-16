@@ -2,6 +2,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 from datetime import date, datetime, timedelta, timezone
 from html.parser import HTMLParser
 from io import BytesIO
@@ -74,10 +76,16 @@ class RoroLinkParser(HTMLParser):
             self.current_text = []
 
 
-def download(url, timeout=60):
+def download(url, timeout=60, retries=3, backoff=5):
     request = Request(url, headers=HEADERS)
-    with urlopen(request, timeout=timeout) as response:
-        return response.read()
+    for attempt in range(1, retries + 1):
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                return response.read()
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == retries:
+                raise
+            time.sleep(backoff * attempt)
 
 
 def get_roro_pdf_url():
