@@ -729,34 +729,6 @@
   },
   {
     "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "IN-JASPER ARROW",
-    "Voyage": "145",
-    "id": "2026-07-24_IN-JASPER ARROW_145",
-    "Departure Ports": {
-      "Yokohama": "2026-08-01",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-07-24",
-      "Kobe": "2026-07-28",
-      "Osaka": "2026-07-29",
-      "Hakata": "2026-07-30",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-09-16",
-      "Mombasa": "2026-09-20",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "JASPER ARROW",
     "Voyage": "145",
     "id": "2026-07-24_JASPER ARROW_145",
