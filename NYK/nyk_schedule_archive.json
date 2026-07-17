@@ -516,8 +516,8 @@
       "Melbourne": "2026-07-29",
       "Adelaide": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260715.pdf",
+    "Schedule Updated": "2026-07-15"
   },
   {
     "Service": "EAST AUST",
@@ -586,6 +586,33 @@
     },
     "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/06/all-260630.pdf",
     "Schedule Updated": "2026-06-30"
+  },
+  {
+    "Service": "SOUTH PACIFIC",
+    "Company": "NYK",
+    "Ship Name": "PACIFIC ISLANDER II",
+    "Voyage": "170",
+    "id": "NYK|SOUTH PACIFIC|PACIFIC ISLANDER II|170|2026-07-12",
+    "Updated": false,
+    "Departure Ports": {
+      "Kobe": "2026-07-12",
+      "Nagoya": "2026-07-13",
+      "Yokohama": "2026-07-14"
+    },
+    "Arrival Ports": {
+      "Honiara": "2026-07-24",
+      "Santo": "2026-07-27",
+      "Port Vila": "2026-07-29",
+      "Noumea": "2026-07-31",
+      "Lautoka": "2026-08-02",
+      "Suva": "2026-08-05",
+      "Nuku'Alofa": "2026-08-07",
+      "Apia": "2026-08-10",
+      "Pagopago": "2026-08-10",
+      "Tarawa": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260715.pdf",
+    "Schedule Updated": "2026-07-15"
   },
   {
     "Service": "SRI LANKA",
@@ -658,7 +685,7 @@
     "Ship Name": "CAPRICORNUS LEADER",
     "Voyage": "081",
     "id": "NYK|CENTRAL AMERICA|CAPRICORNUS LEADER|081|2026-07-16",
-    "Updated": true,
+    "Updated": false,
     "Departure Ports": {
       "Osaka": "-",
       "Yokohama": "2026-07-16",
@@ -673,8 +700,8 @@
       "Lazaro Cardenas": "-",
       "Buenaventura": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260715.pdf",
+    "Schedule Updated": "2026-07-15"
   },
   {
     "Service": "SOUTH PACIFIC",
@@ -1065,8 +1092,8 @@
       "Fremantle": "-",
       "Darwin": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260715.pdf",
+    "Schedule Updated": "2026-07-15"
   },
   {
     "Service": "PNG",
