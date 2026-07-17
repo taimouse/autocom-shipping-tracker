@@ -2182,5 +2182,61 @@
       "Mombasa": "2026-08-06",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "NYK",
+    "Ship Name": "HARMONY LEADER",
+    "Voyage": "104",
+    "id": "2026-07-13_HARMONY LEADER_104",
+    "Departure Ports": {
+      "Yokohama": "2026-07-13",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-14",
+      "Osaka": "2026-07-17",
+      "Hakata": "2026-07-16",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-08-15",
+      "Dar": "2026-08-10",
+      "Mombasa": "2026-08-08",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "CATTLEYA ACE",
+    "Voyage": "0112A",
+    "id": "2026-07-09_CATTLEYA ACE_0112A",
+    "Departure Ports": {
+      "Yokohama": "2026-07-17",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-09",
+      "Osaka": "2026-07-15",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "2026-08-01",
+      "Durban": "-",
+      "Dar": "-",
+      "Mombasa": "-",
+      "Maput": "-"
+    }
   }
 ]
