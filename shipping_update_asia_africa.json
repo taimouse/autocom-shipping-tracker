@@ -112,34 +112,6 @@
     }
   },
   {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "DON JUAN",
-    "Voyage": "706",
-    "id": "2026-06-18_DON JUAN_706",
-    "Departure Ports": {
-      "Yokohama": "2026-06-19",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-18",
-      "Kobe": "2026-06-21",
-      "Osaka": "-",
-      "Hakata": "2026-06-23",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "2026-06-25",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-07-11",
-      "Mombasa": "2026-07-13",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "GRIMALDI",
     "Ship Name": "GRANDE HALIFAX",
     "Voyage": "GHL0426",
@@ -164,6 +136,34 @@
       "Durban": "-",
       "Dar": "2026-07-07",
       "Mombasa": "2026-07-10",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "DON JUAN",
+    "Voyage": "706",
+    "id": "2026-06-18_DON JUAN_706",
+    "Departure Ports": {
+      "Yokohama": "2026-06-19",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-18",
+      "Kobe": "2026-06-21",
+      "Osaka": "-",
+      "Hakata": "2026-06-23",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "2026-06-25",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-07-11",
+      "Mombasa": "2026-07-13",
       "Maput": "-"
     }
   },
@@ -308,34 +308,6 @@
     }
   },
   {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "ASIAN MAJESTY",
-    "Voyage": "IF606",
-    "id": "2026-06-28_ASIAN MAJESTY_IF606",
-    "Departure Ports": {
-      "Yokohama": "2026-06-29",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-06-28",
-      "Kobe": "2026-06-30",
-      "Osaka": "2026-07-02",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "2026-07-05",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "2026-08-09",
-      "Dar": "2026-08-03",
-      "Mombasa": "2026-08-04",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "NYK",
     "Ship Name": "SAGITTARIUS LEADER",
     "Voyage": "072",
@@ -360,6 +332,34 @@
       "Durban": "2026-08-22",
       "Dar": "2026-08-16",
       "Mombasa": "2026-08-11",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "ASIAN MAJESTY",
+    "Voyage": "IF606",
+    "id": "2026-06-28_ASIAN MAJESTY_IF606",
+    "Departure Ports": {
+      "Yokohama": "2026-06-29",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-06-28",
+      "Kobe": "2026-06-30",
+      "Osaka": "2026-07-02",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "2026-07-05",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-08-09",
+      "Dar": "2026-08-03",
+      "Mombasa": "2026-08-04",
       "Maput": "-"
     }
   },
@@ -647,13 +647,13 @@
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "0043A",
-    "id": "2026-07-26_AZUL ACE_0043A",
+    "id": "2026-07-24_AZUL ACE_0043A",
     "Departure Ports": {
-      "Yokohama": "2026-07-27",
+      "Yokohama": "2026-07-26",
       "Kawasaki": "-",
-      "Kisarazu": "2026-08-02",
-      "Nagoya": "2026-07-26",
-      "Kobe": "2026-08-01",
+      "Kisarazu": "2026-08-01",
+      "Nagoya": "2026-07-24",
+      "Kobe": "2026-07-27",
       "Osaka": "2026-07-31",
       "Hakata": "-",
       "Hibikinada": "-",
@@ -784,6 +784,34 @@
     }
   },
   {
+    "Company": "MOL",
+    "Ship Name": "VALIANT ACE",
+    "Voyage": "",
+    "id": "2026-08-06_VALIANT ACE_",
+    "Departure Ports": {
+      "Yokohama": "2026-08-07",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-08-08",
+      "Nagoya": "-",
+      "Kobe": "2026-08-06",
+      "Osaka": "-",
+      "Hakata": "2026-08-10",
+      "Hibikinada": "-",
+      "Kanda": "2026-08-12",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "2026-08-28",
+      "Durban": "2026-09-02",
+      "Dar": "2026-09-09",
+      "Mombasa": "2026-09-14",
+      "Maput": "2026-08-31"
+    }
+  },
+  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "DON JUAN",
     "Voyage": "707",
@@ -809,6 +837,34 @@
       "Dar": "2026-09-04",
       "Mombasa": "2026-09-07",
       "Maput": "-"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "CRYSTAL ACE",
+    "Voyage": "",
+    "id": "2026-08-12_CRYSTAL ACE_",
+    "Departure Ports": {
+      "Yokohama": "2026-08-12",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-08-13",
+      "Nagoya": "-",
+      "Kobe": "2026-08-14",
+      "Osaka": "2026-08-16",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-08-17"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-09-12",
+      "Dar": "2026-09-21",
+      "Mombasa": "2026-09-22",
+      "Maput": "2026-09-13"
     }
   },
   {
@@ -841,17 +897,45 @@
   },
   {
     "Company": "MOL",
-    "Ship Name": "MOURI AUG",
+    "Ship Name": "ELEGANT ACE",
     "Voyage": "",
-    "id": "NA_MOURI AUG_",
+    "id": "2026-08-21_ELEGANT ACE_",
     "Departure Ports": {
-      "Yokohama": "O",
+      "Yokohama": "2026-08-23",
       "Kawasaki": "-",
-      "Kisarazu": "-",
+      "Kisarazu": "2026-08-24",
       "Nagoya": "-",
-      "Kobe": "O",
-      "Osaka": "O",
+      "Kobe": "2026-08-21",
+      "Osaka": "2026-08-26",
       "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "-",
+      "Hitachinaka": "2026-08-28"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-09-14",
+      "Dar": "2026-09-26",
+      "Mombasa": "2026-09-27",
+      "Maput": "2026-09-18"
+    }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "SWIFT ACE",
+    "Voyage": "",
+    "id": "2026-08-29_SWIFT ACE_",
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Kawasaki": "-",
+      "Kisarazu": "2026-08-29",
+      "Nagoya": "-",
+      "Kobe": "2026-08-31",
+      "Osaka": "-",
+      "Hakata": "2026-09-01",
       "Hibikinada": "-",
       "Kanda": "-",
       "Nakanoseki": "-",
@@ -862,8 +946,8 @@
       "Karachi": "-",
       "Port Louis": "-",
       "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
+      "Dar": "O",
+      "Mombasa": "O",
       "Maput": "-"
     }
   },
