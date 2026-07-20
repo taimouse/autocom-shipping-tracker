@@ -2238,5 +2238,33 @@
       "Mombasa": "-",
       "Maput": "-"
     }
+  },
+  {
+    "Company": "MOL",
+    "Ship Name": "LEO SPIRIT",
+    "Voyage": "0085A",
+    "id": "2026-07-15_LEO SPIRIT_0085A",
+    "Departure Ports": {
+      "Yokohama": "2026-07-18",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-07-17",
+      "Osaka": "-",
+      "Hakata": "2026-07-15",
+      "Hibikinada": "-",
+      "Kanda": "2026-07-20",
+      "Nakanoseki": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-08-13",
+      "Dar": "2026-08-21",
+      "Mombasa": "2026-08-26",
+      "Maput": "2026-08-17"
+    }
   }
 ]
