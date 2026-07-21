@@ -647,12 +647,12 @@
     "Company": "MOL",
     "Ship Name": "AZUL ACE",
     "Voyage": "0043A",
-    "id": "2026-07-24_AZUL ACE_0043A",
+    "id": "2026-07-25_AZUL ACE_0043A",
     "Departure Ports": {
       "Yokohama": "2026-07-26",
       "Kawasaki": "-",
-      "Kisarazu": "2026-08-01",
-      "Nagoya": "2026-07-24",
+      "Kisarazu": "2026-08-02",
+      "Nagoya": "2026-07-25",
       "Kobe": "2026-07-27",
       "Osaka": "2026-07-31",
       "Hakata": "-",
@@ -702,14 +702,14 @@
   {
     "Company": "MOL",
     "Ship Name": "PEGASUS ACE",
-    "Voyage": "",
-    "id": "2026-07-30_PEGASUS ACE_",
+    "Voyage": "0337A",
+    "id": "2026-07-30_PEGASUS ACE_0337A",
     "Departure Ports": {
-      "Yokohama": "2026-07-31",
+      "Yokohama": "-",
       "Kawasaki": "-",
       "Kisarazu": "2026-07-30",
       "Nagoya": "-",
-      "Kobe": "-",
+      "Kobe": "2026-07-31",
       "Osaka": "-",
       "Hakata": "-",
       "Hibikinada": "-",
@@ -721,10 +721,10 @@
       "Jebel Ali": "-",
       "Karachi": "-",
       "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-08-25",
+      "Durban": "2026-08-28",
+      "Dar": "2026-08-22",
       "Mombasa": "-",
-      "Maput": "2026-08-21"
+      "Maput": "2026-08-26"
     }
   },
   {
