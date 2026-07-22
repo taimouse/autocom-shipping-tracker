@@ -1,33 +1,5 @@
 [
   {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "RCC ANTWERP",
-    "Voyage": "049",
-    "id": "2026-06-05_RCC ANTWERP_049",
-    "Departure Ports": {
-      "Yokohama": "-",
-      "Kawasaki": "-",
-      "Kisarazu": "2026-06-05",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "2026-06-06",
-      "Hibikinada": "2026-06-08",
-      "Kanda": "-",
-      "Nakanoseki": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "O",
-      "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "PRIME ACE",
     "Voyage": "0099A",

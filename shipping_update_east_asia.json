@@ -390,6 +390,32 @@
     }
   },
   {
+    "Company": "G ALLIANCE SHIPPING",
+    "Ship Name": "GLOVIS STELLA",
+    "Voyage": "071",
+    "id": "2026-07-27_GLOVIS STELLA_071",
+    "Departure Ports": {
+      "Yokohama": "2026-07-27",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "-",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-09-10",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "NYK",
     "Ship Name": "TAURUS LEADER",
     "Voyage": "090",
@@ -409,7 +435,7 @@
     "Arrival Ports": {
       "Hong Kong": "-",
       "Laem Chabang": "-",
-      "Hambantota": "2026-08-15",
+      "Hambantota": "2026-08-16",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
@@ -436,32 +462,6 @@
       "Hong Kong": "-",
       "Laem Chabang": "-",
       "Hambantota": "2026-08-16",
-      "Chittagong": "-",
-      "Mongla": "-",
-      "Subic": "-"
-    }
-  },
-  {
-    "Company": "G ALLIANCE SHIPPING",
-    "Ship Name": "GLOVIS STELLA",
-    "Voyage": "071",
-    "id": "2026-07-31_GLOVIS STELLA_071",
-    "Departure Ports": {
-      "Yokohama": "2026-07-31",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Hong Kong": "-",
-      "Laem Chabang": "-",
-      "Hambantota": "2026-09-10",
       "Chittagong": "-",
       "Mongla": "-",
       "Subic": "-"
