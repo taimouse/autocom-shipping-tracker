@@ -982,8 +982,8 @@
   {
     "Company": "THE KEIHIN CO., LTD.",
     "Ship Name": "KEIHIN AUG",
-    "Voyage": "",
-    "id": "NA_KEIHIN AUG_",
+    "Voyage": "end",
+    "id": "NA_KEIHIN AUG_end",
     "Departure Ports": {
       "Yokohama": "O",
       "Kawasaki": "-",
