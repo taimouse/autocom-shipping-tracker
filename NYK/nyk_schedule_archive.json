@@ -623,17 +623,17 @@
     "Updated": false,
     "Departure Ports": {
       "Yokohama": "2026-07-13",
-      "Osaka": "2026-07-16",
-      "Kobe": "2026-07-17",
-      "Nagoya (Kinjyo)": "2026-07-14",
+      "Osaka": "2026-07-18",
+      "Kobe": "2026-07-19",
+      "Nagoya (Kinjyo)": "2026-07-16",
       "Kawasaki": "-",
       "Moji": "-"
     },
     "Arrival Ports": {
-      "Sri Lanka (Hambantota)": "2026-07-30"
+      "Sri Lanka (Hambantota)": "2026-07-31"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260723.pdf",
+    "Schedule Updated": "2026-07-23"
   },
   {
     "Service": "AFRICA",
@@ -644,23 +644,23 @@
     "Updated": false,
     "Departure Ports": {
       "Yokohama": "2026-07-13",
-      "Osaka": "2026-07-16",
-      "Kobe": "2026-07-17",
-      "Nagoya (Kinjyo)": "2026-07-14",
+      "Osaka": "2026-07-18",
+      "Kobe": "2026-07-19",
+      "Nagoya (Kinjyo)": "2026-07-16",
       "Kawasaki": "-",
       "Moji": "-"
     },
     "Arrival Ports": {
-      "Mombasa": "2026-08-08",
-      "Dar Es Salaam": "2026-08-10",
-      "Durban": "2026-08-15",
+      "Mombasa": "2026-08-09",
+      "Dar Es Salaam": "2026-08-11",
+      "Durban": "2026-08-16",
       "Port Louis": "-",
       "Lagos": "-",
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260723.pdf",
+    "Schedule Updated": "2026-07-23"
   },
   {
     "Service": "HONOLULU",
@@ -676,8 +676,8 @@
     "Arrival Ports": {
       "Honolulu": "2026-07-24"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260723.pdf",
+    "Schedule Updated": "2026-07-23"
   },
   {
     "Service": "CENTRAL AMERICA",
@@ -923,8 +923,8 @@
     "Arrival Ports": {
       "New Westminster (Vancouver)": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp/wp-content/uploads/2026/07/all-260707.pdf",
-    "Schedule Updated": "2026-07-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260723.pdf",
+    "Schedule Updated": "2026-07-23"
   },
   {
     "Service": "NAEC (北米東岸)",
