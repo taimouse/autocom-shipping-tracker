@@ -494,6 +494,32 @@
     }
   },
   {
+    "Company": "ECL",
+    "Ship Name": "MALAYSIA PASSION",
+    "Voyage": "74",
+    "id": "2026-08-21_MALAYSIA PASSION_74",
+    "Departure Ports": {
+      "Yokohama": "2026-08-21",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-08-21",
+      "Osaka": "-",
+      "Hakata": "2026-08-21",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "-",
+      "Chittagong": "O",
+      "Mongla": "O",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "SEVEN SEALS CO.,LTD",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "42",
