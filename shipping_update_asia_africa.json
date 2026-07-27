@@ -734,7 +734,7 @@
     "id": "2026-08-05_ANTARES LEADER_114",
     "Departure Ports": {
       "Yokohama": "2026-08-05",
-      "Kawasaki": "2026-08-06",
+      "Kawasaki": "-",
       "Kisarazu": "-",
       "Nagoya": "-",
       "Kobe": "2026-08-07",
@@ -924,6 +924,34 @@
     }
   },
   {
+    "Company": "THE KEIHIN CO., LTD.",
+    "Ship Name": "MORNING COURIER",
+    "Voyage": "end",
+    "id": "2026-08-25_MORNING COURIER_end",
+    "Departure Ports": {
+      "Yokohama": "2026-08-26",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-08-25",
+      "Kobe": "2026-08-27",
+      "Osaka": "2026-08-28",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "2026-08-30",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "2026-09-30",
+      "Dar": "2026-09-22",
+      "Mombasa": "2026-09-26",
+      "Maput": "-"
+    }
+  },
+  {
     "Company": "MOL",
     "Ship Name": "SWIFT ACE",
     "Voyage": "",
@@ -948,34 +976,6 @@
       "Durban": "-",
       "Dar": "O",
       "Mombasa": "O",
-      "Maput": "-"
-    }
-  },
-  {
-    "Company": "THE KEIHIN CO., LTD.",
-    "Ship Name": "KEIHIN AUG",
-    "Voyage": "end",
-    "id": "NA_KEIHIN AUG_end",
-    "Departure Ports": {
-      "Yokohama": "O",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "O",
-      "Kobe": "O",
-      "Osaka": "O",
-      "Hakata": "-",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "O",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "-",
-      "Mombasa": "-",
       "Maput": "-"
     }
   }
