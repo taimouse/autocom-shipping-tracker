@@ -494,6 +494,32 @@
     }
   },
   {
+    "Company": "NYK",
+    "Ship Name": "GEMINI LEADER",
+    "Voyage": "138",
+    "id": "2026-08-15_GEMINI LEADER_138",
+    "Departure Ports": {
+      "Yokohama": "2026-08-15",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "-",
+      "Kobe": "2026-08-16",
+      "Osaka": "-",
+      "Hakata": "-",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Hong Kong": "-",
+      "Laem Chabang": "-",
+      "Hambantota": "2026-08-24",
+      "Chittagong": "-",
+      "Mongla": "-",
+      "Subic": "-"
+    }
+  },
+  {
     "Company": "ECL",
     "Ship Name": "MALAYSIA PASSION",
     "Voyage": "74",
