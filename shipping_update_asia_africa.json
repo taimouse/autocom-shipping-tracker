@@ -758,8 +758,8 @@
   {
     "Company": "MOL",
     "Ship Name": "VALIANT ACE",
-    "Voyage": "",
-    "id": "2026-08-06_VALIANT ACE_",
+    "Voyage": "0115A",
+    "id": "2026-08-06_VALIANT ACE_0115A",
     "Departure Ports": {
       "Yokohama": "2026-08-07",
       "Kawasaki": "-",
@@ -784,38 +784,10 @@
     }
   },
   {
-    "Company": "SEVEN SEALS CO.,LTD",
-    "Ship Name": "DON JUAN",
-    "Voyage": "707",
-    "id": "2026-08-10_DON JUAN_707",
-    "Departure Ports": {
-      "Yokohama": "2026-08-11",
-      "Kawasaki": "-",
-      "Kisarazu": "-",
-      "Nagoya": "2026-08-10",
-      "Kobe": "2026-08-12",
-      "Osaka": "2026-08-13",
-      "Hakata": "2026-08-13",
-      "Hibikinada": "-",
-      "Kanda": "-",
-      "Nakanoseki": "2026-08-15",
-      "Hitachinaka": "-"
-    },
-    "Arrival Ports": {
-      "Jebel Ali": "-",
-      "Karachi": "-",
-      "Port Louis": "-",
-      "Durban": "-",
-      "Dar": "2026-09-04",
-      "Mombasa": "2026-09-07",
-      "Maput": "-"
-    }
-  },
-  {
     "Company": "MOL",
     "Ship Name": "CRYSTAL ACE",
-    "Voyage": "",
-    "id": "2026-08-12_CRYSTAL ACE_",
+    "Voyage": "0116A",
+    "id": "2026-08-12_CRYSTAL ACE_0116A",
     "Departure Ports": {
       "Yokohama": "2026-08-12",
       "Kawasaki": "-",
@@ -864,6 +836,34 @@
       "Durban": "-",
       "Dar": "O",
       "Mombasa": "O",
+      "Maput": "-"
+    }
+  },
+  {
+    "Company": "SEVEN SEALS CO.,LTD",
+    "Ship Name": "DON JUAN",
+    "Voyage": "707",
+    "id": "2026-08-12_DON JUAN_707",
+    "Departure Ports": {
+      "Yokohama": "2026-08-13",
+      "Kawasaki": "-",
+      "Kisarazu": "-",
+      "Nagoya": "2026-08-12",
+      "Kobe": "2026-08-14",
+      "Osaka": "2026-08-15",
+      "Hakata": "2026-08-15",
+      "Hibikinada": "-",
+      "Kanda": "-",
+      "Nakanoseki": "2026-08-17",
+      "Hitachinaka": "-"
+    },
+    "Arrival Ports": {
+      "Jebel Ali": "-",
+      "Karachi": "-",
+      "Port Louis": "-",
+      "Durban": "-",
+      "Dar": "2026-09-08",
+      "Mombasa": "2026-09-09",
       "Maput": "-"
     }
   },
