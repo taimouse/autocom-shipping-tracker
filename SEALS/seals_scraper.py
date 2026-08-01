@@ -141,10 +141,12 @@ def center(word):
 
 def find_sections(words, page_height):
     """'FOR ...' 제목 행을 기준으로 페이지를 섹션으로 나눈다."""
+    # 2026-07 PDF부터 좌측 여백이 넓어져 'FOR'의 x0가 20 -> 24.7로 밀렸다.
+    # 여백 변동을 흡수하도록 왼쪽 여백 전체(x0 < 60)를 허용한다.
     tops = sorted(
         word["top"]
         for word in words
-        if word["text"] == "FOR" and word["x0"] < 20
+        if word["text"] == "FOR" and word["x0"] < 60
     )
     sections = []
     for index, top in enumerate(tops):

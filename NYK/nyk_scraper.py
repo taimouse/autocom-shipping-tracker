@@ -301,20 +301,28 @@ SERVICES = [
 class ScheduleLinkParser(HTMLParser):
     # 2026-07 사이트 개편으로 링크 텍스트가 전부 "PDF"로 바뀌어,
     # href 파일명(all-YYMMDD.pdf)으로 ALL PDF를 식별한다.
-    ALL_HREF = re.compile(r"/all-\d{6}\.pdf$", re.IGNORECASE)
+    # 같은 날짜로 재업로드하면 워드프레스가 all-260731-1.pdf 처럼 -N 접미사를
+    # 붙이므로 이를 허용하고, 후보가 여러 개면 가장 최신 파일을 고른다.
+    ALL_HREF = re.compile(r"/all-(\d{6})(?:-\d+)?\.pdf$", re.IGNORECASE)
 
-    def __init__(self):
+    def __init__(self, base_url):
         super().__init__()
+        self.base_url = base_url
         self.current_href = None
         self.current_text = []
-        self.all_pdf_url = None
+        self.candidates = []
+        self.text_match_url = None
 
     def handle_starttag(self, tag, attrs):
         if tag.lower() == "a":
             self.current_href = dict(attrs).get("href")
             self.current_text = []
-            if self.current_href and self.ALL_HREF.search(self.current_href):
-                self.all_pdf_url = urljoin(SCHEDULE_URL, self.current_href)
+            if self.current_href:
+                match = self.ALL_HREF.search(self.current_href)
+                if match:
+                    self.candidates.append(
+                        (match.group(1), urljoin(self.base_url, self.current_href))
+                    )
 
     def handle_data(self, data):
         if self.current_href:
@@ -322,12 +330,18 @@ class ScheduleLinkParser(HTMLParser):
 
     def handle_endtag(self, tag):
         if tag.lower() == "a" and self.current_href:
-            if not self.all_pdf_url and (
+            if not self.text_match_url and (
                 " ".join(self.current_text).strip().upper() == "ALL"
             ):
-                self.all_pdf_url = urljoin(SCHEDULE_URL, self.current_href)
+                self.text_match_url = urljoin(self.base_url, self.current_href)
             self.current_href = None
             self.current_text = []
+
+    @property
+    def all_pdf_url(self):
+        if self.candidates:
+            return max(self.candidates)[1]
+        return self.text_match_url
 
 
 def download(url, timeout=60):
@@ -336,9 +350,17 @@ def download(url, timeout=60):
         return response.read()
 
 
+def download_page(url, timeout=60):
+    """본문과 리다이렉트 이후의 최종 URL을 함께 돌려준다."""
+    request = Request(url, headers=HEADERS)
+    with urlopen(request, timeout=timeout) as response:
+        return response.read(), response.geturl()
+
+
 def get_all_pdf_url():
-    parser = ScheduleLinkParser()
-    parser.feed(download(SCHEDULE_URL, timeout=30).decode("utf-8", errors="replace"))
+    content, final_url = download_page(SCHEDULE_URL, timeout=30)
+    parser = ScheduleLinkParser(final_url)
+    parser.feed(content.decode("utf-8", errors="replace"))
     if parser.all_pdf_url:
         return parser.all_pdf_url
 
@@ -368,7 +390,7 @@ def find_updated_date(text, pdf_url):
     if match:
         return date(*(int(value) for value in match.groups()))
 
-    match = re.search(r"-(\d{2})(\d{2})(\d{2})\.pdf", pdf_url)
+    match = re.search(r"-(\d{2})(\d{2})(\d{2})(?:-\d+)?\.pdf", pdf_url)
     if match:
         year, month, day = (int(value) for value in match.groups())
         return date(2000 + year, month, day)
