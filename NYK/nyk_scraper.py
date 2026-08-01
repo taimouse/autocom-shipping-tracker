@@ -1,3 +1,4 @@
+import difflib
 import json
 import os
 import re
@@ -31,6 +32,13 @@ DATE_TOKEN = re.compile(r"^(?:--|-|TBA|\*?\d{1,2}/\d{1,2}(?:-\d{1,2})?)$")
 
 
 def port(name, x, kind):
+    """항구 열 정의.
+
+    name은 JSON 출력 키이자 index.html이 참조하는 계약이라 코드에 유지한다.
+    x는 실제 열 위치를 PDF 헤더에서 찾지 못했을 때만 쓰는 폴백값이다
+    (resolve_ports 참고). PDF 여백이 밀려도 깨지지 않도록 평소에는
+    헤더에서 유도한 좌표를 쓴다.
+    """
     return {"name": name, "x": x, "kind": kind}
 
 
@@ -436,6 +444,71 @@ def find_service_tops(words):
     return tops
 
 
+# 헤더 텍스트 매칭 임계값. PDF 원본 오타(Townsville -> "Townsiville")와
+# 전각괄호 인코딩 깨짐((Kinjo) -> 모지바케)을 흡수하되 다른 항구로 오매칭되지
+# 않는 선. 항구명이 2~3줄에 걸쳐 있어 x구간이 이만큼 벌어지면 다른 열로 본다.
+HEADER_MATCH_RATIO = 0.82
+HEADER_COLUMN_GAP = 12
+
+
+def normalize_label(text):
+    """비교용으로 대소문자·공백·괄호·깨진 전각문자를 제거한다."""
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
+def locate_column(port_name, header_words):
+    """헤더에서 port_name에 해당하는 단어 묶음을 찾아 x0를 돌려준다."""
+    target = normalize_label(port_name)
+    if not target:
+        return None
+
+    ordered = sorted(header_words, key=lambda word: word["x0"])
+    best = None
+    for start in range(len(ordered)):
+        group = []
+        span_end = None
+        for word in ordered[start:]:
+            if span_end is not None and word["x0"] - span_end > HEADER_COLUMN_GAP:
+                break
+            group.append(word)
+            span_end = max(item["x1"] for item in group)
+            # 여러 줄에 걸친 항구명은 위->아래, 왼쪽->오른쪽 순으로 이어붙인다
+            label = normalize_label(
+                " ".join(
+                    item["text"]
+                    for item in sorted(
+                        group, key=lambda item: (round(item["top"]), item["x0"])
+                    )
+                )
+            )
+            if not label:
+                continue
+            ratio = difflib.SequenceMatcher(None, target, label).ratio()
+            if best is None or ratio > best[0]:
+                best = (ratio, min(item["x0"] for item in group))
+
+    if best and best[0] >= HEADER_MATCH_RATIO:
+        return best[1]
+    return None
+
+
+def resolve_ports(service, header_words):
+    """서비스의 각 항구 열 위치를 헤더에서 유도한다.
+
+    헤더에 없는 이름(예: 'Yokohama (Second Call)'처럼 우리가 붙인 구분용
+    표기)은 하드코딩 폴백 x를 그대로 쓴다. 못 찾은 이름 목록도 함께 돌려준다.
+    """
+    resolved = []
+    missing = []
+    for item in service["ports"]:
+        x = locate_column(item["name"], header_words)
+        if x is None:
+            missing.append(item["name"])
+            x = item["x"]
+        resolved.append({**item, "x": x})
+    return {**service, "ports": resolved}, missing
+
+
 def parse_vessel_row(service, voyage_word, words, updated_date, pdf_url):
     row_top = voyage_word["top"]
     row_words = [word for word in words if abs(word["top"] - row_top) <= 3]
@@ -519,6 +592,7 @@ def parse_all_schedules(pdf_content, pdf_url):
         service for service in SERVICES if service["name"] in service_tops
     ]
     records = []
+    unresolved = []
     for index, service in enumerate(ordered_services):
         top = service_tops[service["name"]]
         bottom = (
@@ -536,12 +610,33 @@ def parse_all_schedules(pdf_content, pdf_url):
             ],
             key=lambda word: word["top"],
         )
+        if not voyage_words:
+            continue
+
+        # 헤더 영역: 서비스 제목 줄 ~ 첫 선박 행 직전
+        header_words = [
+            word
+            for word in words
+            if top - 16 <= word["top"] < voyage_words[0]["top"] - 4
+            and word["x0"] >= 340
+        ]
+        live_service, missing = resolve_ports(service, header_words)
+        if missing:
+            unresolved.append((service["name"], missing))
+
         for voyage_word in voyage_words:
             record = parse_vessel_row(
-                service, voyage_word, words, updated_date, pdf_url
+                live_service, voyage_word, words, updated_date, pdf_url
             )
             if record:
                 records.append(record)
+
+    for service_name, missing in unresolved:
+        print(
+            f"[warn] {service_name}: 헤더에서 열을 찾지 못해 폴백 좌표 사용 -> "
+            f"{', '.join(missing)}",
+            file=sys.stderr,
+        )
 
     if not records:
         raise RuntimeError("ALL PDF에서 선박 스케줄을 읽지 못했습니다.")
