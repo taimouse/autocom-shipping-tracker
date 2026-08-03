@@ -17,8 +17,8 @@
     "Arrival Ports": {
       "Hambantota": "2026-07-23"
     },
-    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260731.pdf",
-    "Schedule Updated": "2026-07-31"
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS-20260803.pdf",
+    "Schedule Updated": "2026-08-03"
   },
   {
     "Service": "SOUTHEAST ASIA / BENGAL",
@@ -38,28 +38,28 @@
     "Arrival Ports": {
       "Hambantota": "2026-08-08"
     },
-    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260731.pdf",
-    "Schedule Updated": "2026-07-31"
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS-20260803.pdf",
+    "Schedule Updated": "2026-08-03"
   },
   {
     "Service": "SOUTHEAST ASIA / BENGAL",
     "Company": "SEALS",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "42",
-    "id": "SEALS|VIKING DRIVE|42|2026-08-25",
+    "id": "SEALS|VIKING DRIVE|42|2026-08-26",
     "Departure Ports": {
       "Hitachinaka": "-",
-      "Yokohama": "2026-08-25",
-      "Nagoya": "2026-08-24",
-      "Senboku": "2026-08-22",
+      "Yokohama": "2026-08-26",
+      "Nagoya": "2026-08-25",
+      "Senboku": "2026-08-24",
       "Kobe": "-",
       "Moji": "-",
       "Oita": "-"
     },
     "Arrival Ports": {
-      "Hambantota": "2026-09-07"
+      "Hambantota": "2026-09-08"
     },
-    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260731.pdf",
-    "Schedule Updated": "2026-07-31"
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS-20260803.pdf",
+    "Schedule Updated": "2026-08-03"
   }
 ]
