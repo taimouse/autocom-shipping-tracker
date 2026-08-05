@@ -21,8 +21,8 @@
       "Kuwait": "-",
       "Sohar": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "KARACHI",
@@ -41,50 +41,29 @@
     "Arrival Ports": {
       "Karachi": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
-  },
-  {
-    "Service": "SRI LANKA",
-    "Company": "NYK",
-    "Ship Name": "PROMETHEUS LEADER",
-    "Voyage": "080",
-    "id": "NYK|SRI LANKA|PROMETHEUS LEADER|080|2026-07-30",
-    "Updated": true,
-    "Departure Ports": {
-      "Yokohama": "2026-07-30",
-      "Osaka": "2026-08-03",
-      "Kobe": "2026-08-01",
-      "Nagoya (Kinjyo)": "2026-07-31",
-      "Kawasaki": "-",
-      "Moji": "2026-08-04"
-    },
-    "Arrival Ports": {
-      "Sri Lanka (Hambantota)": "2026-08-16"
-    },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "SRI LANKA",
     "Company": "NYK",
     "Ship Name": "JUPITER LEADER",
     "Voyage": "082",
-    "id": "NYK|SRI LANKA|JUPITER LEADER|082|2026-08-12",
+    "id": "NYK|SRI LANKA|JUPITER LEADER|082|2026-08-13",
     "Updated": false,
     "Departure Ports": {
-      "Yokohama": "2026-08-12",
+      "Yokohama": "2026-08-13",
       "Osaka": "2026-08-15",
       "Kobe": "-",
-      "Nagoya (Kinjyo)": "2026-08-13",
+      "Nagoya (Kinjyo)": "2026-08-14",
       "Kawasaki": "-",
       "Moji": "-"
     },
     "Arrival Ports": {
       "Sri Lanka (Hambantota)": "2026-08-29"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "SRI LANKA",
@@ -104,8 +83,8 @@
     "Arrival Ports": {
       "Sri Lanka (Hambantota)": "2026-08-31"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "SRI LANKA",
@@ -125,35 +104,8 @@
     "Arrival Ports": {
       "Sri Lanka (Hambantota)": "2026-09-08"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
-  },
-  {
-    "Service": "AFRICA",
-    "Company": "NYK",
-    "Ship Name": "PROMETHEUS LEADER",
-    "Voyage": "080",
-    "id": "NYK|AFRICA|PROMETHEUS LEADER|080|2026-07-30",
-    "Updated": true,
-    "Departure Ports": {
-      "Yokohama": "2026-07-30",
-      "Osaka": "2026-08-03",
-      "Kobe": "2026-08-01",
-      "Nagoya (Kinjyo)": "2026-07-31",
-      "Kawasaki": "-",
-      "Moji": "2026-08-04"
-    },
-    "Arrival Ports": {
-      "Mombasa": "2026-09-04",
-      "Dar Es Salaam": "2026-09-01",
-      "Durban": "2026-08-26",
-      "Port Louis": "-",
-      "Lagos": "-",
-      "Tema": "-",
-      "Abidjan": "-"
-    },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "AFRICA",
@@ -161,11 +113,11 @@
     "Ship Name": "ANTARES LEADER",
     "Voyage": "114",
     "id": "NYK|AFRICA|ANTARES LEADER|114|2026-08-05",
-    "Updated": false,
+    "Updated": true,
     "Departure Ports": {
       "Yokohama": "2026-08-05",
-      "Osaka": "2026-08-08",
-      "Kobe": "2026-08-09",
+      "Osaka": "-",
+      "Kobe": "2026-08-10",
       "Nagoya (Kinjyo)": "2026-08-07",
       "Kawasaki": "-",
       "Moji": "-"
@@ -179,21 +131,21 @@
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "AFRICA",
     "Company": "NYK",
     "Ship Name": "JUPITER LEADER",
     "Voyage": "082",
-    "id": "NYK|AFRICA|JUPITER LEADER|082|2026-08-12",
+    "id": "NYK|AFRICA|JUPITER LEADER|082|2026-08-13",
     "Updated": false,
     "Departure Ports": {
-      "Yokohama": "2026-08-12",
+      "Yokohama": "2026-08-13",
       "Osaka": "2026-08-15",
       "Kobe": "-",
-      "Nagoya (Kinjyo)": "2026-08-13",
+      "Nagoya (Kinjyo)": "2026-08-14",
       "Kawasaki": "-",
       "Moji": "-"
     },
@@ -206,8 +158,8 @@
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "AFRICA",
@@ -233,8 +185,8 @@
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "RED SEA",
@@ -255,8 +207,8 @@
       "Port Sudan": "-",
       "Djibouti": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "CARIB (下旬)",
@@ -273,8 +225,8 @@
       "Osaka": "-"
     },
     "Arrival Ports": {},
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "IQUIQUE (SOUTH AMERICA)",
@@ -294,8 +246,8 @@
       "Iquique": "-",
       "San Antonio": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "CENTRAL AMERICA",
@@ -318,8 +270,8 @@
       "Lazaro Cardenas": "-",
       "Buenaventura": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "CANADA",
@@ -336,8 +288,8 @@
     "Arrival Ports": {
       "New Westminster (Vancouver)": "2026-09-13"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "NAWC (北米西岸)",
@@ -356,8 +308,8 @@
       "Los Angeles": "-",
       "Tacoma": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "NAEC (北米東岸)",
@@ -375,8 +327,8 @@
       "Jacksonville": "-",
       "Baltimore": "2026-09-09"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "NAEC (北米東岸)",
@@ -394,8 +346,8 @@
       "Jacksonville": "2026-09-30",
       "Baltimore": "2026-10-03"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "HONOLULU",
@@ -411,8 +363,8 @@
     "Arrival Ports": {
       "Honolulu": "2026-08-21"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "EUROPE",
@@ -429,8 +381,8 @@
       "Osaka": "-"
     },
     "Arrival Ports": {},
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "WEST AUST",
@@ -448,32 +400,8 @@
       "Fremantle": "2026-09-14",
       "Darwin": "2026-09-24"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
-  },
-  {
-    "Service": "EAST AUST",
-    "Company": "NYK",
-    "Ship Name": "HEROIC LEADER",
-    "Voyage": "107",
-    "id": "NYK|EAST AUST|HEROIC LEADER|107|2026-07-31",
-    "Updated": false,
-    "Departure Ports": {
-      "Nagoya (Kinjo)": "-",
-      "Nagoya (Nishisanku)": "2026-07-31",
-      "Yokohama": "2026-08-01",
-      "Osaka": "-",
-      "Kobe": "-"
-    },
-    "Arrival Ports": {
-      "Townsville": "2026-08-11",
-      "Brisbane": "2026-08-13",
-      "Port Kembla": "2026-08-17",
-      "Melbourne": "2026-08-19",
-      "Adelaide": "-"
-    },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "EAST AUST",
@@ -496,8 +424,8 @@
       "Melbourne": "2026-09-17",
       "Adelaide": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "PNG",
@@ -515,8 +443,8 @@
       "Lae": "-",
       "Port Moresby": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "BANGLA",
@@ -539,8 +467,8 @@
       "Chittagong": "2026-09-19",
       "Mongla": "2026-09-21"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "BANGLA",
@@ -563,8 +491,8 @@
       "Chittagong": "2026-09-19",
       "Mongla": "2026-09-21"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "BANGLA",
@@ -587,8 +515,8 @@
       "Chittagong": "2026-09-19",
       "Mongla": "2026-09-21"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "BANGLA",
@@ -611,8 +539,8 @@
       "Chittagong": "2026-09-19",
       "Mongla": "2026-09-21"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "BANGLA",
@@ -635,35 +563,8 @@
       "Chittagong": "2026-09-19",
       "Mongla": "2026-09-21"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
-  },
-  {
-    "Service": "ASIA",
-    "Company": "NYK",
-    "Ship Name": "AQUARIUS LEADER",
-    "Voyage": "074",
-    "id": "NYK|ASIA|AQUARIUS LEADER|074|2026-07-30",
-    "Updated": false,
-    "Departure Ports": {
-      "Nakanoseki (Hakata, Moji)": "-",
-      "Kobe": "-",
-      "Osaka": "-",
-      "Yokohama": "2026-07-30",
-      "Nagoya (Nishisanku)": "2026-07-31"
-    },
-    "Arrival Ports": {
-      "Taipei": "-",
-      "Shanghai": "-",
-      "Singapore": "2026-08-13",
-      "Port Kelang (North)": "-",
-      "Port Kelang (West)": "-",
-      "Ho Chi Minh": "-",
-      "Haiphong": "-",
-      "Jakarta": "-"
-    },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "ASIA",
@@ -689,35 +590,35 @@
       "Haiphong": "-",
       "Jakarta": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "SOUTH PACIFIC",
     "Company": "NYK",
     "Ship Name": "SOUTH ISLANDER",
     "Voyage": "171",
-    "id": "NYK|SOUTH PACIFIC|SOUTH ISLANDER|171|2026-08-10",
+    "id": "NYK|SOUTH PACIFIC|SOUTH ISLANDER|171|2026-08-12",
     "Updated": false,
     "Departure Ports": {
-      "Kobe": "2026-08-10",
-      "Nagoya": "2026-08-12",
-      "Yokohama": "2026-08-13"
+      "Kobe": "2026-08-12",
+      "Nagoya": "2026-08-13",
+      "Yokohama": "2026-08-14"
     },
     "Arrival Ports": {
-      "Honiara": "2026-08-23",
-      "Santo": "2026-08-26",
-      "Port Vila": "2026-08-27",
-      "Noumea": "2026-08-29",
-      "Lautoka": "2026-08-31",
-      "Suva": "2026-09-02",
-      "Nuku'Alofa": "2026-09-05",
-      "Apia": "2026-09-08",
-      "Pagopago": "2026-09-08",
+      "Honiara": "2026-08-24",
+      "Santo": "2026-08-27",
+      "Port Vila": "2026-08-28",
+      "Noumea": "2026-08-30",
+      "Lautoka": "2026-09-01",
+      "Suva": "2026-09-03",
+      "Nuku'Alofa": "2026-09-06",
+      "Apia": "2026-09-09",
+      "Pagopago": "2026-09-09",
       "Tarawa": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "SOUTH PACIFIC",
@@ -743,7 +644,7 @@
       "Pagopago": "2026-09-30",
       "Tarawa": "2026-10-10"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
-    "Schedule Updated": "2026-08-03"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   }
 ]
