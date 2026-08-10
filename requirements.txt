@@ -6,3 +6,4 @@ pandas
 lxml
 pypdf>=5.0.0
 pdfplumber>=0.11.0
+jpholiday>=0.1.10

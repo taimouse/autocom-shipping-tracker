@@ -17,13 +17,22 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Check Japan business day
+        id: jpday
+        run: |
+          pip install jpholiday
+          python scripts/jp_business_day.py
+
       - name: Install dependencies
+        if: steps.jpday.outputs.should_run == 'true'
         run: pip install -r requirements.txt
 
       - name: Run SEALS scraper
+        if: steps.jpday.outputs.should_run == 'true'
         run: python SEALS/seals_scraper.py
 
       - name: Commit and push
+        if: steps.jpday.outputs.should_run == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

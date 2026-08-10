@@ -17,14 +17,23 @@ jobs:
         with:
           python-version: "3.9"
 
+      - name: Check Japan business day
+        id: jpday
+        run: |
+          pip install jpholiday
+          python scripts/jp_business_day.py
+
       - name: Install dependencies
+        if: steps.jpday.outputs.should_run == 'true'
         run: |
           pip install -r requirements.txt
 
       - name: Run Scraper
+        if: steps.jpday.outputs.should_run == 'true'
         run: python scraper.py
 
       - name: Commit and Push
+        if: steps.jpday.outputs.should_run == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
