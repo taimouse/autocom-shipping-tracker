@@ -962,6 +962,23 @@
     "Schedule Updated": "2026-08-03"
   },
   {
+    "Service": "HONOLULU",
+    "Company": "NYK",
+    "Ship Name": "DIONYSOS LEADER",
+    "Voyage": "130",
+    "id": "NYK|HONOLULU|DIONYSOS LEADER|130|2026-08-05",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama": "-",
+      "Nagoya": "2026-08-05"
+    },
+    "Arrival Ports": {
+      "Honolulu": "2026-08-21"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
+  },
+  {
     "Service": "AFRICA",
     "Company": "NYK",
     "Ship Name": "104 7/13 7/18 7/19 7/16 --",
@@ -1064,6 +1081,25 @@
     "Schedule Updated": "2026-08-03"
   },
   {
+    "Service": "WEST AUST",
+    "Company": "NYK",
+    "Ship Name": "SPICA LEADER",
+    "Voyage": "000",
+    "id": "NYK|WEST AUST|SPICA LEADER|000|2026-08-28",
+    "Updated": false,
+    "Departure Ports": {
+      "Nagoya (Kinjo)": "2026-08-28",
+      "Nagoya (Nishisanku)": "-",
+      "Yokohama": "2026-08-30"
+    },
+    "Arrival Ports": {
+      "Fremantle": "2026-09-14",
+      "Darwin": "2026-09-24"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
+  },
+  {
     "Service": "EAST AUST",
     "Company": "NYK",
     "Ship Name": "EQUULEUS LEADER",
@@ -1086,6 +1122,30 @@
     },
     "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260727.pdf",
     "Schedule Updated": "2026-07-27"
+  },
+  {
+    "Service": "EAST AUST",
+    "Company": "NYK",
+    "Ship Name": "EQUULEUS LEADER",
+    "Voyage": "063",
+    "id": "NYK|EAST AUST|EQUULEUS LEADER|063|2026-08-29",
+    "Updated": false,
+    "Departure Ports": {
+      "Nagoya (Kinjo)": "2026-08-29",
+      "Nagoya (Nishisanku)": "2026-08-30",
+      "Yokohama": "2026-08-31",
+      "Osaka": "-",
+      "Kobe": "-"
+    },
+    "Arrival Ports": {
+      "Townsville": "-",
+      "Brisbane": "2026-09-11",
+      "Port Kembla": "2026-09-14",
+      "Melbourne": "2026-09-17",
+      "Adelaide": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260805.pdf",
+    "Schedule Updated": "2026-08-05"
   },
   {
     "Service": "NAEC (北米東岸)",

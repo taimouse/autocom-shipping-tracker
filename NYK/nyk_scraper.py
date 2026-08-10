@@ -307,11 +307,23 @@ SERVICES = [
 
 
 class ScheduleLinkParser(HTMLParser):
-    # 2026-07 사이트 개편으로 링크 텍스트가 전부 "PDF"로 바뀌어,
-    # href 파일명(all-YYMMDD.pdf)으로 ALL PDF를 식별한다.
-    # 같은 날짜로 재업로드하면 워드프레스가 all-260731-1.pdf 처럼 -N 접미사를
-    # 붙이므로 이를 허용하고, 후보가 여러 개면 가장 최신 파일을 고른다.
-    ALL_HREF = re.compile(r"/all-(\d{6})(?:-\d+)?\.pdf$", re.IGNORECASE)
+    """YCS schedule 페이지에서 ALL PDF 링크와 게시 날짜를 뽑아낸다.
+
+    ALL PDF는 세 단계로 찾는다. 사이트 개편(2026-07)으로 링크 텍스트가 전부
+    "PDF"가 되었고, 파일명도 all-260805.pdf -> revised-all-260807.pdf 처럼
+    접두사가 붙는 경우가 있어 어느 한 방법만으로는 깨진다.
+
+    1) <div class="item all"> 블록 안의 PDF 링크 (마크업 기준, 가장 안정적)
+    2) 파일명이 (...-)all-YYMMDD(-N).pdf 인 링크 중 최신 날짜
+    3) 링크 텍스트가 정확히 "ALL"인 링크
+
+    각 항로 항목의 <span class="date">2026.8.7</span> 도 함께 수집한다.
+    """
+
+    # 'all-260805.pdf', 'revised-all-260807.pdf', 'all-260731-1.pdf' 모두 허용.
+    # 워드프레스는 같은 날짜로 재업로드하면 -N 접미사를 붙인다.
+    ALL_HREF = re.compile(r"(?:^|/|-)all-(\d{6})(?:-\d+)?\.pdf$", re.IGNORECASE)
+    DATE_TEXT = re.compile(r"(\d{4})\s*[./-]\s*(\d{1,2})\s*[./-]\s*(\d{1,2})")
 
     def __init__(self, base_url):
         super().__init__()
@@ -320,24 +332,70 @@ class ScheduleLinkParser(HTMLParser):
         self.current_text = []
         self.candidates = []
         self.text_match_url = None
+        self.item_all_url = None
+        self.div_depth = 0
+        self.all_item_depth = None
+        self.date_depth = None
+        self.span_depth = 0
+        self.date_text = []
+        self.dates = []
+
+    @staticmethod
+    def _classes(attrs):
+        return set((dict(attrs).get("class") or "").split())
 
     def handle_starttag(self, tag, attrs):
-        if tag.lower() == "a":
+        tag = tag.lower()
+        if tag == "div":
+            self.div_depth += 1
+            classes = self._classes(attrs)
+            if self.all_item_depth is None and {"item", "all"} <= classes:
+                self.all_item_depth = self.div_depth
+        elif tag == "span":
+            self.span_depth += 1
+            if self.date_depth is None and "date" in self._classes(attrs):
+                self.date_depth = self.span_depth
+                self.date_text = []
+        elif tag == "a":
             self.current_href = dict(attrs).get("href")
             self.current_text = []
             if self.current_href:
+                url = urljoin(self.base_url, self.current_href)
                 match = self.ALL_HREF.search(self.current_href)
                 if match:
-                    self.candidates.append(
-                        (match.group(1), urljoin(self.base_url, self.current_href))
-                    )
+                    self.candidates.append((match.group(1), url))
+                if (
+                    self.all_item_depth is not None
+                    and not self.item_all_url
+                    and self.current_href.lower().endswith(".pdf")
+                ):
+                    self.item_all_url = url
 
     def handle_data(self, data):
         if self.current_href:
             self.current_text.append(data)
+        if self.date_depth is not None:
+            self.date_text.append(data)
 
     def handle_endtag(self, tag):
-        if tag.lower() == "a" and self.current_href:
+        tag = tag.lower()
+        if tag == "div":
+            if self.all_item_depth == self.div_depth:
+                self.all_item_depth = None
+            self.div_depth = max(0, self.div_depth - 1)
+        elif tag == "span":
+            if self.date_depth == self.span_depth:
+                match = self.DATE_TEXT.search("".join(self.date_text))
+                if match:
+                    try:
+                        self.dates.append(
+                            date(*(int(value) for value in match.groups()))
+                        )
+                    except ValueError:
+                        pass
+                self.date_depth = None
+            self.span_depth = max(0, self.span_depth - 1)
+        elif tag == "a" and self.current_href:
             if not self.text_match_url and (
                 " ".join(self.current_text).strip().upper() == "ALL"
             ):
@@ -347,9 +405,15 @@ class ScheduleLinkParser(HTMLParser):
 
     @property
     def all_pdf_url(self):
+        if self.item_all_url:
+            return self.item_all_url
         if self.candidates:
             return max(self.candidates)[1]
         return self.text_match_url
+
+    @property
+    def latest_page_date(self):
+        return max(self.dates) if self.dates else None
 
 
 def download(url, timeout=60):
@@ -365,14 +429,36 @@ def download_page(url, timeout=60):
         return response.read(), response.geturl()
 
 
-def get_all_pdf_url():
+def pdf_url_date(pdf_url):
+    """PDF 파일명의 YYMMDD를 게시일로 해석한다."""
+    match = re.search(r"-(\d{2})(\d{2})(\d{2})(?:-\d+)?\.pdf", pdf_url)
+    if not match:
+        return None
+    year, month, day = (int(value) for value in match.groups())
+    try:
+        return date(2000 + year, month, day)
+    except ValueError:
+        return None
+
+
+def get_all_pdf_info():
+    """(ALL PDF URL, 사이트가 표시하는 갱신일)을 돌려준다.
+
+    갱신일은 ALL PDF 파일명의 날짜를 우선한다. ALL 항목에는 날짜 배지가 없고
+    각 항로 항목에만 <span class="date">가 붙는데, 그중에는 ALL PDF에 들어가지
+    않는 항로(CONVENTIONAL SERVICES 등)도 있어 그대로 쓰면 과잉 감지가 된다.
+    파일명에서 날짜를 못 읽을 때만 페이지 배지 최신값으로 폴백한다.
+    """
     content, final_url = download_page(SCHEDULE_URL, timeout=30)
     parser = ScheduleLinkParser(final_url)
     parser.feed(content.decode("utf-8", errors="replace"))
-    if parser.all_pdf_url:
-        return parser.all_pdf_url
+    if not parser.all_pdf_url:
+        raise RuntimeError(
+            "YCS schedule page에서 SERVICE 'ALL' PDF 링크를 찾지 못했습니다."
+        )
 
-    raise RuntimeError("YCS schedule page에서 SERVICE 'ALL' PDF 링크를 찾지 못했습니다.")
+    published = pdf_url_date(parser.all_pdf_url) or parser.latest_page_date
+    return parser.all_pdf_url, published
 
 
 def extract_pdf_text(pdf_content):
@@ -684,9 +770,55 @@ def update_files(current_records):
     save_json(ARCHIVE_FILE, archive)
 
 
+def previous_state(records):
+    """직전 실행이 어떤 PDF를 어느 갱신일로 저장했는지 돌려준다."""
+    urls = {record.get("Source PDF") for record in records if record.get("Source PDF")}
+    dates = []
+    for record in records:
+        value = record.get("Schedule Updated")
+        if value:
+            try:
+                dates.append(date.fromisoformat(value))
+            except ValueError:
+                continue
+    return urls, (max(dates) if dates else None)
+
+
+def skip_reason(pdf_url, published, records):
+    """스크래핑을 건너뛸 이유가 있으면 문자열로, 없으면 None을 돌려준다."""
+    if not records:
+        return None
+
+    previous_urls, previous_date = previous_state(records)
+
+    # 같은 파일을 다시 받는 것뿐이면 결과가 바뀔 수 없다.
+    if pdf_url in previous_urls:
+        return f"ALL PDF가 직전 실행과 동일합니다 ({pdf_url})"
+
+    # 파일명은 달라졌지만(재업로드 등) 게시일이 더 과거면 새 스케줄이 아니다.
+    if published and previous_date and published < previous_date:
+        return (
+            f"사이트 게시일 {published.isoformat()}이(가) "
+            f"저장된 {previous_date.isoformat()}보다 과거입니다"
+        )
+
+    return None
+
+
 def main():
-    pdf_url = get_all_pdf_url()
+    force = "--force" in sys.argv[1:]
+    pdf_url, published = get_all_pdf_info()
     print(f"ALL PDF: {pdf_url}")
+    print(f"사이트 게시일: {published.isoformat() if published else '알 수 없음'}")
+
+    previous_records = load_json(CURRENT_FILE)
+    reason = skip_reason(pdf_url, published, previous_records)
+    if reason and not force:
+        print(f"업데이트 없음 - 스크래핑을 건너뜁니다: {reason}")
+        return
+    if reason:
+        print(f"[--force] 건너뛰기 조건 무시: {reason}")
+
     records = parse_all_schedules(download(pdf_url), pdf_url)
     update_files(records)
     service_count = len({record["Service"] for record in records})
