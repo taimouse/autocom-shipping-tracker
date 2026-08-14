@@ -272,6 +272,34 @@
         font-weight: 500;
       }
 
+      .range-summary {
+        margin-top: 24px;
+        border-radius: 16px;
+        background: var(--ink);
+        color: var(--canvas);
+        padding: 20px 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 12px 24px;
+      }
+
+      .range-summary .range-label {
+        color: #d8d8d8;
+        font-size: 14px;
+      }
+
+      .range-summary .range-avg {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .range-summary .range-meta {
+        color: #d8d8d8;
+        font-size: 13px;
+      }
+
       .empty {
         border-radius: 16px;
         background: var(--soft);
@@ -392,6 +420,17 @@
         .summary-meta span {
           padding: 6px 9px;
           font-size: 11px;
+        }
+
+        .range-summary {
+          margin-top: 12px;
+          border-radius: 12px;
+          padding: 14px 16px;
+          gap: 8px 16px;
+        }
+
+        .range-summary .range-avg {
+          font-size: 26px;
         }
 
         .month-section {
@@ -638,7 +677,28 @@
           return;
         }
 
-        target.innerHTML = keys
+        const from = document.getElementById("fromDate").value;
+        const to = document.getElementById("toDate").value;
+        let rangeSummary = "";
+        if (from || to) {
+          const priced = records.filter((record) =>
+            Number.isFinite(record.price),
+          );
+          const avg =
+            priced.reduce((sum, record) => sum + record.price, 0) /
+            priced.length;
+          const first = records[records.length - 1].date;
+          const last = records[0].date;
+          rangeSummary = `
+            <div class="range-summary">
+              <span class="range-label">Selected period average</span>
+              <span class="range-avg">${formatMoney(avg)}</span>
+              <span class="range-meta">${first} ~ ${last} · ${priced.length} records · USD/MT</span>
+            </div>
+          `;
+        }
+
+        target.innerHTML = rangeSummary + keys
           .map((key) => {
             const [year, month] = key.split("-");
             const rows = groups[key];
