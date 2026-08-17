@@ -922,19 +922,18 @@
     "Ship Name": "PROMETHEUS LEADER",
     "Voyage": "080",
     "id": "NYK|SRI LANKA|PROMETHEUS LEADER|080|2026-07-30",
-    "Updated": true,
+    "Updated": false,
     "Departure Ports": {
-      "Yokohama": "2026-07-30",
-      "Osaka": "2026-08-03",
-      "Kobe": "2026-08-01",
+      "Yokohama (Daikoku)": "2026-07-30",
       "Nagoya (Kinjyo)": "2026-07-31",
-      "Kawasaki": "-",
+      "Osaka (Senboku)": "2026-08-03",
+      "Kobe (Rokko)": "2026-08-01",
       "Moji": "2026-08-04"
     },
     "Arrival Ports": {
-      "Sri Lanka (Hambantota)": "2026-08-16"
+      "Hambantota": "2026-08-16"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/all-260803.pdf",
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/REVISED-sri-lanka-260803.pdf",
     "Schedule Updated": "2026-08-03"
   },
   {
@@ -1125,6 +1124,46 @@
     },
     "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/revised-all-260807.pdf",
     "Schedule Updated": "2026-08-07"
+  },
+  {
+    "Service": "SRI LANKA",
+    "Company": "NYK",
+    "Ship Name": "JUPITER LEADER",
+    "Voyage": "082",
+    "id": "NYK|SRI LANKA|JUPITER LEADER|082|2026-08-13",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama (Daikoku)": "2026-08-13",
+      "Nagoya (Kinjyo)": "2026-08-14",
+      "Osaka (Senboku)": "2026-08-15",
+      "Kobe (Rokko)": "-",
+      "Moji": "-"
+    },
+    "Arrival Ports": {
+      "Hambantota": "2026-08-29"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/REVISED-sri-lanka-260803.pdf",
+    "Schedule Updated": "2026-08-03"
+  },
+  {
+    "Service": "SRI LANKA",
+    "Company": "NYK",
+    "Ship Name": "GEMINI LEADER",
+    "Voyage": "025",
+    "id": "NYK|SRI LANKA|GEMINI LEADER|025|2026-08-16",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama (Daikoku)": "-",
+      "Nagoya (Kinjyo)": "-",
+      "Osaka (Senboku)": "-",
+      "Kobe (Rokko)": "2026-08-16",
+      "Moji": "-"
+    },
+    "Arrival Ports": {
+      "Hambantota": "2026-08-31"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/REVISED-sri-lanka-260803.pdf",
+    "Schedule Updated": "2026-08-03"
   },
   {
     "Service": "BANGLA",
