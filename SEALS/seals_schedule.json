@@ -2,27 +2,6 @@
   {
     "Service": "SOUTHEAST ASIA / BENGAL",
     "Company": "SEALS",
-    "Ship Name": "MODERN LINK",
-    "Voyage": "706",
-    "id": "SEALS|MODERN LINK|706|2026-07-06",
-    "Departure Ports": {
-      "Hitachinaka": "-",
-      "Yokohama": "2026-07-06",
-      "Nagoya": "2026-07-08",
-      "Senboku": "2026-07-09",
-      "Kobe": "-",
-      "Moji": "-",
-      "Oita": "-"
-    },
-    "Arrival Ports": {
-      "Hambantota": "2026-07-23"
-    },
-    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260807.pdf",
-    "Schedule Updated": "2026-08-07"
-  },
-  {
-    "Service": "SOUTHEAST ASIA / BENGAL",
-    "Company": "SEALS",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "41",
     "id": "SEALS|VIKING DRIVE|41|2026-07-24",
@@ -38,28 +17,28 @@
     "Arrival Ports": {
       "Hambantota": "2026-08-08"
     },
-    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260807.pdf",
-    "Schedule Updated": "2026-08-07"
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260818.pdf",
+    "Schedule Updated": "2026-08-18"
   },
   {
     "Service": "SOUTHEAST ASIA / BENGAL",
     "Company": "SEALS",
     "Ship Name": "VIKING DRIVE",
     "Voyage": "42",
-    "id": "SEALS|VIKING DRIVE|42|2026-08-26",
+    "id": "SEALS|VIKING DRIVE|42|2026-08-30",
     "Departure Ports": {
       "Hitachinaka": "-",
-      "Yokohama": "2026-08-26",
-      "Nagoya": "2026-08-25",
-      "Senboku": "2026-08-24",
+      "Yokohama": "2026-08-30",
+      "Nagoya": "2026-08-31",
+      "Senboku": "2026-09-01",
       "Kobe": "-",
       "Moji": "-",
       "Oita": "-"
     },
     "Arrival Ports": {
-      "Hambantota": "2026-09-08"
+      "Hambantota": "2026-09-15"
     },
-    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260807.pdf",
-    "Schedule Updated": "2026-08-07"
+    "Source PDF": "https://seven-seals.com/wp-content/uploads/RORO-Shipping-Schedule-SEVEN-SEALS20260818.pdf",
+    "Schedule Updated": "2026-08-18"
   }
 ]
