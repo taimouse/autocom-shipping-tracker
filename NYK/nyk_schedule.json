@@ -2,56 +2,6 @@
   {
     "Service": "AFRICA",
     "Company": "NYK",
-    "Ship Name": "ANTARES LEADER",
-    "Voyage": "114",
-    "id": "NYK|AFRICA|ANTARES LEADER|114|2026-08-05",
-    "Updated": false,
-    "Departure Ports": {
-      "Yokohama (Daikoku)": "2026-08-05",
-      "Nagoya (Kinjyo)": "2026-08-07",
-      "Osaka (Senboku)": "2026-08-12",
-      "Kobe (Rokko)": "2026-08-10"
-    },
-    "Arrival Ports": {
-      "Mombasa": "2026-09-02",
-      "Dar Es Salaam": "2026-08-31",
-      "Durban": "-",
-      "Port Louis": "-",
-      "Lagos": "-",
-      "Tema": "-",
-      "Abidjan": "-"
-    },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260807.pdf",
-    "Schedule Updated": "2026-08-07"
-  },
-  {
-    "Service": "AFRICA",
-    "Company": "NYK",
-    "Ship Name": "JUPITER LEADER",
-    "Voyage": "082",
-    "id": "NYK|AFRICA|JUPITER LEADER|082|2026-08-13",
-    "Updated": true,
-    "Departure Ports": {
-      "Yokohama (Daikoku)": "2026-08-13",
-      "Nagoya (Kinjyo)": "2026-08-14",
-      "Osaka (Senboku)": "2026-08-15",
-      "Kobe (Rokko)": "-"
-    },
-    "Arrival Ports": {
-      "Mombasa": "2026-09-17",
-      "Dar Es Salaam": "-",
-      "Durban": "2026-09-07",
-      "Port Louis": "-",
-      "Lagos": "-",
-      "Tema": "-",
-      "Abidjan": "-"
-    },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260807.pdf",
-    "Schedule Updated": "2026-08-07"
-  },
-  {
-    "Service": "AFRICA",
-    "Company": "NYK",
     "Ship Name": "PAVO LEADER",
     "Voyage": "012",
     "id": "NYK|AFRICA|PAVO LEADER|012|2026-08-21",
@@ -59,20 +9,70 @@
     "Departure Ports": {
       "Yokohama (Daikoku)": "2026-08-21",
       "Nagoya (Kinjyo)": "2026-08-22",
-      "Osaka (Senboku)": "2026-08-25",
-      "Kobe (Rokko)": "2026-08-26"
+      "Osaka (Senboku)": "2026-08-26",
+      "Kobe (Rokko)": "2026-08-27"
     },
     "Arrival Ports": {
       "Mombasa": "2026-09-17",
-      "Dar Es Salaam": "2026-09-19",
+      "Dar Es Salaam": "-",
       "Durban": "2026-09-24",
       "Port Louis": "-",
       "Lagos": "-",
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260807.pdf",
-    "Schedule Updated": "2026-08-07"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260819.pdf",
+    "Schedule Updated": "2026-08-19"
+  },
+  {
+    "Service": "AFRICA",
+    "Company": "NYK",
+    "Ship Name": "NEPTUNE LEADER",
+    "Voyage": "154",
+    "id": "NYK|AFRICA|NEPTUNE LEADER|154|2026-09-02",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama (Daikoku)": "2026-09-02",
+      "Nagoya (Kinjyo)": "2026-09-03",
+      "Osaka (Senboku)": "2026-09-04",
+      "Kobe (Rokko)": "2026-09-05"
+    },
+    "Arrival Ports": {
+      "Mombasa": "-",
+      "Dar Es Salaam": "2026-09-25",
+      "Durban": "2026-10-09",
+      "Port Louis": "-",
+      "Lagos": "-",
+      "Tema": "2026-10-22",
+      "Abidjan": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260819.pdf",
+    "Schedule Updated": "2026-08-19"
+  },
+  {
+    "Service": "AFRICA",
+    "Company": "NYK",
+    "Ship Name": "GLORIOUS LEADER",
+    "Voyage": "055",
+    "id": "NYK|AFRICA|GLORIOUS LEADER|055|2026-09-14",
+    "Updated": false,
+    "Departure Ports": {
+      "Yokohama (Daikoku)": "2026-09-14",
+      "Nagoya (Kinjyo)": "2026-09-15",
+      "Osaka (Senboku)": "2026-09-17",
+      "Kobe (Rokko)": "2026-09-18"
+    },
+    "Arrival Ports": {
+      "Mombasa": "2026-10-10",
+      "Dar Es Salaam": "2026-10-12",
+      "Durban": "2026-10-17",
+      "Port Louis": "-",
+      "Lagos": "-",
+      "Tema": "-",
+      "Abidjan": "-"
+    },
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260819.pdf",
+    "Schedule Updated": "2026-08-19"
   },
   {
     "Service": "SRI LANKA",
@@ -84,14 +84,14 @@
     "Departure Ports": {
       "Yokohama (Daikoku)": "2026-08-21",
       "Nagoya (Kinjyo)": "2026-08-22",
-      "Osaka (Senboku)": "2026-08-25",
-      "Kobe (Rokko)": "2026-08-26"
+      "Osaka (Senboku)": "2026-08-26",
+      "Kobe (Rokko)": "2026-08-27"
     },
     "Arrival Ports": {
       "Hambantota": "2026-09-08"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260817.pdf",
-    "Schedule Updated": "2026-08-17"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260819.pdf",
+    "Schedule Updated": "2026-08-19"
   },
   {
     "Service": "SRI LANKA",
@@ -109,7 +109,7 @@
     "Arrival Ports": {
       "Hambantota": "2026-09-08"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260817.pdf",
-    "Schedule Updated": "2026-08-17"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260819.pdf",
+    "Schedule Updated": "2026-08-19"
   }
 ]
