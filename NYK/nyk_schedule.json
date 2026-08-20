@@ -9,8 +9,8 @@
     "Departure Ports": {
       "Yokohama (Daikoku)": "2026-08-21",
       "Nagoya (Kinjyo)": "2026-08-22",
-      "Osaka (Senboku)": "2026-08-26",
-      "Kobe (Rokko)": "2026-08-27"
+      "Osaka (Senboku)": "2026-08-25",
+      "Kobe (Rokko)": "2026-08-26"
     },
     "Arrival Ports": {
       "Mombasa": "2026-09-17",
@@ -21,7 +21,7 @@
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260819.pdf",
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/revised-africa-260819.pdf",
     "Schedule Updated": "2026-08-19"
   },
   {
@@ -46,7 +46,7 @@
       "Tema": "2026-10-22",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260819.pdf",
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/revised-africa-260819.pdf",
     "Schedule Updated": "2026-08-19"
   },
   {
@@ -71,7 +71,7 @@
       "Tema": "-",
       "Abidjan": "-"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/africa-260819.pdf",
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/revised-africa-260819.pdf",
     "Schedule Updated": "2026-08-19"
   },
   {
@@ -84,14 +84,14 @@
     "Departure Ports": {
       "Yokohama (Daikoku)": "2026-08-21",
       "Nagoya (Kinjyo)": "2026-08-22",
-      "Osaka (Senboku)": "2026-08-26",
-      "Kobe (Rokko)": "2026-08-27"
+      "Osaka (Senboku)": "2026-08-25",
+      "Kobe (Rokko)": "2026-08-26"
     },
     "Arrival Ports": {
       "Hambantota": "2026-09-08"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260819.pdf",
-    "Schedule Updated": "2026-08-19"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260817.pdf",
+    "Schedule Updated": "2026-08-17"
   },
   {
     "Service": "SRI LANKA",
@@ -109,7 +109,7 @@
     "Arrival Ports": {
       "Hambantota": "2026-09-08"
     },
-    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260819.pdf",
-    "Schedule Updated": "2026-08-19"
+    "Source PDF": "https://www.ycsco.com/wp-content/uploads/2026/07/sri-lanka-260817.pdf",
+    "Schedule Updated": "2026-08-17"
   }
 ]
