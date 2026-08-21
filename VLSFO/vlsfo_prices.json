@@ -4,11 +4,22 @@
     "product": "VLSFO",
     "unit": "USD/MT",
     "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea",
-    "last_updated": "2026-08-21T07:55:57+09:00",
-    "record_count": 59,
-    "latest_date": "2026-08-20"
+    "last_updated": "2026-08-22T07:51:49+09:00",
+    "record_count": 60,
+    "latest_date": "2026-08-21"
   },
   "records": [
+    {
+      "date": "2026-08-21",
+      "year": 2026,
+      "month": 8,
+      "price": 850.0,
+      "change": 5.0,
+      "change_percent": 0.59,
+      "low": 849.0,
+      "high": 851.0,
+      "source": "https://www.bunkerindex.com/prices/port.php?p=109&n=busan-republic-of-korea"
+    },
     {
       "date": "2026-08-20",
       "year": 2026,
